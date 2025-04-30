@@ -1,0 +1,174 @@
+from os.path import join
+
+import nltk
+import pandas as pd
+import numpy as np
+import gensim
+import gensim.corpora as corpora
+from gensim.models import CoherenceModel
+from nltk.corpus import stopwords
+from pprint import pprint
+import pyLDAvis
+import pyLDAvis.gensim_models
+import matplotlib.pyplot as plt
+import spacy
+from sklearn.model_selection import train_test_split
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import classification_report, accuracy_score, confusion_matrix
+from sklearn.pipeline import Pipeline
+
+documents = [
+    "A importância da autoavaliação digital nas empresas modernas.",
+    "Em um cenário empresarial cada vez mais competitivo e dinâmico, compreender o nível de maturidade digital tornou-se essencial para orientar decisões estratégicas.",
+    "Muitas empresas, porém, ainda enfrentam dificuldades em mensurar sua prontidão digital de forma eficaz.",
+    "Nesse contexto, soluções automatizadas como chatbots inteligentes podem representar uma alternativa viável para realizar diagnósticos precisos e acessíveis.",
+    "Ao simular uma conversa natural com o usuário, o chatbot pode coletar informações relevantes sobre práticas, tecnologias e processos adotados pela organização.",
+    "Com base em modelos estruturados de maturidade digital, a ferramenta é capaz de oferecer um retorno imediato sobre o estágio atual da empresa, além de apontar possíveis áreas de melhoria.",
+    "Essa abordagem reduz custos, aumenta a agilidade do processo de avaliação e democratiza o acesso a diagnósticos digitais, especialmente para empresas que não contam com consultorias especializadas.",
+    "Ao incorporar inteligência artificial e técnicas de PLN, o chatbot se torna um aliado estratégico na jornada rumo à transformação digital."
+]
+
+
+# Exemplo de estrutura real de dados (adaptar para seu contexto):
+real_data = {
+    "texts": [
+        "Qual é o nível de adoção de cloud computing na empresa?",
+        "Vocês usam ferramentas de análise de dados?",
+        "Como é a cultura de inovação aqui?",
+        "Quais tecnologias são utilizadas no processo produtivo?",
+        "A empresa tem estratégia clara para transformação digital?"
+    ],
+    "intents": ["tecnologia", "tecnologia", "cultura", "processos", "estratégia"],
+    "maturidade": [3, 2, 1, 2, 4]  # Exemplo de scores (0-5)
+}
+
+
+
+
+# Função de avaliação modificada para incluir métricas
+def train_and_evaluate(model, model_name, X_train, X_test, y_train, y_test):
+    pipeline = Pipeline([
+        ('tfidf', TfidfVectorizer(max_features=5000)),
+        ('clf', model)
+    ])
+    
+    pipeline.fit(X_train, y_train)
+    predictions = pipeline.predict(X_test)
+    
+    # print(f"\n🔍 Resultados para {model_name}:")
+    # print(f"Acurácia: {accuracy_score(y_test, predictions):.2f}")
+    # print("\nRelatório de Classificação:")
+    # print(classification_report(y_test, predictions))
+    # print("Matriz de Confusão:")
+    # print(confusion_matrix(y_test, predictions))
+    # print("="*60 + "\n")
+
+
+
+def process():
+
+    base_path = "C:\Projetos\chatbot_with_pln\src\data"
+    df = pd.read_csv(join(base_path, "digital_maturity_dataset.csv"))
+    # df = pd.DataFrame(real_data)
+
+    # Configurações iniciais
+    nltk.download('stopwords')
+    nlp = spacy.load('pt_core_news_lg')
+
+    # Criar um Entity Ruler personalizado
+    ruler = nlp.add_pipe("entity_ruler", last=True)
+
+    # Padrões de entidades baseados na OntoMaturity (exemplo)
+    patterns = [
+        {"label": "TECNOLOGIA", "pattern": "nuvem"},
+        {"label": "TECNOLOGIA", "pattern": "cloud computing"},
+        {"label": "TECNOLOGIA", "pattern": "inteligência artificial"},
+        {"label": "PROCESSO", "pattern": "metodologias ágeis"},
+        {"label": "PROCESSO", "pattern": "automação"},
+        {"label": "ESTRATÉGIA", "pattern": "roadmap"},
+        {"label": "CULTURA", "pattern": "resistência à mudança"},
+        {"label": "DADOS", "pattern": "governança de dados"}
+    ]
+
+    ruler.add_patterns(patterns)
+
+    # Aplicar a função a cada texto do DataFrame
+    df["entities"] = df["text"].apply(lambda x: extract_entities(x, nlp))
+
+    # entities = extract_entities(df["text"], nlp)
+    print(df["entities"])
+    
+
+    df.to_csv(join(base_path, "dataframe_processed.csv"),index=False,sep=";")
+    # # 1. Pré-processamento
+    # print("🛠️ Pré-processando documentos...")
+    # processed_tokens = preprocess_with_spacy(documents, nlp)
+    
+    # # Após criar o dataset real:
+    # X_train, X_test, y_train, y_test = train_test_split(
+    #     df["text"], df["intent"], test_size=0.2, random_state=42
+    # )
+
+    # # Pipeline otimizado para maturidade digital
+    # pipeline = Pipeline([
+    #     ('tfidf', TfidfVectorizer(max_features=5000, ngram_range=(1, 2))),
+    #     ('clf', LogisticRegression(class_weight='balanced'))  # Melhor para dados desbalanceados
+    # ])
+
+    # pipeline.fit(X_train, y_train)
+    
+    # # 2. Modelagem de Tópicos (LDA)
+    # print("\n🧠 Executando modelagem de tópicos...")
+    # id2word = corpora.Dictionary(processed_tokens)
+    # corpus = [id2word.doc2bow(text) for text in processed_tokens]
+    
+    # lda_model = gensim.models.LdaModel(
+    #     corpus=corpus,
+    #     id2word=id2word,
+    #     num_topics=3,
+    #     random_state=42,
+    #     passes=15
+    # )
+    
+    # # Cálculo de coerência
+    # coherence_model = CoherenceModel(
+    #     model=lda_model,
+    #     texts=processed_tokens,
+    #     dictionary=id2word,
+    #     coherence='c_v'
+    # )
+    
+    # # Visualização
+    # print("\n🎨 Gerando visualização...")
+    # vis = pyLDAvis.gensim_models.prepare(lda_model, corpus, id2word)
+    # pyLDAvis.display(vis)
+    
+    # # 3. Classificação (Exemplo com dados simulados)
+    # print("\n🤖 Treinando modelos de classificação...")
+    
+    # # Criando labels fictícias para demonstração
+    # y = np.array([0, 0, 0, 0, 1, 1, 1, 1])  # 0: conceitos gerais, 1: chatbots
+    # X = [' '.join(tokens) for tokens in processed_tokens]  # Convertendo tokens para texto
+    
+    # # Divisão dos dados
+    # X_train, X_test, y_train, y_test = train_test_split(
+    #     X, y, test_size=0.25, random_state=42, stratify=y
+    # )
+    
+    # # Modelos para testar
+    # models = [
+    #     (MultinomialNB(), "Naive Bayes")
+    #     # (LogisticRegression(max_iter=1000), "Regressão Logística"),
+    #     # (RandomForestClassifier(n_estimators=100), "Random Forest")
+    # ]
+    
+    
+    # # Treino e avaliação
+    # for model, name in models:
+    #     train_and_evaluate(model, name, X_train, X_test, y_train, y_test)
+
+    
+    print("| ### ✅ Finishing the process... ### |")
