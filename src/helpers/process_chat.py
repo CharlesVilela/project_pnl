@@ -19,6 +19,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, accuracy_score, confusion_matrix
 from sklearn.pipeline import Pipeline
+import joblib
 
 from helpers.entity_extraction import extract_entities, add_custom_entities
 from helpers.preprocess import load_spacy_model, preprocess_with_spacy
@@ -59,19 +60,6 @@ def process():
     processed_tokens = preprocess_with_spacy(df["text"], nlp)
     df["text_clean"] = [' '.join(tokens) for tokens in processed_tokens]
     
-    pipe = build_pipeline(df)
-
-    
-    # # Modelos para testar
-    # models = [
-    #     (MultinomialNB(), "Naive Bayes")
-    #     # (LogisticRegression(max_iter=1000), "Regressão Logística"),
-    #     # (RandomForestClassifier(n_estimators=100), "Random Forest")
-    # ]
-    
-    # # Treino e avaliação
-    # for model, name in models:
-    #     train_and_evaluate(model, name, X_train, X_test, y_train, y_test)
-
+    build_pipeline(df)
     
     print("| ### ✅ Finishing the process... ### |")

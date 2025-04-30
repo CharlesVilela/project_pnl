@@ -5,18 +5,34 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
+from os.path import join
 import matplotlib.pyplot as plt
 import seaborn as sns
+import joblib
+import os
 
 
-def create_matriz_confusion(predictions, y_test, name_model):
+
+def create_matriz_confusion(predictions, y_test, name_model, output_dir="matrizes"):
     cm = confusion_matrix(y_test, predictions)
     plt.figure(figsize=(6,5))
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues')
     plt.xlabel("Previsto")
     plt.ylabel("Real")
     plt.title(f"Matriz de Confusão: {name_model}")
-    plt.show()
+    # plt.show()
+
+    base_path = "C:\Projetos\chatbot_with_pln\image"
+    image_path = join(base_path, output_dir)
+    # Criar diretório se não existir
+    os.makedirs(image_path, exist_ok=True)
+
+    # Gerar nome do arquivo (sem espaços)
+    filename = f"{name_model.replace(' ', '_').lower()}_confusion_matrix.png"
+    filepath = join(image_path, filename)
+
+    # Salvar a imagem
+    plt.savefig(filepath, dpi=300, bbox_inches='tight')
 
 
 def build_pipeline(df):
@@ -40,6 +56,8 @@ def build_pipeline(df):
     for model, name in models:
        predictions = train_and_evaluate(model, name, X_train, X_test, y_train, y_test)
        create_matriz_confusion(predictions, y_test, name)
+       print(f"| ### The Model: {name} ### |")
+       print(classification_report(y_test, predictions, digits=3))
 
 
 # Função de avaliação modificada para incluir métricas
@@ -51,5 +69,9 @@ def train_and_evaluate(model, model_name, X_train, X_test, y_train, y_test):
     
     pipeline.fit(X_train, y_train)
     predictions = pipeline.predict(X_test)
+
+    filename = model_name.replace(" ", "_").lower()
+    joblib.dump(pipeline, f"{filename}_maturity_model.pkl")
+
 
     return predictions
