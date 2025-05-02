@@ -1,0 +1,803 @@
+﻿text,intent,maturity_score,entities,category,metadata
+"Journal of Management Studies published by Society for the Advancement of Management 
+Studies and John Wiley & Sons Ltd
+A Systematic Review of the Literature on Digital 
+Transformation: Insights and Implications for 
+Strategy and Organizational Change
+André Hanelta, René Bohnsackb,*, David Marzc and 
+Cláudia Antunes Maranteb
+a University of  Kassel; b Católica Lisbon School of  Business & Economics; c University of  Goettingen
+ABSTRACT  In this article we provide a systematic review of the extensive yet diverse and frag-
+mented literature on digital transformation (DT), with the goal of clarifying boundary condi-
+tions to investigate the phenomenon from the perspective of organizational change.",outros,1,,banco,
+"On the 
+basis of 279 articles, we provide a multi-dimensional framework synthesizing what is known 
+about DT and discern two important thematical patterns: DT is moving firms to malleable 
+organizational designs that enable continuous adaptation, and this move is embedded in and 
+driven by digital business ecosystems.",outros,1,,banco,
+"From these two patterns, we derive four perspectives on 
+the phenomenon of DT: technology impact, compartmentalized adaptation, systemic shift and 
+holistic co-evolution.",outros,1,,banco,
+"Linking our findings and interpretations to existing work, we find that the 
+nature of DT is only partially covered by conventional frameworks on organizational change.",outros,1,,banco,
+"On the basis of this analysis, we derive a research agenda and provide managerial implications 
+for strategy and organizational change.",outros,1,,banco,
+"Keywords: digital business ecosystems, digital transformation, organizational change, 
+organizational designs, systematic literature review
+INTRODUCTION
+Digital transformation (DT) is increasingly establishing itself as a constant theme in con-
+temporary academic and practitioner conversations.",outros,1,,banco,
+"Therefore, the phenomenon is naturally con-
+nected to the topic of  organizational change, viewed as a ‘difference in form, quality, 
+or state over time in an organizational entity’ (Van de Ven and Poole, 1995, p. 512).",outros,1,,banco,
+"Thus, we define DT as organizational change that is triggered and shaped by the wide-
+spread diffusion of  digital technologies.",outros,1,,banco,
+"Such a view enables us to potentially explain 
+the phenomenon of  DT and its management in business practice by drawing on the 
+robust and diversified knowledge base relating to organizational change and innova-
+tion (Poole and Van de Ven, 2004).",inteligencia_artificial,1,,banco,
+"While prior research studied organizational change in relation to information 
+technology (IT) (Markus and Robey, 1988; Orlikowski, 2000; Volkoff et al., 2007), the 
+latter defined as ‘computer-based technology for the storage, accessing, processing and 
+communication of information’ (Molloy and Schwenk, 1995, p. 283), and created valu-
+able and persistent knowledge, recent observations suggest that DT deviates from these 
+past organizational changes in at least the following ways.",outros,1,,banco,
+"First, the technologies in-
+volved, such as big data analytics, social media, mobile technology or cloud computing, 
+seem very different from earlier IT (Bharadwaj et al., 2013).",infraestrutura_digital,4,,banco,
+"Third, the consequences 
+of DT – such as the emergence of new digital business models even in non-digital in-
+dustries – seem to extend beyond those of previous phases of IT-enabled change, which 
+were usually related to the practice level and rather incremental change within firms 
+ 14676486, 2021, 5, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/joms.12639 by Capes, Wiley Online Library on [30/04/2025].",outros,1,,banco,
+"In summary and as indicated by recent works (e.g., Wessel et al., 
+2020), it seems that the phenomenon of DT differs from past IT-related organizational 
+change and cannot, therefore, be explained entirely using established theoretical models 
+(Markus and Rowe, 2018).",inteligencia_artificial,1,,banco,
+"Instead, DT seems to have a more intricate and encompass-
+ing connection to the topic of organizational change, requiring a broader view of and 
+comparison with the literature on organizational change and innovation (Poole and Van 
+de Ven, 2004).",outros,1,,banco,
+"Due to the uncertainties about the phenomenon, it is currently unclear whether, and if 
+so how knowledge on organizational change can be used to explain DT.",inteligencia_artificial,1,,banco,
+"In other words, 
+as the boundaries of the phenomenon are unclear, we cannot be sure whether DT is cov-
+ered by existing knowledge of organizational change.",outros,1,,banco,
+"And, how does DT relate 
+to existing knowledge on organizational change?",outros,1,,banco,
+"Accordingly, we aim to clarify the boundary conditions both phenomenologi-
+cally and inductively (Post et al., 2020).",inteligencia_artificial,1,,banco,
+"Second, this shift is embedded in and driven by digital business ecosystems.",outros,1,,banco,
+"By connect-
+ing these content patterns with the dimensions of context and process (Pettigrew, 1987), 
+we derived four perspectives on DT: technology impact, compartmentalized adaptation, 
+systemic shift and holistic co-evolution.",outros,1,,banco,
+"Thus, 
+we relate our findings particularly to the distinction in organizational change literature 
+between episodic and continuous change perspectives, as this distinction is ‘sufficiently 
+ 14676486, 2021, 5, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/joms.12639 by Capes, Wiley Online Library on [30/04/2025].",outros,1,,banco,
+"Whereas the episodic position relates to infrequent and 
+intentional organizational change (Lewin, 1951; Poole and Van de Ven, 2004; Waeger 
+and Weber, 2019), the continuous position assumes ‘ongoing, evolving and cumulative’ 
+change (Weick and Quinn, 1999, p. 365).",outros,1,,banco,
+"Finally, we derive a substan-
+tial research agenda on the basis of our analysis of the fit between the phenomenon of 
+DT and the established literature on organizational change and innovation.",outros,1,,banco,
+"While there are multiple ways in which a literature review can make a theoretical 
+contribution, this article aims to contribute via the clarification of boundary conditions, 
+which is seen as critical for the advancement of research around a theory or topic (Post 
+et al., 2020).",inteligencia_artificial,1,,banco,
+"Third, we propose linkages between the phenomenon of DT and established views in 
+management literature on organizational change and innovation and derive important 
+avenues for future research.",outros,1,,banco,
+"Overall, our review aims to help scholars to understand 
+the phenomenon DT, encourage them to think differently about the phenomenon, and 
+allow the development of novel and interesting empirical studies in subsequent research 
+(Post et al., 2020).",inteligencia_artificial,1,,banco,
+"Finally, our work aims to support managers to respond to the strategic 
+challenge of DT (Singh et al., 2020) by revealing important insights on the shifts towards 
+malleable organizational designs and digital business ecosystems that may inform orga-
+nizational change and strategy practices.",inteligencia_artificial,1,,banco,
+"We selected the year 2000 
+as the baseline for our search in order to gain robust insights into recent developments 
+in the understanding of DT.",inteligencia_artificial,1,,banco,
+"The FT50 list contains high 
+quality journals across a range of disciplines, such as the Journal of Management Studies 
+or Organization Science, and was used as a representative and externally valid sample 
+of top management journals (Biehl et al., 2006; Burgess and Shaw, 2010).",inteligencia_artificial,1,,banco,
+"First, as is explained in more detail later on, it allowed us to cater to all 
+four of the dimensions of organizational change, or ‘issues common to all change efforts’ 
+(p. 293), named by Armenakis and Bedeian (1999), i.e., content, context, process and out-
+comes (see explanation below).",inteligencia_artificial,1,,banco,
+"An example of contextual conditions is the emergence and diffusion of cloud 
+computing, as it is described as shaping and driving DT (e.g., Benlian et al., 2018).",infraestrutura_digital,4,,banco,
+"In the 
+category mechanisms we identified, for example, process models to describe and explain 
+how small and medium enterprises drive DT in their companies (Li et al., 2017).",inteligencia_artificial,1,,banco,
+"After applying the categories 
+and sub-categories to about half the material, we again revised the category system 
+by splitting up the sub-categories ‘into individual features or values’ (Mayring, 2014,  
+p. 95).",inteligencia_artificial,1,,banco,
+"For example, environmental antecedents were found to contain country charac-
+teristics, industry characteristics and consumer characteristics.",inteligencia_artificial,1,,banco,
+"Finally, the prevailing discrepancies were discussed and unified by all four authors until 
+agreements were reached on the allocations of all the articles.",inteligencia_artificial,1,,banco,
+"In the 
+following section, we describe the findings of our review in detail.",inteligencia_artificial,1,,banco,
+"We found that so-called SMACIT tech-
+nologies (social, mobile, analytics, cloud, and Internet of Things) (e.g., Sebastian et al., 
+Figure 1.",infraestrutura_digital,4,,banco,
+"Concurrently, the emergence and diffusion of digital technologies 
+has led to an increased data availability, which in turn has increased the importance for 
+organizations of machine learning and data analytics (Weichert, 2017).",inteligencia_artificial,1,,banco,
+"These include the legal and infrastructural conditions of a country, 
+such as regulatory frameworks and interventions (e.g., Cortet et al., 2016), but also tech-
+nology-driven industry dynamics, including, among other things, the changing technological 
+landscape of an industry (e.g., Alos-Simo et al., 2017).",outros,1,,banco,
+"Consumers increasingly rely on 
+digital technologies in their daily routines and personal interactions (e.g., Brynjolfsson 
+et al., 2013), and expect ubiquitous access to virtual resources (e.g., Benlian et al., 2018).",inteligencia_artificial,1,,banco,
+"We identified two main mechanisms used by organizations 
+to conceive and bring about DT: innovation and integration (Daniel and Wilson, 2003; 
+Henfridsson and Yoo, 2013).",inteligencia_artificial,1,,banco,
+"Mobilization for and acceleration of  digital transformation by TMTs 
+is another critical activity at the strategic level, and is used, among other things, to attract 
+a new generation of workers (e.g., Matzler et al., 2018) and to establish digital mindsets 
+(e.g., Hansen et al., 2011).",outros,1,,banco,
+"With a more operational focus but embedded in the strategic 
+orientation, the exploitation and leveraging of  digital capabilities is important for organizations, 
+mainly regarding online informational capabilities (Barua et al., 2004), big data analyt-
+ics capabilities (e.g., Hausladen and Zipf, 2018) and digital platform capabilities (e.g., 
+Karimi and Walter, 2015).",inteligencia_artificial,1,,banco,
+"This also includes merging human-ma-
+chine interaction as a core activity to establish value-adding and sustainable synergies be-
+tween technology and humans (Bajer, 2017).",inteligencia_artificial,1,,banco,
+"First, developing a digital transformation strategy that ‘serves as a cen-
+tral concept to integrate the entire coordination, prioritization, and implementation of 
+digital transformations within a firm’ (Matt et al., 2015, p. 339) is key to marshalling 
+this integration in the course of DT.",outros,1,,banco,
+"Executions of such plans involve activities to unlock 
+organizations, for example by developing dynamic capabilities (e.g., Karimi and Walter, 
+2015) and enhanced organizational learning abilities (e.g., Schuchmann and Seufert, 
+2015).",outros,1,,banco,
+"To start with, we 
+found that a focus on open innovation and crowdsourcing leads to more ecosystem-oriented 
+and -embedded organizations (Berman and Marshall, 2014).",outros,1,,banco,
+"This shift continues in the in-
+tra-organizational structuring: organizations develop permeable, agile organizational structures, 
+and in doing so become agile, adaptable and boundaryless, as manifested in organiza-
+tional forms such as Holacracy (e.g., Schwer and Hitz, 2018).",outros,1,,banco,
+"This is evidenced by 
+the increased use of artificial intelligence support and decision support systems (e.g., 
+Kolbjørnsrud et al., 2016).",outros,1,,banco,
+"In a similar vein, digital and customer experience-focused business 
+models gain importance.",experiencia_cliente,3,,banco,
+"Finally, DT in organizations culminates in the outcome of automatized, 
+data-driven and virtual business processes through an enhanced use of digital technologies and 
+software for performing tasks (e.g., Dery et al., 2017), as well as the development of smart, 
+connected and customized products (e.g., Porter and Heppelman, 2015).",outros,1,,banco,
+"These spill-overs – divided into paradigms, systems, industry, information secu-
+rity and individual effects – form the environment with which firms interact to remain 
+legitimate and successful.",inteligencia_artificial,1,,banco,
+"DT thereby causes a blurring of  the 
+boundaries between physical and online industry structures, including the convergence of physical 
+products and digital services, merging the physical world with online content, and creat-
+ing an omnichannel environment for the customer (e.g., Brynjolfsson et al., 2013).",experiencia_cliente,5,,banco,
+"DISCUSSION OF FINDINGS
+Although our findings portray DT as complex and diversified, we can abstract directions 
+concerning the content of organizational change (Armenakis and Bedeian, 1999).",outros,1,,banco,
+"In particular, 
+we observe the move towards malleable organizational designs that are embedded in and 
+driven by digital business ecosystems.",outros,1,,banco,
+"(2017) say, in summary, that digital firms adapt rapidly though the mechanisms of 
+data-driven operation (e.g., fine-grained monitoring and user profiling based on digital 
+technologies), swift transformation (e.g., fast redefinition of core markets, identities and 
+activities) and instant release (e.g., dynamic innovation of digital offerings based on cus-
+tomer feedback).",inteligencia_artificial,1,,banco,
+"For in-
+stance, data-driven operations and decision making are underpinned by automatized, 
+data-driven and virtual business processes, as well as technology-focused and -supported 
+management.",outros,1,,banco,
+"Finally, the outcomes of digital and customer experience-focused digital 
+business models and of smart connected and customized products can be related to the 
+mechanism of instant release, as these are dynamically adaptable and scalable market 
+offerings.",experiencia_cliente,3,,banco,
+"For instance, by engaging in digital innovation, 
+new digital business models are established that allow for instant release.",outros,1,,banco,
+"By building on 
+new digital capabilities and human-machine interaction, data-driven operations can be 
+achieved.",outros,1,,banco,
+"Developing a digital business strategy, digital acceleration and digital mobiliza-
+tion help to unfreeze the organization for swift transformation.",outros,1,,banco,
+"Here digital firms and non-digital firms 
+diverge, as the latter have to deal with a pre-existing organizational design, requiring a 
+digital transformation strategy and physical-digital harmonizing, while digital firms are 
+regularly built from scratch (Tumbas et al., 2017).",outros,1,,banco,
+"Data-driven operations and decisions tune the firm to environmental feedback, 
+for instance from customers, by utilizing the potential of AI and machine learning to 
+automatically detect and react to changes.",inteligencia_artificial,1,,banco,
+"This is termed ‘digital ecodynamics’, a 
+phenomenon that ‘has no separations among its three core elements, but it is the whole-
+ness of the fused interactions among the three elements’ (El Sawy et al., 2010, p. 837).",outros,1,,banco,
+"Towards Digital Business Ecosystems
+Drawing upon the manifold changes that our review has revealed with regards to an-
+tecedents and outcomes, in conjunction with the emergence of malleable organizational 
+designs that dynamically tune firms to their environments, we can identify a move towards 
+digital business ecosystems as the second thematic pattern of DT.",outros,1,,banco,
+"Business ecosystems 
+are often seen as underpinning the value creation and capture of firms, representing ‘the 
+alignment structure of the multilateral set of partners that need to interact in order for a 
+focal value proposition to materialize’ (Adner, 2017, p. 42).",outros,1,,banco,
+"As they shape firm decisions 
+about where and how to compete, business ecosystems are an essential topic for strategy 
+(Jacobides et al., 2018).",outros,1,,banco,
+"In recent decades, we have seen numerous companies moving 
+away from hierarchical integrated supply chains and towards these more fragmented net-
+works of strategic partnerships with external entities (Bitran et al., 2007).",inteligencia_artificial,1,,banco,
+"However, in the 
+course of DT, we contend that through the holistic confluence comprising material, or-
+ganizational and further environmental dimensions (El Sawy et al., 2010), so-called digital 
+business ecosystems, which in the past were only a topic of interest for IT and software 
+industries, are becoming more and more inseparable from regular business ecosystems 
+and increasingly relevant across sectors as digital technologies diffuse through industries 
+and society.",outros,1,,banco,
+"Digital business ecosystems define business environments ‘shaped by a net-
+work of interdependencies specifically generated through digital technologies’ (Kopalle 
+et al., 2020, pp.",outros,1,,banco,
+"A key differential factor that sets digital business ecosystems 
+apart is their turbulent nature (El Sawy and Perreira, 2013).",outros,1,,banco,
+"In the context of business ecosystems, this turbulence becomes 
+ 14676486, 2021, 5, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/joms.12639 by Capes, Wiley Online Library on [30/04/2025].",outros,1,,banco,
+"Journal of Management Studies published by Society for the Advancement of Management 
+Studies and John Wiley & Sons Ltd
+visible especially through the vast number and heterogeneity of interdependent part-
+ners that shape competition (e.g., Jacobides et al., 2018), the widespread diffusion and 
+adoption of interconnected generative technologies (e.g., Kopalle et al., 2020), and the 
+constantly changing customer preferences (e.g., Downes and Nunes, 2013).",outros,1,,banco,
+"For instance, we identified that DT is triggered and shaped by a plethora 
+of diverse digital technologies and applications, such as blockchain technologies, AI and 
+the Internet of Things.",inteligencia_artificial,1,,banco,
+"Also, consumers are increasingly embedding technology within 
+their daily routines and personal interactions, which has profound implications for their 
+demands and expectations towards the offerings of and the communications with firms.",inteligencia_artificial,1,,banco,
+"In the outcomes category, we can see, among other things, a 
+shift towards connected markets in which the participants are involved in numerous ex-
+change networks that are easily formed, grown, and dissolved again.",inteligencia_artificial,1,,banco,
+"This can mainly be 
+attributed to the ubiquity of the Internet and other related technologies on which these 
+networks heavily rely, leading overall to digitally permeated markets.",inteligencia_artificial,1,,banco,
+"Due to the increasing turbulence, digital business ecosystems are ‘changing the rules 
+of the game in many industries through disruptions of business models’ (Pagani, 2013, 
+p. 617).",outros,1,,banco,
+"The resulting non-linearity and equifinality may make these 
+ecosystems better understood from configurational theory (El Sawy et al., 2010; Meyer 
+et al., 1993).",outros,1,,banco,
+"As a further result of their turbulent nature, digital business ecosystems also diverge 
+from regular business ecosystems with regard to their constituents.",outros,1,,banco,
+"Following the defi-
+nition of Adner (2017), regular business ecosystems are, characterized by, among other 
+things, a set of partners with ‘defined positions and activity flows among them’ (p. 42), 
+based on a collectively pursued value proposition.",outros,1,,banco,
+"Within digital business ecosystems, 
+however, the value propositions pursued can change radically in a short period of time 
+(Yoo et al., 2012).",outros,1,,banco,
+"Thus, the participants within digital business ecosystems, their posi-
+tions, and their roles are subject to constant change.",outros,1,,banco,
+"Thus, it is becoming increasingly complex 
+to maintain an overview of the value propositions pursued and the participants within 
+digital business ecosystems, and to determine their positions and the activity flows among 
+them.",inteligencia_artificial,1,,banco,
+"A Typology of Perspectives on Digital Transformation
+The two aggregated thematic patterns of DT (i.e., towards malleable organizational 
+designs and digital business ecosystems) summarize the content of DT, which focuses on 
+‘the substance of contemporary organizational change’ (Armenakis and Bedeian, 1999, 
+p. 295).",outros,1,,banco,
+"Following literature from the field of organizational change (e.g., Pettigrew, 2012; 
+Sminia and de Rond, 2012), it is necessary to consider the content in conjunction with 
+the context and process dimensions.",outros,1,,banco,
+"Traditionally, scholars in the field 
+of organizational change distinguished between inner contexts (i.e., structures, corporate 
+cultures and political context within firms) and outer contexts (i.e., the social, economic, 
+political and competitive environment of a firm) (Pettigrew, 1987).",outros,1,,banco,
+"Furthermore, the change towards a 
+malleable organizational design is embedded in and driven by digital business ecosystems 
+and cannot be considered in isolation from this.",outros,1,,banco,
+"The contextual scope can be 
+rather narrow if the focus is on the relationship between specific elements from digital 
+business ecosystems and particular aspects of the organizational design.",outros,1,,banco,
+"(2017) focus in their study on the impact of AI on the nature of work 
+and the execution of processes in organizations.",inteligencia_artificial,1,,banco,
+"Conversely, the contextual scope can 
+be rather broad if the holistic confluence of multiple technological, organizational and 
+environmental elements in digital business ecosystems, as well as their interactions with 
+organizational design as a whole, is considered.",outros,1,,banco,
+"The metaphor of an optical lens (Van de Ven and Hargrave, 
+2004), which either ‘zooms in’ and focuses on specific aspects and changes related to 
+contextual conditions and outcomes of DT or ‘zooms out’ to observe the phenomenon 
+in a broader context, can be used here to describe the contextual scope in relation to digital 
+business ecosystems and malleable organizational designs.",outros,1,,banco,
+"Journal of Management Studies published by Society for the Advancement of Management 
+Studies and John Wiley & Sons Ltd
+related to digital business ecosystems and their relation to organizational designs, to being 
+‘broad’ in scope and examining both thematic patterns of DT in a more holistic way.",outros,1,,banco,
+"When considering this dimension, researchers 
+on organizational change typically focus on intra-organizational actors and actions (e.g., 
+Armenakis and Bedeian, 1999; Sminia and de Rond, 2012).",outros,1,,banco,
+"However, as we discussed 
+previously, change processes in the course of DT are driven not only by organizational 
+actors, but by a confluence of organizational, technological and environmental forces 
+in digital business ecosystems (El Sawy et al., 2010).",outros,1,,banco,
+"Some studies in our consideration set put more emphasis on 
+change processes driven by developments outside of a firm’s direct area of control, such 
+as the increasing diffusion of AI, robotics and the Internet, and described their effect 
+on organizational design, without dealing in detail with the intra-organizational change 
+involved to bring about these effects (e.g., Evans, 2017).",inteligencia_artificial,1,,banco,
+"This dimension can vary along a 
+continuum from a ‘weak focus’ to a ‘strong focus’ on intra-organizational change pro-
+cesses, depending on the emphasis placed on an organization’s innovation and integra-
+tion mechanisms as drivers towards malleable organization designs and digital business 
+ecosystems.",outros,1,,banco,
+"By juxtaposing the two dimensions of contextual scope and intra-organizational change 
+process based on our definitions, a two-by-two typology that delineates four distinct per-
+spectives on DT emerges (see Figure 3).",outros,1,,banco,
+"These four perspectives are technology impact, 
+compartmentalized adaptation, systemic shift and holistic co-evolution.",outros,1,,banco,
+"It should be stressed that each and every 
+perspective assumes organizational change in association with the widespread diffusion 
+of digital technologies.",outros,1,,banco,
+"The technology impact perspective on DT combines a weak focus on intra-organizational 
+change processes with a narrow contextual scope.",outros,1,,banco,
+"(2018) 
+describe how the diffusion of the blockchain technology leads to the development of 
+new business models across several industries.",inteligencia_artificial,1,,banco,
+"The main strength of studies 
+that follow this perspective is that they reveal important insights into what is really new 
+about digital technologies and innovations, and that they clarify partial contributions to 
+ 14676486, 2021, 5, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/joms.12639 by Capes, Wiley Online Library on [30/04/2025].",inteligencia_artificial,1,,banco,
+"In the same sense, insights about par-
+ticular outcomes – such as increased business process efficiency through the use of AI 
+– must be related to potential higher-level spill-overs such as exposure to cyber threats.",inteligencia_artificial,3,,banco,
+"In 
+general, these studies do not provide insights about how organizations arrive at malleable 
+organizational designs but reveal particular forces from digital business ecosystems that 
+alter certain parts of organizations.",inteligencia_artificial,1,,banco,
+"(2013) describe how online 
+and offline retailers can successfully take advantage of developments related to mobile 
+and augmented reality technologies to improve their interactions with their customers.",inteligencia_artificial,1,,banco,
+"(2017) derive a process model explaining how small and medium-sized 
+Figure 3.",inteligencia_artificial,1,,banco,
+"Here, we can learn, for instance, 
+how organizations evolve in response to particular triggers towards data-driven opera-
+tions and decision-making.",outros,1,,banco,
+"For 
+instance, one might explain the success of a firm in managing change associated with 
+a specific technology, while concurrently observing the overall downturn of the firm or 
+industry as a whole due to the widespread diffusion of digital technologies across society.",inteligencia_artificial,1,,banco,
+"In summary, this perspective provides insights on how firms partially adapt their organi-
+zations to specific developments in their digital business ecosystems.",outros,1,,banco,
+"The systemic shift perspective on DT is employed by studies that have a weak focus 
+on intra-organizational change processes, as with the technology impact perspective, 
+but combine it with a rather broad contextual scope.",outros,1,,banco,
+"Such work thereby describes how 
+conditions within digital business ecosystems interact with organizational designs as a 
+whole.",outros,1,,banco,
+"Hence, studies following this perspective help us 
+to understand the peculiarities and evolutions of digital business ecosystems as a whole 
+and their impacts on organizational designs.",outros,1,,banco,
+"However, the systemic shift perspective does 
+not describe how organizations achieve adaptations to and interactions with their respec-
+tive business environments.",outros,1,,banco,
+"Finally, the holistic co-evolution perspective on DT combines a strong focus on intra-or-
+ganizational change processes with a rather broad contextual scope.",outros,1,,banco,
+"Works following this perspective contribute to 
+research on DT by yielding insights into how organizations transform their organiza-
+tional design in accordance with the surrounding evolving digital business ecosystems.",outros,1,,banco,
+"Furthermore, examining DT from such a holistic perspective could come at 
+the cost of reduced detail concerning particular elements as, for example, peculiarities 
+of specific digital technologies cannot be examined and considered to the same extent as 
+with the technology impact perspective.",inteligencia_artificial,1,,banco,
+"For instance, a study following the holistic co-evolution 
+perspective might illustrate the ‘big picture’ and reveal aspects which seem to be of par-
+ticular importance, which could then be combined with a technology impact type study 
+in which these aspects are examined in greater detail.",inteligencia_artificial,1,,banco,
+"While there are multiple frameworks that differentiate orga-
+nizational change in this way, our findings reveal a special connection to the distinction 
+between episodic and continuous change (Weick and Quinn, 1999), most notably be-
+cause the dynamics of change denotes a common theme in both the aforementioned the-
+matic patterns.",outros,1,,banco,
+"That is, malleable organizational design places a premium on constant 
+adaptation and change in correspondence to the environment (Huang et al., 2017), and 
+the digital business ecosystems in which organizations are embedded are characterized 
+by their ever-evolving and turbulent nature (El Sawy et al., 2010).",outros,1,,banco,
+"Accordingly, to clarify 
+boundary conditions to investigate DT from the perspective of organizational change, 
+it seems promising to contrast our findings with the characteristics of episodic and con-
+tinuous change, particularly with respect to the ‘different metaphors of the organization, 
+analytical frameworks, theories of intervention, and roles attributed to change agents’ 
+(Poole, 2004, p. 5).",outros,1,,banco,
+"First, the extant literature differentiates continuous and episodic change by the respec-
+tive metaphor of  the organization.",outros,1,,banco,
+"In addition, data-driven operations and decisions might, at the 
+very least, mitigate cognitive sources of inertia (Besson and Rowe, 2012).",outros,1,,banco,
+"Journal of Management Studies published by Society for the Advancement of Management 
+Studies and John Wiley & Sons Ltd
+With regard to the analytic framework characteristics (Poole, 2004), episodic change 
+literature takes macro-level perspectives and sees change as punctuated by occasional 
+external events, affecting internal deep structures and leading to revolutionary change in-
+volving replacement to reach a new equilibrium.",outros,1,,banco,
+"Continuous change, in contrast, utiliz-
+ing micro-level perspectives, focuses more on endless local, smaller adaptations emerging 
+from improvisations in internal practice that may aggregate over time (Weick and Quinn, 
+1999).",outros,1,,banco,
+"Last, when looking at the outcomes, we identi-
+fied that practically every sphere of an organization can but not necessarily has to be 
+affected, illustrating that firms attempt to achieve or remain fit with the contextual con-
+ditions, leading to new socio-organizational configurations (Avgerou, 2001), which may 
+require incremental to fundamental adaptations depending on the context.",inteligencia_artificial,1,,banco,
+"Having said that, our results 
+also indicate that for DT, there might as well be deviations from the regular templates 
+of continuous and episodic change (Weick and Quinn, 1999).",inteligencia_artificial,1,,banco,
+"This is particularly the 
+case due to the new complexity stemming from the increasing interconnectedness of 
+various and dispersed actors in digital business ecosystems.",outros,1,,banco,
+"In the words of El Sawy and 
+Perreira (2013, p. 2), ‘[u]nlike other business environments, digital business ecosystems 
+can never be expected to revert to any kind of “equilibrium” after disruptions change 
+things; turbulence implies that cause-and-effect may cascade in unpredictable ways to 
+alter the structure or health of the ecosystem, or end it entirely’.",outros,1,,banco,
+"Thus, while DT is as-
+sociated with disruptions, known from episodic change conceptions, these are no longer 
+infrequent and do not end in a new era of stability.",outros,1,,banco,
+"With regard to the respective intervention theory, episodic change assumes change evolving 
+by phases of unfreezing, changing and refreezing in a planned and intentional manner, 
+while the continuous perspective follows a freeze, rebalance, unfreeze logic where change 
+exists irrespective of intention (Weick and Quinn, 1999).",outros,1,,banco,
+"Again, as can be seen in the innovation mechanisms, no matter how incremental 
+or fundamental the respective change is, we can diagnose a higher importance of digital 
+ 14676486, 2021, 5, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/joms.12639 by Capes, Wiley Online Library on [30/04/2025].",inteligencia_artificial,1,,banco,
+"Due to the specific nature of digital technologies (Kallinikos et 
+al., 2013), particularly the generativity they induce inside and beyond organizations (Yoo 
+et al., 2012), we contend that even episodic phases of DT trigger continuous changes.",outros,1,,banco,
+"This is also underscored by the fact that firms are increasingly embedded in and interwo-
+ven with digital business ecosystems that are inherently turbulent (El Sawy and Perreira, 
+2013).",outros,1,,banco,
+"Put differently, in the context of DT, the idea of refreezing, as 
+the final step in the schematic Lewinian change processes of episodic change (Weick and 
+Quinn, 1999), is challenged and may culminate in a state of constant unfreezing.",outros,1,,banco,
+"Finally, concerning the change agent, episodic change assumes a change agent that needs 
+to radically alter mind-sets within the organization to create change (Weick and Quinn, 
+1999).",outros,1,,banco,
+"However, again, when we look at the outcomes of DT and the higher level of 
+flexibility the malleable organizational design implies, we see change agents following the 
+continuous paradigm as a new constant.",inteligencia_artificial,1,,banco,
+"Though, especially in the beginning of DT and 
+due to the unpredictable evolution of digital business ecosystems in later phases, change 
+agents from the perspective of episodic change will also be necessary.",outros,1,,banco,
+"What is unique to DT and going 
+beyond the boundaries of established perspectives on organizational change is that, due 
+to the traits of digital technologies underlying the new organizational design and digi-
+tal business ecosystems, even these episodic episodes lead to new phases of continuous 
+change in organizations, which may endure for a comparably long time.",inteligencia_artificial,1,,banco,
+"This path profits from the established the-
+oretical models as a robust basis from which to better understand and explain the phe-
+nomenon.",inteligencia_artificial,1,,banco,
+"Our review revealed that conceptions of 
+continuous change are generally suitable, with some constraints.",inteligencia_artificial,1,,banco,
+"We, therefore, discuss 
+in the following how theories that are classified as belonging to the continuous change 
+ 14676486, 2021, 5, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/joms.12639 by Capes, Wiley Online Library on [30/04/2025].",outros,1,,banco,
+"Furthermore, theories that combine elements of both continuous 
+and episodic change (Poole, 2004) seem particularly valuable.",outros,1,,banco,
+"First, while we 
+find that continuous change perspectives generally fit the phenomenon of DT well, we 
+also identified some variations in this fit, particularly with regard to taking into account 
+the actions of external actors, and when also employing macro perspectives.",outros,1,,banco,
+"Second, 
+while we strongly associate DT with a shift towards continuous change, we also con-
+cluded that this shift might be triggered and shaped by episodic bursts.",outros,1,,banco,
+"Episodic change 
+perspectives might thus be valuable, with the adaption of not assuming an end-state 
+or freezing period.",outros,1,,banco,
+"It is important to note that a detailed review of each 
+of the aforementioned theories is beyond the scope of this study, although the analysis 
+of their basic tenets in the light of DT generates valuable stimulants for future research.",inteligencia_artificial,1,,banco,
+"When employing the DT perspective of technology impact, continuous theories of insti-
+tutional diffusion (Van de Ven and Hargrave, 2004) might be very helpful.",outros,1,,banco,
+"Furthermore, technology structuration theories (Orlikowski, 2000) might be valu-
+able for tracing the consequences of interactions with digital technologies in relation 
+to organizational change.",outros,1,,banco,
+"For instance, heterogeneous and dispersed external software devel-
+opers have been found to alter the value creation structures of focal companies (Parker 
+et al., 2017), while other consequences concerning organizational change remain unex-
+plored.",inteligencia_artificial,1,,banco,
+"However, when using such lenses, it is important to 
+incorporate the specific traits of digital technologies.",inteligencia_artificial,1,,banco,
+"Here, creative accumulation theory (Bergek et al., 2013) seems very promis-
+ing as it allows revolutionary and evolutionary technology consequences to be explained, 
+and thereby reconciles thoughts from both the episodic and the continuous perspectives.",inteligencia_artificial,1,,banco,
+"Research agenda
+DT perspective
+Phenomenological advancement
+Theoretical advancement
+Technology impact
+•	 How do emerging digital technologies (e.g., distributed ledger 
+technologies, virtual and augmented reality, quantum comput-
+ing or AI) influence particular elements of inter- and intra-
+organizational structuring?",inteligencia_artificial,1,,banco,
+"[Creative 
+accumulation theory]
+•	 How can we explain if and how practices of external 
+actors (such as developers or consumers) alter organiza-
+tional structures on the basis of shared digital technolo-
+gies using technology structuration theory?",inteligencia_artificial,1,,banco,
+"How do implica-
+tions for organizational change shift?",outros,1,,banco,
+"Compart-mentalized 
+adaptation
+•	 How can trainings help existing organizational members to 
+learn new digital behaviors and utilize new digital technology?",inteligencia_artificial,1,,banco,
+"[Interpersonal interaction and socialization theory]
+•	 Is training and socialization possible and adequate for 
+digital natives and new digital talent in the course of DT?",inteligencia_artificial,1,,banco,
+"[Interpersonal interaction and socialization theory]
+•	 Can socialization be programmed into robots and AI-based 
+systems?",inteligencia_artificial,1,,banco,
+"•	 How can we extend punctuated equilibrium theory to 
+account for continuous adaptive organizations in turbu-
+lent digital business ecosystems that do not stabilize after 
+disruptions?",outros,1,,banco,
+"•	 How do we need to adapt our understanding of 
+dynamic capabilities when ordinary and dynamic capa-
+bilities merge due to the increased use of flexible and 
+reprogrammable digital technologies?",outros,1,,banco,
+"Journal of Management Studies published by Society for the Advancement of Management 
+Studies and John Wiley & Sons Ltd
+DT perspective
+Phenomenological advancement
+Theoretical advancement
+Systemic shift
+•	 How do new digital organizational forms (such as platform-en-
+abled peer-to-peer networks) emerge and become institution-
+alized across contexts?",outros,1,,banco,
+"[Population and community ecology theory]
+•	 Over time, can we observe more homogeneity in organiza-
+tional forms through the interactions of initially heterogeneous 
+players within digital business ecosystems?",outros,1,,banco,
+"•	 How do we need to adapt our understanding of collec-
+tive action to capture the specifics of turbulent digital 
+business ecosystems?",outros,1,,banco,
+"Holistic co-evolution
+•	 How do internal change initiatives (e.g., by institutional entre-
+preneurs) of particular organizations radiate throughout digital 
+business ecosystems and shape their gestalt?",outros,1,,banco,
+"[Culture change theory]
+•	 How do changes in digital business ecosystems alter power 
+relations (e.g., between different functions or units) and value 
+commitments inside of firms?",outros,1,,banco,
+"[Neo-institutional theory]
+•	 How and why can conflicting views, both inside organiza-
+tions and within digital business ecosystems, be reconciled?",outros,1,,banco,
+"•	 How do well-known relationships between institutional 
+upheaval and organizational change hold when organi-
+zational design becomes malleable in the course of DT?",outros,1,,banco,
+"•	 How does organizational change in association with DT af-
+fect employee satisfaction, commitment and organizational 
+identification?",outros,1,,banco,
+"•	 How can new theories, inductively derived in the con-
+text of DT, explain organizational change?",inteligencia_artificial,1,,banco,
+"•	 Can we explain DT using the motors of change 
+typology?",inteligencia_artificial,1,,banco,
+"It is also interesting to investigate how such theoretical relations play 
+out when new actors are non-human, such as robots or AI-based systems.",inteligencia_artificial,1,,banco,
+"In a similar 
+vein, one might ask if theories relating to organizational learning (Vera et al., 2011) need 
+to be adapted to the new realities of DT, where learning is more and more data-driven, 
+potentially automatized and tuned to the external environment.",outros,1,,banco,
+"Thus, while data-driven 
+operations have the potential to detect and correct errors independently (so-called ‘single 
+loop learning’), with the rise of AI, this might also radiate to higher levels of learning.",inteligencia_artificial,1,,banco,
+"This data-based automation and AI might 
+question human agency in organizational learning.",inteligencia_artificial,4,,banco,
+"Relatedly, questions regarding the 
+idea of dynamic capabilities (Teece, 1997) arise.",outros,1,,banco,
+"As for the particular dynamic nature of these digital 
+operational capabilities (Kallinikos et al., 2013), the difference between ordinary and 
+dynamic capabilities might vanish, as capabilities based on digital technology are very 
+easily adaptable.",outros,1,,banco,
+"Future research might investigate whether DT leads to the seemingly 
+contradictory result that firms adapt faster than ever on the basis of flexible ordinary 
+capabilities, while the need for dynamic capabilities in the traditional sense shrinks.",outros,1,,banco,
+"When employing the DT perspective of systemic shift, continuous views from popu-
+lation and community ecologies (Baum and Rao, 2004) seem adequate for investigat-
+ing how new digital organizational forms (Hinings et al., 2018) emerge and become 
+institutionalized across fields and ecosystems.",outros,1,,banco,
+"Furthermore, theories of collective action (Van de Ven and Hargrave, 2004) 
+seem promising given the importance of digital business ecosystems.",outros,1,,banco,
+"However, future 
+research should scrutinize necessary adaptations because collective action is no longer a 
+punctual event, but a constant, never-ending process in digital business ecosystems which 
+involves ever-changing groups of actors.",outros,1,,banco,
+"When employing the DT perspective of holistic co-evolution, theories of institutional 
+design (Van de Ven and Hargrave, 2004) can be very helpful for learning how organiza-
+tional actions and actors are interacting with the surrounding digital business ecosystem.",outros,1,,banco,
+"For instance, the internal change processes of an organization from a pipeline towards a 
+platform company may significantly shape and be shaped by the business environments, 
+partner networks, etc.",outros,1,,banco,
+"Furthermore, using the lens of culture 
+change (Hatch, 2004), future research should investigate how the increasing embedded-
+ness in global, cross-industry and large scale digital business ecosystems involving intense 
+and ongoing interactions with heterogeneous actors (Yoo et al., 2012) leads to dynam-
+ics in organizational culture.",outros,1,,banco,
+"Here, it seems interesting to see if strong cultures can serve as a connective 
+tissue holding the dynamics of malleable organizational designs and turbulent digital 
+business ecosystems together (Weick and Quinn, 1999).",outros,1,,banco,
+"First, in the spirit of Armenakis and 
+Bedeian (1999), it is important to assess certain criterion variables, such as performance 
+and employee satisfaction, to investigate the efficacy of change efforts.",inteligencia_artificial,1,,banco,
+"As our analysis has revealed, while 
+certain accounts seem to fit DI well, others should be adapted.",inteligencia_artificial,1,,banco,
+"Furthermore, 
+our analysis of the organizational change literature was tightly coupled to the distinction 
+of episodic vs. continuous change.",outros,1,,banco,
+"Journal of Management Studies published by Society for the Advancement of Management 
+Studies and John Wiley & Sons Ltd
+DT, for instance with regard to synthesizing divergent interests both within organizations 
+and digital business ecosystems.",outros,1,,banco,
+"Furthermore, the process of coding 
+the articles was performed by hand, and so could be subject to subjectivity, although we 
+aimed to prevent this by relying on multiple coders and several rounds of scrutinizing 
+the coding.",inteligencia_artificial,1,,banco,
+"Fourth, 
+regarding the discussion, we based our thoughts on the episodic vs. continuous change 
+distinction, as we identified its value for understanding DT.",outros,1,,banco,
+"Managerial Implications
+Next to the aforementioned implications for research, this study also provides valuable 
+insights into managerial practice with respect to organizational change and strategy.",outros,1,,banco,
+"We can witness this phenomenon for example in the 
+current COVID-19 pandemic that simultaneously highlights the potential as well as the 
+necessity of malleable organizational designs: regulatory measures to contain the spread 
+of the virus such as lockdowns and limited person-to-person contacts are forcing new 
+digital ways of collaboration (e.g., through tools such as Zoom or Slack), service delivery 
+models (e.g., through the adoption of AI and robotic process automation), and customer 
+relationship management (e.g., through harnessing digital channels) (KMPG, 2020; 
+McKinsey, 2020; strategy&, 2020).",inteligencia_artificial,4,,banco,
+"Hence, the ideas and topics related to DT such as automatized, data-driven and virtual 
+business processes or ecosystem-oriented and embedded organizations are not simply 
+academic, but of high relevance in practice as well since they provide insights into key 
+questions of organizational change and strategy such as how to adapt organizations, 
+ 14676486, 2021, 5, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/joms.12639 by Capes, Wiley Online Library on [30/04/2025].",outros,1,,banco,
+"As we pointed out, DT involves, on the one hand a shift toward malleable organizational 
+designs that enable continuous adaptation and on the other, toward turbulent digital 
+business ecosystems.",outros,1,,banco,
+"To account 
+for this complexity in assessing the contextual conditions, managers should pro-actively 
+use support from data-analytics.",outros,1,,banco,
+"Current and future DT studies on technology impact and 
+systemic shift are best suited to informing DT awareness.",outros,1,,banco,
+"This refers to the intellectual 
+capacity to continuously conceive novel digital processes and products based on the avail-
+able internal and external resources, as well as the willingness to invest both managerial 
+attention and financial resources in times of episodic bursts.",inteligencia_artificial,1,,banco,
+"Above all, it is important to 
+understand that fast execution and experimentation to learn in the market are superior 
+to ex-ante planning and analysis due to the dynamic nature of digital business ecosystems 
+and the transience of competitive positions and advantages.",outros,1,,banco,
+"This skill can be informed 
+and further developed with studies in the realm of holistic co-evolution.",outros,1,,banco,
+"Third, managers require DT harmonizing skills with regards to organizational change 
+processes.",outros,1,,banco,
+"These are again related to the mechanisms in the multi-dimensional frame-
+work, but with a focus on integration.",inteligencia_artificial,1,,banco,
+"We propose that those firms which ensure that the 
+aforementioned three leadership skills are present and sustained in their organization are 
+best prepared to master the challenges of DT.",inteligencia_artificial,1,,banco,
+"At the same time, however, there 
+still exist considerable uncertainties about what DT is and encompasses.",inteligencia_artificial,1,,banco,
+"As a result, build-
+ing on prior knowledge on organizational change to better understand the phenomenon 
+and give informed advice to practice is problematic.",outros,1,,banco,
+"We define 
+DT as organizational change triggered and shaped by the widespread diffusion of digital 
+technology.",outros,1,,banco,
+"The content of this change, we find, comprises a move towards malleable or-
+ganizational designs that are embedded in and driven by digital business ecosystems.",outros,1,,banco,
+"This 
+content of change can be viewed from four different perspectives, including a technology 
+impact, compartmentalized adaptation, systemic shift and holistic co-evolution perspective.",outros,1,,banco,
+"The perspectives vary in their contextual scope and focus on intra-organizational change 
+processes but share the commonality that they associate organizational change with the na-
+ture of digital technologies, particularly their pervasiveness and the dynamics they induce.",outros,1,,banco,
+"Linking our findings to the established knowledge on organizational change, we diagnose 
+that DT can be best understood as continuous change that can be triggered and shaped by 
+episodic bursts, while the latter are inducing further continuous change.",outros,1,,banco,
+"Through this boundary clarification, an agenda for future research as well 
+as important managerial implications for strategy and organizational change arise.",outros,1,,banco,
+"‘Organizational change: A review of theory and research in the 
+1990s’.",outros,1,,banco,
+‘The significance of context in information systems and organizational change’.,outros,1,,banco,
+"), Handbook of  Organizational Change and Innovation.",outros,1,,banco,
+"‘Special section: The transformative value 
+of cloud computing: A decoupling, platformization, and recombination theoretical framework’.",infraestrutura_digital,4,,banco,
+"‘Changing the channel: Digitization and the rise of “middle tail” 
+strategies’.",inteligencia_artificial,1,,banco,
+"‘Technological discontinuities and the 
+challenge for incumbent firms: Destruction, disruption or creative accumulation?’.",outros,1,,banco,
+"‘The need for third-party coordination in supply chain gov-
+ernance’.",inteligencia_artificial,1,,banco,
+"‘The art of continuous change: Linking complexity theory and 
+time-paced evolution in relentlessly shifting organizations’.",outros,1,,banco,
+‘Competing in the age of omnichannel retailing’.,experiencia_cliente,5,,banco,
+"‘Applications of social network analysis in behav-
+ioral information security research: Concepts and empirical analysis’.",outros,1,,banco,
+‘The role of dynamic capabilities in e-business transformation’.,outros,1,,banco,
+‘The big idea – the big bang disruption’.,outros,1,,banco,
+"‘Blockchain is changing how media and entertainment 
+companies compete’.",inteligencia_artificial,1,,banco,
+"‘Research commentary – Seeking the config-
+urations of digital ecodynamics: It takes three to tango’.",outros,1,,banco,
+"‘Corporate sustainability strategy – Bridging the gap between 
+formulation and implementation’.",inteligencia_artificial,1,,banco,
+"‘Ambivalent urban sustainability transitions: Insights from Brisbane’s 
+building sector’.",inteligencia_artificial,1,,banco,
+"‘The dynamics of CIO derailment: How CIOs come undone and how to 
+avoid it’.",inteligencia_artificial,1,,banco,
+"‘On the fintech revolution: Interpreting the 
+forces of innovation, disruption, and transformation in financial services’.",outros,1,,banco,
+"‘Study of supply-chain management in 
+the automotive industry: A biblometric analysis’.",inteligencia_artificial,1,,banco,
+"‘IT consumerization and the transfor-
+mation of IT governance’.",outros,1,,banco,
+"In Poole, M. S. and Van de Ven, A. H. (Eds), 
+Handbook of  Organizational Change and Innovation.",outros,1,,banco,
+"‘Competitive differentiation versus commoditisation: The role of big data 
+in the European payments industry’.",outros,1,,banco,
+"‘The role of dynamic capabilities in responding to digital disruption: A 
+factor-based study of the newspaper industry’.",outros,1,,banco,
+"‘Effects of computerized physician order entry and clinical 
+decision support systems on medication safety: A systematic review’.",outros,1,,banco,
+"‘How artificial intelligence will redefine manage-
+ment’.",outros,1,,banco,
+"‘Partnering with AI: How organizations can win over 
+sceptical managers’.",inteligencia_artificial,1,,banco,
+‘HR digital disruption: The biggest wave of transformation in decades’.,outros,1,,banco,
+"‘Information technology and organizational change: Causal structure 
+in theory and research’.",outros,1,,banco,
+"‘Cloud-based intelligent accounting applications: Accounting 
+task automation using IBM Watson cognitive computing’.",infraestrutura_digital,4,,banco,
+‘The crusade of digital disruption’.,outros,1,,banco,
+"Available at Social Science Open Access Repository (SSOAR) https://nbn-resol​ving.de/
+urn:nbn:de:0168-ssoar​-395173 (accessed 06 October 2020).",inteligencia_artificial,1,,banco,
+‘A main theme of contemporary sociological analysis: Its achievements and limitations’.,inteligencia_artificial,1,,banco,
+"In Poole, M. S. and Van de Ven, 
+A. H. (Eds), Handbook of  Organizational Change and Innovation.",outros,1,,banco,
+Handbook of  Organizational Change and Innovation.,outros,1,,banco,
+"‘How smart, connected products are transforming companies’.",outros,1,,banco,
+"‘Discovering digital business models in tradi-
+tional industries’.",outros,1,,banco,
+"Available at 
+https://www.strat​egyand.pwc.com/de/de/impli​catio​ns-of-covid​-19/digit​al-techn​ology​-agenda.html 
+(accessed 8 September 2020).",inteligencia_artificial,1,,banco,
+"Tanriverdi, H., Rai, A. and Venkatraman, N. (2010).",inteligencia_artificial,1,,banco,
+‘Dynamic capabilities and strategic management’.,outros,1,,banco,
+"In Poole, M. S. and 
+Van de Ven, A. H. (Eds), Handbook of  Organizational Change and Innovation.",outros,1,,banco,
+‘Explaining development and change in organizations’.,inteligencia_artificial,1,,banco,
+"‘Institutional complexity and organizational change: An open polity per-
+spective’.",outros,1,,banco,
+"‘A contingency model for creating value from RFDI supply chain 
+network projects in logistics and manufacturing environments’.",inteligencia_artificial,1,,banco,
+"‘Building dynamic capabilities for digital transformation: An ongoing 
+process of strategic renewal’.",outros,1,,banco,
+‘Organizational change and development’.,outros,1,,banco,
+"Wessel, L., Baiyere, A., Ologeanu-Taddei, R., Cha, J. and Blegind-Jensen, T. (2020).",inteligencia_artificial,1,,banco,
+"‘Planetary boundaries: Ecological foundations for corporate 
+sustainability’.",inteligencia_artificial,1,,banco,
+"In Poole, 
+M. S. and Van de Ven, A. H. (Eds), Handbook of  Organizational Change and Innovation.",outros,1,,banco,
+"Journal of Management Studies published by Society for the Advancement of Management 
+Studies and John Wiley & Sons Ltd
+APPENDIX I
+Research Matrix – Contextual Conditions
+(Given the large number of  references for the research matrix, the article does not provide detailed references of  all papers.",inteligencia_artificial,1,,banco,
+"Full 
+referencing is available from the authors upon request).",inteligencia_artificial,1,,banco,

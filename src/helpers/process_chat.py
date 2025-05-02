@@ -21,7 +21,7 @@ from sklearn.metrics import classification_report, accuracy_score, confusion_mat
 from sklearn.pipeline import Pipeline
 import joblib
 
-from helpers.entity_extraction import extract_entities, add_custom_entities
+from helpers.entity_extraction import extract_entities, add_custom_entities, load_nlp_with_patterns
 from helpers.preprocess import load_spacy_model, preprocess_with_spacy
 from helpers.classifier import build_pipeline
 
@@ -41,16 +41,18 @@ real_data = {
 
 def process():
 
-    base_path = "C:\Projetos\chatbot_with_pln\data"
-    df = pd.read_csv(join(base_path, "digital_maturity_dataset.csv"))
+    base_path = "C:\Projetos\chatbot_with_pln"
+    input_path = join(base_path, 'input')
+    output_path = join(base_path, 'output')
+
+    df = pd.read_csv(join(output_path, "digital_transformation_maturity.csv"))
     # df = pd.DataFrame(real_data)
 
     # Configurações iniciais
     nltk.download('stopwords')
-    nlp = load_spacy_model()
-
+    spacy_model = load_spacy_model()
     # Criar um Entity Ruler personalizado
-    ruler = add_custom_entities(nlp)
+    nlp = load_nlp_with_patterns(spacy_model)
 
     # Aplicar a função a cada texto do DataFrame
     df["entities"] = df["text"].apply(lambda x: extract_entities(x, nlp))
@@ -59,7 +61,9 @@ def process():
     print("🛠️ Pré-processando documentos...")
     processed_tokens = preprocess_with_spacy(df["text"], nlp)
     df["text_clean"] = [' '.join(tokens) for tokens in processed_tokens]
-    
+
+    print(df['maturity_score'].value_counts())
+
     build_pipeline(df)
     
     print("| ### ✅ Finishing the process... ### |")

@@ -1,0 +1,815 @@
+﻿Capgemini Financial Services Top Trends 2025 
+Retail Banking 
+January 2025 
+  
+Explore 
+Top Trends 2025
+RESEARCH INSTITUTE 
+The Capgemini FS Top Trends 2025 span three broad themes 
+Customer        
+First 
+Transforming customer experience  focusing on omnichannel  
+interactions and the value of  products and services 
+Enterprise        
+Management 
+Revamping processes, teams,  solutions, and operations to run  enterprises with greater agility and  operational efficiency to optimize the  cost of doing business 
+Intelligent        
+Industry 
+Leveraging the most modern  solutions to deliver an end-to-end  digital experience that transforms the  value chain – from design to delivery of  intelligent products and services
+Capgemini FS Top Trends 2025 #FinancialServicesTrends2025 Public © Capgemini 2025. All rights reserved | 2 
+The Capgemini FS Top Trends in the Banking sector by sub-domain (1/2) Wealth Management Retail Banking Payments 
+Seamless digital experience: Wealth firms power up digital  platforms to consolidate services and create seamless CX 
+Hyper-personalized advisory: Artificial intelligence can  enable made-to-order investment advice strategies 
+Bridging generation gaps: With younger entrepreneurs on the rise,  wealth firms shape advice to resonate with HNWIs of all ages 
+Inorganic growth strategies: Wealth firms seek external expansion  to broaden services and boost revenues 
+Regulations drive ESG traceability: Wealth firms implement  ESG asset transparency metrics as regulators standardize  sustainability reporting 
+Digital onboarding: Digital onboarding boosts revenue for wealth  firms through white-labeling, while accelerating client acquisition and  improving compliance 
+Unified operating models: Wealth firms unify operating models to  deliver a consistent experience for HNWIs across geographies 
+Gen AI for relationship manager efficiency: Gen AI-powered  copilots can boost relationship manager productivity 
+Real-world asset tokenization: Real-world asset tokens powered by  robust blockchain networks improve liquidity and access 
+Cloud-native wealth management platforms: Cloud-native  platforms scale workflows and enable cost-efficient wealth  management processes 
+Omnichannel experience: Omnichannel customer journeys boost  experiences across digital platforms, contact centers, and branches 
+Financial literacy: Financial literacy and personal budget apps boost  customer confidence and promote financial inclusion 
+Next-gen banking: Retail banks set their sights on youth, the prime  target of new age players, to secure long-term customer  lifecycle growth 
+Operational resilience: Digital operational resilience will remain crucial for regulatory compliance 
+RegTech for compliance: Intelligent RegTech solutions will reduce  compliance costs and timelines, as retail banks face escalating risks 
+Deposit growth: Deposit growth continues to be a retail bank priority along with lowering funding costs 
+Onboarding efficiency: Onboarding efficiency remains critical as  retail banks embrace digital identity management for seamless  onboarding 
+AI for efficiency gains: Artificial intelligence will drive productivity by  reimagining customer and employee journeys 
+ESG product strategy: Banks will implement intelligent ESG product  strategies and solutions 
+Leveraging open finance: Open finance regulations clear a path for  retail banks to develop a 360-degree customer footprint 
+Open finance: Open-finance-based use cases will grow as regulators  improve financial data access 
+Instant payment adoption: Instant payment rails are cannibalizing  checks and debit cards, while mobile wallets maintain their dominance 
+POS innovations: POS payment innovations can help banks  enhance merchant acquisition capabilities and increase consumers'  credit options 
+Cross-border payments: Multi-territory instant payment corridors are  revolutionizing cross-border payments, empowering businesses with  speed and efficiency 
+Cloud-based payment hubs: Cloud-based payment hubs offers unified  and consolidated multi-rail payment processing capabilities at scale 
+Multi-rail payment strategy: Multi-rail strategy will enhance  payment flexibility and offer different payment methods  in a single interface 
+Operational resilience: Regulators are prioritizing operational  resilience to foster trust in the cashless future of markets and  economies  
+Decentralized identity: Decentralized digital identity management  combats fraud and grants customers greater control over their  personal data 
+Remittance transformation: Remittance transformation is reshaping  the global financial landscape, characterized by plummeting costs and  lightning-fast transfer times 
+Data monetization: Payments data is driving innovation and leading  to the creation of new revenue streams 
+Customer First Enterprise Management Intelligent Industry
+Capgemini FS Top Trends 2025 #FinancialServicesTrends2025 Public © Capgemini 2025. All rights reserved | 3 
+The Capgemini FS Top Trends in the Banking sector by sub-domain (2/2) Capital Markets Lending & Leasing Sustainability 
+Perpetual KYC revolution: Organizations are digitizing and  automating KYC processes to reduce the cost of compliance and  enhance customer experience 
+Accelerating sustainable lending: Banks are augmenting to  accelerate green lending and leverage sustainable finance as  a growth engine  
+Changing investment landscape: The market landscape is shifting as  organizations adapt to passive investing, retail investor growth and  geopolitical forces  
+Efficiencies through collaboration: The industry is moving towards  mutualization and strategic outsourcing to reduce the cost of  post-trade processing 
+Capital efficiency: Global uncertainty and regulatory shifts are  driving organizations to focus on mastering their capital strategy 
+Modernized resilient platforms: Limitations in legacy systems are  driving capital markets organizations to modernize their core systems 
+DLT & tokenization: The increased integration of DLT and  tokenization into mainstream finance is digitally transforming the  financial services industry 
+Leveraging Generative AI: Capital Markets organisations are seeking  competitive advantages using Gen AI to create actionable insights,  efficiencies and differentiation 
+Global accelerated settlement: The drive for a global T+1  settlement cycle continues, with the UK and EU pushing forward  with plans 
+Transaction reporting optimisation: Following the recent  regulatory rewrites, firms are shifting focus to efficiency and control 
+Frictionless Enterprise: Providing a one stop shop for equipment  delivered through a seamless omnichannel digital experience  
+Moving towards Equipment-as-a-Service: Redefining equipment  financing with growth of an as-a-service model 
+Embedded finance: Transforming equipment leasing with seamless  integration of financing solutions 
+Expanding B2C channels: Leveraging digital platforms for scalable  growth and enhanced customer engagement 
+Bespoke Solutions: Offering customized solutions in an efficient and  cost-effective manner 
+Green asset financing: Need for sustainability reshaping the  investment landscape 
+Navigating the regulatory landscape: Shift towards sustainable and  transparent lending 
+Ushering digital transformation: Leveraging data driven  management and decision making 
+Simplifying and standardizing process: Essential steps for  leveraging Artificial Intelligence and Machine Learning technologies  across geographies and business lines 
+Balancing automation with human expertise: Integration of  Artificial Intelligence and Machine Learning for efficiency while  preserving human judgment and creativity 
+Sustainable product opportunities: Growth in innovative and eco friendly debt instruments and insurance products 
+Sustainability service opportunities: Financial institutions support  their end-clients beyond financing to accelerate their net zero  transition and resiliency 
+ESG risk criteria: Financial institutions increasingly incorporate ESG  risk factors into their investment strategies and risk management  processes 
+Increased regulation: Enhanced regulatory frameworks and  reporting reshapes corporate accountability through rigorous ESG  standards by 2025 
+Industrialized climate risk modeling: Financial institutions are  intensifying efforts to assess, manage, and disclose climate related  risks to stakeholders 
+Greenwashing and greenhushing: Financial Institutions face scrutiny  from customers and activists and possible penalties from regulators,  consumers and activists 
+Decarbonization of portfolios: Stakeholders increasingly prioritize  low-carbon investments to reduce carbon footprints and align with  climate goals 
+Sustainability as corporate DNA: Enterprise-wide sustainability with  integration into operations, products and services and supply chain 
+Gen AI aiding sustainability: The advent of Gen AI has made financial  services look at more innovative ways of implementing Sustainability 
+Going beyond carbon emissions: Financial services broaden focus  beyond carbon emissions to include social and biodiversity factors in  ESG strategies 
+Customer First Enterprise Management Intelligent Industry
+Capgemini FS Top Trends 2025 #FinancialServicesTrends2025 Public © Capgemini 2025. All rights reserved | 4 
+Retail Banking Top Trends 2025 – Priority Matrix
+Omnichannel experience: Omnichannel customer journeys boost experiences across  1 
+digital platforms, contact centers, and branches 
+Financial literacy: Financial literacy and personal budget apps boost customer confidence  2 
+and promote financial inclusion 
+Next-gen banking: Retail banks set their sights on youth, the prime target of new-age  3 
+players, to secure long-term customer lifecycle growth 
+Operational resilience: Digital operational resilience will remain crucial for regulatory  4 
+compliance 
+SIGNIFICANT 
+Adoption priority 2025 
+HIGH 
+10 
+4 
+8 
+RegTech for compliance: Intelligent RegTech solutions will reduce compliance costs and  5 
+timelines, as retail banks face escalating risks  
+Deposit growth: Deposit growth continues to be a retail bank priority along with  
+6 
+lowering funding costs 
+Onboarding efficiency: Onboarding efficiency remains critical as retail banks embrace  MEDIUM 
+7 
+digital identity management for seamless onboarding 
+AI for efficiency gains: Artificial intelligence will drive productivity by reimagining  
+8 
+customer and employee journeys 
+ESG product strategy: Banks will implement intelligent ESG product strategies and  
+9 
+2 3 1 5 6 
+9 
+7 
+solutions 
+Leveraging open finance: Open finance regulations clear a path for retail banks to  10
+develop a 360-degree customer footprint 
+MEDIUM HIGH SIGNIFICANT Business impact 2025 
+Customer First Enterprise Management Intelligent Industry 
+Capgemini’s Priority Matrix outlines our assessment of the impact of 2025 trends on operating environments facing: 
+▪ Adoption priority: The criticality of a 2025 trend to value creation because of its sector importance. 
+▪ Softening inflation and high interest rates,  coupled with stagflation trends 
+▪ Geopolitical instability 
+▪ Dynamic regulatory activity 
+▪ Intense competition and increased focus on customer  centricity due to the impact of new-age players ▪ Operational cost overruns and high capital lock-in 
+▪ Business impact: Each trend’s effect on 2025 sector business as it relates to customer experience (CX), operational  excellence, regulatory compliance, or profitability. Circumstances will vary for each firm depending on business  priorities, geographic location, and other factors. For more information, contact us at banking@capgemini.com. 
+Capgemini FS Top Trends 2025 #FinancialServicesTrends2025 Public © Capgemini 2025. All rights reserved | 5 
+Customer FirstTrend 1 
+10
+4 
+8 
+Omnichannel experience 
+Digitalized customer journeys boost experiences across digital platforms, contact centers, and branches Background 
+2 3 1 5 9 
+6 
+7 
+▪ Customer journeys across multiple channels often involve digital and physical interactions. Siloed channel  operations can create friction and hinder seamless customer experience (CX).   
+▪ 60% of customers surveyed for the World Retail Banking Report 2024 said their bank’s self-service chatbot  experience was average.1 
+▪ The same report revealed that only 32% of customers were satisfied with their bank’s customer contact  center experience.1 
+Impact 
+▪ By transitioning from a siloed multichannel to an end-to-end omnichannel customer interaction strategy,  banks can offer seamless start-anywhere-finish-anywhere customer journeys. 
+▪ Omnichannel customer journeys enable banks to collect and leverage cross-channel customer insights to  tailor offerings and interactions to each customer’s preferences. 
+▪ By actively understanding and mapping customer journeys across various channels, retail banks can  identify and address pain points to enhance CX. In turn, improved customer experience can foster greater  customer loyalty. 
+Sources: 1.Capgemini World Retail Banking Report 2024; Capgemini Research Institute for Financial Services analysis, 2024 
+Capgemini FS Top Trends 2025 #FinancialServicesTrends2025 Public © Capgemini 2025. All rights reserved | 6 
+Customer FirstTrend 1 
+10
+4 
+8 
+Omnichannel experience 
+Digitalized customer journeys boost experiences across digital platforms, contact centers, and branches Figure 1: Advantages of an omnichannel versus multichannel approach 
+2 3 1 5 
+6 
+9 
+7 
+RBC Royal Bank   
+Multichannel Omnichannel 
+To get new client relationships off to a  smooth start, RBC Bank offers an  interconnected omnichannel client  
+Banks offer independently operating  channels and modes of interaction  across products 
+Banks collect and store data in silos,  resulting in different customer  experiences for each channel 
+Bank’s channels often conflict with each  other, leading to friction in customer  journeys 
+Banks offer a connected and  consistent experience across all  channels and products 
+Banks connect data and processes  across channels for a seamless  experience at every customer  touchpoint  
+With an omnichannel strategy, the  bank’s digital and physical channels  operate in synchrony 
+acquisition ecosystem. This strategy  seamlessly integrates physical and digital  channels, enabling new customers to  initiate and complete the account opening  process through their preferred channel.1 
+NatWest   
+NatWest launched an upgraded digital  assistant, Cora+, in mid-2024 to enhance its  omnichannel service offerings. Cora+ allows  customers to transition seamlessly from  chatbot interactions to live customer service agents, ensuring a cohesive cross channel experience.2 
+Sources: 1.Celent; 2.Natwest; Capgemini Research Institute for Financial Services analysis, 2024 
+Capgemini FS Top Trends 2025 #FinancialServicesTrends2025 Public © Capgemini 2025. All rights reserved | 7 
+Customer FirstTrend 2 
+10
+4 
+8 
+Financial literacy 
+Financial literacy and personal budget apps boost customer confidence and promote financial inclusion Background 
+2 3 1 5 9 
+6 
+7 
+▪ As banking shifts to digital platforms, consumers are frequently required to make financial decisions  independently. Yet, a 2024 Capital One survey revealed that only about 55% of Americans are  digitally financially literate, scoring high in both digital literacy and financial literacy.1   
+▪ Increasingly, global regulators expect financial institutions to prioritize customer outcomes. In the UK, for  example, the Financial Conduct Authority’s Consumer Duty regulation mandates that firms ensure customers’  full comprehension of the financial products and services they purchase.2 
+▪ The Capital One survey also revealed that 45% of US consumers prefer to manage their finances through a  mobile app.3 
+Impact 
+▪ Financial education informs bank customer behavior, resulting in improved credit scores and  less high-risk borrowing.  
+▪ Financial literacy initiatives can help retail banks boost cross-selling. As customers develop a better  understanding and greater confidence in financial products such as investments and insurance, banks can  effectively cross-sell these offerings. 
+▪ As the financial services industry undergoes digital transformation, retail banks can instill  customer confidence and loyalty through financial literacy efforts. 
+Sources: 1.CapitalOne;2. Finextra; 3. CapitalOne; Capgemini Research Institute for Financial Services analysis, 2024 
+Capgemini FS Top Trends 2025 #FinancialServicesTrends2025 Public © Capgemini 2025. All rights reserved | 8 
+Customer FirstTrend 2 
+10 
+4 
+8 
+Financial literacy 
+Financial literacy and personal budget apps boost customer confidence and promote financial inclusion 
+2 3 1 5 9 
+6 
+7 
+Figure 2: Financial literacy programs can boost customers’ digital confidence 
+Partner with  
+EdTech firms for  
+on-demand  
+workshops 
+Chase   
+Chase, the retail banking division of J.P. Morgan  Chase, is expanding its network of US  community center branches in underserved  communities to offer financial health  workshops and skills training programs. The  bank planned to open three new community  center branches in 2024, increasing its total  to 19 locations.1 
+Regions BankIn the United States, Alabama-based Regions  
+Support 
+in-person financial  literacy programs  
+Gamify learning  moduleswithin  self-guided  
+exercises 
+Bank has enhanced its financial literacy  initiatives. As part of the bank’s Next Step and  Regions Greenprint programs, it aims to help  customers cultivate a positive relationship  with money and achieve their 
+financial objectives.2 
+Sources: 1.Chase; 2.Regions Bank; Capgemini Research Institute for Financial Services analysis, 2024 
+Capgemini FS Top Trends 2025 #FinancialServicesTrends2025 Public © Capgemini 2025. All rights reserved | 9 
+Customer FirstTrend 3 
+10
+4 
+8 
+Next-gen banking 
+Banks set their sights on youth, the prime target of new age players, to secure long-term customer lifecycle growth Background 
+2 3 1 5 9 
+6 
+7 
+▪ A report on youth banking reveals that 57% of parents prefer a family digital wallet solution through their  existing banking provider.1  
+▪ Research by Allied Analytics estimates that starter credit cards, primarily marketed at teenagers, could  generate USD 790 bn in revenue by 2032, growing at a CAGR of 10.6% from 2023 to 2032.2 
+▪ Data services provider Cuscal estimates that in Australia alone, individuals aged 6 to 22 represent a  USD 825 billion total market size for retail banks.3 
+▪ A 2024 Capital One survey found that 50% of US consumers (aged 18 - 24) scored high in digital literacy but  low in financial literacy.4 
+Impact 
+▪ By engaging with customers early and providing banking and education tools for youth, banks create a  foundation of trust that can lead to long-term loyalty. 
+▪ With FinTech companies increasingly targeting younger users, incumbent banks can remain competitive  through enhanced offerings. A focused youth-banking strategy can help banks differentiate through  services that resonate with young digitally-savvy customers.  
+▪ Banks that establish clear pathways for young customers to migrate to adult accounts can capitalize on the  youth-banking segment. Strategic banks proactively communicate transitions at key life stages to ensure  customer relationship continuity. 
+Sources: 1. Rego Payment; 2. Global Newswire; 3. Cuscal; 4. CapitalOne; Capgemini Research Institute for Financial Services analysis, 2024 
+Capgemini FS Top Trends 2025 #FinancialServicesTrends2025 Public © Capgemini 2025. All rights reserved | 10 
+Customer FirstTrend 3 
+10
+4 
+8 
+Next-gen banking 
+Banks set their sights on youth, the prime target of new age players, to secure long-term customer lifecycle growth 
+2 3 1 5 9 
+6 
+7 
+Figure 3: Retail banks can create a compelling value proposition for young customers 
+Innovation 
+Follow best practices established by industry leaders and provide best-in-class experiences for  account holders  
+Intimacy 
+Combine technology with a personalized relationship to make every account holder feel unique  and exclusive 
+Simplicity 
+Use a simple process and straightforward language to uncomplicate the relationship between  people and their money 
+Reliability 
+Guarantee that customers’ money is being responsibly guided by top professionals  they can trust 
+Transparency 
+Be transparent in relations and operations, always making open and honest communication with  all stakeholders a priority 
+Sources: 1.American Banker; 2. FFNews; Capgemini Research Institute for Financial Services analysis, 2024 
+U.S. Bank In mid 2024, U.S. Bank partnered with FinTech  Greenlight to help families teach their children  essential financial skills. The collaboration gives  eligible U.S. Bank customers access to  Greenlight’s debit card and money  
+management app. An in-app financial literacy  game, Greenlight Level Up, is designed to help  users learn money skills.1 
+Revolut Revolut’s youth banking app, Revolut <18,  surpassed 2 million users in early 2024. The UK  neo-bank’s app offers analytics to boost  financial literacy through budgeting and  spending analysis. Its Pockets feature  encourages users to set aside money for  specific goals.2 
+Capgemini FS Top Trends 2025 #FinancialServicesTrends2025 Public © Capgemini 2025. All rights reserved | 11 
+Enterprise  
+Management 
+Trend 4 
+10
+4 
+8 
+Operational resilience 
+Digital operational resilience remains crucial for regulatory compliance Background 
+2 3 1 5 9 
+6 
+7 
+▪ To strengthen and harmonize cybersecurity and operational risk management regulations in Europe,  regulators created the Digital Operational Resilience Act (DORA), which requires banks and critical  third-party providers to implement robust IT security measures by January 2025.1 
+▪ Research by Statista estimates that financial services firms lost an average of USD 6.1 million per data  breach in 2024, up from USD 5.9 million in 2023.2 
+▪ Yet, an IMF survey of over 51 markets revealed that 56% of central banks lack a defined financial sector  cyber resilience strategy and 42% of markets lack dedicated cyber security or technology risk  management regulations.3 
+Impact 
+▪ Retail banks can increase customer confidence with a demonstrated focus on digital operational resilience.  Preventing data breaches and cyber attacks will help banks avoid reputational damage and regulatory action. 
+▪ Retail banks with digital resilience plans can prevent costly disruptions from downtime and data  recovery efforts.  
+▪ Retail banks that demonstrate a commitment to resilience can establish a competitive advantage over others  and attract customers who value security and reliability. 
+Source: 1.EIOPA; 2. Statista; 3. IMF; Capgemini Research Institute for Financial Services analysis, 2024 
+Capgemini FS Top Trends 2025 #FinancialServicesTrends2025 Public © Capgemini 2025. All rights reserved | 12 
+10
+4 
+8 
+ManagementDigital operational resilience remains crucial for regulatory compliance 
+Enterprise  
+Trend 4 
+Operational resilience 
+Figure 4: Technology partners can help financial firms meet DORA requirements 
+2 3 1 5 
+6 
+9 
+7 
+Barclays 
+Reduced vulnerability,  
+investigation time 
+Strong partnerships for  
+compliance solutions  
+One-click DORA compliance  
+with automation 
+Sources: 1.Channel Life; 2.Kyndryl; Capgemini Research Institute for Financial Services analysis, 2024 
+Less remediation needed to  achieve resource-light compliance 
+Efficient preparation of  
+executive reports 
+Lower DORA compliance costs with scalability 
+Barclays Bank entered a strategic  partnership with Microsoft in June 2024  to enhance its digital security  capabilities and safeguard employees, customers, and operations against  evolving cyber threats.1 
+ANB In Saudi Arabia, Arab National Bank  automated its IT disaster recovery  with orchestration and real-time  dashboards to achieve minimal  downtime and reduce manual effort by  90%. The move enhances bank  resilience, agility, and compliance  with regulatory demands.2 
+Capgemini FS Top Trends 2025 #FinancialServicesTrends2025 Public © Capgemini 2025. All rights reserved | 13 
+Enterprise  
+ManagementTrend 5 
+10
+4 
+8 
+RegTech for compliance 
+Intelligent RegTech solutions will reduce compliance costs and timelines, as retail banks face escalating risks Background 
+2 3 1 5 9 
+6 
+7 
+▪ A 2023 Reuters survey of global financial services firms revealed that over half of respondents said they  expected the time spent on compliance to increase in the next year.1 
+▪ Laws governing Anti-Money Laundering (AML) and Know Your Customer (KYC) regulations have become  increasingly exhaustive, with Forrester estimating that the global cost of financial crime compliance has  reached USD 206 billion.2 
+▪ New risks emerge for retail banks with the exponential growth of transaction volumes. Fenergo, a provider of  RegTech solutions, reported that in 2023, banks and financial institutions shelled out USD 6.6 billion in  fines for failing to comply with regulatory reporting and compliance rules.3 
+Impact 
+▪ As more retail banks adopt RegTech solutions, compliance and regulatory reporting is being automated. And  that means banks can react to regulatory changes quickly and cost effectively.  
+▪ RegTechs can help turn compliance processes into a competitive advantage for retail banks by enabling the use  of sizeable regulatory data for fraud analytics and informing underwriting decisions. 
+▪ RegTech solutions also enable retail banks to build resilience frameworks that help them proactively identify  and assess potential regulatory and fraud risks. 
+Sources: 1.Reuters; 2. Lexis Nexis; 3. Fenergo; Capgemini Research Institute for Financial Services analysis, 2024 
+Capgemini FS Top Trends 2025 #FinancialServicesTrends2025 Public © Capgemini 2025. All rights reserved | 14 
+Enterprise  
+ManagementTrend 5 
+10
+4 
+8 
+RegTech for compliance 
+Intelligent RegTech solutions will reduce compliance costs and timelines, as retail banks face escalating risks Figure 5: How can RegTech add value for retail banks? 
+2 3 1 5 
+6 
+9 
+7 
+First Citizens Bank 
+Financial crime compliance 
+Integrate AI and ML capabilities with reporting to  streamline financial crime compliance by  
+automating identification of KYC and anti-money  laundering (AML) incidents 
+Regulatory and compliance 
+Track and monitor regulatory developments for  effective compliance, assess the impact of regulatory  changes, and identify necessary adjustments in realtime 
+Trade surveillance 
+Monitor transaction data to analyze patterns for  market manipulation or other abuse; generate alerts  for potential violations, ensuring timely action  
+Data and information 
+Improve data quality and governance for  regulatory and compliance disclosures; with  improved data quality, regulatory data can be  leveraged for analytics 
+US-based First Citizens Bank selected  the RegCloud solution from Adenza in  late 2023 to enhance its regulatory  reporting capabilities. RegCloud  enables the bank to transition to  more efficient and hands-free  reporting processes.1 
+ING 
+Dutch bank ING tapped RegTech firm  Ascent to automate identification of  its MiFID-II/MiFIR obligations. Ascent  shortened the process to 2.5 minutes,  a task that previously took 1,800 hours  of manual effort.2 
+Sources: 1.WFLA; 2.Ascent; Capgemini Research Institute for Financial Services analysis, 2024 
+Capgemini FS Top Trends 2025 #FinancialServicesTrends2025 Public © Capgemini 2025. All rights reserved | 15 
+Enterprise  
+ManagementTrend 6 
+10
+4 
+8 
+Deposit growth 
+Deposit growth continues to be a retail bank priority along with lowering funding costs Background 
+2 3 1 5 9 
+6 
+7 
+▪ A global reduction of money supply in the market by central banks (quantitative tightening*) in 2022 and  2023 has resulted in a significant outflow of deposits from banks. Additionally, high interest rates have also  increased the cost of capital for retail banks. 
+▪ Despite exercising caution in expanding the money supply, central banks have begun a cycle of  interest rate reductions. The European Union initiated rate cuts in June 2024, followed by the US Federal  Reserve in September.1, 2 
+▪ Findings from the Capgemini World Retail Banking Report 2024 indicate that retail bank executives rank the  high cost of capital and declining deposit volumes as the top two concerns.3 
+Impact 
+▪ Retail banks can offer bundled products that combine savings accounts with credit or investment options,  providing greater value to customers. 
+▪ Targeting specific customer segments, including young professionals and retirement-age customers with  higher preference for liquid cash, retail banks stand to boost their deposit volumes. 
+▪ As interest rates continue to decline, retail banks must cultivate stronger relationships with  price-insensitive customers. By consolidating their customer needs through retention and acquisition  incentives (cash bonuses, fee waivers, and reward programs), banks maintain their deposit volumes. 
+Sources: 1. Federal Reserve; 2. ECB; 3. Capgemini World Retail Banking Report 2024; Capgemini Research Institute for Financial Services analysis, 2024 * Quantitative tightening occurs when a central bank chooses to reduce its balance sheet by refraining from reinvesting in maturing securities or by selling existing securities. 
+Capgemini FS Top Trends 2025 #FinancialServicesTrends2025 Public © Capgemini 2025. All rights reserved | 16 
+Enterprise  
+ManagementTrend 6 
+10
+4 
+8 
+Deposit growth 
+Deposit growth continues to be a retail bank priority along with lowering funding costs 
+Revolut 
+2 3 1 5 9 
+6 
+7 
+
+Figure 6: How central bank interest rates influence bank profitabilityIn mid-2024 Revolut launched RevPoints,  
+a pan-European loyalty program in  
+which customers can redeem points for  
+Increasing interest rates High but stable interest rates Declining interest rates  2024  
+everyday purchases. The program seeks  to increase customer engagement and  boost bank deposits.1 
+2022 2023 Deposit rates were low while  
+and  
+beyond 
+Banks need to be cautious as deposit  
+U.S. Bank In September 2024, U.S. Bank  
+lending rates were high resulting in  a high spread for banks, translating  into high profits. 
+Banks increased deposit rates to  remain competitive. This started  to impact their net margin.  
+rate sensitivity (deposit beta) will be  driven by factors like bank size, deposit  mix, and customer loyalty. 
+announced the Bank Smartly Savings  Account, a savings offering bundled  with its Visa Signature Card. US Bank  intends to enhance deposit growth by  specifically targeting younger, affluent  customers. U.S. Bank says its Smartly  product line contributed to a 4.4%  increase in deposits from 2023 to 2024.2 
+Source: 1. Qorus; 2. Financial Brand; Capgemini Research Institute for Financial Services analysis, 2024 
+Capgemini FS Top Trends 2025 #FinancialServicesTrends2025 Public © Capgemini 2025. All rights reserved | 17 
+Enterprise  
+ManagementTrend 7 
+10
+4 
+8 
+Onboarding efficiency 
+Onboarding efficiency remains critical as retail banks embrace digital identity management for seamless onboarding Background 
+2 3 1 5 9 
+6 
+7 
+▪ Capgemini’s World Retail Banking Report 2024 explored delays in the KYC process for banking customers, with  64% of bank employees reporting that the process for each customer can take up to three days.1 
+▪ Regulators globally are advocating for the adoption of digital identity tools for KYC processes. In April 2024,  the European Commission published the European Digital Identity Framework, requiring member states to  provide their citizens with a pan-European digital identity wallet by 2026.2 
+▪ In September 2024, Gartner published research findings which predict that by 2026, at least 500 million users  will be using a digital identity wallet for KYC and verification claims.3 
+Impact 
+▪ Digital identity verification will enable banks to efficiently handle high volumes of customer  onboarding requests without the need for additional resources, facilitating easier scaling of operations as  demand increases. 
+▪ Digital identity tools for KYC verification can also significantly decrease the time required for onboarding  customers, leading to increased conversion rates and supporting 24/7 account openings. 
+▪ By utilizing digital identity management tools for onboarding and KYC processes, retail banks can also improve  accuracy and enhance fraud detection during the onboarding phase. 
+Sources: 1. Capgemini World Retail Banking Report 2024; 2. Thales; 3.Gartner; Capgemini Research Institute for Financial Services analysis, 2024 
+Capgemini FS Top Trends 2025 #FinancialServicesTrends2025 Public © Capgemini 2025. All rights reserved | 18 
+Enterprise  
+ManagementTrend 7 
+10
+4 
+8 
+Onboarding efficiency 
+Onboarding efficiency remains critical as retail banks embrace digital identity management for seamless onboarding 
+2 3 1 5 9 
+6 
+7 
+Figure 7: Digital identity models for retail banks 
+Centralized identity A single agency, usually a regulatory or government body, is responsible for issuing  and managing digital identities 
+NatWest In July 2024, NatWest announced its  integration of OneID's bank-verified  digital identity solution for its  structured finance customers in the  Nordics. NatWest will use OneID’s digital identity verification within  Adobe Acrobat Sign, enabling the bank  to digitally onboard and verify KYC of  
+Federated identity Self-sovereign identity 
+Retail banks and financial institutions use third-party providers that issue and maintain  digital identities on the banks’ behalf 
+In this decentralized model for digital identity, users store their digital identities on  their own devices and provide access on demand 
+its customers.1 
+HSBC HSBC Singapore implemented Singpass  Face Verification; a digital identity  wallet offered by the Monetary  Authority of Singapore, in Q4 2024.  The wallet enables users to verify  their identity for HSBC’s mobile  banking services.2 
+Sources: 1.Banking Gateway; 2. Fintech News; Capgemini Research Institute for Financial Services analysis, 2024 
+Capgemini FS Top Trends 2025 #FinancialServicesTrends2025 Public © Capgemini 2025. All rights reserved | 19 
+Intelligent  
+IndustryTrend 8 
+10
+4 
+8 
+AI for efficiency gains 
+Artificial intelligence will drive productivity by reimagining customer and employee journeys Background 
+2 3 1 5 9 
+6 
+7 
+▪ AI in retail banking began with data-driven machine learning, advanced to new content generation with GenAI,  and is now closing in on agentic AI – systems that possess a degree of autonomy and can act on their own to  achieve specific goals. Autonomous agents will help banks personalize services and automate operations. 
+▪ Domain-specific large language models (LLMs) are being developed for the financial industry to analyze  market data, understand financial regulations, and automate risk assessment, fraud detection, and  customer service.  
+▪ Capgemini's World Retail Banking Report 2024 found that 70% of bank CXOs planned to increase digital  transformation investments by up to 10% in 2024.1 
+Impact 
+▪ According to Citi, AI could boost banking industry profits by USD 170 billion by 2028, enhancing  productivity through automation and streamlined operations.2 
+▪ A 2023 NVIDIA survey found that 36% of financial services professionals reported AI applications reduced  their company's annual costs by more than 10%.3 
+▪ Banks can optimize up to 66% of time spent on operational, documentation, and compliance-related  activities by leveraging AI-powered intelligent transformation projects, according to Capgemini research.4 
+Sources: 1.Capgemini World Retail Banking Report 2024; 2. Citi; 3.BizTech Magazine; 4.Capgemini World Retail Banking Report 2024;  Capgemini Research Institute for Financial Services analysis, 2024 
+Capgemini FS Top Trends 2025 #FinancialServicesTrends2025 Public © Capgemini 2025. All rights reserved | 20 
+Intelligent  
+IndustryTrend 8 
+10
+4 
+8 
+AI for efficiency gains 
+Artificial intelligence will drive productivity by reimagining customer and employee journeys Figure 8: AI can help banks navigate the cost, competition, and customer triad 
+2 3 1 5 
+6 
+9 
+7 
+J.P. Morgan Chase 
+CUSTOMER 
+COST 
+Boost employee productivity  
+and efficiency 
+COMPETITION 
+In July 2024, J.P. Morgan Chase unveiled  LLM Suite, a set of AI copilot tools  designed to enhance employee  productivity. The virtual research  assistant offers writing assistance, idea  generation, and document  
+summarization.1 
+Commonwealth Bank Australian multinational  
+Commonwealth Bank adopted AI to  enhance efficiency, boosting  software engineering  
+productivity by 30%. The bank  
+Magnify experience 
+Improve time to market and  realize new-product value 
+reported that AI-driven tools also  boosted security and accelerated  loan processing by halving the time  needed to verify income.2 
+Sources: 1. Forbes; 2. Financial Review; Capgemini Research Institute for Financial Services analysis, 2024 
+Capgemini FS Top Trends 2025 #FinancialServicesTrends2025 Public © Capgemini 2025. All rights reserved | 21 
+Intelligent  
+IndustryTrend 9 
+10
+4 
+8 
+ESG product strategy 
+Banks will implement intelligent ESG product strategies and solutions Background 
+2 3 1 5 9 
+6 
+7 
+▪ Regulations are encouraging financial services firms to power up ESG efforts. As part of Capgemini’s  “Embrace data to accelerate sustainability” report, 67% of executives said compliance is a key reason to  initiate ESG initiatives.1 
+▪ Investments in ESG technology will unlock value beyond compliance. More than 72% of global financial firms  plan to spend ≥USD 500,000 on regulatory reporting, emissions data, and transitional  climate risk modeling, according to a 2024 Chartis Research study.2 
+▪ Banks are responding to growing customer demand for ESG products. An Economist Impact report sponsored  by Temenos shows 73% of banks will offer more sustainable options in the next five years.3 
+Impact 
+▪ By embedding innovative ESG products and solutions into products, retail banks can win market differentiation to create a competitive advantage.  
+▪ As investors continue to prioritize ESG considerations, sustainability products and services tailored to  individual customers will help banks foster deeper relationships.  
+▪ Proactive use of ESG solutions can help retail banks bolster their reputation and brand image, while  staying ahead of the regulatory curve.  
+Sources: 1.Embrace data to accelerate sustainability; 2. IBS Intelligence; 3. Sustainability Magazine; Capgemini Research Institute for Financial Services analysis, 2024 *ESG stands for Environmental, Social, and Governance  
+Capgemini FS Top Trends 2025 #FinancialServicesTrends2025 Public © Capgemini 2025. All rights reserved | 22 
+Intelligent  
+IndustryTrend 9 
+10
+4 
+8 
+ESG product strategy 
+Banks will implement intelligent ESG product strategies and solutions Figure 9: Steps to ESG product and solutions strategy development 
+2 3 1 5 
+6 
+9 
+7 
+Bank of Ireland 
+2 
+3 
+Design and  
+Communicate  Communicate  and educate  
+and educate  stakeholders  
+stakeholders  
+1 
+Evaluate current ESG products and services;  benchmark against industry best practices to  identify potential opportunities 
+2 
+Develop ESG goals and frameworks for different  customer segments and leverage analytics to  develop personalized products and services 
+Bank of Ireland offers a mortgage with discounted interest rates for  energy-rated homes: its EcoSaver  Mortgage offers discounts for homes  that have earned Ireland’s Building  Energy Rating.1 
+NatWest 
+London-based NatWest uses  
+AI to link loans with ESG data. New  
+1 
+Current ESG  
+Design and  launch ESG  
+launch  
+products 
+ESG products 
+3 
+Communicate the ESG product strategy to  internal teams to ensure they understand their role  
+loans benefit from sophisticated  mapping techniques, while AI helps  address challenges with older loans by  improving data accuracy. NatWest  
+Assess current  
+climate  
+ESG risk climate assessment 
+in implementation and with external shareholders  to build trust 
+uses machine learning to manage its  loan portfolio and streamline ESG  data processing.2 
+Sources: 1. Irish Independent; 2. FinTech Global; Capgemini Research Institute for Financial Services analysis, 2024 
+Capgemini FS Top Trends 2025 #FinancialServicesTrends2025 Public © Capgemini 2025. All rights reserved | 23 
+Intelligent  
+IndustryTrend 10 
+10
+4 
+8 
+Leveraging open finance 
+Open finance regulations clear a path for retail banks to develop a 360-degree customer footprint Background 
+2 3 1 5 9 
+6 
+7 
+▪ The European Commission’s Financial Data Access regulation (FiDA), expected to be finalized in 2025, establishes  a legal framework governing the access and use of customer data within the financial sector. The legislation aims  to foster data-driven innovation across sectors of the EU economy, including finance.1 
+▪ In mid-2024, the US Consumer Financial Protection Bureau suggested new rules aiming to allow consumers to  easily move their financial information between different financial institutions.2 
+▪ Research by MX Technologies in 2023 found that 89% of US consumers want to control access to their  financial data.3 
+Impact 
+▪ With real-time access to comprehensive financial data, open finance allows banks to seamlessly integrate  customer information into a single platform, improving customer convenience. 
+▪ A 360-degree view of bank customers’ finances gives firms opportunities to cross sell, offering personalized  savings and investment advice. 
+▪ With access to comprehensive data sets, retail banks can develop more nuanced risk profiles for borrowers.  This can lead to better-informed lending decisions and potentially lower default rates, as banks are able to  identify reliable borrowers overlooked under traditional scoring models.  
+Sources: 1.Didomi; 2. CFPB; 3. MX; Capgemini Research Institute for Financial Services analysis, 2024 
+Capgemini FS Top Trends 2025 #FinancialServicesTrends2025 Public © Capgemini 2025. All rights reserved | 24 
+Intelligent  
+IndustryTrend 10 
+10
+4 
+8 
+Leveraging open finance 
+Open finance regulations clear a path for retail banks to develop a 360-degree customer footprint Figure 10: Open finance regulations can add value for retail banks 
+2 3 1 5 
+6 
+9 
+7 
+Experian 
+Affordability  
+assessment 
+Credit risk decisioning Income verification Collection management ID verification 
+A more detailed and insightful view of customers’ finances enables  more accurate affordability decisions 
+Combining banking and investment activity insights with bureau  data can improve credit-risk scorecard effectiveness 
+Creditors will be able to gain quick and accurate bank-evidenced  verification of a consumer’s salary and other regular income 
+By improving and automating the way banks assess income and  expenditure, better customer outcomes will result 
+Retail banks will be empowered to perform anti-impersonation checks  and effectively authenticate consumer identities 
+Experian launched an open-banking solution to  expand credit scoring methodologies in mid  2024. Cashflow Attributes offers lenders  insights from 1,000+ transaction-based  attributes generated from consumer checking,  savings and credit card transaction data and  factors such as income, expenses, wealth and  debt for advanced consumer analysis,  underwriting enhancements and account  management processes.1 
+Citibank In mid-2024, Citi Hong Kong added Wealth  360, a digital wealth management feature  to its mobile app, as part of the Interbank  Account Data Sharing (IADS) program  initiated by the Hong Kong Monetary  Authority. Wealth 360 gives Citi users  real-time access to wealth management  functions, including an overview of interbank  accounts and personalized financial insights.2 
+Sources: 1.Experian; 2. Media Outreach Newswire; Capgemini Research Institute for Financial Services analysis, 2024 
+Capgemini FS Top Trends 2025 #FinancialServicesTrends2025 Public © Capgemini 2025. All rights reserved | 25 
+Partner with Capgemini
+Generative AI for Customer Experience 
+GenAI for CX helps banks move from generic  public LLMs that can be challenging to control  and risky for data and privacy – to a tailored,  trusted, and compliant solution. To help you  deliver innovative CX faster and at scale, we  leverage our Digital Customer Experience  Foundry – a collaborative environment for  ideation and innovation. Fostering  
+collaboration among clients and partners, the  Foundry is a global delivery incubation hub. 
+Connected Marketing 
+Capgemini helps banks navigate the digital  landscape with an end-to-end suite of services  and capabilities driven by our Connected  Marketing engine. Services fall into five areas:  Brand & experience, content, data &  technology, loyalty, and personalization.  Delivering the right message or product at  the right time helps drive brand loyalty. Using  real-time customer data, banks can deliver  personalized, relevant content and product  offerings at scale. 
+Intelligent Process Automation 
+Automation is a top 2025 priority as banks  align operational efficiency with profitability.  Capgemini’s Intelligent Process Automation  delivers self-service and end-to-end  automation through automated, frictionless  business processes and a digitally augmented  workforce infused with robotic process  automation (RPA), AI, and smart analytics. Let  us help you connect your teams with data to  drive success at scale while breaking down  organizational silos around front-, middle-,  and back-office processes. 
+Contact Center Transformation 
+If your organization relies on legacy  infrastructure and faces team silos, scalability  issues, and challenges with employee  performance and satisfaction – then Contact  Center Transformation can help you migrate to  cloud and leverage artificial intelligence,  GenAI, and machine learning modernization.  By moving your on-premises contact center to  cloud, your organization can improve  scalability and bolster cost savings and  agent productivity. 
+Capgemini FS Top Trends 2025 #FinancialServicesTrends2025 Public © Capgemini 2025. All rights reserved | 26 #FinancialServicesTrends2025 Public © Capgemini 2025. All rights reserved | 26 
+Ask the experts 
+Gareth Wilson 
+Global Head of Banking and  
+Capital Markets Practice  
+gareth.wilson@capgemini.com 
+With over 30 year of experience, Gareth is an expert  with a proven track record of developing long term  
+client relationships and the successful management of  large scale, complex, business critical client  
+engagements.
+Catherine Chedru-Refeuil 
+Head of Banking Practice, France  
+catherine.chedru-refeuil@capgemini.com 
+Catherine leads the Banking Practice in Financial  
+Services in France. She is a seasoned professional with  25 years’ experience in the banking industry where  
+she was involved in major operational and digital  
+transformation programs in Wealth, Asset  
+Management and CIB sectors. 
+Carlos Salta 
+EVP, Head of Banking and Capital Markets Practice  carlos.salta@capgemini.com  
+Carlos comes with extensive experience and skills sets  focused around transformation planning and  management, solution definition and complex solution  delivery disciplines. He has a strong background in  digital led core modernization/replacement and has  experience in driving transformations that span front  end and back-end functions. 
+Elias Ghanem  
+Global Head of Capgemini Research Institute for  Financial Services  
+elias.ghanem@capgemini.com 
+Elias Ghanem leads Capgemini’s global portfolio of  financial services thought leadership. He oversees a  team of strategy consultants and sector analysts who  deliver market insights to help clients build future proofing strategies. He has more than 25 years of  financial services experience, focusing on win-win  collaboration between incumbents and startups. 
+Jennifer Evans 
+Global Head of Retail Banking and Global Client  Partner, Capgemini Invent 
+jennifer.evans@capgemini.com  
+Jennifer Evans leads Retail Banking for Capgemini  Invent. She comes with over 19 years of experience in  leading complex transformation programs, experience  designing and delivering a range of strategic solutions  covering areas including cultural change, employee  and customer advocacy, digital evolution, and  operational efficiencies.  
+Vivek Singh  
+Head of Banking, Capgemini Research Institute for FS  vivek-kumar.singh@capgemini.com 
+Vivek leads the Wealth Management, Banking,  FinTech, and Payments sectors in the Capgemini  Research Institute for Financial Services and has over  12 years of digital, consulting, and business strategy  experience. He is a tech enthusiast who tracks  industry disruptions, thought leadership programs,  and business development. 
+Capgemini FS Top Trends 2025 #FinancialServicesTrends2025 Public © Capgemini 2025. All rights reserved | 27 
+Key contacts
+Global
+Pierre-Olivier Bouée (Europe) 
+Shinichi Tonomura (APAC) 
+Nathan Summers (Invent) 
+P.V. Narayan (Americas) 
+pvnarayan@capgemini.com 
+pierre-olivier.bouee@capgemini.com 
+shinichi.tonomura@capgemini.com 
+nathan.summers@capgemini.com 
+	
+
+
+
+Americas 
+Patrick Bucquet 
+patrick.bucquet@capgemini.com
+	Asia (Hong Kong, Singapore)  
+Ravi Makhija ravi.makhija@capgemini.com 
+James Aylen james.aylen@capgemini.com  
+Laurent Liotard-Vogt laurent.liotard-vogt@capgemini.com 
+Manoj Khera manoj.khera@capgemini.com
+	Australia  
+Roy Crociani  
+roy.crociani@capgemini.com 
+	Austria, Germany, Switzerland Jens Korb  
+jens.korb@capgemini.com  
+Joachim von Puttkamer 
+joachim.von.puttkamer@capgemini.com
+	Belgium 
+Ilda Dajci 
+ilda.dajci@capgemini.com
+	France  
+Christele Rabardel  
+christele.rabardel@capgemini.com  Stéphane Dalifard  
+stephane.dalifard@capgemini.com 
+	India 
+Sanjay Pathak  
+sanjay.pathak@capgemini.com 
+Kamal Misra  
+kamal.mishra@capgemini.com
+	Italy 
+Monia Ferrari 
+monia.ferrari@capgemini.com  
+Lorenzo Busca 
+lorenzo.busca@capgemini.com
+	Japan 
+Hiroyasu Hozumi 
+hiroyasu.hozumi@capgemini.com 
+Hideo Nishikawa 
+hideo.nishikawa@capgemini.com 
+	Middle East 
+Bilel Guedhami 
+bilel.guedhami@capgemini.com 
+Vincent Sahagian 
+vincent.sahagian@capgemini.com
+	Netherlands  
+Stefan Van Alen  
+stefan.van.alen@capgemini.com  
+Alexander Eerdmans  
+alexander.eerdmans@capgemini.com 
+	Nordics (Finland, Norway,  
+Sweden) 
+Saumitra Srivastava  
+saumitra.srivastava@capgemini.com 
+Johan Bergström  
+johan.bergstrom@capgemini.com 
+Liv Fiksdahl 
+liv.fiksdahl@capgemini.com
+	Spain 
+Mª Carmen Castellvi Cervello  carmen.castellvi@capgemini.com
+	UK 
+Som Sarma Royyuru 
+somsarma.royyuru@capgemini.com 
+Stephen Dury  
+stephen.dury@capgemini.com  
+Carlos Salta 
+carlos.salta@capgemini.com 
+	
+
+
+
+Capgemini FS Top Trends 2025 #FinancialServicesTrends2025 Public © Capgemini 2025. All rights reserved | 28 28 
+Acknowledgements 
+We want to thank the following teams and individuals for helping to create,  produce, and promote Retail Banking Top Trends 2025 
+Capgemini Research Institute for Financial Services: Elias Ghanem, Luca Russignan,  Vivek Singh for their overall leadership. Tamara McKinney Berry for editorial  contributions and content leadership. Chayan Bandyopadhyay and Aranya Adak for  project management. Abhishek Gurajala for in-depth market analysis, research and  compilation of insights. Dinesh Dhandapani Dhesigan for graphical interpretation  and design. 
+Capgemini’s global Banking Network: Cyril Francois, Kartik Ramakrishnan,  Pierre-Olivier Bouée, Shinichi Tonomura, Nilesh Vaidya, Gareth Wilson, Jeroen Holscher,  Anuj Agarwal, Nathan Summers, Jennifer Evans, Florian Forst, Sandeep Kurne, Ian  Campos, Vijaydeep Singh, Doli Karmakar, Nagaraj Ranga; we offer special thanks to all  our executives who contributed their valuable time during the Retail Banking Top Trends  2025 survey. 
+Marketing and Promotion: Meghala Nair, Jyoti Goyal, David Merrill, Neha George, Fahd  Pasha, Manasi Sakpal, Anthony Tourville, Manisha Singh for their overall marketing  support for the trends book; the Creative Services Team: Sushmitha Kunaparaju, Pravin  Kimbahune, Sushmita Singh and Chirantan Kulkarni for trends book production; Kavita  Deo and Ashwin Sreenivas for enabling the promotion of the trends book.
+Capgemini FS Top Trends 2025 #FinancialServicesTrends2025 Public © Capgemini 2025. All rights reserved | 29 
+Capgemini Research Institute for Financial Services 2024-2025 calendar 
+TREND BOOKS 2024 
+WORLD 
+RETAIL BANKING  REPORT 2024 
+WORLD 
+P&C INSURANCE  REPORT 2024 
+WORLD 
+WEALTH  REPORT 2024 
+WORLD 
+PAYMENTS  REPORT 2024 
+SUSTAINABILITY POINT OF VIEW 
+WORLD 
+LIFE INSURANCE  REPORT 2025 
+WORLD 
+CLOUD FOR FS REPORT 2025 
+
+How can banks  become intelligent  to deliver  
+frictionless and  personalized  
+experiences 
+Underwriting 
+transformation can  unlock efficiency,  accuracy and better  customer experience 
+Wealth management  firms can capitalize on  the ultra-HNWI  
+segment
+Become a leader by  seizing the instant  payment opportunity 
+Bolster ESG data  
+management to drive  FS sustainability  
+reporting, compliance,  and business growth 
+Insurers that position  policyholders at their  core can regain  
+relevancy 
+Cloud can help drive  financial services’  operational  
+efficiency and top line innovation 
+15 Jan 2024 05 Mar 2024 17 Apr 2024 05 Jun 2024 10 Sep 2024 23 Sep 2024 15 Oct 2024 14 Nov 2024 
+28th 17 edition th 20 edition th edition 20th 10 edition th edition Insurance Banking 
+3rd 2 edition nd edition 2nd edition 
+Capgemini FS Top Trends 2025 #FinancialServicesTrends2025 Public © Capgemini 2025. All rights reserved | 30 
+Share your feedback and stay up to date with our  Banking industry research 
+Subscribe to receive  
+Capgemini financial services thought leadership
+Download the Capgemini FS Top 10 trends 
+Retail banking Cloud for FS Wealth management Payments 
+Your feedback matters 
+Previous Latest World reports 
+Previous Latest 
+Previous Latest Previous Latest 
+What banks can  learn from the  FinTech playbook 
+Take an efficiency leap  with frictionless,  
+personalized banking 
+Empowering  
+relationship managers  and serving the affluent 
+Bridge wealth  
+management and  family office strengths  to fuel growth 
+Accelerate corporate cash management  transformation 
+to build value 
+Lead in the open and  instant future of  payments 
+Create business  
+value in an innovation powered future 
+Propel top-line  growth with your  cloud journey 
+Trends book 
+Sustainability CBDC Point of View 
+Capgemini FS Top Trends 2025 #FinancialServicesTrends2025 Public © Capgemini 2025. All rights reserved | 31 
+Reach out to the Capgemini Research Institute for Financial Services 
+Thought leadership that empowers financial services  executives to make insights-driven business decisions
+The Capgemini Research Institute for Financial Services is the in-house  think tank focused on digital, innovation, and technology issues  impacting banks, wealth management firms, payments players and  insurers. The Institute annually publishes its signature Financial  Services World Reports series that draw on voice of the customer  surveys, CxO interviews, and partnerships with technology companies  as well as academia to uncover emerging trends and explore how AI,  cloud, data, and digitalization are driving transformative business  outcomes. Supported by time-series global datasets, our industry  experts offer actionable insights, trend analyses, and innovative  solutions to address the dynamic challenges of financial institutions in  a fast-changing global economy. 
+Don’t miss out. Subscribe to receive reports as they launch. Visit https://www.capgemini.com/insights/research-library/world-reports. 
+Get The Future You Want | www.capgemini.com 
+
+Contact us 
+
+Gareth Wilson 
+Global Head 
+Banking and  
+Capital Markets practice 
+gareth.wilson@capgemini.com 
+Capgemini Research Institute Financial Services 
+TREND BOOKS 
+
+Elias Ghanem  
+Global Head 
+Capgemini Research Institute  for Financial Services 
+elias.ghanem@capgemini.com 
+Capgemini Research Institute Financial Services 
+WORLD REPORTS 
+
+Vivek Singh 
+Head of Banking 
+Capgemini Research Institute  for Financial Services 
+vivek-kumar.singh@capgemini.com 
+Capgemini Research Institute OTHER BUSINESS  
+SECTORS 
+Capgemini FS Top Trends 2025 #FinancialServicesTrends2025 Public © Capgemini 2025. All rights reserved | 32 
+About Capgemini 
+Capgemini is a global business and technology transformation partner, helping  organizations to accelerate their dual transition to a digital and sustainable world,  while creating tangible impact for enterprises and society. It is a responsible and  diverse group of 340,000 team members in more than 50 countries. With its strong  over 55-year heritage, Capgemini is trusted by its clients to unlock the value of  technology to address the entire breadth of their business needs. It delivers  end-to-end services and solutions leveraging strengths from strategy and design to  engineering, all fueled by its market leading capabilities in AI, cloud and data,  combined with its deep industry expertise and partner ecosystem. The Group  reported 2023 global revenues of €22.5 Bn. 
+Get the future you want | www.capgemini.com 
+Disclaimer 
+The information contained herein is general in nature and is not intended and should not be construed as professional advice or  opinion provided to the user. Capgemini assumes no liability for errors or omissions, or use of this material. This document is  provided for informational purposes only; it is meant solely to provide helpful information to the user. This document does not  purport to be a complete statement of the approach or steps necessary to address or solve any particular matter or to  accomplish any particular business goal. The user also is cautioned that this material may not be applicable to, or suitable for, the  user’s specific circumstances or needs and may require consideration of additional factors if any action is to be contemplated.  The text of this document was originally written in English. Translation to languages other than English is provided as a  convenience to our users. Capgemini disclaims any responsibility for translation inaccuracies. The information provided herein is  on an as-is basis. Capgemini disclaims any and all representations and warranties of any kind.
+
+This presentation contains information that may be privileged or confidential  and is the property of the Capgemini Group. 
+Copyright © 2025 Capgemini. All rights reserved.

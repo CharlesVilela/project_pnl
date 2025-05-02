@@ -1,0 +1,60 @@
+C:\Projetos\chatbot_with_pln\venv\Scripts\python.exe -X pycache_prefix=C:\Users\charl\AppData\Local\JetBrains\PyCharmCE2024.3\cpython-cache "C:/Program Files/JetBrains/PyCharm Community Edition 2024.3.5/plugins/python-ce/helpers/pydev/pydevd.py" --multiprocess --qt-support=auto --client 127.0.0.1 --port 50679 --file C:\Projetos\chatbot_with_pln\src\main.py
+Connected to pydev debugger (build 243.26053.29)
+C:\Projetos\chatbot_with_pln\src\helpers\process_chat.py:44: DeprecationWarning: invalid escape sequence \P
+  base_path = "C:\Projetos\chatbot_with_pln"
+<frozen importlib._bootstrap>:228: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+<frozen importlib._bootstrap>:228: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+<frozen importlib._bootstrap>:228: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+<frozen importlib._bootstrap>:228: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+<frozen importlib._bootstrap>:228: DeprecationWarning: builtin type swigvarlink has no __module__ attribute
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\charl\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+| ### ✅ Starting process ### |
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\charl\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+Backend tkagg is interactive backend. Turning interactive mode on.
+🛠️ Pré-processando documentos...
+maturity_score
+1    248
+4      7
+3      3
+5      2
+Name: count, dtype: int64
+| ### The Model: Naive Bayes ### |
+              precision    recall  f1-score   support
+
+           1      0.954     1.000     0.976        62
+           3      0.000     0.000     0.000         1
+           4      0.000     0.000     0.000         2
+
+    accuracy                          0.954        65
+   macro avg      0.318     0.333     0.325        65
+weighted avg      0.910     0.954     0.931        65
+
+| ### The Model: Regressão Logística ### |
+              precision    recall  f1-score   support
+
+           1      0.954     1.000     0.976        62
+           3      0.000     0.000     0.000         1
+           4      0.000     0.000     0.000         2
+
+    accuracy                          0.954        65
+   macro avg      0.318     0.333     0.325        65
+weighted avg      0.910     0.954     0.931        65
+
+
+| ### The Model: Random Forest ### |
+              precision    recall  f1-score   support
+
+           1      0.954     1.000     0.976        62
+           3      0.000     0.000     0.000         1
+           4      0.000     0.000     0.000         2
+
+    accuracy                          0.954        65
+   macro avg      0.318     0.333     0.325        65
+weighted avg      0.910     0.954     0.931        65
+
+| ### ✅ Finishing the process... ### |
+Process finished with exit code 0

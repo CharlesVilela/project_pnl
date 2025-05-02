@@ -13,7 +13,7 @@ import os
 
 
 
-def create_matriz_confusion(predictions, y_test, name_model, output_dir="matrizes"):
+def create_matriz_confusion(predictions, y_test, name_model, output_dir="matrizes3"):
     cm = confusion_matrix(y_test, predictions)
     plt.figure(figsize=(6,5))
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues')
@@ -38,7 +38,7 @@ def create_matriz_confusion(predictions, y_test, name_model, output_dir="matrize
 def build_pipeline(df):
     # Divisão dos dados
     x = df['text_clean']
-    y = df['intent']
+    y = df['maturity_score']
 
     # 2. Dividir treino/teste
     X_train, X_test, y_train, y_test = train_test_split(
