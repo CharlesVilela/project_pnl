@@ -1,0 +1,257 @@
+palavra_chave,score,intent,contexto_no_artigo,exemplo_no_artigo,frequencia_no_artigo
+Gen AI,5,artificial intelligence,,,0
+copilots,5,others,,,0
+ai copilot tools,5,artificial intelligence,,,0
+llm suite,5,artificial intelligence,,,0
+agentic ai,5,artificial intelligence,,,0
+open finance,5,business_model,,,0
+embedded finance,5,business_model,,,0
+asset tokenization,5,others,,,0
+embedded finance,5,business_model,,,0
+generative AI,4,artificial intelligence,,,0
+digital twins,4,others,,,0
+platform business models,4,business_model,,,0
+AI-as-a-service,4,artificial intelligence,,,0
+platform economy,4,digital_infrastructure,,,0
+multisided platforms,4,others,,,0
+customer data platforms,4,data_and_analytics,,,0
+intelligent automation,4,artificial intelligence,,,0
+workflow automation,4,digital_operations,,,0
+robotic process automation,4,digital_operations,,,0
+AI fluency,4,artificial intelligence,,,0
+sustainable innovation,4,artificial intelligence,,,0
+ethical AI,4,artificial intelligence,,,0
+technology-driven sustainability,4,artificial intelligence,,,0
+AI,4,artificial intelligence,,,0
+efficiency gains,4,artificial intelligence,,,0
+intelligent automation,4,artificial intelligence,,,0
+RPA,4,artificial intelligence,,,0
+ai-powered,4,artificial intelligence,,,0
+domain-specific large language models,4,artificial intelligence,,,0
+cloud-native,4,digital_infrastructure,,,0
+cloud platforms,4,digital_infrastructure,,,0
+cloud-native wealth management,4,digital_infrastructure,,,0
+compliance automation,4,governance_risks,,,0
+multi-rail,4,artificial intelligence,,,0
+multi-rail,4,artificial intelligence,,,0
+blockchain,4,artificial intelligence,,,0
+sustainability,4,artificial intelligence,,,0
+sustainable lending,4,artificial intelligence,,,0
+digital customer experience,3,customer_experience,,,0
+hyper-personalization,3,customer_experience,,,0
+customer profiling,3,others,,,0
+customer centricity,3,others,,,0
+digital journeys,3,others,,,0
+omnichannel experience,3,customer_experience,,,0
+user experience,3,others,,,0
+data-driven decision-making,3,data_and_analytics,,,0
+digital workflows,3,digital_operations,,,0
+cloud journey,3,digital_infrastructure,,,0
+data-driven,3,data_and_analytics,,,0
+360-degree customer footprint,3,others,,,0
+onboarding efficiency,3,others,,,0
+digital onboarding,3,others,,,0
+customer experience,3,customer_experience,,,0
+seamless experience,3,customer_experience,,,0
+personalization,3,customer_experience,,,0
+customer journey,3,customer_experience,,,0
+gamify,3,customer_experience,,,0
+financial literacy,3,talent_and_education,,,0
+financial literacy,3,talent_and_education,,,0
+IT governance,2,governance_risks,,,0
+cyber-physical systems,2,others,,,0
+digital governance,2,governance_risks,,,0
+cybersecurity,2,governance_risks,,,0
+cyber resilience,2,others,,,0
+digital risk management,2,governance_risks,,,0
+regulatory compliance,2,governance_risks,,,0
+digital resilience,2,others,,,0
+operational resilience,2,governance_risks,,,0
+cybersecurity,2,governance_risks,,,0
+RegTech,2,governance_risks,,,0
+compliance costs,2,governance_risks,,,0
+digital risk,2,governance_risks,,,0
+risk management,2,governance_risks,,,0
+digital identity,2,digital_identity,,,0
+KYC,2,digital_identity,,,0
+perpetual kyc,2,digital_identity,,,0
+identity wallet,2,digital_identity,,,0
+self-sovereign identity,2,digital_identity,,,0
+decentralized identity,2,digital_identity,,,0
+federated identity,2,digital_identity,,,0
+identity verification,2,digital_identity,,,0
+digital identity management,2,digital_identity,,,0
+singpass,2,others,,,0
+climate risk,2,sustainability,,,0
+esg compliance,2,governance_risks,,,0
+regtech,2,governance_risks,,,0
+regulatory reporting,2,governance_risks,,,0
+digital operational resilience,2,governance_risks,,,0
+digital transformation strategy,1,others,,,0
+strategic alignment,1,others,,,0
+digital capabilities,1,others,,,0
+dynamic capabilities,1,others,"dynamic capabilities, organizational lear ning t h","dynamic capabilities, organizational lear ning t h",15
+agility,1,others,"(agility, digit al options, and entre","(agility, digit al options, and entre",5
+scalability,1,others,cture that enables continuous scalability,cture that enables continuous scalability,1
+IT-business alignment,1,others,,,0
+digital acceleration,1,others,,,0
+digital mobilization,1,others,,,0
+innovation readiness,1,others,,,0
+organizational ambidexterity,1,others,,,0
+technology assimilation,1,others,,,0
+big data,1,data_and_analytics,"), and big data analytics (dremel et˝al.","), and big data analytics (dremel et˝al.",10
+big data analytics,1,data_and_analytics,"), and big data analytics (dremel et˝al.","), and big data analytics (dremel et˝al.",3
+data analytics capabilities,1,data_and_analytics,,,0
+data lake,1,data_and_analytics,,,0
+IoT,1,others,"h as t he internet of things (iot), big","h as t he internet of things (iot), big",13
+Internet of Things,1,others,"of applications such as t he internet of things (iot), big","of applications such as t he internet of things (iot), big",1
+5G,1,others,,,0
+SMACIT,1,others,,,0
+social technologies,1,others,,,0
+mobile technologies,1,others,"dat a, cloud computing, and mobile technologies signi˜cantly increases t he o","dat a, cloud computing, and mobile technologies signi˜cantly increases t he o",2
+analytics,1,data_and_analytics,"), and big data analytics (dremel et˝al.","), and big data analytics (dremel et˝al.",9
+cloud,1,digital_infrastructure,"ay include big dat a, mobile, cloud computing or search-based","ay include big dat a, mobile, cloud computing or search-based",8
+edge computing,1,digital_infrastructure,,,0
+API economy,1,digital_infrastructure,,,0
+microservices,1,digital_infrastructure,,,0
+generative technologies,1,others,,,0
+intelligent systems,1,others,,,0
+decision support systems,1,others,,,0
+sensor networks,1,others,,,0
+agile culture,1,organizational_architecture,,,0
+digital culture,1,organizational_architecture,the constituent pillars of a digital culture,the constituent pillars of a digital culture,3
+digital mindset,1,others,,,0
+tech-savvy leadership,1,others,,,0
+adaptive leadership,1,others,,,0
+change readiness,1,others,,,0
+permeable organizations,1,organizational_architecture,,,0
+boundaryless organizations,1,others,,,0
+holacracy,1,organizational_architecture,,,0
+digital-native,1,others,,,0
+post-bureaucratic structures,1,organizational_architecture,,,0
+remote workforce,1,others,,,0
+distributed teams,1,others,,,0
+virtual collaboration,1,others,,,0
+cross-functional teams,1,organizational_architecture,,,0
+digital business models,1,business_model,,,0
+servitization,1,others,,,0
+as-a-service models,1,others,,,0
+data-as-a-service,1,others,,,0
+ecosystem orchestration,1,others,,,0
+value co-creation,1,others,,,0
+freemium,1,others,,,0
+modular offerings,1,others,,,0
+smart products,1,others,,,0
+connected products,1,others,,,0
+customized products,1,others,,,0
+digital services,1,others,,,0
+subscription models,1,business_model,,,0
+digital channels,1,others,,,0
+digital ecosystems,1,others,,,0
+business ecosystems,1,others,"business ecosystems. in t his sense,","business ecosystems. in t his sense,",1
+digital business ecosystems,1,others,,,0
+ecosystem integration,1,others,,,0
+ecosystem strategy,1,others,,,0
+partner networks,1,others,,,0
+open APIs,1,others,,,0
+interoperability,1,others,,,0
+network orchestration,1,others,,,0
+value networks,1,others,,,0
+collaborative innovation,1,others,,,0
+open innovation,1,others,"ible it, open innovation)","ible it, open innovation)",3
+crowdsourcing,1,others,,,0
+start-up partnerships,1,others,,,0
+venture ecosystems,1,others,,,0
+digital convergence,1,others,,,0
+real-time interaction,1,others,,,0
+context-aware services,1,others,,,0
+mass customization,1,others,,,0
+virtual business processes,1,others,,,0
+real-time dashboards,1,digital_operations,,,0
+smart operations,1,digital_operations,,,0
+digital operations,1,digital_operations,,,0
+operational transparency,1,digital_operations,require higher operational transparency in daily-business and work-ro,require higher operational transparency in daily-business and work-ro,1
+information security,2,others,,,0
+data privacy,2,others,,,0
+GDPR,1,others,,,0
+network security,2,others,,,0
+zero trust architecture,1,others,,,0
+digital sovereignty,1,others,,,0
+regulatory frameworks,1,others,,,0
+digital skills,1,talent_and_education,scale-up digital skills?™,scale-up digital skills?™,2
+digital literacy,1,talent_and_education,which mindset and digital literacy do middle managers need to be,which mindset and digital literacy do middle managers need to be,1
+reskilling,1,talent_and_education,,,0
+upskilling,1,talent_and_education,,,0
+continuous learning,1,others,,,0
+future of work,1,talent_and_education,,,0
+talent agility,1,others,,,0
+workforce transformation,1,others,,,0
+digital leadership programs,1,others,,,0
+learning ecosystems,1,talent_and_education,,,0
+digital academies,1,talent_and_education,,,0
+green IT,1,others,,,0
+carbon accounting,1,others,,,0
+tech for good,1,others,,,0
+digital inclusion,1,others,,,0
+responsible innovation,1,others,,,0
+inclusive technology,1,others,,,0
+organizational change,1,organizational_architecture,e digit al transfor mation as organizational change tr iggered by digit al techno,e digit al transfor mation as organizational change tr iggered by digit al techno,3
+episodic change,1,others,,,0
+continuous change,1,others,,,0
+technology impact,1,others,,,0
+systemic shift,1,others,,,0
+holistic co-evolution,1,others,,,0
+digital ecodynamics,1,others,the concept of digital ecodynamics,the concept of digital ecodynamics,1
+digital turbulence,1,others,,,0
+disruption,1,others,al transfor mation˝· digit al disruption˝· technological disr uption˝·,al transfor mation˝· digit al disruption˝· technological disr uption˝·,13
+transformation drivers,1,others,,,0
+configurational theory,1,others,,,0
+multilevel analysis,1,others,,,0
+artificial intelligence,1,artificial intelligence,,,0
+machine learning,1,artificial intelligence,,,0
+autonomous agents,1,artificial intelligence,,,0
+digital workforce,1,others,,,0
+intelligent transformation,1,others,,,0
+cloud,1,digital_infrastructure,"ay include big dat a, mobile, cloud computing or search-based","ay include big dat a, mobile, cloud computing or search-based",8
+cloud-based,1,digital_infrastructure,,,0
+data monetization,1,data_and_analytics,,,0
+real-time access,1,data_and_analytics,,,0
+data sharing,1,data_and_analytics,,,0
+wealth 360,1,others,,,0
+DORA,1,governance_risks,,,0
+oneid,1,others,,,0
+CX,1,customer_experience,,,0
+omnichannel,1,customer_experience,environment requires digit al omnichannel,environment requires digit al omnichannel,5
+connected marketing,1,customer_experience,,,0
+hyper-personalized advisory,1,others,,,0
+personalized financial insights,1,others,,,0
+interbank account data,1,others,,,0
+account data sharing,1,data_and_analytics,,,0
+instant payment,1,others,,,0
+cross-border payments,1,others,,,0
+payment hubs,1,others,,,0
+remittance transformation,1,others,,,0
+pos innovations,1,others,,,0
+instant payments,1,others,,,0
+POS innovations,1,others,,,0
+payment hubs,1,others,,,0
+DLT,1,others,,,0
+esg,1,sustainability,,,0
+green finance,1,sustainability,,,0
+net zero,1,sustainability,,,0
+greenwashing,1,sustainability,,,0
+greenhushing,1,sustainability,,,0
+decarbonization,1,sustainability,,,0
+esg product strategy,1,sustainability,,,0
+climate modeling,1,sustainability,,,0
+dora,1,governance_risks,,,0
+Equipment-as-a-Service,1,business_model,,,0
+financial inclusion,1,business_model,,,0
+next-gen banking,1,others,,,0
+financial inclusion,1,business_model,,,0
+youth banking,1,others,,,0
+greenlight,1,others,,,0
+starter credit cards,1,others,,,0
+family app,1,others,,,0
+financial education,1,others,,,0
+money skills,1,talent_and_education,,,0

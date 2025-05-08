@@ -1,24 +1,51 @@
 import fitz  # PyMuPDF
 import pandas as pd
 import re
+from pathlib import Path
 from os.path import join
+from collections import Counter
+from keybert import KeyBERT
+from sentence_transformers import SentenceTransformer
 
 from resource.key_world import palavras_chave
-from helpers.extract_text import extrair_texto_pdf, extrair_frases_relevantes, salvar_txt, extract_relevant_phrases
+from resource.intent_map import intent_map
+from helpers.extract_text import extract_pdf_text, extract_relevant_phrases, extract_key_words
 from helpers.generated_dataset import gerar_dataset
+from helpers.classification_score_intent import atribuir_intent_from_keyword
 
+base_path = Path(__file__).resolve().parents[2]
 # 4. Rodar tudo
-def extract_data():
-    base_path = "C:\Projetos\chatbot_with_pln"
+def extract_data(article):
+
     input_path = join(base_path, 'input')
     output_path = join(base_path, 'output')
+    path_pdf = join(input_path, article+".pdf")
 
-    # caminho_pdf = join(base_path, "Capgemini_Top-Trends-2025_Retail-Banking.pdf")
-    caminho_pdf = join(input_path, "artigo_01.pdf")
-    # caminho_txt = join(base_path, "Capgemini_Top-Trends-2025_Retail-Banking.txt")
+    # === 2. Inicializar o modelo KeyBERT ===
+    kw_model = KeyBERT(model='all-MiniLM-L6-v2')
+    model = SentenceTransformer("all-MiniLM-L6-v2")
 
-    texto = extrair_texto_pdf(caminho_pdf)
-    # texto = extrair_texto_txt(caminho_txt)
-    # frases = extrair_frases_relevantes(texto, palavras_chave)
-    frases = extract_relevant_phrases(texto, palavras_chave)
-    gerar_dataset(frases)
+    print(f"| ### 📄 Starting PDF text extraction... ### |")
+    text = extract_pdf_text(path_pdf)
+    print(f"| ### 🧹 Limpando texto extraído... ### |")
+    # cleaned_text = clean_texts_parallel(text)
+    cleaned_text = text
+    print(f"| ### ✨ Text ready/finalized after cleaning... ### |")
+    print(f"| ### 📑 Finished PDF text extraction... ### |")
+
+    print(f"| ### 🔍 Starting keyword extraction... ### |")
+    key_words = extract_key_words(kw_model, cleaned_text)
+    print(f"| ### 🔑 Keywords extracted... ### |")
+
+    print(f"| ### 🧠 Extracting relevant phrases based on keywords... ### |")
+    phrases = extract_relevant_phrases(cleaned_text, key_words, model)
+    print(f"| ### 📌 Relevant phrases extracted... ### |")
+
+    print(f"| ### 🛠️ Generating dataset from extracted data... ### |")
+    gerar_dataset(phrases, key_words, model)
+    print(f"| ### 📁 Dataset generation complete... ### |")
+
+
+
+
+

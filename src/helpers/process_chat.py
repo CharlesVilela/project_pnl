@@ -54,9 +54,6 @@ def process():
     # Criar um Entity Ruler personalizado
     nlp = load_nlp_with_patterns(spacy_model)
 
-    # Aplicar a função a cada texto do DataFrame
-    df["entities"] = df["text"].apply(lambda x: extract_entities(x, nlp))
-    
     # # 1. Pré-processamento
     print("🛠️ Pré-processando documentos...")
     processed_tokens = preprocess_with_spacy(df["text"], nlp)

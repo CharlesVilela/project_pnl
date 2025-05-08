@@ -1,10 +1,27 @@
 from helpers import process_LDA, process_chat
 from utils.extract_data import extract_data
+from pathlib import Path
+base_path = Path(__file__).resolve().parents[1]
 
 def main():
-    print("| ### ✅ Starting process ### |")
-    # extract_data()
-    process_chat.process()
+    articles = ["artigo_08","artigo_09", "artigo_10"]
+    # articles = ["artigo_01", "artigo_02", "artigo_03", "artigo_04", "artigo_05", "artigo_06", "artigo_07", "artigo_08","artigo_09", "artigo_10"]
+    while True:
+        option = input("Digite sua opção: [1] - EXTRAIR DADOS [2] - TREINAR MODELO")
+        option = int(option)  # Converte a string para um inteiro
+        if option == 1:
+            for article in articles:
+                print(f"| ### 📄 Starting extraction the article {article} ### |")
+                extract_data(article)
+                print(f"| ### ✅ Finish the extraction the article {article} ### |")
+        elif option == 2:
+            print("| ### ✅ Starting process ### |")
+            process_chat.process()
+        elif option == 3:
+            print("| ### Project Finalizing ### |")
+            break
+        else:
+            print("Opção invalida...")
 
 
 if __name__=="__main__":

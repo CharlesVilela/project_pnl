@@ -69,8 +69,8 @@ def add_custom_entities(nlp):
 import spacy
 
 def load_nlp_with_patterns(nlp):
-    # nlp = spacy.load("en_core_web_sm")  # ou outro modelo, se preferir
-    ruler = nlp.add_pipe("entity_ruler", before="ner")  # CORRETO AGORA ✅
+    # nlp = spacy.load("en_core_web_sm")
+    ruler = nlp.add_pipe("entity_ruler", before="ner")
 
     patterns = [
         {"label": "TECHNOLOGY", "pattern": "cloud"},

@@ -10,10 +10,37 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import joblib
 import os
+import re
+
+from pathlib import Path
+base_path = Path(__file__).resolve().parents[2]
+
+def create_directory_matrix():
+    root_image_path = Path(join(base_path, 'image'))
+    # List only folders
+    folders = [p for p in root_image_path.iterdir() if p.is_dir()]
+    # Regular expression to extract numbers at the end of the folder name
+    pattern = re.compile(r'matrices(\d+)$')
+    # Extract the numbers from the existing folders
+    numbers = []
+    for folder in folders:
+        match = pattern.match(folder.name)
+        if match:
+            numbers.append(int(match.group(1)))
+
+    # Determine the next number
+    next_num = max(numbers, default=0) + 1
+    new_folder = root_image_path / f"matrices{next_num}"
+
+    # Create the new folder
+    new_folder.mkdir(exist_ok=True)
+    print(f"Folder created: {new_folder}")
+
+    return new_folder
 
 
 
-def create_matriz_confusion(predictions, y_test, name_model, output_dir="matrizes3"):
+def create_matriz_confusion(predictions, y_test, name_model):
     cm = confusion_matrix(y_test, predictions)
     plt.figure(figsize=(6,5))
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues')
@@ -22,10 +49,9 @@ def create_matriz_confusion(predictions, y_test, name_model, output_dir="matrize
     plt.title(f"Matriz de Confusão: {name_model}")
     # plt.show()
 
-    base_path = "C:\Projetos\chatbot_with_pln\image"
-    image_path = join(base_path, output_dir)
-    # Criar diretório se não existir
-    os.makedirs(image_path, exist_ok=True)
+    root_image_path = join(base_path,'image')
+    output_dir = create_directory_matrix()
+    image_path = join(root_image_path, output_dir)
 
     # Gerar nome do arquivo (sem espaços)
     filename = f"{name_model.replace(' ', '_').lower()}_confusion_matrix.png"
