@@ -11,12 +11,20 @@ import seaborn as sns
 import joblib
 import os
 import re
+from sentence_transformers import SentenceTransformer, util
+import torch
+from sklearn.metrics.pairwise import cosine_similarity
+from transformers import pipeline
+from helpers.classification_score_intent import map_score_to_label
 
 from pathlib import Path
 base_path = Path(__file__).resolve().parents[2]
 
-def create_directory_matrix():
-    root_image_path = Path(join(base_path, 'image'))
+# Inicialize os pipelines (uma vez)
+rephrase_pipe = pipeline("text2text-generation", model="Vamsi/T5_Paraphrase_Paws")
+
+def create_directory_matrix(type_train):
+    root_image_path = Path(join(base_path, 'image',type_train))
     # List only folders
     folders = [p for p in root_image_path.iterdir() if p.is_dir()]
     # Regular expression to extract numbers at the end of the folder name
@@ -40,7 +48,7 @@ def create_directory_matrix():
 
 
 
-def create_matriz_confusion(predictions, y_test, name_model):
+def create_matriz_confusion(predictions, y_test, name_model, type_train, output_dir):
     cm = confusion_matrix(y_test, predictions)
     plt.figure(figsize=(6,5))
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues')
@@ -49,22 +57,21 @@ def create_matriz_confusion(predictions, y_test, name_model):
     plt.title(f"Matriz de Confusão: {name_model}")
     # plt.show()
 
-    root_image_path = join(base_path,'image')
-    output_dir = create_directory_matrix()
-    image_path = join(root_image_path, output_dir)
-
+    image_path = join(base_path, "image",type_train,output_dir)
     # Gerar nome do arquivo (sem espaços)
     filename = f"{name_model.replace(' ', '_').lower()}_confusion_matrix.png"
     filepath = join(image_path, filename)
-
     # Salvar a imagem
     plt.savefig(filepath, dpi=300, bbox_inches='tight')
 
 
 def build_pipeline(df):
+
+    df['maturity_label'] = df['maturity_score'].apply(map_score_to_label)
+
     # Divisão dos dados
     x = df['text_clean']
-    y = df['maturity_score']
+    y = df['maturity_label']
 
     # 2. Dividir treino/teste
     X_train, X_test, y_train, y_test = train_test_split(
@@ -77,27 +84,116 @@ def build_pipeline(df):
         (LogisticRegression(max_iter=1000), "Regressão Logística"),
         (RandomForestClassifier(n_estimators=100), "Random Forest")
     ]
-    
+
+    type_train = "model_train_maturity_score"
+    output_dir = create_directory_matrix(type_train)
     # Treino e avaliação
     for model, name in models:
-       predictions = train_and_evaluate(model, name, X_train, X_test, y_train, y_test)
-       create_matriz_confusion(predictions, y_test, name)
+       predictions = train_and_evaluate(model, name, X_train, X_test, y_train, y_test,type_train)
+       create_matriz_confusion(predictions, y_test, name, type_train,output_dir)
        print(f"| ### The Model: {name} ### |")
        print(classification_report(y_test, predictions, digits=3))
 
+def train_intent_classifier(df):
+
+    intent_counts = df['intent'].value_counts()
+    valid_intents = intent_counts[intent_counts >= 2].index
+    df_filtered = df[df['intent'].isin(valid_intents)]
+
+    # Divisão dos dados
+    x = df_filtered['text']
+    y = df_filtered['intent']
+
+    # 2. Dividir treino/teste
+    X_train, X_test, y_train, y_test = train_test_split(
+        x, y, test_size=0.25, random_state=42, stratify=y
+    )
+
+    # Modelos para testar
+    models = [
+        (MultinomialNB(), "Naive Bayes"),
+        (LogisticRegression(max_iter=1000), "Regressão Logística"),
+        (RandomForestClassifier(n_estimators=100), "Random Forest")
+    ]
+
+    type_train = "model_train_intent"
+    output_dir = create_directory_matrix(type_train)
+    # Treino e avaliação
+    for model, name in models:
+        predictions = train_and_evaluate(model, name, X_train, X_test, y_train, y_test,type_train)
+        create_matriz_confusion(predictions, y_test, name, type_train,output_dir)
+        print(f"| ### The Model: {name} ### |")
+        print(classification_report(y_test, predictions, digits=3))
+        save_classification_report(name, y_test, predictions)
+
 
 # Função de avaliação modificada para incluir métricas
-def train_and_evaluate(model, model_name, X_train, X_test, y_train, y_test):
+def train_and_evaluate(model, model_name, X_train, X_test, y_train, y_test, type_train):
     pipeline = Pipeline([
         ('tfidf', TfidfVectorizer(max_features=5000)),
         ('clf', model)
     ])
-    
+
     pipeline.fit(X_train, y_train)
     predictions = pipeline.predict(X_test)
-
     filename = model_name.replace(" ", "_").lower()
-    joblib.dump(pipeline, f"{filename}_maturity_model.pkl")
 
-
+    path_model = join(base_path,"model_train",type_train)
+    joblib.dump(pipeline, join(path_model, f"{filename}_maturity_model.pkl"))
     return predictions
+
+def save_classification_report(name, y_test, predictions):
+    file_path=join(base_path,"log","classification_reports.txt")
+    # Gera o relatório de classificação como string
+    report = classification_report(y_test, predictions, digits=3)
+    
+    with open(file_path, "a", encoding="utf-8") as f:
+        f.write(f"| ### The Model: {name} ### |\n")
+        f.write(report + "\n")
+        f.write("=" * 60 + "\n")
+
+def prepare_semantic_search(df):
+    corpus = df["text_clean"].tolist()
+    tfidf_vectorizer = TfidfVectorizer(stop_words='english')
+    tfidf_matrix = tfidf_vectorizer.fit_transform(corpus)
+
+    embed_model = SentenceTransformer('all-MiniLM-L6-v2')
+    embeddings = embed_model.encode(corpus, convert_to_tensor=True)
+
+    return tfidf_vectorizer, tfidf_matrix, embed_model, embeddings
+
+# TF-IDF Search
+def tfidf_search(query, tfidf_vectorizer, tfidf_matrix, df, top_k=3):
+    query_vec = tfidf_vectorizer.transform([query])
+    similarity = cosine_similarity(query_vec, tfidf_matrix).flatten()
+    top_indices = similarity.argsort()[-top_k:][::-1]
+    return df.iloc[top_indices][["text", "maturity_score", "intent"]]
+
+# Semantic Search com SentenceTransformer
+# Ajustando o top_k de 3 para 1
+def semantic_search(query, model, embeddings, df, top_k=1):
+    query_emb = model.encode(query, convert_to_tensor=True)
+    hits = util.semantic_search(query_emb, embeddings, top_k=top_k)[0]
+    return df.iloc[[hit['corpus_id'] for hit in hits]][["text", "maturity_score", "intent"]]
+
+def improve_question(question):
+    prompt = f"paraphrase: {question} </s>"
+    result = rephrase_pipe(prompt, max_length=64, do_sample=True, top_k=50)[0]['generated_text']
+    return result
+
+# Função do chatbot
+def chatbot_loop(df):
+    tfidf_vectorizer, tfidf_matrix, embed_model, embeddings = prepare_semantic_search(df)
+
+    print("\n🔹 Chatbot sobre Transformação Digital (digite 'sair' para encerrar)\n")
+    while True:
+        user_input = input("Você: ")
+        if user_input.lower() in ['sair', 'exit', 'quit']:
+            print("👋 Encerrando o chatbot. Até mais!")
+            break
+        user_input = improve_question(user_input)
+        print("\n🔍 Resultados mais relevantes (semânticos):")
+        results = semantic_search(user_input, embed_model, embeddings, df)
+        for idx, row in results.iterrows():
+            print(f"\n📝 Texto: {row['text'][:300]}...")
+            print(f"📈 Maturity Score: {row['maturity_score']} | 🎯 Intent: {row['intent']}")

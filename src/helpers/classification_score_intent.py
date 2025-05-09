@@ -133,3 +133,13 @@ def gerar_nome_cluster(termos, modelo):
 
     # Alternativa: juntar as 2 mais representativas
     return termo_mais_representativo.title()
+
+
+def map_score_to_label(score):
+    if score <= 0.33:
+        return 'low'
+    elif score <= 0.66:
+        return 'average'
+    else:
+        return 'high'
+

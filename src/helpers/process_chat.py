@@ -23,7 +23,7 @@ import joblib
 
 from helpers.entity_extraction import extract_entities, add_custom_entities, load_nlp_with_patterns
 from helpers.preprocess import load_spacy_model, preprocess_with_spacy
-from helpers.classifier import build_pipeline
+from helpers.classifier import build_pipeline, train_intent_classifier
 
 # Exemplo de estrutura real de dados (adaptar para seu contexto):
 real_data = {
@@ -62,5 +62,6 @@ def process():
     print(df['maturity_score'].value_counts())
 
     build_pipeline(df)
+    train_intent_classifier(df)
     
     print("| ### ✅ Finishing the process... ### |")
