@@ -23,7 +23,7 @@ def main():
             process_chat.process()
         elif option == 3:
             output_path = join(base_path, 'output')
-            df = pd.read_csv(join(output_path, "digital_transformation_maturity.csv"))
+            df = pd.read_csv(join(output_path, "digital_transformation_maturity2.csv"))
             df['text_clean'] = df['text']
             chatbot_loop(df)
         elif option == 0:

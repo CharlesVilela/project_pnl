@@ -17,11 +17,11 @@ def load_nlp():
     nlp = load_nlp_with_patterns(spacy_model)
     return nlp
 
-def atribuir_entities(frase):
+def assign_entities(frase):
     nlp = load_nlp()
     return extract_entities(frase, nlp)
 
-def atribuir_score(frase, score_map):
+def assign_score(frase, score_map):
     frase_lower = frase.lower()
     scores_encontrados = []
 
@@ -32,7 +32,7 @@ def atribuir_score(frase, score_map):
     return max(scores_encontrados) if scores_encontrados else 1  # 1 = irrelevante por padrão
 
 
-def atribuir_intent(frase, intent_map):
+def assign_intent(frase, intent_map):
     frase_lower = frase.lower()
     intents_encontrados = []
     for termo, intent in intent_map.items():
@@ -49,6 +49,19 @@ def atribuir_intent_from_keyword(palavra_chave, intent_map):
         if any(t in palavra_lower for t in termos):
             return intent
     return "others"
+
+
+def assign_category(frase, category_keywords):
+    frase_lower = frase.lower()
+    scores = {categoria: 0 for categoria in category_keywords}
+
+    for categoria, palavras in category_keywords.items():
+        for palavra in palavras:
+            if palavra in frase_lower:
+                scores[categoria] += 1
+
+    categoria_mais_relevante = max(scores, key=scores.get)
+    return categoria_mais_relevante if scores[categoria_mais_relevante] > 0 else "Uncategorized"
 
 def extract_new_intent(phrases, new_key_words, model, df_scores_intents):
     df_intent = df_scores_intents[["palavra_chave", "intent"]]

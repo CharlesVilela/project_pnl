@@ -45,7 +45,7 @@ def process():
     input_path = join(base_path, 'input')
     output_path = join(base_path, 'output')
 
-    df = pd.read_csv(join(output_path, "digital_transformation_maturity.csv"))
+    df = pd.read_csv(join(output_path, "digital_transformation_maturity2.csv"))
     # df = pd.DataFrame(real_data)
 
     # Configurações iniciais

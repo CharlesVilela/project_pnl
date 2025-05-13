@@ -1,3 +1,4 @@
+from nipype.interfaces.elastix.registration import AnalyzeWarpInputSpec
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import classification_report, accuracy_score, confusion_matrix
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -197,3 +198,17 @@ def chatbot_loop(df):
         for idx, row in results.iterrows():
             print(f"\n📝 Texto: {row['text'][:300]}...")
             print(f"📈 Maturity Score: {row['maturity_score']} | 🎯 Intent: {row['intent']}")
+
+# ANOTAÇÕES
+# MODELOS NER
+
+# Whispers tiny (Para trancrever os textos em audios ou vise-versa)
+# Idea de fluxo:
+# [1] Inicio
+# [2] Captura da Pergunta
+# [3] Pré-processamento da linguagem
+# [4] Classificação e Analyze
+# [5] Busca da resposta
+# [6] Resposta ao usuário
+# [7] feedback
+# [8] Aprendizado continuo

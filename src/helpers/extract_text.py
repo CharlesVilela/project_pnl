@@ -42,13 +42,16 @@ def clean_texts_parallel(text, max_workers=None):
 def extract_pdf_text(path_pdf):
     try:
         doc = fitz.open(path_pdf)
+        meta_doc = doc.metadata
+        metadata_str = format_metadata(meta_doc)
         text_total = ""
         for page in doc:
             blocks = page.get_text("blocks")
             for block in blocks:
                 text_total += block[4]
         doc.close()
-        return text_total
+
+        return text_total, metadata_str
     except Exception as e:
         print(f"An error occurred while extracting the text: {e}")
         return None
@@ -157,6 +160,9 @@ def extract_relevant_phrases(text, key_words, model):
 
     return all_phrases
 
+def format_metadata(meta: dict) -> str:
+    fields = ["title", "author", "creationDate", "modDate", "subject", "keywords"]
+    return "; ".join(f"{field}: {meta[field]}" for field in fields if field in meta and meta[field])
 
 
 

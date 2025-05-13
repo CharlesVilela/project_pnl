@@ -26,7 +26,7 @@ def extract_data(article):
     model = SentenceTransformer("all-MiniLM-L6-v2")
 
     print(f"| ### 📄 Starting PDF text extraction... ### |")
-    text = extract_pdf_text(path_pdf)
+    text, metadata = extract_pdf_text(path_pdf)
     print(f"| ### 🧹 Limpando texto extraído... ### |")
     # cleaned_text = clean_texts_parallel(text)
     cleaned_text = text
@@ -42,7 +42,7 @@ def extract_data(article):
     print(f"| ### 📌 Relevant phrases extracted... ### |")
 
     print(f"| ### 🛠️ Generating dataset from extracted data... ### |")
-    gerar_dataset(phrases, key_words, model)
+    gerar_dataset(phrases, metadata, key_words, model)
     print(f"| ### 📁 Dataset generation complete... ### |")
 
 
