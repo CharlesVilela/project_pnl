@@ -11,15 +11,15 @@ from pathlib import Path
 base_path = Path(__file__).resolve().parents[2]
 
 # 3. Gerar estrutura para DataFrame
-def gerar_dataset(sentences, metadata, new_key_words, model):
+def generate_dataset(sentences, metadata, new_key_words, model):
     data = []
     data_path = join(base_path, 'data')
-    df_scores_intents = pd.read_csv(join(data_path, "palavras_chave_com_scores_e_intents.csv"))
+    df_scores_intents = pd.read_csv(join(data_path, "keywords_with_scores_and_intents.csv"))
 
     df_scores_intents = extract_new_intent(sentences, new_key_words, model, df_scores_intents)
 
-    score_map = {p.lower(): s for p, s in zip(df_scores_intents["palavra_chave"], df_scores_intents["score"])}
-    intent_map = {p.lower(): intent for p, intent in zip(df_scores_intents["palavra_chave"], df_scores_intents["intent"])}
+    score_map = {str(p).lower(): s for p, s in zip(df_scores_intents["keywords"], df_scores_intents["score"]) if pd.notna(p)}
+    intent_map = {str(p).lower(): intent for p, intent in zip(df_scores_intents["keywords"], df_scores_intents["intent"]) if pd.notna(p)}
     for sentence in sentences:
         score = assign_score(sentence, score_map)
         intent = assign_intent(sentence, intent_map)
@@ -43,10 +43,10 @@ def save_dataframe(df):
 
     if not os.path.exists(file_path):
         df.to_csv(file_path, index=False, encoding='utf-8-sig')
-        print(f"✅ Arquivo salvo com {len(df)} exemplos.")
+        print(f"✅ File saved with {len(df)} examples.")
     else:
         df_dtm = pd.read_csv(file_path)
         df_concat = pd.concat([df_dtm, df])
         df_concat.to_csv(file_path, index=False, encoding='utf-8-sig')
-        print(f"✅ Arquivo salvo com {len(df)} exemplos.")
+        print(f"✅ File saved with {len(df)} examples.")
 

@@ -24,12 +24,12 @@ base_path = Path(__file__).resolve().parents[2]
 # Inicialize os pipelines (uma vez)
 rephrase_pipe = pipeline("text2text-generation", model="Vamsi/T5_Paraphrase_Paws")
 
-def create_directory_matrix(type_train):
-    root_image_path = Path(join(base_path, 'image',type_train))
+def create_directory_matrix(type_train, type_directory, base_name):
+    root_image_path = Path(join(base_path, type_directory,type_train))
     # List only folders
     folders = [p for p in root_image_path.iterdir() if p.is_dir()]
     # Regular expression to extract numbers at the end of the folder name
-    pattern = re.compile(r'matrices(\d+)$')
+    pattern = re.compile(f'{base_name}(\d+)$')
     # Extract the numbers from the existing folders
     numbers = []
     for folder in folders:
@@ -39,7 +39,7 @@ def create_directory_matrix(type_train):
 
     # Determine the next number
     next_num = max(numbers, default=0) + 1
-    new_folder = root_image_path / f"matrices{next_num}"
+    new_folder = root_image_path / f"{base_name}{next_num}"
 
     # Create the new folder
     new_folder.mkdir(exist_ok=True)
@@ -82,15 +82,16 @@ def build_pipeline(df):
     # Modelos para testar
     models = [
         (MultinomialNB(), "Naive Bayes"),
-        (LogisticRegression(max_iter=1000), "Regressão Logística"),
+        (LogisticRegression(max_iter=1000), "Logistic Regression"),
         (RandomForestClassifier(n_estimators=100), "Random Forest")
     ]
 
     type_train = "model_train_maturity_score"
-    output_dir = create_directory_matrix(type_train)
+    output_dir = create_directory_matrix(type_train, type_directory="image", base_name="matrices")
+    version_directory = create_directory_matrix(type_train, type_directory="model_train", base_name="version")
     # Treino e avaliação
     for model, name in models:
-       predictions = train_and_evaluate(model, name, X_train, X_test, y_train, y_test,type_train)
+       predictions = train_and_evaluate(model, name, X_train, X_test, y_train, y_test,type_train,version_directory)
        create_matriz_confusion(predictions, y_test, name, type_train,output_dir)
        print(f"| ### The Model: {name} ### |")
        print(classification_report(y_test, predictions, digits=3))
@@ -113,15 +114,16 @@ def train_intent_classifier(df):
     # Modelos para testar
     models = [
         (MultinomialNB(), "Naive Bayes"),
-        (LogisticRegression(max_iter=1000), "Regressão Logística"),
+        (LogisticRegression(max_iter=1000), "Logistic Regression"),
         (RandomForestClassifier(n_estimators=100), "Random Forest")
     ]
 
     type_train = "model_train_intent"
-    output_dir = create_directory_matrix(type_train)
+    output_dir = create_directory_matrix(type_train, type_directory="image", base_name="matrices")
+    version_directory = create_directory_matrix(type_train, type_directory="model_train", base_name="version")
     # Treino e avaliação
     for model, name in models:
-        predictions = train_and_evaluate(model, name, X_train, X_test, y_train, y_test,type_train)
+        predictions = train_and_evaluate(model, name, X_train, X_test, y_train, y_test,type_train,version_directory)
         create_matriz_confusion(predictions, y_test, name, type_train,output_dir)
         print(f"| ### The Model: {name} ### |")
         print(classification_report(y_test, predictions, digits=3))
@@ -129,17 +131,18 @@ def train_intent_classifier(df):
 
 
 # Função de avaliação modificada para incluir métricas
-def train_and_evaluate(model, model_name, X_train, X_test, y_train, y_test, type_train):
+def train_and_evaluate(model, model_name, x_train, x_test, y_train, y_test, type_train,version_directory):
     pipeline = Pipeline([
         ('tfidf', TfidfVectorizer(max_features=5000)),
         ('clf', model)
     ])
 
-    pipeline.fit(X_train, y_train)
-    predictions = pipeline.predict(X_test)
+    pipeline.fit(x_train, y_train)
+    predictions = pipeline.predict(x_test)
     filename = model_name.replace(" ", "_").lower()
 
-    path_model = join(base_path,"model_train",type_train)
+
+    path_model = join(base_path,"model_train",type_train,version_directory)
     joblib.dump(pipeline, join(path_model, f"{filename}_maturity_model.pkl"))
     return predictions
 
@@ -182,9 +185,25 @@ def improve_question(question):
     result = rephrase_pipe(prompt, max_length=64, do_sample=True, top_k=50)[0]['generated_text']
     return result
 
+
+# Carrega os modelos salvos
+def load_models():
+    intent_model_path = join(base_path, "model_train", "model_train_intent", "version1",
+                             "regressão_logística_maturity_model.pkl")
+    maturity_model_path = join(base_path, "model_train", "model_train_maturity_score", "version1",
+                               "regressão_logística_maturity_model.pkl")
+
+    intent_model = joblib.load(intent_model_path)
+    maturity_model = joblib.load(maturity_model_path)
+
+    return intent_model, maturity_model
+
+
 # Função do chatbot
 def chatbot_loop(df):
     tfidf_vectorizer, tfidf_matrix, embed_model, embeddings = prepare_semantic_search(df)
+
+    intent_model, maturity_model = load_models()
 
     print("\n🔹 Chatbot sobre Transformação Digital (digite 'sair' para encerrar)\n")
     while True:
@@ -193,6 +212,13 @@ def chatbot_loop(df):
             print("👋 Encerrando o chatbot. Até mais!")
             break
         user_input = improve_question(user_input)
+
+        predicted_intent = intent_model.predict([user_input])[0]
+        predicted_maturity = maturity_model.predict([user_input])[0]
+
+        print(f"\n🎯 Intenção Detectada: {predicted_intent}")
+        print(f"📈 Nível de Maturidade: {predicted_maturity}")
+
         print("\n🔍 Resultados mais relevantes (semânticos):")
         results = semantic_search(user_input, embed_model, embeddings, df)
         for idx, row in results.iterrows():

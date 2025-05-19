@@ -7,11 +7,11 @@ from collections import Counter
 from keybert import KeyBERT
 from sentence_transformers import SentenceTransformer
 
-from resource.key_world import palavras_chave
+from resource.key_world import keywords
 from resource.intent_map import intent_map
 from helpers.extract_text import extract_pdf_text, extract_relevant_phrases, extract_key_words
-from helpers.generated_dataset import gerar_dataset
-from helpers.classification_score_intent import atribuir_intent_from_keyword
+from helpers.generated_dataset import generate_dataset
+from helpers.classification_score_intent import assign_intent_from_keyword
 
 base_path = Path(__file__).resolve().parents[2]
 # 4. Rodar tudo
@@ -21,7 +21,7 @@ def extract_data(article):
     output_path = join(base_path, 'output')
     path_pdf = join(input_path, article+".pdf")
 
-    # === 2. Inicializar o modelo KeyBERT ===
+    # === 2. Initialize the KeyBERT model ===
     kw_model = KeyBERT(model='all-MiniLM-L6-v2')
     model = SentenceTransformer("all-MiniLM-L6-v2")
 
@@ -42,7 +42,7 @@ def extract_data(article):
     print(f"| ### 📌 Relevant phrases extracted... ### |")
 
     print(f"| ### 🛠️ Generating dataset from extracted data... ### |")
-    gerar_dataset(phrases, metadata, key_words, model)
+    generate_dataset(phrases, metadata, key_words, model)
     print(f"| ### 📁 Dataset generation complete... ### |")
 
 

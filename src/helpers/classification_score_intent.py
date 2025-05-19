@@ -1,7 +1,7 @@
 from helpers.preprocess import load_spacy_model, preprocess_with_spacy
 from helpers.entity_extraction import extract_entities, add_custom_entities, load_nlp_with_patterns
-from resource.atribute_score import grupos
-from resource.key_world import palavras_chave
+from resource.atribute_score import groups
+from resource.key_world import keywords
 from os.path import join
 import re
 import pandas as pd
@@ -11,60 +11,54 @@ from sklearn.cluster import KMeans
 from pathlib import Path
 base_path = Path(__file__).resolve().parents[2]
 
+# Create a custom Entity Ruler
 def load_nlp():
     spacy_model = load_spacy_model()
-    # Criar um Entity Ruler personalizado
     nlp = load_nlp_with_patterns(spacy_model)
     return nlp
 
-def assign_entities(frase):
+def assign_entities(phrase):
     nlp = load_nlp()
-    return extract_entities(frase, nlp)
+    return extract_entities(phrase, nlp)
 
-def assign_score(frase, score_map):
-    frase_lower = frase.lower()
-    scores_encontrados = []
+def assign_score(phrase, score_map):
+    phrase_lower = phrase.lower()
+    scores_founds = []
+    for term, score in score_map.items():
+        if term in phrase_lower:
+            scores_founds.append(score)
+    return max(scores_founds) if scores_founds else 1  #1 = irrelevant by default
 
-    for termo, score in score_map.items():
-        if termo in frase_lower:
-            scores_encontrados.append(score)
+# Regex with word boundaries to avoid false positives like "ai" inside "said"
+def assign_intent(phrase, intent_map):
+    phrase_lower = phrase.lower()
+    intents_founds = []
+    for term, intent in intent_map.items():
+        pattern = r'\b' + re.escape(term) + r'\b'
+        if re.search(pattern, phrase_lower):
+            intents_founds.append(intent)
+    return max(set(intents_founds), key=intents_founds.count) if intents_founds else "others"
 
-    return max(scores_encontrados) if scores_encontrados else 1  # 1 = irrelevante por padrão
-
-
-def assign_intent(frase, intent_map):
-    frase_lower = frase.lower()
-    intents_encontrados = []
-    for termo, intent in intent_map.items():
-        # Regex com bordas de palavra para evitar falsos positivos como "ai" dentro de "said"
-        pattern = r'\b' + re.escape(termo) + r'\b'
-        if re.search(pattern, frase_lower):
-            intents_encontrados.append(intent)
-
-    return max(set(intents_encontrados), key=intents_encontrados.count) if intents_encontrados else "others"
-
-def atribuir_intent_from_keyword(palavra_chave, intent_map):
-    palavra_lower = palavra_chave.lower()
-    for intent, termos in intent_map.items():
-        if any(t in palavra_lower for t in termos):
+def assign_intent_from_keyword(keyword, intent_map):
+    word_lower = keyword.lower()
+    for intent, terms in intent_map.items():
+        if any(t in word_lower for t in terms):
             return intent
     return "others"
 
 
-def assign_category(frase, category_keywords):
-    frase_lower = frase.lower()
-    scores = {categoria: 0 for categoria in category_keywords}
-
-    for categoria, palavras in category_keywords.items():
-        for palavra in palavras:
-            if palavra in frase_lower:
-                scores[categoria] += 1
-
-    categoria_mais_relevante = max(scores, key=scores.get)
-    return categoria_mais_relevante if scores[categoria_mais_relevante] > 0 else "Uncategorized"
+def assign_category(phrase, category_keywords):
+    phrase_lower = phrase.lower()
+    scores = {category: 0 for category in category_keywords}
+    for category, words in category_keywords.items():
+        for word in words:
+            if word in phrase_lower:
+                scores[category] += 1
+    category_most_relevant = max(scores, key=scores.get)
+    return category_most_relevant if scores[category_most_relevant] > 0 else "Uncategorized"
 
 def extract_new_intent(phrases, new_key_words, model, df_scores_intents):
-    df_intent = df_scores_intents[["palavra_chave", "intent"]]
+    df_intent = df_scores_intents[["keywords", "intent"]]
     existing_terms = [term[0] for term in df_intent]
     only_keywords = [kw[0] for kw in new_key_words]
 
@@ -80,8 +74,8 @@ def extract_new_intent(phrases, new_key_words, model, df_scores_intents):
 
     # === 6. Cluster new terms to suggest intent groups ===
     new_terms = [termo for termo, _ in suggested_terms]
-    emb_sugeridos = model.encode(new_terms)
-    kmeans = KMeans(n_clusters=3, random_state=0).fit(emb_sugeridos)
+    emb_suggested = model.encode(new_terms)
+    kmeans = KMeans(n_clusters=3, random_state=0).fit(emb_suggested)
 
     # === 7. Organize terms by cluster ===
     clusters = {}
@@ -99,53 +93,62 @@ def extract_new_intent(phrases, new_key_words, model, df_scores_intents):
         for term in terms:
             print(f"  - {term}")
 
-    # Agrupar por cluster
+    # Group by cluster
     new_clusters = {}
     labels = kmeans.labels_
-    for termo, label in zip(only_keywords, labels):
-        new_clusters.setdefault(label, []).append(termo)
+    for term, label in zip(only_keywords, labels):
+        new_clusters.setdefault(label, []).append(term)
 
-    # Gerar nomes de cluster
-    clusters_names = {label: gerar_nome_cluster(termos, model) for label, termos in new_clusters.items()}
-
+    # Generate cluster names
+    clusters_names = {label: generate_cluster_name(terms, model) for label, terms in new_clusters.items()}
     term_reference = df_intent.iloc[0,0]
 
-    scores = [
-        round(util.cos_sim(model.encode([term])[0], model.encode(term_reference)).item(), 2)
-        for term, _ in suggested_terms
-    ]
+    keywords_filtered = []
+    scores = []
+    intents = []
+    for (term, label) in suggested_terms:
+        if pd.notna(term) and pd.notna(term_reference):
+            sim = round(
+                util.cos_sim(
+                    model.encode([str(term)])[0],
+                    model.encode([str(term_reference)])[0]
+                ).item(), 2
+            )
+            keywords_filtered.append(term)
+            scores.append(sim)
+            intents.append(clusters_names[label])
 
-    return prepare_file_new_intent(suggested_terms, scores, labels, clusters_names, df_scores_intents)
+    return prepare_file_new_intent(keywords_filtered,scores,intents, df_scores_intents)
 
 
-def prepare_file_new_intent(suggested_terms, scores, labels, clusters_names, df_scores_intents):
-    # === 7. Preparar dados para salvar ===
+def prepare_file_new_intent(keywords_filtered,intents,scores, df_scores_intents):
+
+    # === 7. Preparer the data to salve ===
     df_final = pd.DataFrame({
-        "palavra_chave": [term for term, _ in suggested_terms],
+        "keyword": keywords_filtered,
         "score": scores,
-        "intent": [clusters_names[label] for label in labels]
+        "intent": intents
     })
-
-    # === 8. Salvar em CSV ===
-    df_novos = pd.DataFrame(df_final)
-    new_df = pd.concat([df_novos, df_scores_intents])
+    # === 8. Salve the CSV ===
+    df_news = pd.DataFrame(df_final)
+    new_df = pd.concat([df_news, df_scores_intents])
     data_path = join(base_path, 'data')
-    new_df.to_csv(join(data_path, "palavras_chave_com_scores_e_intents.csv"))
+    new_df.to_csv(join(data_path, "keywords_with_scores_and_intents.csv"))
 
     return new_df
 
 
-# Gerar descrição semântica por cluster (automático via palavras mais centrais)
-def gerar_nome_cluster(termos, modelo):
-    emb_termos = modelo.encode(termos)
-    centroide = emb_termos.mean(axis=0)
+# Generate semantic description by cluster (automatic via most central words)
+def generate_cluster_name(terms, model):
+    emb_termos = model.encode(terms)
+    centroid = emb_termos.mean(axis=0)
 
-    # Calcular similaridade do centroide com cada termo
-    sims = [(termo, util.cos_sim(modelo.encode([termo])[0], centroide).item()) for termo in termos]
-    termo_mais_representativo = sorted(sims, key=lambda x: -x[1])[0][0]
+    # Calculate centroid similarity with each term
+    sims = [(term, util.cos_sim(model.encode([term])[0], centroid).item()) for term in terms]
+    most_representative_term = sorted(sims, key=lambda x: -x[1])[0][0]
 
-    # Alternativa: juntar as 2 mais representativas
-    return termo_mais_representativo.title()
+    # Alternative: join the 2 most representative ones
+    return most_representative_term.title()
 
 
 def map_score_to_label(score):

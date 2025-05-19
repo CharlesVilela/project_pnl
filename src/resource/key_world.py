@@ -1,4 +1,4 @@
-palavras_chave = [
+keywords = [
     # Estratégia e Capacidades Digitais
     "digital transformation strategy", "strategic alignment", "digital capabilities",
     "dynamic capabilities", "agility", "scalability", "IT-business alignment",

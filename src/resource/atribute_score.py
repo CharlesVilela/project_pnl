@@ -1,5 +1,5 @@
 # Cada grupo com peso
-grupos = {
+groups = {
     5: set([
         "gen ai", "open finance", "omnichannel", "llm suite", "agentic ai",
         "hyper-personalized advisory", "asset tokenization", "cross-border payments",

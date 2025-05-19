@@ -8,10 +8,10 @@ import pandas as pd
 
 base_path = Path(__file__).resolve().parents[1]
 def main():
-    articles = ["artigo_08","artigo_09", "artigo_10"]
-    # articles = ["artigo_01", "artigo_02", "artigo_03", "artigo_04", "artigo_05", "artigo_06", "artigo_07", "artigo_08","artigo_09", "artigo_10"]
+    # articles = ["artigo_08","artigo_09", "artigo_10"]
+    articles = ["artigo_01", "artigo_02", "artigo_03", "artigo_04", "artigo_05", "artigo_06", "artigo_07", "artigo_08","artigo_09", "artigo_10"]
     while True:
-        option = input("Digite sua opção: [1] - EXTRAIR DADOS [2] - TREINAR MODELO [3] - USAR MODELO [0] - SAIR")
+        option = input("Digite sua opção: [1] - EXTRAIR DADOS | [2] - TREINAR MODELO | [3] - USAR MODELO | [0] - SAIR")
         option = int(option)  # Converte a string para um inteiro
         if option == 1:
             for article in articles:
