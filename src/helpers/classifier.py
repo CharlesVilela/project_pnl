@@ -1,4 +1,3 @@
-from nipype.interfaces.elastix.registration import AnalyzeWarpInputSpec
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import classification_report, accuracy_score, confusion_matrix
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -10,19 +9,26 @@ from os.path import join
 import matplotlib.pyplot as plt
 import seaborn as sns
 import joblib
-import os
 import re
-from sentence_transformers import SentenceTransformer, util
-import torch
-from sklearn.metrics.pairwise import cosine_similarity
-from transformers import pipeline
 from helpers.classification_score_intent import map_score_to_label
 
 from pathlib import Path
 base_path = Path(__file__).resolve().parents[2]
 
 # Inicialize os pipelines (uma vez)
-rephrase_pipe = pipeline("text2text-generation", model="Vamsi/T5_Paraphrase_Paws")
+# rephrase_pipe = pipeline("text2text-generation", model="Vamsi/T5_Paraphrase_Paws")
+# tokenizer = AutoTokenizer.from_pretrained("google/flan-t5-base")
+# model_for_seqlm = AutoModelForSeq2SeqLM.from_pretrained("google/flan-t5-base")
+# embed_model_transformer = SentenceTransformer("paraphrase-mpnet-base-v2")
+
+# model_name_llama = "meta-llama/Llama-2-7b-chat-hf"
+# tokenizer_llama = AutoTokenizer.from_pretrained(model_name_llama)
+# model_llama = AutoModelForCausalLM.from_pretrained(
+#     model_name_llama,
+#     device_map="auto",  # envia para GPU se disponível
+#     torch_dtype=torch.float16,
+#     load_in_4bit=True  # usa quantização para caber em GPUs menores
+# )
 
 def create_directory_matrix(type_train, type_directory, base_name):
     root_image_path = Path(join(base_path, type_directory,type_train))
@@ -156,85 +162,3 @@ def save_classification_report(name, y_test, predictions):
         f.write(report + "\n")
         f.write("=" * 60 + "\n")
 
-def prepare_semantic_search(df):
-    corpus = df["text_clean"].tolist()
-    tfidf_vectorizer = TfidfVectorizer(stop_words='english')
-    tfidf_matrix = tfidf_vectorizer.fit_transform(corpus)
-
-    embed_model = SentenceTransformer('all-MiniLM-L6-v2')
-    embeddings = embed_model.encode(corpus, convert_to_tensor=True)
-
-    return tfidf_vectorizer, tfidf_matrix, embed_model, embeddings
-
-# TF-IDF Search
-def tfidf_search(query, tfidf_vectorizer, tfidf_matrix, df, top_k=3):
-    query_vec = tfidf_vectorizer.transform([query])
-    similarity = cosine_similarity(query_vec, tfidf_matrix).flatten()
-    top_indices = similarity.argsort()[-top_k:][::-1]
-    return df.iloc[top_indices][["text", "maturity_score", "intent"]]
-
-# Semantic Search com SentenceTransformer
-# Ajustando o top_k de 3 para 1
-def semantic_search(query, model, embeddings, df, top_k=1):
-    query_emb = model.encode(query, convert_to_tensor=True)
-    hits = util.semantic_search(query_emb, embeddings, top_k=top_k)[0]
-    return df.iloc[[hit['corpus_id'] for hit in hits]][["text", "maturity_score", "intent"]]
-
-def improve_question(question):
-    prompt = f"paraphrase: {question} </s>"
-    result = rephrase_pipe(prompt, max_length=64, do_sample=True, top_k=50)[0]['generated_text']
-    return result
-
-
-# Carrega os modelos salvos
-def load_models():
-    intent_model_path = join(base_path, "model_train", "model_train_intent", "version1",
-                             "regressão_logística_maturity_model.pkl")
-    maturity_model_path = join(base_path, "model_train", "model_train_maturity_score", "version1",
-                               "regressão_logística_maturity_model.pkl")
-
-    intent_model = joblib.load(intent_model_path)
-    maturity_model = joblib.load(maturity_model_path)
-
-    return intent_model, maturity_model
-
-
-# Função do chatbot
-def chatbot_loop(df):
-    tfidf_vectorizer, tfidf_matrix, embed_model, embeddings = prepare_semantic_search(df)
-
-    intent_model, maturity_model = load_models()
-
-    print("\n🔹 Chatbot sobre Transformação Digital (digite 'sair' para encerrar)\n")
-    while True:
-        user_input = input("Você: ")
-        if user_input.lower() in ['sair', 'exit', 'quit']:
-            print("👋 Encerrando o chatbot. Até mais!")
-            break
-        user_input = improve_question(user_input)
-
-        predicted_intent = intent_model.predict([user_input])[0]
-        predicted_maturity = maturity_model.predict([user_input])[0]
-
-        print(f"\n🎯 Intenção Detectada: {predicted_intent}")
-        print(f"📈 Nível de Maturidade: {predicted_maturity}")
-
-        print("\n🔍 Resultados mais relevantes (semânticos):")
-        results = semantic_search(user_input, embed_model, embeddings, df)
-        for idx, row in results.iterrows():
-            print(f"\n📝 Texto: {row['text'][:300]}...")
-            print(f"📈 Maturity Score: {row['maturity_score']} | 🎯 Intent: {row['intent']}")
-
-# ANOTAÇÕES
-# MODELOS NER
-
-# Whispers tiny (Para trancrever os textos em audios ou vise-versa)
-# Idea de fluxo:
-# [1] Inicio
-# [2] Captura da Pergunta
-# [3] Pré-processamento da linguagem
-# [4] Classificação e Analyze
-# [5] Busca da resposta
-# [6] Resposta ao usuário
-# [7] feedback
-# [8] Aprendizado continuo

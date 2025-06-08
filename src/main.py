@@ -1,5 +1,5 @@
 from helpers import process_LDA, process_chat
-from helpers.classifier import chatbot_loop
+from helpers.chatbot_interection import chatbot_loop
 from utils.extract_data import extract_data
 from pathlib import Path
 from os.path import join
@@ -8,10 +8,15 @@ import pandas as pd
 
 base_path = Path(__file__).resolve().parents[1]
 def main():
-    # articles = ["artigo_08","artigo_09", "artigo_10"]
-    articles = ["artigo_01", "artigo_02", "artigo_03", "artigo_04", "artigo_05", "artigo_06", "artigo_07", "artigo_08","artigo_09", "artigo_10"]
+    articles = ["artigo_37"]
+    # articles = ["artigo_01", "artigo_02", "artigo_03", "artigo_04", "artigo_05", "artigo_06", "artigo_07", "artigo_08","artigo_09", "artigo_10"]
+    # articles = ["artigo_01", "artigo_02", "artigo_03", "artigo_04", "artigo_05", "artigo_06", "artigo_07", "artigo_08","artigo_09", "artigo_10",
+    #             "artigo_11", "artigo_12", "artigo_13", "artigo_14", "artigo_15", "artigo_16", "artigo_17", "artigo_18","artigo_19", "artigo_20",
+    #             "artigo_21", "artigo_22", "artigo_23", "artigo_24", "artigo_25", "artigo_26", "artigo_27", "artigo_28","artigo_29", "artigo_30"]
+    # Faltaou o artigo 36
+    # books = ['livro_05','livro_06','livro_07','livro_08']
     while True:
-        option = input("Digite sua opção: [1] - EXTRAIR DADOS | [2] - TREINAR MODELO | [3] - USAR MODELO | [0] - SAIR")
+        option = input("Digite sua opção: [1] - EXTRAIR DADOS | [2] - TREINAR MODELO | [3] - USAR MODELO | [0] - SAIR: ")
         option = int(option)  # Converte a string para um inteiro
         if option == 1:
             for article in articles:

@@ -22,6 +22,8 @@ def assign_entities(phrase):
     return extract_entities(phrase, nlp)
 
 def assign_score(phrase, score_map):
+    if not phrase or not phrase.strip():
+        return 1
     phrase_lower = phrase.lower()
     scores_founds = []
     for term, score in score_map.items():
@@ -31,6 +33,8 @@ def assign_score(phrase, score_map):
 
 # Regex with word boundaries to avoid false positives like "ai" inside "said"
 def assign_intent(phrase, intent_map):
+    if not phrase or not phrase.strip():
+        return 'others'
     phrase_lower = phrase.lower()
     intents_founds = []
     for term, intent in intent_map.items():
@@ -48,6 +52,8 @@ def assign_intent_from_keyword(keyword, intent_map):
 
 
 def assign_category(phrase, category_keywords):
+    if not phrase or not phrase.strip():
+        return 'Uncategorized'
     phrase_lower = phrase.lower()
     scores = {category: 0 for category in category_keywords}
     for category, words in category_keywords.items():

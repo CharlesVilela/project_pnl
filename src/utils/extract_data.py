@@ -12,6 +12,9 @@ from resource.intent_map import intent_map
 from helpers.extract_text import extract_pdf_text, extract_relevant_phrases, extract_key_words
 from helpers.generated_dataset import generate_dataset
 from helpers.classification_score_intent import assign_intent_from_keyword
+from resource.category_keywords import category_keywords
+from resource.category_keywords_pt import category_keywords_pt
+from utils.detect_language import identify_language
 
 base_path = Path(__file__).resolve().parents[2]
 # 4. Rodar tudo
@@ -25,25 +28,24 @@ def extract_data(article):
     kw_model = KeyBERT(model='all-MiniLM-L6-v2')
     model = SentenceTransformer("all-MiniLM-L6-v2")
 
-    print(f"| ### 📄 Starting PDF text extraction... ### |")
     text, metadata = extract_pdf_text(path_pdf)
-    print(f"| ### 🧹 Limpando texto extraído... ### |")
     # cleaned_text = clean_texts_parallel(text)
     cleaned_text = text
-    print(f"| ### ✨ Text ready/finalized after cleaning... ### |")
-    print(f"| ### 📑 Finished PDF text extraction... ### |")
-
-    print(f"| ### 🔍 Starting keyword extraction... ### |")
     key_words = extract_key_words(kw_model, cleaned_text)
-    print(f"| ### 🔑 Keywords extracted... ### |")
 
-    print(f"| ### 🧠 Extracting relevant phrases based on keywords... ### |")
-    phrases = extract_relevant_phrases(cleaned_text, key_words, model)
-    print(f"| ### 📌 Relevant phrases extracted... ### |")
+    all_keywords = []
+    language = identify_language(text)
+    if language == 'pt':
+        all_keywords = [kw for keywords in category_keywords_pt.values() for kw in keywords]
+        [all_keywords.append(kw[0]) for kw in key_words]
+    if language == 'en':
+        all_keywords = [kw for keywords in category_keywords.values() for kw in keywords]
+        [all_keywords.append(kw[0]) for kw in key_words]
 
-    print(f"| ### 🛠️ Generating dataset from extracted data... ### |")
+    phrases = extract_relevant_phrases(cleaned_text, all_keywords, model)
+
     generate_dataset(phrases, metadata, key_words, model)
-    print(f"| ### 📁 Dataset generation complete... ### |")
+
 
 
 
