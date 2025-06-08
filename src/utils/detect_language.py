@@ -11,6 +11,15 @@ def translate_auto_to_en(text):
         print(f"[⚠️ Tradução falhou]: '{text}' — {e}")
         return text
 
+def translate_text(text, target_lang='en'):
+    if not text or len(text.strip()) < 2:
+        return text
+    try:
+        return GoogleTranslator(source='auto', target=target_lang).translate(text)
+    except Exception as e:
+        print(f"[⚠️ Tradução falhou]: '{text}' — {e}")
+        return text
+
 def translate_pt_to_en(text):
     return GoogleTranslator(source='pt', target='en').translate(text)
 

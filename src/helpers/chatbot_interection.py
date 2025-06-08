@@ -8,9 +8,14 @@ import re
 from sklearn.metrics.pairwise import cosine_similarity
 from transformers import pipeline, AutoTokenizer, AutoModelForSeq2SeqLM, AutoModelForCausalLM
 from helpers.classification_score_intent import map_score_to_label
+from utils.detect_language import identify_language, translate_pt_to_en, translate_auto_to_en, translate_text
+
 
 from pathlib import Path
 base_path = Path(__file__).resolve().parents[2]
+
+output_path = join(base_path, 'output')
+df = pd.read_csv(join(output_path, "digital_transformation_maturity2.csv"))
 
 # Inicialize os pipelines (uma vez)
 rephrase_pipe = pipeline("text2text-generation", model="Vamsi/T5_Paraphrase_Paws")
@@ -40,6 +45,21 @@ for word in FORBIDDEN_WORDS:
 
 UNIQUE_BAD_IDS = list(set(bad_word_ids))
 BAD_WORDS_IDS = [[id] for id in UNIQUE_BAD_IDS]
+
+# Carrega os modelos salvos
+def load_models():
+    intent_model_path = join(base_path, "model_train", "model_train_intent", "version1",
+                             "regressão_logística_maturity_model.pkl")
+    maturity_model_path = join(base_path, "model_train", "model_train_maturity_score", "version1",
+                               "regressão_logística_maturity_model.pkl")
+
+    intent_model = joblib.load(intent_model_path)
+    maturity_model = joblib.load(maturity_model_path)
+
+    return intent_model, maturity_model
+
+
+intent_model, maturity_model = load_models()
 
 def prepare_semantic_search(df):
     corpus = df["text_clean"].tolist()
@@ -80,19 +100,6 @@ def improve_question(question):
     sims = util.cos_sim(original_vec, candidate_vecs)[0]
     best_idx = torch.argmin(sims).item()
     return candidates[best_idx]
-
-
-# Carrega os modelos salvos
-def load_models():
-    intent_model_path = join(base_path, "model_train", "model_train_intent", "version1",
-                             "regressão_logística_maturity_model.pkl")
-    maturity_model_path = join(base_path, "model_train", "model_train_maturity_score", "version1",
-                               "regressão_logística_maturity_model.pkl")
-
-    intent_model = joblib.load(intent_model_path)
-    maturity_model = joblib.load(maturity_model_path)
-
-    return intent_model, maturity_model
 
 
 def extract_relevant_snippets(text, query, model, window_size=300, top_n=3):
@@ -362,6 +369,32 @@ def get_context(query, tfidf_vectorizer, tfidf_matrix, embed_model, embeddings, 
 
     return combined['text'].tolist()
 
+def conversation_chatbot(user_input):
+    df['text_clean'] = df['text']
+
+    user_input = translate_text(user_input, 'en')
+
+    tfidf_vectorizer, tfidf_matrix, embed_model, embeddings = prepare_semantic_search(df)
+    user_input = improve_question(user_input)
+
+    predicted_intent = intent_model.predict([user_input])[0]
+    predicted_maturity = maturity_model.predict([user_input])[0]
+
+    print(f"\n🎯 Intenção Detectada: {predicted_intent}")
+    print(f"📈 Nível de Maturidade: {predicted_maturity}")
+
+    print("\n🔍 Resultados mais relevantes (semânticos):")
+    # results = semantic_search(user_input, embed_model, embeddings, df)
+
+    retrieved_texts = get_context(user_input, tfidf_vectorizer, tfidf_matrix, embed_model, embeddings, df)
+
+    context = build_context(retrieved_texts, user_input, max_tokens=1500)
+
+    # retrieved_texts = results['text'].tolist()
+    response = generate_answer(predicted_intent, predicted_maturity, context, user_input)
+    response = response.replace('\n', ' ').strip()
+    response = translate_text(response, 'pt')
+    return response
 
 # Token huggface: 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
 # Função do chatbot
