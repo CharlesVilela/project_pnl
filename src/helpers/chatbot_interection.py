@@ -22,6 +22,7 @@ rephrase_pipe = pipeline("text2text-generation", model="Vamsi/T5_Paraphrase_Paws
 tokenizer = AutoTokenizer.from_pretrained("google/flan-t5-base")
 model_for_seqlm = AutoModelForSeq2SeqLM.from_pretrained("google/flan-t5-base")
 embed_model_transformer = SentenceTransformer("paraphrase-mpnet-base-v2")
+embed_model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # model_name_llama = "meta-llama/Llama-2-7b-chat-hf"
 # tokenizer_llama = AutoTokenizer.from_pretrained(model_name_llama)
@@ -66,7 +67,7 @@ def prepare_semantic_search(df):
     tfidf_vectorizer = TfidfVectorizer(stop_words='english')
     tfidf_matrix = tfidf_vectorizer.fit_transform(corpus)
 
-    embed_model = SentenceTransformer('all-MiniLM-L6-v2')
+    
     embeddings = embed_model.encode(corpus, convert_to_tensor=True)
 
     return tfidf_vectorizer, tfidf_matrix, embed_model, embeddings
@@ -379,15 +380,9 @@ def conversation_chatbot(user_input):
 
     predicted_intent = intent_model.predict([user_input])[0]
     predicted_maturity = maturity_model.predict([user_input])[0]
-
-    print(f"\n🎯 Intenção Detectada: {predicted_intent}")
-    print(f"📈 Nível de Maturidade: {predicted_maturity}")
-
-    print("\n🔍 Resultados mais relevantes (semânticos):")
     # results = semantic_search(user_input, embed_model, embeddings, df)
 
     retrieved_texts = get_context(user_input, tfidf_vectorizer, tfidf_matrix, embed_model, embeddings, df)
-
     context = build_context(retrieved_texts, user_input, max_tokens=1500)
 
     # retrieved_texts = results['text'].tolist()
