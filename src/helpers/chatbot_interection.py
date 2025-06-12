@@ -9,7 +9,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from transformers import pipeline, AutoTokenizer, AutoModelForSeq2SeqLM, AutoModelForCausalLM
 from helpers.classification_score_intent import map_score_to_label
 from utils.detect_language import identify_language, translate_pt_to_en, translate_auto_to_en, translate_text
-
+import streamlit as st
 
 from pathlib import Path
 base_path = Path(__file__).resolve().parents[2]
@@ -47,6 +47,7 @@ for word in FORBIDDEN_WORDS:
 UNIQUE_BAD_IDS = list(set(bad_word_ids))
 BAD_WORDS_IDS = [[id] for id in UNIQUE_BAD_IDS]
 
+@st.cache_resource
 # Carrega os modelos salvos
 def load_models():
     intent_model_path = join(base_path, "model_train", "model_train_intent", "version1",
@@ -371,25 +372,29 @@ def get_context(query, tfidf_vectorizer, tfidf_matrix, embed_model, embeddings, 
     return combined['text'].tolist()
 
 def conversation_chatbot(user_input):
-    df['text_clean'] = df['text']
+    try:
+        df['text_clean'] = df['text']
 
-    user_input = translate_text(user_input, 'en')
+        user_input = translate_text(user_input, 'en')
 
-    tfidf_vectorizer, tfidf_matrix, embed_model, embeddings = prepare_semantic_search(df)
-    user_input = improve_question(user_input)
+        tfidf_vectorizer, tfidf_matrix, embed_model, embeddings = prepare_semantic_search(df)
+        user_input = improve_question(user_input)
 
-    predicted_intent = intent_model.predict([user_input])[0]
-    predicted_maturity = maturity_model.predict([user_input])[0]
-    # results = semantic_search(user_input, embed_model, embeddings, df)
+        predicted_intent = intent_model.predict([user_input])[0]
+        predicted_maturity = maturity_model.predict([user_input])[0]
+        # results = semantic_search(user_input, embed_model, embeddings, df)
 
-    retrieved_texts = get_context(user_input, tfidf_vectorizer, tfidf_matrix, embed_model, embeddings, df)
-    context = build_context(retrieved_texts, user_input, max_tokens=1500)
+        retrieved_texts = get_context(user_input, tfidf_vectorizer, tfidf_matrix, embed_model, embeddings, df)
+        context = build_context(retrieved_texts, user_input, max_tokens=1500)
 
-    # retrieved_texts = results['text'].tolist()
-    response = generate_answer(predicted_intent, predicted_maturity, context, user_input)
-    response = response.replace('\n', ' ').strip()
-    response = translate_text(response, 'pt')
-    return response
+        # retrieved_texts = results['text'].tolist()
+        response = generate_answer(predicted_intent, predicted_maturity, context, user_input)
+        response = response.replace('\n', ' ').strip()
+        response = translate_text(response, 'pt')
+        return response
+    except Exception as e:
+        st.error("Erro ao gerar resposta.")
+        st.exception(e)
 
 # Token huggface: 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
 # Função do chatbot
