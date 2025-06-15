@@ -208,3 +208,372 @@ Transformation Public Administration      0.000     0.000     0.000         2
                         weighted avg      0.924     0.926     0.917      4085
 
 ============================================================
+| ### The Model: Naive Bayes ### |
+              precision    recall  f1-score   support
+
+     average      0.000     0.000     0.000        70
+        high      0.916     0.990     0.951      8894
+         low      0.827     0.388     0.528      1218
+
+    accuracy                          0.911     10182
+   macro avg      0.581     0.459     0.493     10182
+weighted avg      0.899     0.911     0.894     10182
+
+============================================================
+| ### The Model: Logistic Regression ### |
+              precision    recall  f1-score   support
+
+     average      0.800     0.171     0.282        70
+        high      0.954     0.976     0.965      8894
+         low      0.790     0.690     0.737      1218
+
+    accuracy                          0.937     10182
+   macro avg      0.848     0.613     0.661     10182
+weighted avg      0.933     0.937     0.933     10182
+
+============================================================
+| ### The Model: Random Forest ### |
+              precision    recall  f1-score   support
+
+     average      0.909     0.286     0.435        70
+        high      0.969     0.975     0.972      8894
+         low      0.811     0.802     0.807      1218
+
+    accuracy                          0.950     10182
+   macro avg      0.896     0.688     0.738     10182
+weighted avg      0.950     0.950     0.949     10182
+
+============================================================
+| ### The Model: Naive Bayes ### |
+                                      precision    recall  f1-score   support
+
+       Assess Digital Transformation      0.000     0.000     0.000         1
+           Business Model Innovation      0.000     0.000     0.000        14
+       Business Model Transformation      0.000     0.000     0.000         2
+        Digital Platforms Ecosystems      0.000     0.000     0.000         1
+                    Digital Strategy      0.000     0.000     0.000         8
+              Digital Transformation      0.000     0.000     0.000         7
+   Digital Transformation Leadership      0.000     0.000     0.000         4
+      Digital Transformation Ongoing      0.000     0.000     0.000         2
+Digital Transformation Organisations      0.000     0.000     0.000         2
+     Digital Transformation Research      0.000     0.000     0.000         4
+   Digital Transformation Strategies      0.000     0.000     0.000         6
+        Disruptive Innovation Theory      0.000     0.000     0.000        10
+           Distributed Manufacturing      0.000     0.000     0.000         3
+                               Et Al      0.828     0.559     0.667       558
+                     Grounded Theory      0.000     0.000     0.000         5
+                    Industry Digital      0.000     0.000     0.000         1
+                  Innovation Digital      0.000     0.000     0.000         1
+               Organizational Change      0.909     0.345     0.500       899
+             Sloan Management Review      1.000     0.021     0.041        48
+           Sustainability Affects Dt      0.000     0.000     0.000         1
+   Transformation Digital Innovation      0.000     0.000     0.000        37
+Transformation Public Administration      0.000     0.000     0.000         2
+                Wiley Online Library      1.000     0.750     0.857        24
+             artificial intelligence      1.000     0.060     0.113       251
+                      business_model      0.000     0.000     0.000         1
+                 customer_experience      0.000     0.000     0.000        82
+                  data_and_analytics      1.000     0.047     0.090       128
+              digital_infrastructure      0.000     0.000     0.000        31
+                  digital_operations      0.000     0.000     0.000         1
+                    governance_risks      0.000     0.000     0.000        13
+         organizational_architecture      0.000     0.000     0.000        22
+                              others      0.840     0.990     0.909      7996
+                talent_and_education      0.000     0.000     0.000        16
+
+                            accuracy                          0.843     10181
+                           macro avg      0.199     0.084     0.096     10181
+                        weighted avg      0.830     0.843     0.801     10181
+
+============================================================
+| ### The Model: Logistic Regression ### |
+                                      precision    recall  f1-score   support
+
+       Assess Digital Transformation      0.000     0.000     0.000         1
+           Business Model Innovation      1.000     0.071     0.133        14
+       Business Model Transformation      0.000     0.000     0.000         2
+        Digital Platforms Ecosystems      0.000     0.000     0.000         1
+                    Digital Strategy      0.000     0.000     0.000         8
+              Digital Transformation      0.000     0.000     0.000         7
+   Digital Transformation Leadership      0.000     0.000     0.000         4
+      Digital Transformation Ongoing      0.000     0.000     0.000         2
+Digital Transformation Organisations      0.000     0.000     0.000         2
+     Digital Transformation Research      0.000     0.000     0.000         4
+   Digital Transformation Strategies      0.000     0.000     0.000         6
+        Disruptive Innovation Theory      0.000     0.000     0.000        10
+           Distributed Manufacturing      0.000     0.000     0.000         3
+                               Et Al      0.901     0.787     0.840       558
+                     Grounded Theory      0.000     0.000     0.000         5
+                    Industry Digital      0.000     0.000     0.000         1
+                  Innovation Digital      0.000     0.000     0.000         1
+               Organizational Change      0.844     0.833     0.839       899
+             Sloan Management Review      0.848     0.583     0.691        48
+           Sustainability Affects Dt      0.000     0.000     0.000         1
+   Transformation Digital Innovation      1.000     0.189     0.318        37
+Transformation Public Administration      0.000     0.000     0.000         2
+                Wiley Online Library      0.957     0.917     0.936        24
+             artificial intelligence      0.935     0.693     0.796       251
+                      business_model      0.000     0.000     0.000         1
+                 customer_experience      0.848     0.476     0.609        82
+                  data_and_analytics      0.821     0.609     0.700       128
+              digital_infrastructure      0.842     0.516     0.640        31
+                  digital_operations      0.000     0.000     0.000         1
+                    governance_risks      0.000     0.000     0.000        13
+         organizational_architecture      1.000     0.091     0.167        22
+                              others      0.936     0.982     0.959      7996
+                talent_and_education      1.000     0.375     0.545        16
+
+                            accuracy                          0.925     10181
+                           macro avg      0.362     0.216     0.248     10181
+                        weighted avg      0.917     0.925     0.917     10181
+
+============================================================
+| ### The Model: Random Forest ### |
+                                      precision    recall  f1-score   support
+
+       Assess Digital Transformation      0.000     0.000     0.000         1
+           Business Model Innovation      1.000     0.214     0.353        14
+       Business Model Transformation      0.000     0.000     0.000         2
+        Digital Platforms Ecosystems      0.000     0.000     0.000         1
+                    Digital Strategy      0.500     0.125     0.200         8
+              Digital Transformation      1.000     0.143     0.250         7
+   Digital Transformation Leadership      0.000     0.000     0.000         4
+      Digital Transformation Ongoing      0.000     0.000     0.000         2
+Digital Transformation Organisations      1.000     0.500     0.667         2
+     Digital Transformation Research      0.000     0.000     0.000         4
+   Digital Transformation Strategies      1.000     0.333     0.500         6
+        Disruptive Innovation Theory      1.000     0.100     0.182        10
+           Distributed Manufacturing      1.000     0.333     0.500         3
+                               Et Al      0.884     0.987     0.933       558
+                     Grounded Theory      1.000     0.200     0.333         5
+                    Industry Digital      1.000     1.000     1.000         1
+                  Innovation Digital      0.000     0.000     0.000         1
+               Organizational Change      0.861     0.933     0.895       899
+             Sloan Management Review      0.795     0.646     0.713        48
+           Sustainability Affects Dt      1.000     1.000     1.000         1
+   Transformation Digital Innovation      1.000     0.432     0.604        37
+Transformation Public Administration      0.000     0.000     0.000         2
+                Wiley Online Library      0.923     1.000     0.960        24
+             artificial intelligence      0.947     0.853     0.897       251
+                      business_model      0.000     0.000     0.000         1
+                 customer_experience      0.898     0.537     0.672        82
+                  data_and_analytics      0.850     0.797     0.823       128
+              digital_infrastructure      0.913     0.677     0.778        31
+                  digital_operations      0.000     0.000     0.000         1
+                    governance_risks      1.000     0.077     0.143        13
+         organizational_architecture      1.000     0.091     0.167        22
+                              others      0.971     0.979     0.975      7996
+                talent_and_education      1.000     0.375     0.545        16
+
+                            accuracy                          0.952     10181
+                           macro avg      0.653     0.374     0.427     10181
+                        weighted avg      0.951     0.952     0.947     10181
+
+============================================================
+| ### The Model: Naive Bayes ### |
+              precision    recall  f1-score   support
+
+     average      0.000     0.000     0.000        70
+        high      0.916     0.990     0.951      8894
+         low      0.827     0.388     0.528      1218
+
+    accuracy                          0.911     10182
+   macro avg      0.581     0.459     0.493     10182
+weighted avg      0.899     0.911     0.894     10182
+
+============================================================
+| ### The Model: Logistic Regression ### |
+              precision    recall  f1-score   support
+
+     average      0.800     0.171     0.282        70
+        high      0.954     0.976     0.965      8894
+         low      0.790     0.690     0.737      1218
+
+    accuracy                          0.937     10182
+   macro avg      0.848     0.613     0.661     10182
+weighted avg      0.933     0.937     0.933     10182
+
+============================================================
+| ### The Model: Random Forest ### |
+              precision    recall  f1-score   support
+
+     average      0.952     0.286     0.440        70
+        high      0.968     0.977     0.972      8894
+         low      0.816     0.795     0.805      1218
+
+    accuracy                          0.950     10182
+   macro avg      0.912     0.686     0.739     10182
+weighted avg      0.949     0.950     0.948     10182
+
+============================================================
+| ### The Model: Naive Bayes ### |
+                                      precision    recall  f1-score   support
+
+       Assess Digital Transformation      0.000     0.000     0.000         1
+           Business Model Innovation      0.000     0.000     0.000        14
+       Business Model Transformation      0.000     0.000     0.000         2
+        Digital Platforms Ecosystems      0.000     0.000     0.000         1
+                    Digital Strategy      0.000     0.000     0.000         8
+              Digital Transformation      0.000     0.000     0.000         7
+   Digital Transformation Leadership      0.000     0.000     0.000         4
+      Digital Transformation Ongoing      0.000     0.000     0.000         2
+Digital Transformation Organisations      0.000     0.000     0.000         2
+     Digital Transformation Research      0.000     0.000     0.000         4
+   Digital Transformation Strategies      0.000     0.000     0.000         6
+        Disruptive Innovation Theory      0.000     0.000     0.000        10
+           Distributed Manufacturing      0.000     0.000     0.000         3
+                               Et Al      0.828     0.559     0.667       558
+                     Grounded Theory      0.000     0.000     0.000         5
+                    Industry Digital      0.000     0.000     0.000         1
+                  Innovation Digital      0.000     0.000     0.000         1
+               Organizational Change      0.909     0.345     0.500       899
+             Sloan Management Review      1.000     0.021     0.041        48
+           Sustainability Affects Dt      0.000     0.000     0.000         1
+   Transformation Digital Innovation      0.000     0.000     0.000        37
+Transformation Public Administration      0.000     0.000     0.000         2
+                Wiley Online Library      1.000     0.750     0.857        24
+             artificial intelligence      1.000     0.060     0.113       251
+                      business_model      0.000     0.000     0.000         1
+                 customer_experience      0.000     0.000     0.000        82
+                  data_and_analytics      1.000     0.047     0.090       128
+              digital_infrastructure      0.000     0.000     0.000        31
+                  digital_operations      0.000     0.000     0.000         1
+                    governance_risks      0.000     0.000     0.000        13
+         organizational_architecture      0.000     0.000     0.000        22
+                              others      0.840     0.990     0.909      7996
+                talent_and_education      0.000     0.000     0.000        16
+
+                            accuracy                          0.843     10181
+                           macro avg      0.199     0.084     0.096     10181
+                        weighted avg      0.830     0.843     0.801     10181
+
+============================================================
+| ### The Model: Logistic Regression ### |
+                                      precision    recall  f1-score   support
+
+       Assess Digital Transformation      0.000     0.000     0.000         1
+           Business Model Innovation      1.000     0.071     0.133        14
+       Business Model Transformation      0.000     0.000     0.000         2
+        Digital Platforms Ecosystems      0.000     0.000     0.000         1
+                    Digital Strategy      0.000     0.000     0.000         8
+              Digital Transformation      0.000     0.000     0.000         7
+   Digital Transformation Leadership      0.000     0.000     0.000         4
+      Digital Transformation Ongoing      0.000     0.000     0.000         2
+Digital Transformation Organisations      0.000     0.000     0.000         2
+     Digital Transformation Research      0.000     0.000     0.000         4
+   Digital Transformation Strategies      0.000     0.000     0.000         6
+        Disruptive Innovation Theory      0.000     0.000     0.000        10
+           Distributed Manufacturing      0.000     0.000     0.000         3
+                               Et Al      0.901     0.787     0.840       558
+                     Grounded Theory      0.000     0.000     0.000         5
+                    Industry Digital      0.000     0.000     0.000         1
+                  Innovation Digital      0.000     0.000     0.000         1
+               Organizational Change      0.844     0.833     0.839       899
+             Sloan Management Review      0.848     0.583     0.691        48
+           Sustainability Affects Dt      0.000     0.000     0.000         1
+   Transformation Digital Innovation      1.000     0.189     0.318        37
+Transformation Public Administration      0.000     0.000     0.000         2
+                Wiley Online Library      0.957     0.917     0.936        24
+             artificial intelligence      0.935     0.693     0.796       251
+                      business_model      0.000     0.000     0.000         1
+                 customer_experience      0.848     0.476     0.609        82
+                  data_and_analytics      0.821     0.609     0.700       128
+              digital_infrastructure      0.842     0.516     0.640        31
+                  digital_operations      0.000     0.000     0.000         1
+                    governance_risks      0.000     0.000     0.000        13
+         organizational_architecture      1.000     0.091     0.167        22
+                              others      0.936     0.982     0.959      7996
+                talent_and_education      1.000     0.375     0.545        16
+
+                            accuracy                          0.925     10181
+                           macro avg      0.362     0.216     0.248     10181
+                        weighted avg      0.917     0.925     0.917     10181
+
+============================================================
+| ### The Model: Random Forest ### |
+                                      precision    recall  f1-score   support
+
+       Assess Digital Transformation      0.000     0.000     0.000         1
+           Business Model Innovation      0.750     0.214     0.333        14
+       Business Model Transformation      0.000     0.000     0.000         2
+        Digital Platforms Ecosystems      0.000     0.000     0.000         1
+                    Digital Strategy      0.500     0.125     0.200         8
+              Digital Transformation      1.000     0.143     0.250         7
+   Digital Transformation Leadership      0.000     0.000     0.000         4
+      Digital Transformation Ongoing      0.000     0.000     0.000         2
+Digital Transformation Organisations      1.000     0.500     0.667         2
+     Digital Transformation Research      0.000     0.000     0.000         4
+   Digital Transformation Strategies      1.000     0.333     0.500         6
+        Disruptive Innovation Theory      0.000     0.000     0.000        10
+           Distributed Manufacturing      1.000     0.333     0.500         3
+                               Et Al      0.879     0.987     0.930       558
+                     Grounded Theory      1.000     0.200     0.333         5
+                    Industry Digital      1.000     1.000     1.000         1
+                  Innovation Digital      0.000     0.000     0.000         1
+               Organizational Change      0.867     0.930     0.897       899
+             Sloan Management Review      0.805     0.688     0.742        48
+           Sustainability Affects Dt      1.000     1.000     1.000         1
+   Transformation Digital Innovation      1.000     0.432     0.604        37
+Transformation Public Administration      0.000     0.000     0.000         2
+                Wiley Online Library      0.923     1.000     0.960        24
+             artificial intelligence      0.959     0.845     0.898       251
+                      business_model      0.000     0.000     0.000         1
+                 customer_experience      0.857     0.585     0.696        82
+                  data_and_analytics      0.861     0.727     0.788       128
+              digital_infrastructure      0.880     0.710     0.786        31
+                  digital_operations      0.000     0.000     0.000         1
+                    governance_risks      1.000     0.077     0.143        13
+         organizational_architecture      1.000     0.091     0.167        22
+                              others      0.970     0.980     0.975      7996
+                talent_and_education      1.000     0.375     0.545        16
+
+                            accuracy                          0.952     10181
+                           macro avg      0.614     0.372     0.422     10181
+                        weighted avg      0.949     0.952     0.947     10181
+
+============================================================
+| ### The Model: Naive Bayes ### |
+                               precision    recall  f1-score   support
+
+              Business Models      1.000     0.013     0.025       236
+           Culture and People      0.884     0.305     0.454       426
+          Customer Experience      1.000     0.081     0.151       221
+        Operational Processes      1.000     0.020     0.038       102
+Technology and Infrastructure      0.884     0.471     0.614      1931
+                Uncategorized      0.805     0.995     0.890      7266
+
+                     accuracy                          0.814     10182
+                    macro avg      0.929     0.314     0.362     10182
+                 weighted avg      0.834     0.814     0.775     10182
+
+============================================================
+| ### The Model: Logistic Regression ### |
+                               precision    recall  f1-score   support
+
+              Business Models      0.752     0.386     0.510       236
+           Culture and People      0.892     0.779     0.832       426
+          Customer Experience      0.890     0.588     0.708       221
+        Operational Processes      0.839     0.255     0.391       102
+Technology and Infrastructure      0.916     0.691     0.788      1931
+                Uncategorized      0.894     0.992     0.941      7266
+
+                     accuracy                          0.896     10182
+                    macro avg      0.864     0.615     0.695     10182
+                 weighted avg      0.895     0.896     0.887     10182
+
+============================================================
+| ### The Model: Random Forest ### |
+                               precision    recall  f1-score   support
+
+              Business Models      0.941     0.407     0.568       236
+           Culture and People      0.898     0.908     0.903       426
+          Customer Experience      0.932     0.679     0.785       221
+        Operational Processes      0.972     0.343     0.507       102
+Technology and Infrastructure      0.943     0.726     0.820      1931
+                Uncategorized      0.908     0.996     0.950      7266
+
+                     accuracy                          0.914     10182
+                    macro avg      0.932     0.676     0.756     10182
+                 weighted avg      0.916     0.914     0.907     10182
+
+============================================================

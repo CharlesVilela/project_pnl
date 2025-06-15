@@ -23,7 +23,10 @@ import joblib
 
 from helpers.entity_extraction import extract_entities, add_custom_entities, load_nlp_with_patterns
 from helpers.preprocess import load_spacy_model, preprocess_with_spacy
-from helpers.classifier import build_pipeline, train_intent_classifier
+from helpers.classifier import build_pipeline, train_intent_classifier, build_pipeline_complete
+from helpers.classification_score_intent import map_score_to_label
+
+from dao import connection_bd
 
 # Exemplo de estrutura real de dados (adaptar para seu contexto):
 real_data = {
@@ -41,12 +44,15 @@ real_data = {
 
 def process():
 
-    base_path = "C:\Projetos\chatbot_with_pln"
-    input_path = join(base_path, 'input')
-    output_path = join(base_path, 'output')
+    # base_path = "C:\Projetos\chatbot_with_pln"
+    # input_path = join(base_path, 'input')
+    # output_path = join(base_path, 'output')
 
-    df = pd.read_csv(join(output_path, "digital_transformation_maturity2.csv"))
+    # df = pd.read_csv(join(output_path, "digital_transformation_maturity2.csv"))
     # df = pd.DataFrame(real_data)
+
+    raw_data = connection_bd.find_all()
+    data = pd.DataFrame(raw_data)
 
     # Configurações iniciais
     nltk.download('stopwords')
@@ -56,12 +62,20 @@ def process():
 
     # # 1. Pré-processamento
     print("🛠️ Pré-processando documentos...")
-    processed_tokens = preprocess_with_spacy(df["text"], nlp)
-    df["text_clean"] = [' '.join(tokens) for tokens in processed_tokens]
+    processed_tokens = preprocess_with_spacy(data["text"], nlp)
+    data["text_clean"] = [' '.join(tokens) for tokens in processed_tokens]
 
-    print(df['maturity_score'].value_counts())
+    print(data['maturity_score'].value_counts())
 
-    build_pipeline(df)
-    train_intent_classifier(df)
+    data['maturity_label'] = data['maturity_score'].apply(map_score_to_label)
+    build_pipeline_complete(data['text_clean'],data['maturity_label'], "model_train_maturity_score")
+
+    intent_counts = data['intent'].value_counts()
+    valid_intents = intent_counts[intent_counts >= 2].index
+    df_filtered = data[data['intent'].isin(valid_intents)]
+    build_pipeline_complete(df_filtered['text'], df_filtered['intent'], "model_train_intent")
+
+    
+    build_pipeline_complete(data['text'],data['category'], "model_train_category")
     
     print("| ### ✅ Finishing the process... ### |")

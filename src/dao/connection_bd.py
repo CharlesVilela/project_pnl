@@ -21,3 +21,10 @@ def connection_bd():
         print("❌ Erro ao conectar ao MongoDB Atlas:", e)
 
 
+def find_all():
+    collection = connection_bd()
+
+    # Converte o cursor em uma lista de dicionários
+    return list(collection.find({}))
+
+

@@ -2,27 +2,23 @@ import streamlit as st
 import time
 from queue import Queue
 from collections import deque
-from helpers.chatbot_interection import conversation_chatbot
+from helpers.chatbot_interection import conversation_chatbot, load_resources
+from dao  import connection_bd
+import pandas as pd
 
 
 def historic():
-     # Exibir todas as interações exceto a última resposta do assistente
-    for i, message in enumerate(st.session_state.chatbot_responses):
-        if i == len(st.session_state.chatbot_responses) - 1 and message["role"] == "assistant":
-            break  # pula a última resposta do assistente para exibir incrementalmente
-
+    # Exibe todo o histórico
+    for message in st.session_state.chatbot_responses:
         if message["role"] == "assistant":
-            if message.get("avatar"):
-                st.image(message["avatar"], width=50)
-            else:
-                st.chat_message(message["role"])
-            for content in message["content"]:
-                if content["type"] == "text":
-                    st.write(content["text"])
-                elif content["type"] == "audio_file":
-                    st.audio(content["audio_file"])
+            with st.chat_message("assistant"):
+                for content in message["content"]:
+                    if content["type"] == "text":
+                        st.write(content["text"])
+                    elif content["type"] == "audio_file":
+                        st.audio(content["audio_file"])
         else:
-            with st.chat_message(message["role"]):
+            with st.chat_message("user"):
                 for content in message["content"]:
                     if content["type"] == "text":
                         st.write(content["text"])
@@ -31,56 +27,69 @@ def historic():
 
 
 def display_incremental_response(text):
-    """Mostra resposta de forma incremental como o ChatGPT."""
     with st.chat_message("assistant"):
         placeholder = st.empty()
         full_text = ""
-        for chunk in text.split():  # ou use 'for char in text' para caractere a caractere
+        for chunk in text.split():
             full_text += chunk + " "
             placeholder.markdown(full_text + "▌")
             time.sleep(0.05)
         placeholder.markdown(full_text)
+    return full_text
+
+
+@st.cache_data(show_spinner="Carregando dados do banco...")
+def load_bd():
+    bd = connection_bd.find_all()
+    return pd.DataFrame(bd)
+
 
 def main():
     st.title("TransforMind 🎈")
 
-    # Inicializar a fila de mensagens se ainda não existir
-    if 'chatbot_responses' not in st.session_state:
+    # Inicializações
+    if "resources" not in st.session_state:
+        df = load_bd()
+        st.session_state.df = df
+        with st.spinner("Preparando modelos..."):
+            st.session_state.resources = load_resources(df)
+
+    if "chatbot_responses" not in st.session_state:
         st.session_state.chatbot_responses = deque()
-    
+
+    # Mostra histórico antes de gerar nova resposta
     historic()
 
     # Entrada do usuário
-    if (prompt := st.chat_input("Me pergunte algo.")):
-        isPrimary_question = False
-        
-        # ✅ Mostra a pergunta do usuário imediatamente na interface
+    prompt = st.chat_input("Me pergunte algo.")
+
+    # Se houve nova pergunta
+    if prompt:
+        # Mostrar pergunta imediatamente
         with st.chat_message("user"):
             st.write(prompt)
-        
-        with st.spinner("Hummmm... Deixe-me pensar"):
-            # Formatar a data e hora sem caracteres inválidos
-          response = conversation_chatbot(prompt)
 
-        # ✅ Mostra a resposta do assistente com efeito incremental
-        display_incremental_response(response)
-
-        # ✅ Agora sim, salva pergunta e resposta no histórico para exibição futura
+        # Adicionar pergunta no histórico
         st.session_state.chatbot_responses.append({
             "role": "user",
-            "content": [{
-                "type": "text",
-                "text": prompt,
-            }]
+            "content": [{"type": "text", "text": prompt}]
         })
+
+        # Gerar resposta
+        with st.spinner("Gerando..."):
+            response = conversation_chatbot(prompt, st.session_state.df, st.session_state.resources)
+
+        # Exibir resposta incrementalmente
+        full_response = display_incremental_response(response)
+
+        # Adicionar resposta no histórico
         st.session_state.chatbot_responses.append({
             "role": "assistant",
-            "content": [{
-                "type": "text",
-                "text": response,
-            }]
+            "content": [{"type": "text", "text": full_response}]
         })
-        
 
-if __name__ == '__main__':
+        st.rerun()
+
+
+if __name__ == "__main__":
     main()

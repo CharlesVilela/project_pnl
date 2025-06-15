@@ -14,25 +14,15 @@ import streamlit as st
 from pathlib import Path
 base_path = Path(__file__).resolve().parents[2]
 
-output_path = join(base_path, 'output')
-df = pd.read_csv(join(output_path, "digital_transformation_maturity2.csv"))
+# output_path = join(base_path, 'output')
+# df = pd.read_csv(join(output_path, "digital_transformation_maturity2.csv"))
 
 # Inicialize os pipelines (uma vez)
 rephrase_pipe = pipeline("text2text-generation", model="Vamsi/T5_Paraphrase_Paws")
-tokenizer = AutoTokenizer.from_pretrained("google/flan-t5-base")
+tokenizer = AutoTokenizer.from_pretrained("google/flan-t5-base",legacy=True)
 model_for_seqlm = AutoModelForSeq2SeqLM.from_pretrained("google/flan-t5-base")
 embed_model_transformer = SentenceTransformer("paraphrase-mpnet-base-v2")
 embed_model = SentenceTransformer('all-MiniLM-L6-v2')
-
-# model_name_llama = "meta-llama/Llama-2-7b-chat-hf"
-# tokenizer_llama = AutoTokenizer.from_pretrained(model_name_llama)
-# model_llama = AutoModelForCausalLM.from_pretrained(
-#     model_name_llama,
-#     device_map="auto",  # envia para GPU se disponível
-#     torch_dtype=torch.float16,
-#     load_in_4bit=True  # usa quantização para caber em GPUs menores
-# )
-
 
 # Pré-calcular os IDs proibidos uma vez (fora da função)
 FORBIDDEN_WORDS = ["survey", "study", "research", "report", "data", "percent", "%",
@@ -57,20 +47,13 @@ def load_models():
 
     intent_model = joblib.load(intent_model_path)
     maturity_model = joblib.load(maturity_model_path)
-
     return intent_model, maturity_model
 
-
-intent_model, maturity_model = load_models()
-
 def prepare_semantic_search(df):
-    corpus = df["text_clean"].tolist()
+    corpus = df["text"].tolist()
     tfidf_vectorizer = TfidfVectorizer(stop_words='english')
     tfidf_matrix = tfidf_vectorizer.fit_transform(corpus)
-
-    
     embeddings = embed_model.encode(corpus, convert_to_tensor=True)
-
     return tfidf_vectorizer, tfidf_matrix, embed_model, embeddings
 
 
@@ -108,7 +91,6 @@ def extract_relevant_snippets(text, query, model, window_size=300, top_n=3):
     """Extrai trechos mais relevantes usando similaridade com a consulta"""
     words = text.split()
     snippets = []
-
     # Divide o texto em janelas
     for i in range(0, len(words), window_size // 2):
         window = " ".join(words[i:i + window_size])
@@ -116,7 +98,6 @@ def extract_relevant_snippets(text, query, model, window_size=300, top_n=3):
         query_embed = model.encode(query)
         similarity = util.pytorch_cos_sim(query_embed, window_embed).item()
         snippets.append((window, similarity))
-
     # Seleciona os trechos mais relevantes
     snippets.sort(key=lambda x: x[1], reverse=True)
     return [s[0] for s in snippets[:top_n]]
@@ -174,26 +155,22 @@ def prompt_format(intent, maturity, context, question):
            - A **context**: optional insights from documents, research, or prior conversation relevant to the question.
 
        Your job is to provide a clear, well-structured, and insightful answer that helps guide the user.
-
+        |||| START STRUCTURE ||||
        Structure your response like this:
-
        1. **Strategic Importance**  
           Explain why the intent/topic is critical in the broader context of digital transformation.
-
        2. **Maturity-Based Guidance**  
           Tailor your response to the organization’s maturity level.  
           - For *Emerging* organizations: Focus on awareness, foundation building, and early steps.  
           - For *Developing*: Emphasize integration, consistency, and internal alignment.  
           - For *Maturing*: Highlight optimization, scalability, and performance.  
           - For *Leading*: Encourage innovation, ecosystem orchestration, and competitive differentiation.
-
        3. **Practical Recommendations**  
           Give actionable guidance, concrete examples, or tools/methods that can be applied in this area.
-
        4. **Cross-Dimensional Insight**  
           If relevant, explain how this dimension connects with others (e.g., how culture enables customer experience, or how tech supports operations).
-
        Use a professional, consultative tone. Avoid generic advice. Make your recommendations practical and tailored to the scenario.
+       |||| END STRUCTURE ||||
 
        Intent: {intent}
        Maturity Level: {maturity}
@@ -259,8 +236,8 @@ def generate_answer(intent, maturity, retrieved_texts, question):
     # context = filter_context(context)
 
     prompt = prompt_format(intent, maturity, context, question)
-
     inputs = tokenizer(prompt, return_tensors="pt", truncation=True)
+    
     outputs = model_for_seqlm.generate(
         **inputs,
         max_length=600,
@@ -269,8 +246,8 @@ def generate_answer(intent, maturity, retrieved_texts, question):
         top_k=50,
         top_p=0.92,
         repetition_penalty=1.5,
-        num_beams=4,
-        do_sample=True,
+        num_beams=3,
+        do_sample=False,
         no_repeat_ngram_size=3,
         early_stopping=True
         # num_return_sequences=1
@@ -336,18 +313,18 @@ def postprocess_response(response):
 
 # Aumentar top_k e combinar TF-IDF + Semântica
 def get_context(query, tfidf_vectorizer, tfidf_matrix, embed_model, embeddings, df, top_k=15, min_similarity=0.4):
-    # Busca semântica com mais resultados
-    sem_results = semantic_search(query, embed_model, embeddings, df, top_k=top_k)
+    # # Busca semântica com mais resultados
+    # sem_results = semantic_search(query, embed_model, embeddings, df, top_k=top_k)
 
     # Busca TF-IDF com mais resultados
     tfidf_results = tfidf_search(query, tfidf_vectorizer, tfidf_matrix, df, top_k=top_k)
 
     # Adiciona colunas de similaridade manualmente
-    sem_results['semantic_similarity'] = [hit['score'] for hit in util.semantic_search(
-        embed_model.encode(query, convert_to_tensor=True),
-        embeddings,
-        top_k=top_k
-    )[0]]
+    # sem_results['semantic_similarity'] = [hit['score'] for hit in util.semantic_search(
+    #     embed_model.encode(query, convert_to_tensor=True),
+    #     embeddings,
+    #     top_k=top_k
+    # )[0]]
 
     tfidf_results['tfidf_similarity'] = cosine_similarity(
         tfidf_vectorizer.transform([query]),
@@ -355,11 +332,15 @@ def get_context(query, tfidf_vectorizer, tfidf_matrix, embed_model, embeddings, 
     ).flatten()
 
     # Combina e remove duplicatas
-    combined = pd.concat([sem_results, tfidf_results]).drop_duplicates(subset=['text'])
+    combined = pd.concat([tfidf_results]).drop_duplicates(subset=['text'])
 
     # Calcula score combinado
+    # combined['combined_score'] = combined.apply(
+    #     lambda row: (row['semantic_similarity'] * 0.7 + row['tfidf_similarity'] * 0.3),
+    #     axis=1
+    # )
     combined['combined_score'] = combined.apply(
-        lambda row: (row['semantic_similarity'] * 0.7 + row['tfidf_similarity'] * 0.3),
+        lambda row: (row['tfidf_similarity'] * 0.3),
         axis=1
     )
 
@@ -371,21 +352,44 @@ def get_context(query, tfidf_vectorizer, tfidf_matrix, embed_model, embeddings, 
 
     return combined['text'].tolist()
 
-def conversation_chatbot(user_input):
-    try:
-        df['text_clean'] = df['text']
+@st.cache_resource
+def load_resources(df):
+    # Carregar tudo uma única vez
+    tfidf_vectorizer, tfidf_matrix, embed_model, embeddings = prepare_semantic_search(df)
+    intent_model, maturity_model = load_models()
+    return {
+        "tfidf": (tfidf_vectorizer, tfidf_matrix),
+        "embeddings": (embed_model, embeddings),
+        "models": (intent_model, maturity_model)
+    }
 
+def conversation_chatbot(user_input, df, resources):
+    try:
+        tfidf_vectorizer, tfidf_matrix = resources["tfidf"]
+        embed_model, embeddings = resources["embeddings"]
+        intent_model, maturity_model = resources["models"]
+
+        # Traduzir a pergunta do usuario
+        df['text_clean'] = df['text']
         user_input = translate_text(user_input, 'en')
 
-        tfidf_vectorizer, tfidf_matrix, embed_model, embeddings = prepare_semantic_search(df)
+        # tfidf_vectorizer, tfidf_matrix, embed_model, embeddings = prepare_semantic_search(df)
+        
+        # Melhorar a pergunta do usuario
         user_input = improve_question(user_input)
 
-        predicted_intent = intent_model.predict([user_input])[0]
-        predicted_maturity = maturity_model.predict([user_input])[0]
-        # results = semantic_search(user_input, embed_model, embeddings, df)
+        # Busca otimizada com FAISS
+        # query_emb = embed_model.encode(user_input, convert_to_tensor=True).cpu().numpy()
+        # query_emb = query_emb.reshape(1, -1).astype('float32')
+        # distances, indices = faiss_index.search(query_emb, 3)
 
+        # Obter textos relevantes
         retrieved_texts = get_context(user_input, tfidf_vectorizer, tfidf_matrix, embed_model, embeddings, df)
         context = build_context(retrieved_texts, user_input, max_tokens=1500)
+
+        # Classificação
+        predicted_intent = intent_model.predict([user_input])[0]
+        predicted_maturity = maturity_model.predict([user_input])[0]
 
         # retrieved_texts = results['text'].tolist()
         response = generate_answer(predicted_intent, predicted_maturity, context, user_input)
@@ -433,7 +437,6 @@ def chatbot_loop(df):
 
 # ANOTAÇÕES
 # MODELOS NER
-
 # Whispers tiny (Para trancrever os textos em audios ou vise-versa)
 # Idea de fluxo:
 # [1] Inicio

@@ -72,6 +72,31 @@ def create_matriz_confusion(predictions, y_test, name_model, type_train, output_
     plt.savefig(filepath, dpi=300, bbox_inches='tight')
 
 
+def build_pipeline_complete(x, y, type_train):
+    
+    # 2. Dividir treino/teste
+    X_train, X_test, y_train, y_test = train_test_split(
+        x, y, test_size=0.25, random_state=42, stratify=y
+    )
+
+    # Modelos para testar
+    models = [
+        (MultinomialNB(), "Naive Bayes"),
+        (LogisticRegression(max_iter=1000), "Logistic Regression"),
+        (RandomForestClassifier(n_estimators=100), "Random Forest")
+    ]
+
+    output_dir = create_directory_matrix(type_train, type_directory="image", base_name="matrices")
+    version_directory = create_directory_matrix(type_train, type_directory="model_train", base_name="version")
+    # Treino e avaliação
+    for model, name in models:
+        predictions = train_and_evaluate(model, name, X_train, X_test, y_train, y_test,type_train,version_directory)
+        create_matriz_confusion(predictions, y_test, name, type_train,output_dir)
+        print(f"| ### The Model: {name} ### |")
+        print(classification_report(y_test, predictions, digits=3))
+        save_classification_report(name, y_test, predictions)
+
+
 def build_pipeline(df):
 
     df['maturity_label'] = df['maturity_score'].apply(map_score_to_label)
@@ -134,7 +159,6 @@ def train_intent_classifier(df):
         print(f"| ### The Model: {name} ### |")
         print(classification_report(y_test, predictions, digits=3))
         save_classification_report(name, y_test, predictions)
-
 
 # Função de avaliação modificada para incluir métricas
 def train_and_evaluate(model, model_name, x_train, x_test, y_train, y_test, type_train,version_directory):
