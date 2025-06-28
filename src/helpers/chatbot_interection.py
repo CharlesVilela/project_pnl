@@ -20,8 +20,8 @@ base_path = Path(__file__).resolve().parents[2]
 # Inicialize os pipelines (uma vez)
 rephrase_pipe = pipeline("text2text-generation", model="Vamsi/T5_Paraphrase_Paws")
 tokenizer = AutoTokenizer.from_pretrained("google/flan-t5-base",legacy=True)
-model_for_seqlm = AutoModelForSeq2SeqLM.from_pretrained("google/flan-t5-base")
-embed_model_transformer = SentenceTransformer("paraphrase-mpnet-base-v2")
+model_for_seqlm = AutoModelForSeq2SeqLM.from_pretrained("google/flan-t5-base", torch_dtype=torch.float16)
+embed_model_transformer = SentenceTransformer("paraphrase-mpnet-base-v2", device='cuda' if torch.cuda.is_available() else 'cpu')
 embed_model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # Pré-calcular os IDs proibidos uma vez (fora da função)
@@ -376,12 +376,7 @@ def conversation_chatbot(user_input, df, resources):
         # tfidf_vectorizer, tfidf_matrix, embed_model, embeddings = prepare_semantic_search(df)
         
         # Melhorar a pergunta do usuario
-        user_input = improve_question(user_input)
-
-        # Busca otimizada com FAISS
-        # query_emb = embed_model.encode(user_input, convert_to_tensor=True).cpu().numpy()
-        # query_emb = query_emb.reshape(1, -1).astype('float32')
-        # distances, indices = faiss_index.search(query_emb, 3)
+        # user_input = improve_question(user_input)
 
         # Obter textos relevantes
         retrieved_texts = get_context(user_input, tfidf_vectorizer, tfidf_matrix, embed_model, embeddings, df)
