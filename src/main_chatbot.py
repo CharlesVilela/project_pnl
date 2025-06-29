@@ -5,7 +5,7 @@ from datetime import datetime
 from queue import Queue
 from collections import deque
 from helpers.chatbot_interection import conversation_chatbot, load_resources
-from helpers.audio import transcrever_audio
+from helpers.audio import transcrever_audio, texto_para_audio
 from helpers.audio import GravadorAudio
 from dao  import connection_bd
 from utils import similarity_text, interaction
@@ -79,6 +79,9 @@ def main():
     
     with st.sidebar:
         st.title("Test side bar ")
+
+        on = st.toggle("Ativar respostas em audio")
+
         # Botões de controle
         col1, col2 = st.columns([1, 3])
 
@@ -175,14 +178,28 @@ def main():
         time_in_seconds = delta.total_seconds()
         interaction.log_interaction(prompt, response, isQuestionAudio, isResponseAudio, time_in_seconds)
 
-        # Exibir resposta incrementalmente
-        full_response = display_incremental_response(response)
+        # Checa se a conversão para áudio está ativada
+        if on:
+            # audio_path = f"script\\output\\audio_output_{st.session_state['user_id']}_{timestamp}.wav"
+            audio = texto_para_audio(response)
+            st.session_state.chatbot_responses.append({
+                    "role": "assistant",
+                    "content":[{
+                        "type": "audio_file",
+                        "audio_file": audio,
+                    }]
+                })
 
-        # Adicionar resposta no histórico
-        st.session_state.chatbot_responses.append({
-            "role": "assistant",
-            "content": [{"type": "text", "text": full_response}]
-        })
+            isResponseAudio = True
+        else:
+            # Exibir resposta incrementalmente
+            full_response = display_incremental_response(response)
+
+            # Adicionar resposta no histórico
+            st.session_state.chatbot_responses.append({
+                "role": "assistant",
+                "content": [{"type": "text", "text": full_response}]
+            })
 
         st.rerun()
 

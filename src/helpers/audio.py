@@ -6,6 +6,10 @@ import numpy as np
 import sounddevice as sd
 import whisper
 import queue
+from gtts import gTTS
+import io
+import edge_tts
+import asyncio
 
 # =======================
 # ⚙️ CONFIGURAÇÕES GERAIS
@@ -112,3 +116,26 @@ def transcrever_audio(audio_array):
     print("📝 Transcrição:", texto)
     print("⏱ Tempo áudio:", tempo_audio, "Tempo transcrição:", tempo_transcricao)
     return texto, tempo_audio, tempo_transcricao
+
+
+async def texto_para_audio_edge(texto):
+    communicate = edge_tts.Communicate(texto, "pt-BR-AntonioNeural")  # Exemplo voz masculina
+    audio_fp = io.BytesIO()
+    async for chunk in communicate.stream():
+        if chunk["type"] == "audio":
+            audio_fp.write(chunk["data"])
+    audio_fp.seek(0)
+    return audio_fp
+
+# def texto_para_audio(texto):
+#     if not texto.strip():
+#         return None
+    
+#     tts = gTTS(text=texto, lang='pt-br')
+#     audio_fp = io.BytesIO()
+#     tts.write_to_fp(audio_fp)
+#     audio_fp.seek(0)
+#     return audio_fp
+
+def texto_para_audio(texto):
+    return asyncio.run(texto_para_audio_edge(texto))

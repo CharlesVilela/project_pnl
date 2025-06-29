@@ -6,6 +6,10 @@ import numpy as np
 import sounddevice as sd
 import whisper
 import queue
+from gtts import gTTS
+import io
+import edge_tts
+import asyncio
 
 # =======================
 # ⚙️ CONFIGURAÇÕES GERAIS
@@ -113,6 +117,29 @@ def transcrever_audio(audio_array):
     print("⏱ Tempo áudio:", tempo_audio, "Tempo transcrição:", tempo_transcricao)
     return texto, tempo_audio, tempo_transcricao
 
+async def texto_para_audio_edge(texto):
+    communicate = edge_tts.Communicate(texto, "pt-BR-AntonioNeural")  # Exemplo voz masculina
+    audio_fp = io.BytesIO()
+    async for chunk in communicate.stream():
+        if chunk["type"] == "audio":
+            audio_fp.write(chunk["data"])
+    audio_fp.seek(0)
+    return audio_fp
+
+# def texto_para_audio(texto):
+#     if not texto.strip():
+#         return None
+    
+#     tts = gTTS(text=texto, lang='pt-br')
+#     audio_fp = io.BytesIO()
+#     tts.write_to_fp(audio_fp)
+#     audio_fp.seek(0)
+#     return audio_fp
+
+def texto_para_audio(texto):
+    return asyncio.run(texto_para_audio_edge(texto))
+
+
 # =====================
 # 🌐 INTERFACE STREAMLIT
 # =====================
@@ -177,6 +204,11 @@ def main():
                    f"**Velocidade:** {st.session_state.tempo_audio/st.session_state.tempo_transcricao:.1f}x")
 
         st.caption(f"🕒 **Timestamp:** {st.session_state.timestamp.strftime('%d/%m/%Y %H:%M:%S')}")
+
+        # Converter texto em áudio
+        audio_fp = texto_para_audio(st.session_state.ultima_transcricao)
+        if audio_fp:
+            st.audio(audio_fp, format="audio/mp3")
 
 if __name__ == "__main__":
     main()

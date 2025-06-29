@@ -21,7 +21,8 @@ base_path = Path(__file__).resolve().parents[2]
 rephrase_pipe = pipeline("text2text-generation", model="Vamsi/T5_Paraphrase_Paws")
 tokenizer = AutoTokenizer.from_pretrained("google/flan-t5-base",legacy=True)
 model_for_seqlm = AutoModelForSeq2SeqLM.from_pretrained("google/flan-t5-base", torch_dtype=torch.float16)
-embed_model_transformer = SentenceTransformer("paraphrase-mpnet-base-v2", device='cuda' if torch.cuda.is_available() else 'cpu')
+# embed_model_transformer = SentenceTransformer("paraphrase-mpnet-base-v2", device='cuda' if torch.cuda.is_available() else 'cpu')
+embed_model_transformer = SentenceTransformer("paraphrase-mpnet-base-v2")
 embed_model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # Pré-calcular os IDs proibidos uma vez (fora da função)
