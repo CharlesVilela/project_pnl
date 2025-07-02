@@ -322,7 +322,7 @@ Indique se está:
 
 ## 💡 **12. Futuras Implementações**
 
-Liste melhorias ou próximos passos:
+Melhorias ou próximos passos:
 
 * Treinar modelos maiores para geração de resposta
 * Deploy em nuvem (AWS, GCP)
