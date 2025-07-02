@@ -93,47 +93,73 @@ Liste as principais tecnologias utilizadas:
 
 * **Linguagem:** Python 3.9.13
 * **Bibliotecas:**
-> accelerate==1.4.0
-datasets==3.3.2
-decorator==5.2.1
-deep-translator==1.11.4
-huggingface-hub==0.29.1
-joblib==1.4.2
-keybert==0.9.0
-langcodes==3.5.0
-langid==1.1.6
-language_data==1.3.0
-matplotlib==3.9.4
-matplotlib-inline==0.1.7
-nltk==3.9.1
-numpy==1.26.4
-pandas==2.2.3
-spacy==3.8.7
-en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
-pt-core-news-sm @ https://github.com/explosion/spacy-models/releases/download/pt_core_news_sm-3.8.0/pt_core_news_sm-3.8.0-py3-none-any.whl
-pyLDAvis==3.4.1
-pyparsing==3.2.3
-PyPDF2==3.0.1
-python-dateutil==2.9.0.post0
-python-dotenv==1.0.1
-python-json-logger==3.2.1
-pytz==2025.1
-regex==2024.11.6
-scikit-learn==1.6.1
-scipy==1.10.1
-seaborn==0.13.2
-sentence-transformers==3.4.1
-sentencepiece==0.2.0
-spacy-legacy==3.0.12
-spacy-loggers==1.0.5
-transformers==4.41.0
-torch==2.3.0
-pymongo==4.13.0
+---
 
-# Streamlit e utilidades
-streamlit==1.36.0
-plotly==5.22.0
+1. ### **Pacotes de NLP e Transformers**
 
+   * `accelerate==1.4.0`
+   * `transformers==4.41.0`
+   * `sentence-transformers==3.4.1`
+   * `sentencepiece==0.2.0`
+   * `keybert==0.9.0`
+   * `deep-translator==1.11.4`
+   * `langid==1.1.6`
+   * `langcodes==3.5.0`
+   * `huggingface-hub==0.29.1`
+   * `datasets==3.3.2`
+
+2. ### **Spacy e modelos**
+
+   * `spacy==3.8.7`
+   * `en-core-web-sm`
+     [Baixar modelo](https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl)
+   * `pt-core-news-sm`
+     [Baixar modelo](https://github.com/explosion/spacy-models/releases/download/pt_core_news_sm-3.8.0/pt_core_news_sm-3.8.0-py3-none-any.whl)
+   * `spacy-legacy==3.0.12`
+   * `spacy-loggers==1.0.5`
+
+3. ### **Pré-processamento e NLP Clássico**
+
+   * `nltk==3.9.1`
+   * `regex==2024.11.6`
+
+4. ### **Machine Learning**
+
+   * `scikit-learn==1.6.1`
+   * `scipy==1.10.1`
+   * `joblib==1.4.2`
+   * `torch==2.3.0`
+
+5. ### **Visualização de Dados**
+
+   * `matplotlib==3.9.4`
+   * `matplotlib-inline==0.1.7`
+   * `seaborn==0.13.2`
+   * `plotly==5.22.0`
+   * `pyLDAvis==3.4.1`
+
+6. ### **Manipulação de Dados**
+
+   * `numpy==1.26.4`
+   * `pandas==2.2.3`
+
+7. ### **Streamlit e Utilitários Web**
+
+   * `streamlit==1.36.0`
+   * `python-dotenv==1.0.1`
+
+8. ### **Outros Utilitários**
+
+   * `decorator==5.2.1`
+   * `python-json-logger==3.2.1`
+   * `python-dateutil==2.9.0.post0`
+   * `pytz==2025.1`
+   * `pyparsing==3.2.3`
+   * `PyPDF2==3.0.1`
+   * `pymongo==4.13.0`
+   * `language_data==1.3.0`
+
+---
 
 * **Modelos:** BERT, T5, Word2Vec, SentenceTransformers
 * **Outros:** Docker, Git, VSCode, etc.
