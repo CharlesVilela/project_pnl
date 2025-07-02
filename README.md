@@ -197,18 +197,6 @@ Inclua exemplos reais de interação:
 
 ---
 
-## 🔬 **8. Dataset**
-
-Descreva a base de dados utilizada:
-
-* Fonte dos dados (artigos, whitepapers, bases públicas)
-* Processos de limpeza e preparação
-* Estrutura de intents e categorias
-
-Segue a **estrutura formatada em Markdown** para inserir no seu README de forma clara, organizada e profissional:
-
----
-
 ## 📊 **8. Dataset**
 
 Como não foi encontrada uma base pública pronta, foi criada uma **base de dados própria** utilizando:
@@ -240,6 +228,17 @@ Como não foi encontrada uma base pública pronta, foi criada uma **base de dado
 | `metadata`       | Informações adicionais (fonte, data, autor, etc)                 |
 
 
+### ** O armazenamento **
+Para o armazenamento dos dados foi utilizado o banco de dados ** MongoDB Atlas **. Por conta:
+
+  1. Escalabilidade e Flexibilidade
+    * MongoDB Atlas oferece escalabilidade horizontal automática, permitindo o armazenamento de grandes volumes de dados não estruturados ou semiestruturados sem restrições rigidas de esquema
+  2. Modelo de dados Natural para documentos NLP
+    * Utiliza o formato JSON-like (BSON), que se adapta a documentos de conhecimento, resultados de inferências, classificações de intents e entities, eliminando a necessidade de múltiplas tabelas relacionais complexas.
+  3. Fácil integração com aplicações Python
+    * Com bibliotecas como pymongo e conectores nativos, a integração com o pipeline de processamento de linguagem natural é direta, permitindo armazenar e consultar resultados de forma rápida.
+  4. Disponibilidade Multi-Cloud
+    * Permite deploy em diferentes provedores e regiões, aumentando a flexibilidade e aderência a estratégias corporativas multicloud.
 
 ---
 
