@@ -94,6 +94,7 @@ Organização dos arquivos e pastas. Exemplo:
 └── LICENSE                            # Licença de uso
 
 
+
 ---
 
 ## 🧠 **5. Tecnologias e Ferramentas**
