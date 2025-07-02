@@ -292,6 +292,7 @@ O objetivo da utilização do cache de interações é otimizar o tempo de respo
 ## 📊 **9. Metodologia**
 
 - A base de dados foi criada manualmente por meio de artigos baseados em Maturidade digital. Com isso, o sistema conta com uma base de conhecimento fundamental em maturidade digital, que foi aprimorado com tecnicas de aprendizado de maquina (ML) e redes neurais para melhorar a classificação do modelo.
+  
 - Utilizado para o desenvolvimento desse chatbot:
   - Natural Lanaguage Undestanding - (NLU)
   - Natural Language Generation - (NLG) 
@@ -332,21 +333,6 @@ Melhorias ou próximos passos:
 * Deploy em nuvem (AWS, GCP)
 * Melhorar integração com plataformas de atendimento ao cliente
 * Dashboard de analytics de interação
-
----
-
-## 📝 **13. Licença**
-
-Declare a licença de uso (ex: MIT, Apache 2.0).
-
----
-
-## 📫 **14. Contato**
-
-Para dúvidas, sugestões ou contribuições, inclua:
-
-* Email de contato
-* Outras formas de comunicação (Issues no GitHub, etc.)
 
 ---
 
