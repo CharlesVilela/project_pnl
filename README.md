@@ -223,17 +223,19 @@ Exemplos reais de interação:
 
 ---
 
-## ☁ **8. O armazenamento **
+## ☁ **8. O armazenamento**
 Para o armazenamento dos dados foi utilizado o banco de dados **MongoDB Atlas**. Por conta:
 
-  1. Escalabilidade e Flexibilidade
-    * MongoDB Atlas oferece escalabilidade horizontal automática, permitindo o armazenamento de grandes volumes de dados não estruturados ou semiestruturados sem restrições rigidas de esquema
-  2. Modelo de dados Natural para documentos NLP
-    * Utiliza o formato JSON-like (BSON), que se adapta a documentos de conhecimento, resultados de inferências, classificações de intents e entities, eliminando a necessidade de múltiplas tabelas relacionais complexas.
-  3. Fácil integração com aplicações Python
-    * Com bibliotecas como pymongo e conectores nativos, a integração com o pipeline de processamento de linguagem natural é direta, permitindo armazenar e consultar resultados de forma rápida.
-  4. Disponibilidade Multi-Cloud
-    * Permite deploy em diferentes provedores e regiões, aumentando a flexibilidade e aderência a estratégias corporativas multicloud.
+  1. **Escalabilidade e Flexibilidade:**
+    MongoDB Atlas oferece escalabilidade horizontal automática, permitindo o armazenamento de grandes volumes de dados não estruturados ou semiestruturados sem restrições rigidas de esquema
+
+  2. **Modelo de dados Natural para documentos NLP:**
+    Utiliza o formato JSON-like (BSON), que se adapta a documentos de conhecimento, resultados de inferências, classificações de intents e entities, eliminando a necessidade de múltiplas tabelas relacionais complexas.
+
+  3. **Fácil integração com aplicações Python:**
+    Com bibliotecas como pymongo e conectores nativos, a integração com o pipeline de processamento de linguagem natural é direta, permitindo armazenar e consultar resultados de forma rápida.
+  4. **Disponibilidade Multi-Cloud:**
+    Permite deploy em diferentes provedores e regiões, aumentando a flexibilidade e aderência a estratégias corporativas multicloud.
 
 O banco de dados se divide em dois tipos de dados: o primeiro utilizado para o treinamento do modelo e consulta do contexto para a geração de resposta do chatbot; e o segundo que armazena um cache de interações dos usuários que é utilizado para otimizar o tempo de resposta do chatbot.
 
