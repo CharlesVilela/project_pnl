@@ -41,7 +41,7 @@ Usar as tecnicas e ferramentas de Processamento de Linguagem Natural (PLN) para 
 
 ## 🔧 **3. Funcionalidades**
 
-Liste as principais funcionalidades implementadas:
+Principais funcionalidades implementadas:
 
 * Responder perguntas sobre transformação digital
 * Classificação de intents (ex: customer experience, processos, cultura)
@@ -53,7 +53,7 @@ Liste as principais funcionalidades implementadas:
 
 ## 🏗️ **4. Estrutura do Projeto**
 
-Descreva a organização dos arquivos e pastas. Exemplo:
+Organização dos arquivos e pastas. Exemplo:
 
 ```
 /chatbot_transformacao_digital
@@ -190,7 +190,7 @@ Passo a passo para execução local:
 
 ## 🧪 **7. Exemplos de Uso**
 
-Inclua exemplos reais de interação:
+Exemplos reais de interação:
 
 > **Usuário:** O que é transformação digital?<br>
 > **Chatbot:** Transformação digital é a integração de tecnologias digitais em todas as áreas de um negócio, mudando fundamentalmente como você opera e entrega valor aos clientes...
@@ -199,7 +199,7 @@ Inclua exemplos reais de interação:
 
 ## 🔬 **8. Dataset**
 
-Descreva a base de dados utilizada:
+Base de dados utilizada:
 
 * Fonte dos dados (artigos, whitepapers, bases públicas)
 * Processos de limpeza e preparação
@@ -250,7 +250,7 @@ Como não foi encontrada uma base pública pronta, foi criada uma **base de dado
   - Natural Lanaguage Undestanding - (NLU)
   - Natural Language Generation - (NLG) 
 
-Explique brevemente a abordagem:
+ Abordagem explicada:
 
 * Pré-processamento (tokenização, stopwords)
 * Vetorização ou embeddings utilizados
@@ -261,9 +261,10 @@ Explique brevemente a abordagem:
 
 ## 👥 **10. Contribuidores**
 
-Liste os membros do projeto com links para GitHub/LinkedIn, ex:
+Os membros do projeto:
 
 * **Charles Vilela** – [GitHub](https://github.com/charlesvilela) | [LinkedIn](https://linkedin.com/in/charlesvilela)
+* **Gabriel Lima** – [GitHub](https://github.com/charlesvilela) | [LinkedIn](https://linkedin.com/in/charlesvilela)
 
 ---
 
