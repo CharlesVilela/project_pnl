@@ -13,37 +13,36 @@ Segue uma **estrutura completa e organizada** para seu README de um projeto de c
 
 ---
 
-# 📝 **README – Chatbot: Transformação Digital**
+# **README – Chatbot: TransformMind**
 
-## 📌 **1. Título do Projeto**
+## **1. Título do Projeto**
 
 > **Exemplo:** Chatbot TransformMind
 
-> Um chatbot inteligente para responder dúvidas sobre transformação digital, maturidade digital, tecnologias emergentes e estratégias organizacionais.
+Um chatbot inteligente para responder dúvidas sobre transformação digital, maturidade digital, tecnologias emergentes e estratégias organizacionais.
 
 ---
 
-## 🎯 **2. Descrição Geral**
+## **2. Descrição Geral**
+ 
+### O que?
 
-Explique o propósito do projeto:
-
-* O que?
->A transformação digital tornou-se um fator determinante para a competitividade e inovação nas organizações. No entanto, avaliar o nível de maturidade digital de uma empresa ainda é um desafio complexo, que requer a análise de múltiplos fatores, como cultura organizacional, adoção de tecnologia, processos e estratégias.
+A transformação digital tornou-se um fator determinante para a competitividade e inovação nas organizações. No entanto, avaliar o nível de maturidade digital de uma empresa ainda é um desafio complexo, que requer a análise de múltiplos fatores, como cultura organizacional, adoção de tecnologia, processos e estratégias.
 
 Este projeto propõe o desenvolvimento de um chatbot para interagir com usuários e avaliar o nível de maturidade digital de suas organizações com base em parâmetros estruturados previamente definidos por meio de pesquisa.
 
-* Por que?
-> Atualmente, a avaliação da maturidade digital é feita por diagnósticos manuais, consultorias especializadas ou questionários extensos, sendo processos custosos, demorados e subjetivos. Muitas organizações não possuem recursos ou conhecimento suficiente para realizar uma autoavaliação eficaz. Um chatbot automatiza essa tarefa, oferecendo:
+
+### Por que?
+
+Atualmente, a avaliação da maturidade digital é feita por diagnósticos manuais, consultorias especializadas ou questionários extensos, sendo processos custosos, demorados e subjetivos. Muitas organizações não possuem recursos ou conhecimento suficiente para realizar uma autoavaliação eficaz. Um chatbot automatiza essa tarefa, oferecendo:
 
  - Experiência interativa e acessível
  - Autoavaliação rápida
  - Resultados baseados em dados e ontologias validadas
 
-Como?
+### Como?
 
-* Como?
-
-> O chatbot utiliza técnicas de Processamento de Linguagem Natural (PLN), incluindo:
+O chatbot utiliza técnicas de Processamento de Linguagem Natural (PLN), incluindo:
 
 NLU (Natural Language Understanding) para compreensão do usuário
 
