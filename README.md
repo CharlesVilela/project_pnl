@@ -1,18 +1,3 @@
-# ChatBot - Maturidade digital 
-
-#### Metodologia 
-
-- A base de dados foi criada manualmente por meio de artigos baseados em Maturidade digital. Com isso, o sistema conta com uma base de conhecimento fundamental em maturidade digital, que foi aprimorado com tecnicas de aprendizado de maquina (ML) e redes neurais para melhorar a classificação do modelo.
-- Utilizado para o desenvolvimento desse chatbot:
-  - Natural Lanaguage Undestanding - (NLU)
-  - Natural Language Generation - (NLG) 
-
-
-
-Segue uma **estrutura completa e organizada** para seu README de um projeto de chatbot sobre **Transformação Digital**, adequada para clareza técnica, gestão de stakeholders e boas práticas de repositórios profissionais:
-
----
-
 # **README – Chatbot: TransformMind**
 
 ## **1. TransformMind**
@@ -216,6 +201,11 @@ Descreva a base de dados utilizada:
 ---
 
 ## 📊 **9. Metodologia**
+
+- A base de dados foi criada manualmente por meio de artigos baseados em Maturidade digital. Com isso, o sistema conta com uma base de conhecimento fundamental em maturidade digital, que foi aprimorado com tecnicas de aprendizado de maquina (ML) e redes neurais para melhorar a classificação do modelo.
+- Utilizado para o desenvolvimento desse chatbot:
+  - Natural Lanaguage Undestanding - (NLU)
+  - Natural Language Generation - (NLG) 
 
 Explique brevemente a abordagem:
 
