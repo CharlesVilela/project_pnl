@@ -53,8 +53,9 @@ Principais funcionalidades implementadas:
 
 ## 🏗️ **4. Estrutura do Projeto**
 
-Organização dos arquivos e pastas. Exemplo:
+Organização dos arquivos e pastas:
 
+```
 /chatbot_transformacao_digital
 │
 ├── data/                               # Bases de conhecimento e datasets
@@ -93,7 +94,7 @@ Organização dos arquivos e pastas. Exemplo:
 ├── README.md                          # Documentação geral
 └── LICENSE                            # Licença de uso
 
-
+```
 
 ---
 
