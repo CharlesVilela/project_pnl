@@ -74,7 +74,7 @@ Descreva a organização dos arquivos e pastas. Exemplo:
 
 ## 🧠 **5. Tecnologias e Ferramentas**
 
-Liste as principais tecnologias utilizadas:
+As principais tecnologias utilizadas:
 
 * **Linguagem:** Python 3.9.13
 * **Bibliotecas:**
@@ -146,8 +146,15 @@ Liste as principais tecnologias utilizadas:
 
 ---
 
-* **Modelos:** BERT, T5, Word2Vec, SentenceTransformers
-* **Outros:** Docker, Git, VSCode, etc.
+* **Modelos:**
+
+    * `Vamsi/T5_Paraphrase_Paws`
+    * `google/flan-t5-base`
+    * `paraphrase-mpnet-base-v2`
+    * `all-MiniLM-L6-v2`
+    * `BERT`
+
+* **Outros:** Git e VSCode.
 
 ---
 
@@ -197,6 +204,42 @@ Descreva a base de dados utilizada:
 * Fonte dos dados (artigos, whitepapers, bases públicas)
 * Processos de limpeza e preparação
 * Estrutura de intents e categorias
+
+Segue a **estrutura formatada em Markdown** para inserir no seu README de forma clara, organizada e profissional:
+
+---
+
+## 📊 **8. Dataset**
+
+Como não foi encontrada uma base pública pronta, foi criada uma **base de dados própria** utilizando:
+
+### 🔎 **Fontes**
+
+1. **Artigos acadêmicos**
+
+   * *Exemplo:* **Digital transformation: What we have learned (thus far) and what is next** – Consensus
+
+---
+
+### 🌐 **Sites consultados**
+
+* [Google Academico](https://scholar.google.com/?hl=pt-BR)
+* [Consensus](https://consensus.app/search/)
+
+---
+
+### 🗃️ **Estrutura da base de dados**
+
+| **Campo**        | **Descrição**                                                    |
+| ---------------- | ---------------------------------------------------------------- |
+| `text`           | Pergunta, afirmação ou trecho relevante extraído                 |
+| `intent`         | Intenção comunicativa do texto                                   |
+| `maturity_score` | Grau de maturidade digital (0 a 1)                               |
+| `entities`       | Lista de entidades nomeadas (ex: organizações, pessoas, locais)  |
+| `category`       | Classificação geral (ex: arquitetura organizacional, estratégia) |
+| `metadata`       | Informações adicionais (fonte, data, autor, etc)                 |
+
+
 
 ---
 
