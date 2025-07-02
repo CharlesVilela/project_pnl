@@ -205,8 +205,6 @@ Base de dados utilizada:
 * Processos de limpeza e preparação
 * Estrutura de intents e categorias
 
-Segue a **estrutura formatada em Markdown** para inserir no seu README de forma clara, organizada e profissional:
-
 ---
 
 ## 📊 **8. Dataset**
