@@ -262,7 +262,7 @@ Como não foi encontrada uma base pública pronta, foi criada uma **base de dado
 Os membros do projeto:
 
 * **Charles Vilela** – [GitHub](https://github.com/charlesvilela) | [LinkedIn](https://linkedin.com/in/charlesvilela)
-* **Gabriel Lima** – [GitHub](https://github.com/charlesvilela) | [LinkedIn](https://linkedin.com/in/charlesvilela)
+* **Gabriel Lima** – [GitHub](https://github.com/Gabs19) | [LinkedIn](https://www.linkedin.com/in/gabriel-lima-861181168/)
 
 ---
 
