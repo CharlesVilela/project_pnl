@@ -55,20 +55,44 @@ Principais funcionalidades implementadas:
 
 Organização dos arquivos e pastas. Exemplo:
 
-```
 /chatbot_transformacao_digital
 │
-├── data/                 # Bases de conhecimento e datasets
-├── models/               # Modelos treinados
-├── notebooks/            # Análises exploratórias e experimentos
-├── src/                  # Código-fonte principal
-│   ├── preprocessing/    # Pré-processamento de dados
-│   ├── nlp/              # Funções de NLP
-│   └── app.py            # Aplicação principal
-├── requirements.txt      # Dependências do projeto
-├── README.md             # Documentação geral
-└── LICENSE               # Licença de uso
-```
+├── data/                               # Bases de conhecimento e datasets
+├── documents/                      # Documentos brutos (PDFs, artigos, relatórios)
+├── input/                          # Arquivos de entrada para processamento
+├── output/                         # Resultados processados e datasets finais
+│
+├── model_train/                        # Diretório de modelos treinados organizados
+│   ├── model_train_category/
+│   │   └── versions/                   # Versões de modelos de classificação de categoria
+│   ├── model_train_intent/
+│   │   └── versions/                   # Versões de modelos de classificação de intents
+│   └── model_train_maturity_score/
+│       └── versions/                   # Versões de modelos de maturidade digital
+│
+├── image/                              # Imagens geradas, plots de treinamento e resultados
+│   ├── model_train_category/
+│   │   └── versions/                   # Gráficos do treinamento do modelo de categoria
+│   ├── model_train_intent/
+│   │   └── versions/                   # Gráficos do treinamento do modelo de intents
+│   └── model_train_maturity_score/
+│       └── versions/                   # Gráficos do treinamento do modelo de maturidade digital
+│
+├── log/                                # Logs de execução e treinamentos
+│
+├── src/                                # Código-fonte principal
+│   ├── dao/                            # Data Access Objects (interfaces com banco de dados)
+│   ├── helpers/                        # Funções utilitárias gerais para o projeto
+│   ├── model/                          # Scripts de treinamento e avaliação de modelos
+│   ├── resource/                       # Arquivos de configuração, dicionários, mappings
+│   ├── utils/                          # Funções utilitárias específicas (ex: logs, formatação)
+│   ├── main.py                        # Script principal para execução geral do projeto (como extração de dados, treinamento dos modelos e teste das interações com os modelos)
+│   └── main_chatbot.py                # Script principal com a interface gráfica do chatbot (integrado o o streamlit)
+│
+├── requirements.txt                   # Dependências do projeto
+├── README.md                          # Documentação geral
+└── LICENSE                            # Licença de uso
+
 
 ---
 
