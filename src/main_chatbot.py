@@ -1,6 +1,7 @@
 import streamlit as st
 import time
 import uuid
+from io import BytesIO
 from datetime import datetime
 from queue import Queue
 from collections import deque
@@ -10,6 +11,7 @@ from helpers.audio import GravadorAudio
 from dao  import connection_bd
 from utils import similarity_text, interaction
 import pandas as pd
+import soundfile as sf
 
 
 def historic():
@@ -51,6 +53,8 @@ def load_bd():
 
 def main():
     st.title("TransforMind 🎈")
+    
+    audio_bk = None
 
     # Inicializações
     if "resources" not in st.session_state:
@@ -76,9 +80,15 @@ def main():
         st.session_state.tempo_transcricao = 0
     if 'timestamp' not in st.session_state:
         st.session_state.timestamp = None
+    if 'pergunta_isaudio' not in st.session_state:
+        st.session_state.pergunta_isaudio = False
+    if 'audio_gravado' not in st.session_state:
+        st.session_state.pergunta_isaudio = None
+    if 'ultimo_audio' not in st.session_state:
+        st.session_state.ultimo_audio = None
     
     with st.sidebar:
-        st.title("Test side bar ")
+        st.title("Opções:")
 
         on = st.toggle("Ativar respostas em audio")
 
@@ -104,27 +114,44 @@ def main():
         # Processar áudio após parar gravação
         if st.session_state.get("processar_audio"):
             audio_array, duracao = st.session_state.gravador.parar()
-            
+
+            # Converter para BytesIO em formato WAV
+            audio_buffer = BytesIO()
+            sf.write(audio_buffer, audio_array, 16000, format='wav')
+            audio_buffer.seek(0)
+
+            st.session_state.ultimo_audio = audio_buffer
             texto, tempo_audio, tempo_transcricao = transcrever_audio(audio_array)
             st.session_state.ultima_transcricao = texto
             st.session_state.tempo_audio = tempo_audio
             st.session_state.tempo_transcricao = tempo_transcricao
             st.session_state.timestamp = datetime.now()
+
+            # # Adiciona ao histórico
+            # st.session_state.chatbot_responses.append({
+            #     "role": "user",
+            #     "content": [{
+            #         "type": "audio_file",
+            #         "audio_file": audio_buffer,
+            #     }]
+            # })
+            
+            # st.session_state.pergunta_isaudio = True
             
             st.session_state["processar_audio"] = False
             st.rerun()
 
-        # Mostrar transcrição
-        if not st.session_state.gravador.gravando and st.session_state.ultima_transcricao:
-            st.divider()
-            st.subheader("📝 Transcrição:")
-            st.write(st.session_state.ultima_transcricao)
+        # # Mostrar transcrição
+        # if not st.session_state.gravador.gravando and st.session_state.ultima_transcricao:
+        #     st.divider()
+        #     st.subheader("📝 Transcrição:")
+        #     st.write(st.session_state.ultima_transcricao)
 
-            st.caption(f"⏱ **Duração do áudio:** {st.session_state.tempo_audio:.1f}s | "
-                    f"**Tempo de transcrição:** {st.session_state.tempo_transcricao:.1f}s | "
-                    f"**Velocidade:** {st.session_state.tempo_audio/st.session_state.tempo_transcricao:.1f}x")
+        #     st.caption(f"⏱ **Duração do áudio:** {st.session_state.tempo_audio:.1f}s | "
+        #             f"**Tempo de transcrição:** {st.session_state.tempo_transcricao:.1f}s | "
+        #             f"**Velocidade:** {st.session_state.tempo_audio/st.session_state.tempo_transcricao:.1f}x")
 
-            st.caption(f"🕒 **Timestamp:** {st.session_state.timestamp.strftime('%d/%m/%Y %H:%M:%S')}")
+        #     st.caption(f"🕒 **Timestamp:** {st.session_state.timestamp.strftime('%d/%m/%Y %H:%M:%S')}")
             
 
     # Mostra histórico antes de gerar nova resposta
@@ -136,24 +163,40 @@ def main():
     # Se houve entrada manual, prioriza ela; senão, usa transcrição se existir
     if user_input:
         prompt = user_input
+        is_audio = False
     elif st.session_state.ultima_transcricao:
         prompt = st.session_state.ultima_transcricao
         # Limpa a transcrição após usar
         st.session_state.ultima_transcricao = ""
+        is_audio = True
     else:
         prompt = None
+        is_audio = False
 
     # Se houve nova pergunta
     if prompt:
-        # Mostrar pergunta imediatamente
-        with st.chat_message("user"):
-            st.write(prompt)
-
-        # Adicionar pergunta no histórico
-        st.session_state.chatbot_responses.append({
-            "role": "user",
-            "content": [{"type": "text", "text": prompt}]
-        })
+        if is_audio:
+             # Adiciona SOMENTE o áudio ao histórico
+            with st.chat_message("user"):
+                st.audio(st.session_state.ultimo_audio)
+            
+            st.session_state.chatbot_responses.append({
+                "role": "user",
+                "content": [{
+                    "type": "audio_file",
+                    "audio_file": st.session_state.ultimo_audio,
+                }]
+            })
+            st.session_state.ultimo_audio = None
+        else:
+            # Mostrar pergunta imediatamente
+            with st.chat_message("user"):
+                st.write(prompt)
+            # Adicionar pergunta no histórico
+            st.session_state.chatbot_responses.append({
+                "role": "user",
+                "content": [{"type": "text", "text": prompt}]
+            })
 
         # Gerar resposta
         with st.spinner("Gerando..."):
