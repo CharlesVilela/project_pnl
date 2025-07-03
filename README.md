@@ -320,7 +320,46 @@ O objetivo da utilização do cache de interações é otimizar o tempo de respo
 
 ![Texto alternativo](https://drive.google.com/file/d/1Qif3Q8qZAhfI0Xr4HrYEWA6cnkq3nFil/view?usp=sharing)
 
+### Texto para descrever melhor depois:<br>
 
+Meu projeto de chatbot basicamenete vai ter dois mains:
+O primeiro main é mais voltado para a extração de textos de artigos/livros e do treinamento dos modelos de redes neurais.
+	Nesse main na parte da extração dos textos ele faz o seguinte:
+		- Extrai os textos do pdf
+			- Limpa textos
+		- Extrai as keywords
+			- Usa o modelo KeyBERT
+		- Identifica o idioma (se o texto é em portugues ou inglês) para usar o mapeamento correto das categorias com suas palavras chaves.
+		- Extrai as frases mais relevantes
+			- Usa SentenceTransformer
+		- Gera um dataset com esses textos
+			- traduz o texto (se o texto for em portugues traduz para o inglês)
+			- atribui o score
+			- atribui o intent
+			- atribui a entities
+			- atribui a categoria
+			- salva na base de dados
+	Nesse main na parte do treinamento dos modelos
+		- Ler a base de dados com os textos extraidos
+		- pré-processa os dados
+			- tokenização e lemantização com (Spacy)
+		- Treina os modelos
+			- Naive Bayes
+			- Logistic Regression
+			- Random Forest
+
+O segundo main é mais voltado para a parte da interação do usuário com o chatbot, ou seja nesse main eu vou ter o front end do projeto e vou conseguir conversar com o chatbot
+	O fluxo desse main é algo assim:
+		- O usuario faz uma pergunta que pode ser em (áudio ou texto)
+			- Se for em áudio ele transcreve o audio para texto
+		- a pergunta do usuário é buscada primeiramente na base de dados cache
+			- Se na base de dados cache já tiver uma pergunta 95% similar a essa pergunta do usuário, ele retorna a mesma reposta que esta no banco de cache
+			- Se a pergunta não tiver na base de dados cache ele passa a pergunta para o modelo
+		- Antes de ir diretamente para o modelo, a pergunta do usuário é traduzida para o ingles
+		- Depois da tradução a pergunta é pasada para o modelo que faz uma busca semantica junto com TF-IDF para buscar o contexto na base de dados e joga para o modelo gerar uma resposta
+		- Com a resposta do modelo gerada, ele traduz a resposta para o portugues
+		- Caso a opção de resposta em audio estiver ativada ele passa o texto para audio
+		- e retorna a resposta para o usuário
 ---
 
 ## 👥 **10. Contribuidores**
