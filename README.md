@@ -216,11 +216,6 @@ Passo a passo para execução local:
 
 ## 🧪 **7. Exemplos de Uso**
 
-Exemplos reais de interação:
-### Exemplo:
-> **Usuário:** O que é transformação digital?<br>
-> **Chatbot:** Transformação digital é a integração de tecnologias digitais em todas as áreas de um negócio, mudando fundamentalmente como você opera e entrega valor aos clientes...
-
 ### Exemplo 1 - Interação por texto
 > **Usuário (texto):** O que é exatamente a transformação digital no cenário de negócios atual?
 > **Chatbot (texto):** - A transformação digital no cenário de negócios atual é uma mudança na maneira como as empresas operam e interagem com seus clientes, funcionários e outras partes interessadas. É também uma mudança na maneira como as pessoas interagem com produtos e serviços, bem como como as empresas podem fazer melhor uso da tecnologia e da infraestrutura, relata o Wall Street Journal. "A transformação digital é a evolução da capacidade de uma organização de ser mais eficiente, mais receptiva e mais receptiva às necessidades dos clientes", diz um especialista em transformação digital da Universidade da Califórnia, Berkeley. "Está mudando a maneira como interagimos com nossos clientes, tornando -os mais conscientes do que eles podem fazer e de como eles podem ajudá -los a alcançar seus objetivos".
