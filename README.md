@@ -315,17 +315,7 @@ Os membros do projeto:
 
 ---
 
-## 🗓️ **11. Status do Projeto**
-
-Indique se está:
-
-* Em desenvolvimento
-* Em manutenção
-* Finalizado
-
----
-
-## 💡 **12. Futuras Implementações**
+## 💡 **11. Futuras Implementações**
 
 Melhorias ou próximos passos:
 
