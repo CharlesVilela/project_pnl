@@ -318,6 +318,9 @@ O objetivo da utilização do cache de interações é otimizar o tempo de respo
 * Algoritmos de classificação ou geração de texto
 * Métricas de avaliação e resultados
 
+![Texto alternativo](https://drive.google.com/file/d/1Qif3Q8qZAhfI0Xr4HrYEWA6cnkq3nFil/view?usp=sharing)
+
+
 ---
 
 ## 👥 **10. Contribuidores**
