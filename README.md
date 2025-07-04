@@ -39,7 +39,7 @@ Usar as tecnicas e ferramentas de Processamento de Linguagem Natural (PLN) para 
 
 ---
 
-## 🔧 **3. Funcionalidades**
+## **3. Funcionalidades**
 
 Principais funcionalidades implementadas:
 
@@ -51,7 +51,7 @@ Principais funcionalidades implementadas:
 
 ---
 
-## 🏗️ **4. Estrutura do Projeto**
+## **4. Estrutura do Projeto**
 
 Organização dos arquivos e pastas:
 
@@ -98,7 +98,7 @@ Organização dos arquivos e pastas:
 
 ---
 
-## 🧠 **5. Tecnologias e Ferramentas**
+## **5. Tecnologias e Ferramentas**
 
 As principais tecnologias utilizadas:
 
@@ -184,7 +184,7 @@ As principais tecnologias utilizadas:
 
 ---
 
-## 🚀 **6. Como Executar o Projeto**
+## **6. Como Executar o Projeto**
 
 Passo a passo para execução local:
 
@@ -214,7 +214,7 @@ Passo a passo para execução local:
 
 ---
 
-## 🧪 **7. Exemplos de Uso**
+## **7. Exemplos de Uso**
 
 ### Exemplo 1 - Interação por texto
 > **Usuário (texto):** O que é exatamente a transformação digital no cenário de negócios atual?<br>
@@ -237,7 +237,7 @@ Passo a passo para execução local:
 
 ---
 
-## ☁ **8. O armazenamento**
+## **8. O armazenamento**
 Para o armazenamento dos dados foi utilizado o banco de dados **MongoDB Atlas**. Por conta:
 
   1. **Escalabilidade e Flexibilidade:**
@@ -253,7 +253,7 @@ Para o armazenamento dos dados foi utilizado o banco de dados **MongoDB Atlas**.
 
 O banco de dados se divide em dois tipos de dados: o primeiro utilizado para o treinamento do modelo e consulta do contexto para a geração de resposta do chatbot; e o segundo que armazena um cache de interações dos usuários que é utilizado para otimizar o tempo de resposta do chatbot.
 
-### 💾 **1. Dataset - Treinamento do modelo**
+### **1. Dataset - Treinamento do modelo**
 
 Como não foi encontrada uma base pública pronta, foi criada uma **base de dados própria** utilizando:
 
@@ -261,7 +261,6 @@ Como não foi encontrada uma base pública pronta, foi criada uma **base de dado
 
 1. **Artigos acadêmicos**
 
-   * *Exemplo:* **Digital transformation: What we have learned (thus far) and what is next** – Consensus
 
 | **Tipo**         | **Título**                                                                 | **Autor** | **Ano de publicação** |
 | ---------------- | -------------------------------------------------------------------------- | --------- | --------------------- |
@@ -291,22 +290,31 @@ Como não foi encontrada uma base pública pronta, foi criada uma **base de dado
 | `artigo` | Complexity of Creating Customer Experience under the Influence of Digital Transformation  | Iva Gregurec, Lucija Tomasek et. all         | 2022                     |
 | `artigo`      | Exploring the Impact of Digital Transformation on Business Operations and Customer Experience | Dr. Sayyad Vakeel Agmad Munaf Ali, Dr. Monika Sharma et. all | 2024                  |
 | `artigo`         | Adoption paths of digital transformation in manufacturing SME    | Elisa Battistoni, Simone Gitto et. all         | 2022                   |
-| `autor`          | Nome do(s) autor(es) ou organização responsável                            | -         | -                     |
-| `ano_publicacao` | Ano em que o documento foi publicado                                       | -         | -                     |
-| **Exemplo**      | *Digital transformation: What we have learned (thus far) and what is next* | Consensus | 2024                  |
+| `artigo`          | Challenges for digital transformation - towards a conceptual decision support guide for managers      | Ciara Heavin e Daniel J. Power         | 2018                    |
+| `artigo` | Transform Me If You Can: Leveraging Dynamic Capabilities ti Manage Digital Transformation  | Malte H. G. Schneider, Dominik K. Kanbach et. all        | 2023                    |
+| `artigo`      | A socio-cognitive theorisation of how data-driven digital transformation affects operational productivity | Mohsin Malik, Amir Andargoli et. all | 2023                  |
+| `artigo`          | Digital transformation: A systematic literature review  | Xiaoteng Zhu, Shilun Ge et. all       | 2021                    |
+| `artigo` | Digital Transformation and Organization Design: An Integrated Approach | Tobias Kretschmer e Pooyan Khashabi        | 2020                 |
+| `livro`      | Inteligência artificial, poder A Próxima Onda e o maior dilema do século XXI| Yuval Noah Harari | 2023                  |
+| `livro`          | Automação de Processos através da RPA para Transformação Digital         | Álvaro Farias Pinheiro         | 20222                    |
+| `livro` | Inteligência Artificial  | Álvaro Farias Pinheiro        | 2024                    |
+| `livro`     | INTERNET DAS COISAS (IOT), TRANSFORMAÇÃO DIGITAL E INDÚSTRIA 4.0 | Robert Spadinger | 2024                  |
+| `livro`        | Estratégia Brasileira para a Transformação Digital (E-Digital) Ciclo 2022-2026 | Centro de Gestão e Estudos Estratégicos (CGEE)         | 2022                   |
+| `livro` | TRANSFORMAÇÃO DIGITAL   | Moema Pereira Nunes        | 2024                    |
+| `livro`      | TRANSFORMAÇÃO DIGITAL,TECNOLOGIA E INOVAÇÃO NOS ESTADOS BRASILEIROS OS CAMINHOS PROPOSTOS PARA O PERÍODO DE 2023-2026| Thiago Ávila, Beatriz Lanza e Daniel Valotto  | 2023                  |
 
 
 
 ---
 
-### 🌐 **Sites consultados**
+### **Sites consultados**
 
 * [Google Academico](https://scholar.google.com/?hl=pt-BR)
 * [Consensus](https://consensus.app/search/)
 
 ---
 
-#### 🗃️ **Estrutura da base de dados**
+#### **Estrutura da base de dados**
 
 | **Campo**        | **Descrição**                                                    |
 | ---------------- | ---------------------------------------------------------------- |
@@ -318,7 +326,7 @@ Como não foi encontrada uma base pública pronta, foi criada uma **base de dado
 | `metadata`       | Informações adicionais (fonte, data, autor, etc)                 |
 
 
-### 🔄 **2. Dataset - Cache das interações**
+###  **2. Dataset - Cache das interações**
 
 O objetivo da utilização do cache de interações é otimizar o tempo de resposta levado para o chatbot consegui retornar uma resposta para o usuário.
 
@@ -337,7 +345,7 @@ O objetivo da utilização do cache de interações é otimizar o tempo de respo
 
 ---
 
-## 📊 **9. Metodologia**
+## **9. Metodologia**
 
 - A base de dados foi criada manualmente por meio de artigos baseados em Maturidade digital. Com isso, o sistema conta com uma base de conhecimento fundamental em maturidade digital, que foi aprimorado com tecnicas de aprendizado de maquina (ML) e redes neurais para melhorar a classificação do modelo.
   
@@ -445,6 +453,66 @@ O projeto do chatbot se divide em três partes.
          - Retorna a resposta para o usuário
 
 
+### Analise do treinamento
+
+Os modelos foram treinados para 2 tarefas distintas:
+   * `maturity_label` (Classificação de maturidade)
+   * `intent` (Classificação de intenção
+
+Cada tarefa foi testada com 3 algoritmos: Naive Bayes, Regressão Logística e Random Forest
+
+#### Tabelas
+##### **1. Maturity Label**
+
+| **Modelo**           | **Accuracy** | **Macro Avg (F1-score)** | **Weighted Avg (F1-score)** |
+|-----------------------|:------------:|:------------------------:|:---------------------------:|
+| Naive Bayes           | 0.911        | 0.493                    | 0.894                       |
+| Logistic Regression   | 0.937        | 0.661                    | 0.933                       |
+| Random Forest         | 0.950        | 0.738                    | 0.949                       |
+
+---
+
+##### **2. Intent**
+
+| **Modelo**           | **Accuracy** | **Macro Avg (F1-score)** | **Weighted Avg (F1-score)** |
+|-----------------------|:------------:|:------------------------:|:---------------------------:|
+| Naive Bayes           | 0.843        | 0.096                    | 0.801                       |
+| Logistic Regression   | 0.925        | 0.248                    | 0.917                       |
+| Random Forest         | 0.952        | 0.422                    | 0.947                       |
+
+### Principais Padrões Observados
+
+1. **Maturity Label**
+    * Melhor modelo: Random Forest
+        * Accuracy: 0.950
+        * Macro Avg F1: 0.738
+        * Weighted Avg F1: 0.949
+     * Observações:
+         * O Random Forest apresentou desempenho superior em todas as métricas.
+         * Logistic Regression também teve performance alta, mas levemente inferior em macro avg, indicando menor equilíbrio entre classes.
+         * Naive Bayes teve o pior desempenho, especialmente na macro avg (0.493), evidenciando dificuldade em classes minoritárias.
+
+2. Intent
+    * Melhor modelo: Random Forest
+      * Accuracy: 0.952
+      * Macro Avg F1: 0.422
+      * Weighted Avg F1: 0.947
+    * Observações
+       * Apesar da alta accuracy (~95%), o macro avg F1 é baixo (0.422) em todos os modelos, sugerindo que:
+
+         * O modelo acerta predominantemente classes majoritárias.
+         * Classes minoritárias têm performance insatisfatória.
+
+       * Logistic Regression apresentou macro avg F1 melhor (0.248) que Naive Bayes (0.096), mas ambos muito baixos.
+          
+**Insights Gerais**
+ - Random Forest foi consistentemetne o melhor modelo em todas as tarefas
+ - Logistic Regression teve desempenho competitivo, especialmente para maturity_label
+ - Naive Bayes apresentou desempenho fraco, sugerindo inadequação aos seus dados de alta dimensionaldiade e distribuição desequilibrada.
+
+<br>
+
+
 ### Resultado da analise das respostas do chatbot
 
 A analise dos dados gerados pelo chatbot seguem o fluxo da Figura 02
@@ -507,66 +575,6 @@ A analise dos dados gerados pelo chatbot seguem o fluxo da Figura 02
         
         return weak_points
      ```
-### Analise do treinamento
-
-Os modelos foram treinados para 2 tarefas distintas:
-   * `maturity_label` (Classificação de maturidade)
-   * `intent` (Classificação de intenção
-
-Cada tarefa foi testada com 3 algoritmos: Naive Bayes, Regressão Logística e Random Forest
-
-#### Tabelas
-##### **1. Maturity Label**
-
-| **Modelo**           | **Accuracy** | **Macro Avg (F1-score)** | **Weighted Avg (F1-score)** |
-|-----------------------|:------------:|:------------------------:|:---------------------------:|
-| Naive Bayes           | 0.911        | 0.493                    | 0.894                       |
-| Logistic Regression   | 0.937        | 0.661                    | 0.933                       |
-| Random Forest         | 0.950        | 0.738                    | 0.949                       |
-
----
-
-##### **2. Intent**
-
-| **Modelo**           | **Accuracy** | **Macro Avg (F1-score)** | **Weighted Avg (F1-score)** |
-|-----------------------|:------------:|:------------------------:|:---------------------------:|
-| Naive Bayes           | 0.843        | 0.096                    | 0.801                       |
-| Logistic Regression   | 0.925        | 0.248                    | 0.917                       |
-| Random Forest         | 0.952        | 0.422                    | 0.947                       |
-
-### Principais Padrões Observados
-
-1. **Maturity Label**
-    * Melhor modelo: Random Forest
-        * Accuracy: 0.950
-        * Macro Avg F1: 0.738
-        * Weighted Avg F1: 0.949
-     * Observações:
-         * O Random Forest apresentou desempenho superior em todas as métricas.
-         * Logistic Regression também teve performance alta, mas levemente inferior em macro avg, indicando menor equilíbrio entre classes.
-         * Naive Bayes teve o pior desempenho, especialmente na macro avg (0.493), evidenciando dificuldade em classes minoritárias.
-
-2. Intent
-    * Melhor modelo: Random Forest
-      * Accuracy: 0.952
-      * Macro Avg F1: 0.422
-      * Weighted Avg F1: 0.947
-    * Observações
-       * Apesar da alta accuracy (~95%), o macro avg F1 é baixo (0.422) em todos os modelos, sugerindo que:
-
-         * O modelo acerta predominantemente classes majoritárias.
-         * Classes minoritárias têm performance insatisfatória.
-
-       * Logistic Regression apresentou macro avg F1 melhor (0.248) que Naive Bayes (0.096), mas ambos muito baixos.
-          
-**Insights Gerais**
- - Random Forest foi consistentemetne o melhor modelo em todas as tarefas
- - Logistic Regression teve desempenho competitivo, especialmente para maturity_label
- - Naive Bayes apresentou desempenho fraco, sugerindo inadequação aos seus dados de alta dimensionaldiade e distribuição desequilibrada.
-
-
-
-<br>
 ### Desempenho do chatbot
 
 A tabela abaixo é uma pequena amostra dos dados gerados pelos modelos de avaliação. Para ver o arquivo json completo clique aqui: [Ver arquivo JSON completo](full_evaluation_report.json)
@@ -607,7 +615,7 @@ A tabela abaixo é uma pequena amostra dos dados gerados pelos modelos de avalia
 
 ---
 
-## 👥 **10. Contribuidores**
+##  **11. Contribuidores**
 
 Os membros do projeto:
 
@@ -616,14 +624,12 @@ Os membros do projeto:
 
 ---
 
-## 💡 **11. Futuras Implementações**
+## **12. Futuras Implementações**
 
 Melhorias ou próximos passos:
 
-* Treinar modelos maiores para geração de resposta
-* Deploy em nuvem (AWS, GCP)
-* Melhorar integração com plataformas de atendimento ao cliente
-* Dashboard de analytics de interação
+*Implementar verificações contra alucinações
+* Desenvolver submodelos especializados para domínios técnicos
 
 ---
 
