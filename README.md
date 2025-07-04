@@ -263,6 +263,40 @@ Como não foi encontrada uma base pública pronta, foi criada uma **base de dado
 
    * *Exemplo:* **Digital transformation: What we have learned (thus far) and what is next** – Consensus
 
+| **Tipo**         | **Título**                                                                 | **Autor** | **Ano de publicação** |
+| ---------------- | -------------------------------------------------------------------------- | --------- | --------------------- |
+| `artigo`         | A Systematic Review of the Literature on Digital Transformation: Insights and Implications for Strategy and Organizational Change |  André Hanelta, René Bohnsack et. all         | 2021                     |
+| `artigo`         | Understanding digital transformation: A review and a research agenda                                               | Gregory Vial         | 2019                     |
+| `artigo`          | Digital transformation: a review, synthesis and opportunities for future research                            | Swen Nadkarni e Reinhard Prugl        | 2020                     |
+| `artigo` | Digital transformation: A review and research agenda                                       | Dmitry Plekhanov, Henrik Franke et. all         | 2023                    |
+| `artigo`      | Digital transformation: What we have learned (thus far) and what is next | Sabrina Schneider e Olga Kokshagina | 2020                  |
+| `artigo`         | Digital transformation: A multidisciplinary reflection and research agenda                                               | Peter C. Verhoef, Thijs Broekhuizen et. all         | 2019                     |
+| `artigo`          | Digital Transformation Leadership Characteristics: a Literature Analysis                            |  Patrick McCarthy, David Sammon et. all       | 2021                    |
+| `artigo` | Defining digital transformation: Results from expert interviews                                       | Ines Mergel, Noella Edelmann et. all        | 2019                    |
+| `artigo`      | Influence of Digital Transformation Capability on Operational Performance | Jiatong Yu, Jiajue Wang et. all | 2022                  |
+| `artigo`         | The role of digital transformation practices in the operations improvement in manufacturing firms: A practice-based view                                               | Meng Tian, Yang Chen et. all         | 2023                    |
+| `artigo`          | The Effects of Digital Transformation on Firm Performance: Evidence from China's Manufacturing Sector                 | Lei Guo e Luying Xu        | 2021                    |
+| `artigo` | Does digital transformation improve the operational efficiency of Chinese power enterprises         | Boqiang Lin e Yongjing Xie        | 2023                     |
+| `artigo`      | Digital Transformation in Business Operations Management | Nur Rohmah e Komarudin | 2023                  |
+| `artigo`         | Operational research and business intelligence as drivers for digital transformation          | Pavlos Delias e Fotis C. Kitsios         | 2023                     |
+| `artigo`          | Digital Transformation in Process Industries                   | Joseph Ting         | 2021                     |
+| `artigo` | Research on the Impact of Digital Transformation on Enterprise Operational Efficiency           | Boru Lei         | 2025                    |
+| `artigo`      | Broadband infrastructure and enterprise digital transformation: Evidence from China | Meng Li, Zhengqi Wang et. all | 2024                  |
+| `artigo`         | Transforming the Customer Experience Through New Technologies                                              | Wayne D. Hoyer, Mirja Kroschke et. all         | 2020                     |
+| `artigo`          | Solving the crisis of immediacy: how digital technology can transform the customer experience        | Salvatore Parise, Patricia J. Guinan et. all         | 20216                    |
+| `artigo` | Digital Transformation and the Customer Experience: Enhancing Engagement and Loyalty | Antonius Felix e Glisina Dwinoor Rembulan        | 2023                   |
+| `artigo`     | The Effects of Digital Transformation on Firm Performance: The Role of Customer Experience and IT Innovation | Rawan Masoud e Sarah Basahel | 2023                  |
+| `artigo`         | The digital transformation of business. Towards the datafication of the relationship with customers     | Cristina Fernández-Rovira, Jesús Álvarez Valdés et. all        | 2021                    |
+| `artigo`          | Digital transformation and customer value creation in Made in Italy SMEs: A dynamic capabilities perspective      | Michela Matarazzo, Lara Penco et. all         | 2021                     |
+| `artigo` | Complexity of Creating Customer Experience under the Influence of Digital Transformation  | Iva Gregurec, Lucija Tomasek et. all         | 2022                     |
+| `artigo`      | Exploring the Impact of Digital Transformation on Business Operations and Customer Experience | Dr. Sayyad Vakeel Agmad Munaf Ali, Dr. Monika Sharma et. all | 2024                  |
+| `artigo`         | Adoption paths of digital transformation in manufacturing SME    | Elisa Battistoni, Simone Gitto et. all         | 2022                   |
+| `autor`          | Nome do(s) autor(es) ou organização responsável                            | -         | -                     |
+| `ano_publicacao` | Ano em que o documento foi publicado                                       | -         | -                     |
+| **Exemplo**      | *Digital transformation: What we have learned (thus far) and what is next* | Consensus | 2024                  |
+
+
+
 ---
 
 ### 🌐 **Sites consultados**
@@ -321,45 +355,57 @@ O objetivo da utilização do cache de interações é otimizar o tempo de respo
 ![Texto alternativo](https://drive.google.com/file/d/1Qif3Q8qZAhfI0Xr4HrYEWA6cnkq3nFil/view?usp=sharing)
 
 ### Texto para descrever melhor depois:<br>
+O projeto do chatbot se divide em três partes.
 
-Meu projeto de chatbot basicamenete vai ter dois mains:
-O primeiro main é mais voltado para a extração de textos de artigos/livros e do treinamento dos modelos de redes neurais.
-	Nesse main na parte da extração dos textos ele faz o seguinte:
-		- Extrai os textos do pdf
-			- Limpa textos
-		- Extrai as keywords
-			- Usa o modelo KeyBERT
-		- Identifica o idioma (se o texto é em portugues ou inglês) para usar o mapeamento correto das categorias com suas palavras chaves.
-		- Extrai as frases mais relevantes
-			- Usa SentenceTransformer
-		- Gera um dataset com esses textos
-			- traduz o texto (se o texto for em portugues traduz para o inglês)
-			- atribui o score
-			- atribui o intent
-			- atribui a entities
-			- atribui a categoria
-			- salva na base de dados
-	Nesse main na parte do treinamento dos modelos
-		- Ler a base de dados com os textos extraidos
-		- pré-processa os dados
-			- tokenização e lemantização com (Spacy)
-		- Treina os modelos
-			- Naive Bayes
-			- Logistic Regression
-			- Random Forest
+1. O primeiro main é mais voltado para a extração de textos de artigos/livros e do treinamento dos modelos de redes neurais
+   - **Parte 1: Extração de textos**
+     - Extrai os textos do PDF
+       - Limpa textos
+     - Extrai as keywords
+       - Usa o modelo KeyBERT
+     - Identifica o idioma (se o texto é em português ou inglês) para usar o mapeamento correto das categorias com suas palavras-chave
+     - Extrai as frases mais relevantes
+       - Usa SentenceTransformer
+     - Gera um dataset com esses textos
+       - Traduz o texto (se for em português, traduz para inglês)
+       - Atribui o score
+       - Atribui o intent
+       - Atribui as entities
+       - Atribui a categoria
+       - Salva na base de dados
 
-O segundo main é mais voltado para a parte da interação do usuário com o chatbot, ou seja nesse main eu vou ter o front end do projeto e vou conseguir conversar com o chatbot
-	O fluxo desse main é algo assim:
-		- O usuario faz uma pergunta que pode ser em (áudio ou texto)
-			- Se for em áudio ele transcreve o audio para texto
-		- a pergunta do usuário é buscada primeiramente na base de dados cache
-			- Se na base de dados cache já tiver uma pergunta 95% similar a essa pergunta do usuário, ele retorna a mesma reposta que esta no banco de cache
-			- Se a pergunta não tiver na base de dados cache ele passa a pergunta para o modelo
-		- Antes de ir diretamente para o modelo, a pergunta do usuário é traduzida para o ingles
-		- Depois da tradução a pergunta é pasada para o modelo que faz uma busca semantica junto com TF-IDF para buscar o contexto na base de dados e joga para o modelo gerar uma resposta
-		- Com a resposta do modelo gerada, ele traduz a resposta para o portugues
-		- Caso a opção de resposta em audio estiver ativada ele passa o texto para audio
-		- e retorna a resposta para o usuário
+   - **Parte 2: Treinamento dos modelos**
+     - Lê a base de dados com os textos extraídos
+     - Pré-processa os dados
+       - Tokenização e lematização com Spacy
+     - Treina os modelos
+       - Naive Bayes
+       - Logistic Regression
+       - Random Forest
+
+2. O segundo main é mais voltado para a parte da interação do usuário com o chatbot, ou seja, nesse main temos o front end do projeto que permite conversar com o chatbot.
+
+   - **Fluxo desse main:**
+     - O usuário faz uma pergunta que pode ser em:
+       - Áudio
+       - Texto
+     - Se for em áudio:
+       - Transcreve o áudio para texto
+     - A pergunta do usuário é buscada primeiramente na base de dados cache
+       - Se na base de dados cache já existir uma pergunta 95% similar:
+         - Retorna a mesma resposta que está no banco de cache
+       - Se a pergunta não estiver na base de dados cache:
+         - Passa a pergunta para o modelo
+           - Antes de ir diretamente para o modelo:
+             - A pergunta do usuário é traduzida para o inglês
+           - Depois da tradução:
+             - O modelo faz uma busca semântica junto com TF-IDF para buscar o contexto na base de dados
+             - O modelo gera uma resposta
+           - Com a resposta do modelo gerada:
+             - Traduz a resposta para o português
+           - Caso a opção de resposta em áudio esteja ativada:
+             - Converte o texto em áudio
+         - Retorna a resposta para o usuário
 ---
 
 ## 👥 **10. Contribuidores**
