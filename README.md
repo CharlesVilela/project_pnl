@@ -348,12 +348,47 @@ O objetivo da utilização do cache de interações é otimizar o tempo de respo
  Abordagem explicada:
 
 * Pré-processamento (tokenização, stopwords)
+  * Utiliza-se o spaCy com o modelo `en_core_web_sm` para:
+    * Criar um Entity Ruler personalizado para identificação de entidades especificas nos textos
+    * Realizar a tokenização e lematização de cada texto, gerantindo a padronização linguistica antes do trienamento.
+    * Após o pré-processamento, os dados passam pela função `map_score_to_label(score)`, que mapeia os scores dos textos em três classes:
+     * 'low', 'average' e 'high'
+       
 * Vetorização ou embeddings utilizados
+  * É aplicado TF-IDF para gerar a matriz de vetores:
+
+    ```
+      tfidf_vectorizer = TfidfVectorizer(stop_words='english')
+      tfidf_matrix = tfidf_vectorizer.fit_transform(corpus)
+     ```
+
+   * Além do TF-IDF, são gerados **embeddings semânticos** com o **SentenceTransformer**, utilizando dois modelos principais:
+      * `"all-MiniLM-L6-v2"` para tarefas gerais de embeddings
+      * `"paraphrase-mpnet-base-v2"` para tarefas de similaridade semântica mais robusta
+        
 * Algoritmos de classificação ou geração de texto
+   * Classificação
+      * Para tarefas de maturity_label e intent, são utilizados três algoritmos clássicos de Machine Learning:
+         * Naive Bayes
+         * Logistic Regression
+         * Random Forest
+   * Modelos carregados
+      * Modelos treinados como **Logistic Regression** são carregados via `joblib.load` nos caminhos salvos para intent e maturity:
+
+        ```
+          intent_model = joblib.load(intent_model_path)
+          maturity_model = joblib.load(maturity_model_path)
+        ```
+    * Geração de texto
+       * **Paraphrase Pipeline** com o modelo **"Vamsi/T5_Paraphrase_Paws"** para reescrita de textos.
+       * **Flan-T5** `google/flan-t5-base` para tarefas de geração de sequência de texto (seq2seq) com suporte a inferência em **float16** para melhor desempenho.
+           
 * Métricas de avaliação e resultados
 
-![Texto alternativo](https://drive.google.com/file/d/1Qif3Q8qZAhfI0Xr4HrYEWA6cnkq3nFil/view?usp=sharing)
-![Exemplo de fluxo do chatbot](image/img_readme/fluxo_chatbot_mains.png)
+
+## **10. Resultados**
+
+![Fluxo do chatbot](image/img_readme/fluxo_chatbot_mains.png)
 
 ### Texto para descrever melhor depois:<br>
 O projeto do chatbot se divide em três partes.
@@ -407,6 +442,29 @@ O projeto do chatbot se divide em três partes.
            - Caso a opção de resposta em áudio esteja ativada:
              - Converte o texto em áudio
          - Retorna a resposta para o usuário
+
+
+
+
+### Desempenho do Modelo (Resumo)
+
+| Categoria          | Métrica             | Valor Médio | Observação                           |
+|--------------------|---------------------|-------------|--------------------------------------|
+| **Amostra**        | Total de Respostas  | 67          |                                      |
+| **Similaridade**   | Cosine Similarity   | 0.6816      | 0 (sem relação) → 1 (idêntico)       |
+| **Qualidade**      | ROUGE-L             | 0.0903      | Coerência de sequências              |
+|                    | METEOR Score        | 0.0993      | Precisão por alinhamento             |
+|                    | BLEU Score          | 0.0027      | Similaridade n-gram                  |
+| **Humano**         | Relevância          | 2.6/5       | Relação com o tema                   |
+|                    | Correção            | 2.0/5       | Precisão factual                     |
+|                    | Completude          | 1.6/5       | Abrangência da resposta              |
+|                    | Clareza             | 2.0/5       | Facilidade de compreensão            |
+
+**Principais Desafios:**  
+▸ Completude 68% abaixo do ideal  
+▸ Clareza insuficiente em 40% das respostas  
+▸ Dificuldade em tópicos técnicos específicos
+
 ---
 
 ## 👥 **10. Contribuidores**
