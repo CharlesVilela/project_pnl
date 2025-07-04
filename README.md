@@ -8,30 +8,36 @@ Um chatbot inteligente para responder dúvidas sobre transformação digital, ma
 
 ## **2. Descrição Geral**
  
-### O que?
+### **O que?**
+A transformação digital (TD) tornou-se um eixo estratégico fundamental para organizações que buscam inovação, eficiência e sustentabilidade. No entanto, compreender os conceitos, dimensões e implicações da TD ainda é um desafio para muitas instituições, dada a complexidade do tema e a multiplicidade de abordagens. Este projeto propõe o desenvolvimento do TransforMind, um chatbot que responde a perguntas sobre transformação digital, classifica intenções comunicativas, extrai entidades relevantes e gera respostas contextualizadas. O sistema não realiza diagnósticos ou avaliações de maturidade, mas atua como uma interface educativa interativa voltada à disseminação de conhecimento sobre TD.
 
-A transformação digital tornou-se um fator determinante para a competitividade e inovação nas organizações. No entanto, avaliar o nível de maturidade digital de uma empresa ainda é um desafio complexo, que requer a análise de múltiplos fatores, como cultura organizacional, adoção de tecnologia, processos e estratégias.
+### **Por que?**
+Organizações de diferentes portes enfrentam dificuldades em assimilar os conceitos-chave da transformação digital e em aplicar esse conhecimento à sua realidade. Essa lacuna de entendimento é agravada pela ausência de recursos técnicos, financeiros ou humanos para acessar consultorias especializadas. A utilização de um chatbot educacional possibilita uma abordagem acessível, escalável e de baixo custo, promovendo o aprendizado autônomo e contínuo sobre transformação digital por meio de interações naturais em linguagem cotidiana.
 
-Este projeto propõe o desenvolvimento de um chatbot para interagir com usuários e avaliar o nível de maturidade digital de suas organizações com base em parâmetros estruturados previamente definidos por meio de pesquisa.
+### **Como?**
+O TransforMind foi construído com base em técnicas de Processamento de Linguagem Natural (PLN), como classificação de intenção, extração de entidades, geração de respostas (NLG) e reformulação automática de perguntas (rephrasing), visando melhorar o engajamento e a diversidade do treinamento contínuo. O sistema é implementado com ferramentas como Streamlit, PyTorch, Transformers, MongoDB Atlas e Spacy, integrando recursos de machine learning e armazenamento em nuvem. Sua arquitetura modular foi organizada em cinco principais módulos: entrada, pré-processamento e classificação, geração de respostas, rephrasing e armazenamento.
+O chatbot foi desenvolvido com as seguintes características técnicas:
+Compreensão e resposta em linguagem natural: Uso de técnicas de tokenização, lematização, embeddings (ex: BERT, MiniLM) e transformers para NLU e NLG.
 
 
-### Por que?
+ * Interação por texto e áudio: Suporte parcial implementado com Streamlit para entrada textual e integração planejada com APIs de síntese e reconhecimento de voz.
 
-Atualmente, a avaliação da maturidade digital é feita por diagnósticos manuais, consultorias especializadas ou questionários extensos, sendo processos custosos, demorados e subjetivos. Muitas organizações não possuem recursos ou conhecimento suficiente para realizar uma autoavaliação eficaz. Um chatbot automatiza essa tarefa, oferecendo:
 
- - Experiência interativa e acessível
- - Autoavaliação rápida
- - Resultados baseados em dados e ontologias validadas
+ * Arquitetura modular: Separação de responsabilidades entre pré-processamento, modelos de classificação, rephrase e front-end.
 
-### Como?
 
-O chatbot utiliza técnicas de Processamento de Linguagem Natural (PLN), incluindo:
+ * Uso de técnicas de deep learning: Modelos do Hugging Face para classificação de intents e rephrasing, com redes neurais finas (MLP) para tarefas específicas.
 
-NLU (Natural Language Understanding) para compreensão do usuário
 
-NLG (Natural Language Generation) para gerar respostas naturais
+ * Avaliação com métricas apropriadas: Foram utilizadas métricas como accuracy, precision, recall e F1-score.
 
-O modelo de aprendizado é treinado aplicando Machine Learning e redes neurais para melhorar a precisão da classificação.
+
+ * Interface simples e acessível: Front-end construído com Streamlit, acessível via navegador, com layout responsivo e funcional.
+
+
+### Para que?
+O objetivo do projeto é oferecer uma ferramenta educacional interativa que auxilie indivíduos e organizações na compreensão da transformação digital e de suas dimensões centrais — como cultura, processos e experiência do cliente — sem depender de interfaces tradicionais como relatórios ou cursos formais. Ao ampliar o acesso a esse conhecimento, o TransforMind também contribui com a pesquisa aplicada em PLN e sistemas inteligentes, abrindo caminhos para futuras integrações com ontologias, modelos de maturidade ou ambientes corporativos como CRMs e plataformas de gestão pública.
+
 
 ### Objetivo 
 
