@@ -353,6 +353,7 @@ O objetivo da utilização do cache de interações é otimizar o tempo de respo
 * Métricas de avaliação e resultados
 
 ![Texto alternativo](https://drive.google.com/file/d/1Qif3Q8qZAhfI0Xr4HrYEWA6cnkq3nFil/view?usp=sharing)
+![Exemplo de fluxo do chatbot](image/img_readme/fluxo_chatbot_mains.png)
 
 ### Texto para descrever melhor depois:<br>
 O projeto do chatbot se divide em três partes.
