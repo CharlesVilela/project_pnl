@@ -388,7 +388,7 @@ O objetivo da utilização do cache de interações é otimizar o tempo de respo
 
 ## **10. Resultados**
 
-![Fluxo do chatbot](image/img_readme/fluxo_chatbot_mains.png)
+![Figura 01 - Fluxo do chatbot](image/img_readme/fluxo_chatbot_mains.png)
 
 ### Texto para descrever melhor depois:<br>
 O projeto do chatbot se divide em três partes.
@@ -444,9 +444,74 @@ O projeto do chatbot se divide em três partes.
          - Retorna a resposta para o usuário
 
 
+### Resultado da analise das respostas do chatbot
 
+A analise dos dados gerados pelo chatbot seguem o fluxo da Figura 02
 
-### Desempenho do Modelo (Resumo)
+![Figura 02 - Fluxo dos testes](image/img_readme/fluxo_test_desempenho.png)
+
+1. Pergunta de Teste
+   * Input: Questões do dataset de validação (ex: "Como a transformação digital impacta cadeias de suprimentos?")
+   * Código relacionado: `conversation_chatbot()` que processa perguntas através do modelo
+2. Resposta Gerada vs Resposta Esperada
+    * Comparação entre:
+      * Saída do modelo (resposta gerada)
+      * Resposta de referência (gold standar)
+     * Código `calculate_similarity` que usa embeddings para comparar semelhança
+3. Avaliação Automática
+    * Métricas calculadas
+       * Similaridade (Cosine): `cosine_similarity(response_embedding, reference_embedding)`
+       * BLEU: `sentence_bleu([reference_tokens], generated_tokens)`
+       * ROUGE-L: `rouge_l_score(reference, generated)`
+       * METEOR: `meteor_score([reference], generated)`
+     * Código: `test_analise.py` contendo todas as funções de cálculo
+4. Relatório Consolidado
+    * Agrega resultados de todas as perguntas
+    * Gera estrutura JSON com:
+       * Métricas médias
+       * Resultados detalhados por pergunta
+       * Identificação de pontos fracos
+ 5. Análise de Pontos Fracos
+   * Detecta padrões problemáticos
+
+     ```
+        def identify_weak_points(self):
+        """Identifica áreas problemáticas com base nas avaliações"""
+        weak_points = {
+            "low_semantic_similarity": [],
+            "human_low_scores": []
+        }
+        
+        # Identificar respostas com baixa similaridade semântica
+        for item in self.results:
+            if item['auto_metrics']['cosine_similarity'] < 0.6:
+                weak_points["low_semantic_similarity"].append({
+                    "question": item['question'],
+                    "score": item['auto_metrics']['cosine_similarity']
+                })
+        
+        # Identificar respostas com baixa avaliação humana
+        for item in self.results:
+            if item['human_evaluation']:
+                low_scores = [
+                    metric for metric, score in item['human_evaluation']['scores'].items() 
+                    if score < 3
+                ]
+                if low_scores:
+                    weak_points["human_low_scores"].append({
+                        "question": item['question'],
+                        "criteria": low_scores,
+                        "comments": item['human_evaluation']['comments']
+                    })
+        
+        return weak_points
+     ```
+
+### Desempenho do chatbot
+
+A tabela abaixo é uma pequena amostra dos dados gerados pelos modelos de avaliação. Para ver o arquivo json completo clique aqui: [Ver arquivo JSON completo](full_evaluation_report.json)
+
+##### Desempenho do Modelo (Resumo)
 
 | Categoria          | Métrica             | Valor Médio | Observação                           |
 |--------------------|---------------------|-------------|--------------------------------------|
@@ -459,6 +524,21 @@ O projeto do chatbot se divide em três partes.
 |                    | Correção            | 2.0/5       | Precisão factual                     |
 |                    | Completude          | 1.6/5       | Abrangência da resposta              |
 |                    | Clareza             | 2.0/5       | Facilidade de compreensão            |
+
+**Principais Insights**
+
+1. Forças
+   * Boa compreensão conceitual (similaridade semântica aceitavel)
+   * Desempenho superior em tópicos estratégicos (ex: definições de transformação digital)
+2. Desafios Críticos
+    * Baixa completude (63% abaixo do esperado)
+    * Clareza insuficiente (40% das respostas confusas)
+    * Problemas graves em temas técnicos especificos
+3. Futuras melhorias
+    * Implementar verificações contra alucinações
+    * Desenvolver submodelos especializados para domínios técnicos
+
+
 
 **Principais Desafios:**  
 ▸ Completude 68% abaixo do ideal  
