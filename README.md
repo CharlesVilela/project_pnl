@@ -1,6 +1,6 @@
-# **README – Chatbot: TransformMind**
+# **README – Chatbot: TransforMind**
 
-## **1. TransformMind**
+## **1. TransforMind**
 
 Um chatbot inteligente para responder dúvidas sobre transformação digital, maturidade digital, tecnologias emergentes e estratégias organizacionais.
 
