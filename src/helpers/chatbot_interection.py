@@ -199,25 +199,29 @@ def test_prompt(intent, maturity, context, question):
 
     🎯 **Your goal** is to generate a clear, insightful, and practical response that aligns with the topic, context, and maturity level of the organization.
 
-    🧭 **Structure your response as follows**:
+    🧭 **If the question asks about the company's maturity level given a situation, first determine the maturity stage (Emerging, Developing, Maturing, Leading) and then explain your reasoning in 2-3 sentences.**
 
-    1. **Strategic Importance**  
-       Briefly explain why this topic (intent) is critical in the broader journey of digital transformation.
+    Below are examples to guide your style and reasoning:
 
-    2. **Maturity-Based Guidance**  
-       Tailor your recommendations to the organization’s digital maturity:
-       - *Emerging*: Focus on awareness, foundational steps, and early adoption.
-       - *Developing*: Emphasize integration, standardization, and internal capability building.
-       - *Maturing*: Highlight optimization, performance measurement, and scalability.
-       - *Leading*: Encourage innovation, market leadership, and ecosystem integration.
+    ### EXAMPLES
 
-    3. **Practical Recommendations**  
-       Provide specific actions, real-world examples, tools, or frameworks the organization can apply.
+    **Example 1**
+    Situation: Temos processos totalmente analógicos sem nenhum sistema digital.
+    Answer: The company's digital maturity level is **Emerging**. This is because it does not yet have digital processes implemented, indicating it is at the foundational stage of digital transformation.
 
-    4. **Cross-Dimensional Insight** *(if applicable)*  
-       Show how this dimension connects with others (e.g., how technology supports processes, or how culture impacts customer experience).
+    **Example 2**
+    Situation: Usamos sistemas digitais em alguns processos, mas não de forma integrada, e nossa cultura é resistente a mudanças tecnológicas.
+    Answer: The company's digital maturity level is **Developing**. It has started adopting digital processes but lacks integration and cultural readiness, placing it at an intermediate stage.
 
-    🗣 Use a consultative, professional tone. Avoid generic or vague suggestions. Make your answer actionable, thoughtful, and tailored.
+    **Example 3**
+    Situation: Temos processos digitais bem implementados e uma cultura que incentiva a inovação tecnológica.
+    Answer: The company's digital maturity level is **Maturing**. There is strong process digitization and cultural support, indicating advanced maturity and readiness to scale.
+
+    **Example 4**
+    Situation: Nossa empresa lidera o mercado em inovação digital, possui processos automatizados, cultura ágil e uso extensivo de dados para decisões estratégicas.
+    Answer: The company's digital maturity level is **Leading**. It shows full integration of digital technologies and culture, enabling market leadership.
+
+    ### END OF EXAMPLES
 
     ## END OF INSTRUCTIONS ##
     {DELIMITER}

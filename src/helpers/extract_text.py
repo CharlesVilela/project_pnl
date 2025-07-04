@@ -40,6 +40,36 @@ def clean_texts_parallel(text, max_workers=None):
     print(f"| ### ✨ Text ready/finalized after cleaning... ### |")
     return cleaned
 
+def clear_texts(text):
+    # print()
+    # print('| ----------------------------------------------- TEXTOS ANTES DA LIMPEZA -------------------------------------------------------- |')
+    # print(text)
+    # print('| -------------------------------------------------------------------------------------------------------------------------------- |')
+
+    if pd.isnull(text):
+        return None
+
+    # Remover espaços extras
+    text = text.strip()
+
+    # Remover apenas números ou palavras numéricas
+    if re.fullmatch(r"\(?\d{1,4}\)?", text):  # Ex: "1980", "(1980)", "123"
+        return None
+
+    # Remover textos curtos sem sentido (1-2 palavras)
+    if len(text.split()) < 3:
+        return None
+
+    # Remover padrões tipo: Journal info, volume, páginas — ex: "Information Systems Research, 21, 748-59"
+    if re.search(r"\b\d{1,2},\s*\d{2,3}(-\d{1,3})?\b", text):
+        return None
+
+    # Remover frases genéricas como "To estimate", "To assess"
+    if re.fullmatch(r"To\s+\w+", text, re.IGNORECASE):
+        return None
+
+    return text
+
 # 1. Extrair texto do PDF
 def extract_pdf_text(path_pdf):
     print(f"| ### 📄 Starting PDF text extraction... ### |")
@@ -51,7 +81,7 @@ def extract_pdf_text(path_pdf):
         for page in doc:
             blocks = page.get_text("blocks")
             for block in blocks:
-                text_total += block[4]
+                text_total += clear_texts(block[4])
         doc.close()
         print(f"| ### 📑 Finished PDF text extraction... ### |")
         return text_total, metadata_str

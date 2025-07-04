@@ -1,0 +1,29 @@
+{
+  "question": "Como superar a resistência a novas tecnologias?",
+  "expected_response": "Abordagens comprovadas: 1) Change management estruturado (modelo ADKAR), 2) Mentoria peer-to-peer, 3) Demonstração tangível de ganhos individuais, 4) Pilotagem com early adopters influentes, e 5) Canais abertos para feedback e ajustes. É crucial abordar medos concretos (ex: substituição por IA) com planos de requalificação.",
+  "generated_response": "- A resposta a esta pergunta é: \"Como superar a resistência a novas tecnologias\". Essa é a pergunta, e é uma das mais comuns. Mas também pode ser útil conversar com alguém que sabe do que está falando. Por exemplo, você pode dizer: \"É importante entender que não seremos capazes de fazer nada até que fizemos tudo o que podemos fazer\". Ou \"teremos que garantir que não precisemos fazer tudo ao nosso alcance para melhorar as coisas\". Você também pode sugerir maneiras de resolver esse problema, concentrando -se em como as pessoas se sentem em relação à tecnologia, como o uso da tecnologia para ajudá -los a resolver problemas",
+  "auto_metrics": {
+    "cosine_similarity": 0.4653463661670685,
+    "rouge_l": 0.06349205910178916,
+    "meteor_score": 0.07920792079207922,
+    "bleu_score": 3.194802156447434e-155,
+    "length_difference": 302,
+    "length_ratio": 1.9292307692307693
+  },
+  "human_evaluation": {
+    "scores": {
+      "relevance": 2,
+      "correctness": 2,
+      "completeness": 1,
+      "clarity": 1
+    },
+    "comments": {
+      "relevance": "A pergunta não é relevante para a pergunta, ele cita algo relacionado a pergunta mas ao decorrer da resposta fica completamente fora da pergunta",
+      "correctness": "A resposta gerada nao diz como superar a resisitencia a novas tecnologias",
+      "completeness": "A resposta não esta totalmente completa",
+      "clarity": "A resposta gerada é completamente confusa"
+    },
+    "overall_comment": "A pergunta não atendeu a pergunta",
+    "timestamp": "2025-07-03T21:08:40.238494"
+  }
+}

@@ -98,3 +98,6 @@ def add_to_cache(user_input: str, response: str, embedding, min_similarity: floa
         print('⚠️ Nenhum dado válido para inserir.')
 
 
+def load_bd():
+    bd = find_all()
+    return pd.DataFrame(bd)

@@ -1,0 +1,29 @@
+{
+  "question": "Quais habilidades são essenciais para profissionais na era digital?",
+  "expected_response": "Habilidades críticas: 1) Alfabetização de dados, 2) Pensamento analítico, 3) Adaptabilidade tecnológica, 4) Colaboração virtual, 5) Resolução criativa de problemas, e 6) Inteligência emocional. 85% das profissões do futuro exigirão combinação dessas competências técnicas e humanas.",
+  "generated_response": "- A transformação digital é um campo em rápida mudança e é importante ter as habilidades certas para fazer a transição. O New York Times explica que a transformação digital é uma área de alta maturidade digital e que \"nível de maturidade\" significa o estágio atual da organização na maturidade digital (emergente, em desenvolvimento, amadurecimento, liderança). O Times também observa que \"todos precisam ser capazes de entender como a transformação digital afeta suas vidas\". O Times relata que a era digital sofreu várias mudanças nos últimos anos, incluindo a introdução das mídias sociais, a criação de aplicativos móveis e a criação e o uso da realidade virtual. O Times observa que essa tendência levou a uma mudança na maneira como as pessoas interagem entre si, o que pode levar a uma comunicação mais eficiente e eficaz. \"A era digital está cheia de desafios\", diz um especialista. \"É hora de todos estarem cientes do que está acontecendo ao seu redor\".",
+  "auto_metrics": {
+    "cosine_similarity": 0.4414083957672119,
+    "rouge_l": 0.0579710107792483,
+    "meteor_score": 0.07246376811594203,
+    "bleu_score": 2.8976723635433103e-155,
+    "length_difference": 680,
+    "length_ratio": 3.4113475177304964
+  },
+  "human_evaluation": {
+    "scores": {
+      "relevance": 1,
+      "correctness": 1,
+      "completeness": 1,
+      "clarity": 1
+    },
+    "comments": {
+      "relevance": "A resposta gerada foi completamente forar do contexto da pergunta",
+      "correctness": "A resposta gerada não cita as habilidades essenciais para os profissionais da pergunta",
+      "completeness": "A resposta foi insatisfatoria",
+      "clarity": "A resposta esta totalmente fora do contexto da pergunta tornando a não clara"
+    },
+    "overall_comment": "A resposta fugiu inteiramente do contexto",
+    "timestamp": "2025-07-03T21:05:42.326354"
+  }
+}

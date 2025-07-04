@@ -7,6 +7,7 @@ import os
 from helpers.classification_score_intent import assign_intent, assign_score, assign_entities, extract_new_intent, assign_category
 from resource.category_keywords import category_keywords
 from utils.detect_language import identify_language, translate_pt_to_en, translate_auto_to_en
+from dao.connection_bd import send_text_db
 
 from pathlib import Path
 base_path = Path(__file__).resolve().parents[2]
@@ -36,7 +37,8 @@ def generate_dataset(sentences, metadata, new_key_words, model):
             "category": category,
             "metadata": metadata
         })
-    save_dataframe(pd.DataFrame(data))
+    # save_dataframe(pd.DataFrame(data))
+    send_text_db(pd.DataFrame(data))
     print(f"| ### 📁 Dataset generation complete... ### |")
 
 def save_dataframe(df):

@@ -1,0 +1,29 @@
+{
+  "question": "Como implementar arquitetura orientada a eventos?",
+  "expected_response": "Implementação eficaz: 1) Identificar fontes de eventos críticos, 2) Definir padrões de mensagens, 3) Implementar barramento de eventos, 4) Desenvolver microserviços reativos, e 5) Garantir resiliência e escalabilidade. Arquitetura orientada a eventos permite resposta em tempo real e sistemas altamente desacoplados.",
+  "generated_response": "- A arquitetura orientada para eventos é um conceito que existe há muito tempo. É uma maneira de implementar eventos de maneira orientada a eventos, e é uma que pode ser aplicada a uma ampla variedade de cenários, incluindo ambientes de negócios, governo e educação. O objetivo da arquitetura orientada para eventos (EA) é fornecer um único ponto de contato para os usuários interagirem entre si através do uso da tecnologia, como videogames, salas de bate-papo e mídias sociais. O principal objetivo da EA é ajudar as pessoas a entender como usar a tecnologia para facilitar suas vidas. \"É importante ter uma resposta clara e bem estruturada para esta pergunta\", diz John McKinney, co-fundador e CEO da arquitetura orientada para eventos",
+  "auto_metrics": {
+    "cosine_similarity": 0.5310221910476685,
+    "rouge_l": 0.13675213249178186,
+    "meteor_score": 0.17133486047480218,
+    "bleu_score": 2.207559664977474e-63,
+    "length_difference": 422,
+    "length_ratio": 2.3354430379746836
+  },
+  "human_evaluation": {
+    "scores": {
+      "relevance": 1,
+      "correctness": 1,
+      "completeness": 1,
+      "clarity": 1
+    },
+    "comments": {
+      "relevance": "A resposta é completamente irrelevante",
+      "correctness": "Ele não cita como implementar a arquitetura orientada a enventos",
+      "completeness": "A resposta está completamente incompleta",
+      "clarity": "Não é clara"
+    },
+    "overall_comment": "Irrelevante",
+    "timestamp": "2025-07-03T21:15:08.021057"
+  }
+}

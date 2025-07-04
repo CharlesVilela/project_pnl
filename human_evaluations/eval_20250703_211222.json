@@ -1,0 +1,29 @@
+{
+  "question": "Quais riscos enfrentamos se o treinamento em novas plataformas for insuficiente?",
+  "expected_response": "Riscos críticos: 1) Apenas 40-50% das funcionalidades são utilizadas, 2) Erros operacionais aumentam em 60%, 3) Resistência ativa dos usuários, 4) Retorno sobre investimento abaixo de 30%, e 5) Vazamentos de dados por uso inadequado. Cada dólar investido em treinamento gera US$5 em ganhos de produtividade.",
+  "generated_response": "- Se não treinarmos em novas plataformas, ficaremos presos no escuro nos próximos anos. É por isso que é tão importante ter uma base sólida de conhecimento e habilidades para nos ajudar a avançar. O New York Times relata que muitas empresas estão lutando para treinar seus funcionários em novas tecnologias, mas também estão lutando para encontrar as pessoas certas para ensiná -las. \"É uma situação muito difícil\", diz um dos CEOs da empresa. \"Não temos certeza de como treinar nossos funcionários, mas precisamos garantir que eles saibam o que precisam aprender\". O Times observa que algumas empresas ainda não estão treinando seus funcionários, e ainda há muito trabalho a fazer antes que possam começar a treinar",
+  "auto_metrics": {
+    "cosine_similarity": 0.5154985189437866,
+    "rouge_l": 0.06201549948440629,
+    "meteor_score": 0.07532956685499058,
+    "bleu_score": 3.648617231290655e-155,
+    "length_difference": 409,
+    "length_ratio": 2.3322475570032575
+  },
+  "human_evaluation": {
+    "scores": {
+      "relevance": 4,
+      "correctness": 3,
+      "completeness": 3,
+      "clarity": 3
+    },
+    "comments": {
+      "relevance": "A pergunta fala sobre o contexto da pergunta, consegue responder em partes a pergunta. ",
+      "correctness": "Ele responde dentro do contexto mas não chega a citar mais exemplos dos riscos",
+      "completeness": "Ainda faltou ele citar mais exemplos dos riscos, alem de mencionar dados reais",
+      "clarity": "A resposta até que é clara, mas ainda sim precisaria melhorar"
+    },
+    "overall_comment": "Foi uma resposta razoavel",
+    "timestamp": "2025-07-03T21:12:22.676636"
+  }
+}

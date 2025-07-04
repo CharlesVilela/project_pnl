@@ -1,0 +1,1147 @@
+{
+  "summary": {
+    "total_responses": 67,
+    "auto_metrics_avg": {
+      "cosine_similarity": 0.6815652718294912,
+      "rouge_l": 0.09031086030140517,
+      "meteor_score": 0.0993308042191266,
+      "bleu_score": 0.0026586475955897395
+    },
+    "human_metrics_avg": {
+      "relevance": 2.6,
+      "correctness": 2.0,
+      "completeness": 1.6,
+      "clarity": 2.0
+    }
+  },
+  "detailed_results": [
+    {
+      "question": "O que é exatamente a transformação digital no cenário de negócios atual?",
+      "expected_response": "A transformação digital é a integração estratégica de tecnologias digitais em todos os aspectos dos negócios, redefinindo fundamentalmente operações, entrega de valor e experiências do cliente. No cenário atual, vai além da simples digitalização, envolvendo uma reestruturação cultural que prioriza agilidade, data-driven decision e inovação contínua para manter competitividade em mercados dinâmicos.",
+      "generated_response": "- A transformação digital no cenário de negócios atual é uma mudança na maneira como as empresas operam e interagem com seus clientes, funcionários e outras partes interessadas. É também uma mudança na maneira como as pessoas interagem com produtos e serviços, bem como como as empresas podem fazer melhor uso da tecnologia e da infraestrutura, relata o Wall Street Journal. \"A transformação digital é a evolução da capacidade de uma organização de ser mais eficiente, mais receptiva e mais receptiva às necessidades dos clientes\", diz um especialista em transformação digital da Universidade da Califórnia, Berkeley. \"Está mudando a maneira como interagimos com nossos clientes, tornando -os mais conscientes do que eles podem fazer e de como eles podem ajudá -los a alcançar seus objetivos\".",
+      "auto_metrics": {
+        "cosine_similarity": 0.9200538396835327,
+        "rouge_l": 0.2031249952746583,
+        "meteor_score": 0.1969479316303375,
+        "bleu_score": 0.06076306961421833,
+        "length_difference": 392,
+        "length_ratio": 1.9775561097256857
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Como uma empresa pode identificar sua prontidão para a transformação digital?",
+      "expected_response": "A prontidão pode ser avaliada através de: 1) Diagnóstico de maturidade digital (avaliando processos, tecnologia e capacitação), 2) Análise da cultura organizacional (abertura à inovação e tolerância a falhas), 3) Avaliação da infraestrutura tecnológica atual, e 4) Alinhamento estratégico entre liderança e colaboradores. Ferramentas como Digital Readiness Index podem quantificar essa avaliação.",
+      "generated_response": "- Um \"nível de maturidade\" indica que o estágio atual da organização na maturidade digital, e uma \"recomendação prática\" é uma boa maneira de avaliar a prontidão da empresa para a transformação digital. Por exemplo, se você é uma empresa emergente, concentre -se na integração, consistência e alinhamento interno. Para uma empresa líder, destaque otimização, escalabilidade e desempenho. Para uma organização emergente, enfatize a inovação, a orquestração do ecossistema e a diferenciação competitiva",
+      "auto_metrics": {
+        "cosine_similarity": 0.8485310673713684,
+        "rouge_l": 0.07920791580433323,
+        "meteor_score": 0.11090573012939002,
+        "bleu_score": 5.52091150220387e-155,
+        "length_difference": 104,
+        "length_ratio": 1.2626262626262625
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Quais são os primeiros passos para uma PME iniciar sua transformação digital?",
+      "expected_response": "Passos críticos: 1) Definir objetivos claros alinhados ao negócio, 2) Mapear processos prioritários para digitalização, 3) Desenvolcer capacitação digital da equipe, 4) Adotar soluções cloud escaláveis, e 5) Implementar coleta e análise de dados básica. Recomenda-se começar com pilotos em áreas específicas antes de expandir.",
+      "generated_response": "-A transformação digital é um grande desafio para muitas pequenas e médias empresas (PMEs) na era digital, e é importante garantir que sua empresa tenha as ferramentas e recursos certos para ter sucesso. Aqui está o que você precisa saber: uma pergunta de \"importância estratégica\": quais são os objetivos do seu projeto de transformação digital? Uma resposta de \"nível de maturidade\": o estágio atual da organização em maturidade digital (emergente, desenvolvendo, amadurecendo, liderando)",
+      "auto_metrics": {
+        "cosine_similarity": 0.6945340633392334,
+        "rouge_l": 0.07619047135419531,
+        "meteor_score": 0.09414225941422594,
+        "bleu_score": 5.237596532155796e-155,
+        "length_difference": 164,
+        "length_ratio": 1.5030674846625767
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Como medir o ROI de iniciativas de transformação digital?",
+      "expected_response": "Além de métricas financeiras tradicionais, o ROI digital deve considerar: 1) Ganhos de eficiência operacional (ex: redução de lead times), 2) Melhoria na experiência do cliente (NPS, CES), 3) Aceleração da inovação (% receita de novos produtos), e 4) Agilidade organizacional (velocidade de adaptação a mudanças). Uma abordagem balanced scorecard é recomendada.",
+      "generated_response": "- O ROI das iniciativas de transformação digital depende de quão bem eles estão sendo implementados. Por exemplo, o ROI da iniciativa de transformação digital de uma empresa pode ser medido pelo quão bem ele foi implementado e quanto tempo passou desde que a iniciativa foi lançada. Em outras palavras, há quanto tempo foi levado para implementar a iniciativa? Há quanto tempo a organização consegue acompanhar o ritmo da mudança? E quantas pessoas se inscreveram para a iniciativa até agora? Quais são as métricas de ROI que podem ser usadas para medir o ROI?",
+      "auto_metrics": {
+        "cosine_similarity": 0.7335153818130493,
+        "rouge_l": 0.08771929337026806,
+        "meteor_score": 0.11565836298932385,
+        "bleu_score": 2.703651422260833e-63,
+        "length_difference": 199,
+        "length_ratio": 1.551246537396122
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Quais tecnologias são essenciais na transformação digital atual?",
+      "expected_response": "As tecnologias fundamentais incluem: 1) Cloud computing (base para escalabilidade), 2) IA/ML (automação e insights preditivos), 3) IoT (integração de operações físicas-digitais), 4) Blockchain (segurança e transparência), e 5) Plataformas low-code (aceleração de desenvolvimento). A combinação estratégica dessas tecnologias cria ecossistemas digitais resilientes.",
+      "generated_response": "- A transformação digital envolve o uso de tecnologia e infraestrutura, e é importante garantir que essas tecnologias sejam integradas ao processo geral de transformação digital. Isso é especialmente importante para empresas que já estão nos estágios iniciais da transformação digital, como Microsoft, Google e Facebook. O objetivo é garantir que todas essas tecnologias possam ser integradas perfeitamente ao atual modelo de transformação digital, o que significa que elas podem ser usadas de várias maneiras, inclusive na forma de aplicativos, sites e mídias sociais. \"A transformação digital é uma parte essencial da modernização do mundo, e precisamos ser capazes de integrar essas tecnologias em nossas vidas diárias\", diz uma pesquisa recente publicada pelo New York Times. \"Precisamos ter um entendimento claro do que está acontecendo no mundo\".",
+      "auto_metrics": {
+        "cosine_similarity": 0.7082089185714722,
+        "rouge_l": 0.07812499576293967,
+        "meteor_score": 0.08754863813229571,
+        "bleu_score": 3.970924318364466e-155,
+        "length_difference": 488,
+        "length_ratio": 2.340659340659341
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Como a IA contribui para transformação digital no setor de saúde?",
+      "expected_response": "Na saúde, a IA impulsiona: 1) Diagnósticos precisos através de análise de imagens, 2) Medicina personalizada baseada em genômica, 3) Gestão preditiva de recursos hospitalares, 4) Chatbots para triagem inicial, e 5) Pesquisa acelerada de medicamentos. Estudos mostram redução de 30% em erros diagnósticos e 25% em custos operacionais com implementações efetivas.",
+      "generated_response": "- A inteligência artificial (IA) demonstrou ser um fator -chave da transformação digital no setor de saúde, de acordo com os Centros de Controle e Prevenção de Doenças (CDC). A IA também está sendo usada para ajudar os médicos a diagnosticar doenças e prescrever medicamentos. O CDC observa que a IA pode ser usada para melhorar a qualidade de vida dos pacientes, bem como ajudar a prevenir surtos de doenças. \"A IA é uma parte muito importante do sistema de saúde\", diz o Dr. Robert A. Smith, professor de ciência da computação na Universidade da Califórnia, Berkeley",
+      "auto_metrics": {
+        "cosine_similarity": 0.8714922666549683,
+        "rouge_l": 0.11764705412047191,
+        "meteor_score": 0.12389380530973451,
+        "bleu_score": 2.7439318792541196e-63,
+        "length_difference": 207,
+        "length_ratio": 1.5734072022160666
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Qual a importância da cultura organizacional na transformação digital?",
+      "expected_response": "A cultura é o alicerce crítico, pois: 1) Determina a aceitação de novas tecnologias, 2) Influencia a velocidade de adoção, 3) Define a tolerância a falhas em experimentações, e 4) Impacta a retenção de talentos digitais. Organizações com culturas ágeis têm 5x mais probabilidade de sucesso na transformação segundo o MIT Sloan.",
+      "generated_response": "- A importância estratégica é crítica no contexto mais amplo da transformação digital e é importante explicar por que a intenção/tópico é crítica. O objetivo desta questão é fornecer uma visão geral do nível atual de maturidade digital da organização e fornecer orientações práticas sobre como resolver esse problema. O objetivo é responder à pergunta do usuário com uma resposta clara, bem estruturada e perspicaz que ajuda a orientar o usuário durante o processo. Por exemplo, \"orientação baseada em maturidade\" se concentraria no foco na integração, consistência e alinhamento interno, enquanto as \"recomendações práticas\" se concentram em exemplos ou ferramentas/métodos específicos que podem ser aplicados nessa área. Por exemplo, \"insight inter-dimensional\" pode se concentrar em como a cultura permite a experiência do cliente ou como o Tech suporta operações",
+      "auto_metrics": {
+        "cosine_similarity": 0.5492154359817505,
+        "rouge_l": 0.15827337696806595,
+        "meteor_score": 0.1423785594639866,
+        "bleu_score": 5.253362285176399e-155,
+        "length_difference": 539,
+        "length_ratio": 2.6483180428134556
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Como engajar colaboradores com mentalidade digital?",
+      "expected_response": "Estratégias eficazes: 1) Liderança pelo exemplo (executivos usando novas ferramentas), 2) Programas de upskilling com aplicação prática imediata, 3) Mecanismos de reconhecimento por inovação, 4) Squads multidisciplinares para cocriação, e 5) Comunicação transparente sobre benefícios individuais. O engajamento aumenta 40% quando colaboradores participam do design das soluções.",
+      "generated_response": "- Se você está tentando envolver funcionários com mentalidade digital, é importante estar ciente do que está acontecendo no local de trabalho e como isso os afeta. Por exemplo, se sua empresa tiver uma estratégia digital, convém se concentrar em como fazer com que os funcionários se sintam mais conectados ao mundo digital. Você pode considerar a criação de um kit de ferramentas de \"mentalidade digital\", como o \"Digital Mindset Toolkit\", que pode ajudar os funcionários a entender como usar a tecnologia para melhorar sua produtividade e criatividade. O kit de ferramentas também pode ser usado para ensinar os funcionários a pensar digitalmente",
+      "auto_metrics": {
+        "cosine_similarity": 0.5319312810897827,
+        "rouge_l": 0.10084033139185108,
+        "meteor_score": 0.08555133079847908,
+        "bleu_score": 3.888683732874228e-155,
+        "length_difference": 270,
+        "length_ratio": 1.7142857142857142
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Como superar a resistência a novas tecnologias?",
+      "expected_response": "Abordagens comprovadas: 1) Change management estruturado (modelo ADKAR), 2) Mentoria peer-to-peer, 3) Demonstração tangível de ganhos individuais, 4) Pilotagem com early adopters influentes, e 5) Canais abertos para feedback e ajustes. É crucial abordar medos concretos (ex: substituição por IA) com planos de requalificação.",
+      "generated_response": "- A resposta a esta pergunta é: \"Como superar a resistência a novas tecnologias\". Essa é a pergunta, e é uma das mais comuns. Mas também pode ser útil conversar com alguém que sabe do que está falando. Por exemplo, você pode dizer: \"É importante entender que não seremos capazes de fazer nada até que fizemos tudo o que podemos fazer\". Ou \"teremos que garantir que não precisemos fazer tudo ao nosso alcance para melhorar as coisas\". Você também pode sugerir maneiras de resolver esse problema, concentrando -se em como as pessoas se sentem em relação à tecnologia, como o uso da tecnologia para ajudá -los a resolver problemas",
+      "auto_metrics": {
+        "cosine_similarity": 0.4653463661670685,
+        "rouge_l": 0.06349205910178916,
+        "meteor_score": 0.07920792079207922,
+        "bleu_score": 3.194802156447434e-155,
+        "length_difference": 302,
+        "length_ratio": 1.9292307692307693
+      },
+      "human_evaluation": {
+        "scores": {
+          "relevance": 2,
+          "correctness": 2,
+          "completeness": 1,
+          "clarity": 1
+        },
+        "comments": {
+          "relevance": "A pergunta não é relevante para a pergunta, ele cita algo relacionado a pergunta mas ao decorrer da resposta fica completamente fora da pergunta",
+          "correctness": "A resposta gerada nao diz como superar a resisitencia a novas tecnologias",
+          "completeness": "A resposta não esta totalmente completa",
+          "clarity": "A resposta gerada é completamente confusa"
+        },
+        "overall_comment": "A pergunta não atendeu a pergunta",
+        "timestamp": "2025-07-03T21:08:40.238494"
+      }
+    },
+    {
+      "question": "Qual o impacto de infraestrutura de TI desatualizada?",
+      "expected_response": "Infraestrutura legada causa: 1) Custos de manutenção até 80% maiores, 2) Lentidão na implementação de novas soluções, 3) Vulnerabilidades de segurança críticas, e 4) Impossibilidade de integração com ecossistemas digitais modernos. Empresas com infraestrutura obsoleta levam 3x mais tempo para lançar novos produtos digitais.",
+      "generated_response": "- O impacto da infraestrutura desatualizada de TI pode ser enorme. De acordo com o New York Times, \"o custo médio da atualização de uma infraestrutura de TI nos Estados Unidos é de cerca de US $ 1 bilhão por ano\". Isso é mais que o dobro do custo de uma nova infraestrutura, e é por isso que é tão importante que as empresas garantam que sua infraestrutura esteja atualizada. \"Também é importante para as empresas saber o que precisam fazer para garantir que seus sistemas estejam atualizados\", diz um especialista em segurança cibernética da Universidade da Califórnia, Berkeley. \"Se você não sabe o que está olhando, não pode simplesmente assumir que não há nada de errado com sua infraestrutura\". O Times observa que, embora algumas empresas possam atualizar sua infraestrutura de TI, outras podem não estar prontas para fazê -lo. \"À medida que a tecnologia evolui, o mesmo acontece com a demanda por infraestrutura de TI\", acrescenta o Washington Post",
+      "auto_metrics": {
+        "cosine_similarity": 0.7163499593734741,
+        "rouge_l": 0.09523809133971972,
+        "meteor_score": 0.15982445641332532,
+        "bleu_score": 3.8990214127878916e-155,
+        "length_difference": 630,
+        "length_ratio": 2.9384615384615387
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Como garantir que dados gerem decisões estratégicas?",
+      "expected_response": "Requer: 1) Governança de dados clara (qualidade e responsabilidades), 2) Ferramentas de analytics acessíveis a não técnicos, 3) Cultura de data literacy em todos os níveis, 4) Processos de decisão estruturados baseados em dados, e 5) Mecanismos de feedback para refinar modelos. Empresas data-driven têm 23x mais chance de reter clientes.",
+      "generated_response": "- Como você garante que os dados gerem decisões estratégicas? A resposta a esta pergunta vem da pergunta do usuário: \"Recomendações práticas\". Nesse caso, o usuário está perguntando como garantir que os dados possam ser usados ​​para tomar decisões estratégicas. Por exemplo, se você está tentando tomar uma decisão sobre um produto ou serviço, diga: \"É importante ter um entendimento claro do que será usado e o que isso significará para a empresa\". Se você deseja tomar uma decisão informada, precisa saber como usar os dados para tomar essa decisão. Você também precisa fornecer conselhos práticos sobre como aplicar essas informações a outras áreas do negócio, como marketing, vendas e operações",
+      "auto_metrics": {
+        "cosine_similarity": 0.66501384973526,
+        "rouge_l": 0.0967741889698233,
+        "meteor_score": 0.06140350877192983,
+        "bleu_score": 3.745930766298518e-155,
+        "length_difference": 361,
+        "length_ratio": 2.0680473372781063
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Quais riscos de treinamento insuficiente em novas plataformas?",
+      "expected_response": "Riscos críticos incluem: 1) Subutilização de recursos (até 60% das funcionalidades), 2) Resistência ativa dos usuários, 3) Retrabalho e erros operacionais, 4) Baixo ROI em investimentos tecnológicos, e 5) Aumento de riscos de segurança. Estudos da Gartner mostram que 70% das falhas em transformação digital originam-se de gaps de capacitação.",
+      "generated_response": "- Treinamento insuficiente em novas plataformas pode levar a uma variedade de problemas, incluindo: falta de conscientização sobre novas tecnologias; uma falha em treinar funcionários; e uma perda de produtividade. Os Institutos Nacionais de Saúde relatam que treinamento insuficiente pode levar a sérios problemas de saúde, como doenças cardíacas, derrame e diabetes. Além disso, o risco de desenvolver novas tecnologias é maior que o do treinamento existente. \"É importante estar ciente dos riscos associados ao treinamento inadequado\", diz o Instituto Nacional de Saúde e Serviços Humanos. \"Se você não tiver o treinamento necessário, talvez não consiga aproveitar ao máximo suas novas plataformas\".",
+      "auto_metrics": {
+        "cosine_similarity": 0.7863577604293823,
+        "rouge_l": 0.08547008082109747,
+        "meteor_score": 0.15209072759538594,
+        "bleu_score": 5.116379531646389e-155,
+        "length_difference": 359,
+        "length_ratio": 2.0466472303206995
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Como criar cultura de experimentação em empresas tradicionais?",
+      "expected_response": "Passos fundamentais: 1) Estabelecer sandboxes seguras para testes, 2) Implementar métricas de inovação (ex: % tempo para experimentação), 3) Celebrar aprendizados de falhas controladas, 4) Vincular incentivos à inovação incremental, e 5) Trazer cases externos inspiradores. Começar com 'laboratórios de inovação' desconectados da operação principal reduz riscos percebidos.",
+      "generated_response": "- Uma cultura de experimentação nas empresas tradicionais pode ser uma ótima maneira de aumentar o envolvimento e a produtividade dos funcionários, de acordo com o New York Times. Mas também é uma boa maneira de fazer com que os funcionários se sintam mais conectados à empresa, o que pode levar a uma melhor retenção de funcionários e melhoria da produtividade. Nesse caso, a questão é sobre como criar uma cultura de experimentação em uma empresa tradicional. \"É importante entender que não há uma maneira certa ou errada de fazer isso\", diz um especialista na Universidade da Califórnia, Berkeley. \"Se você não sabe o que está fazendo, não pode fazer isso.\"",
+      "auto_metrics": {
+        "cosine_similarity": 0.535697877407074,
+        "rouge_l": 0.08264462347107465,
+        "meteor_score": 0.06445672191528545,
+        "bleu_score": 3.745930766298518e-155,
+        "length_difference": 287,
+        "length_ratio": 1.769436997319035
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Como a transformação digital impacta cadeias de suprimentos?",
+      "expected_response": "Efeitos transformadores: 1) Visibilidade em tempo real via IoT e blockchain, 2) Otimização preditiva de estoques com IA, 3) Resiliência através de digital twins para simulação de cenários, 4) Automação de processos com RPA, e 5) Personalização em massa. Leader digitais reportam redução de 30% em custos logísticos e 50% menos rupturas.",
+      "generated_response": "- As cadeias de suprimentos dependem cada vez mais da transformação digital para melhorar sua eficiência e produtividade, de acordo com um novo relatório. O relatório constata que as cadeias de suprimentos estão experimentando um aumento significativo no número de clientes aos quais têm acesso, bem como um aumento na demanda por bens e serviços. A transformação digital também tem um impacto negativo na própria cadeia de suprimentos, com alguns varejistas dizendo que pode levar a menos clientes que possam comprar bens ou serviços. \"A transformação digital afeta as cadeias de suprimentos de várias maneiras\", diz o relatório",
+      "auto_metrics": {
+        "cosine_similarity": 0.708431601524353,
+        "rouge_l": 0.10714285241230888,
+        "meteor_score": 0.1060070671378092,
+        "bleu_score": 5.219751176930713e-155,
+        "length_difference": 293,
+        "length_ratio": 1.8720238095238095
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Quais tendências futuras na transformação digital?",
+      "expected_response": "Tendências emergentes: 1) Hiperautomação com IA generativa, 2) Plataformas industriais de metaverso para colaboração, 3) Sustentabilidade integrada via digital twins, 4) Democratização de desenvolvimento com low-code, e 5) Segurança zero-trust como padrão. Até 2027, 40% das grandes empresas terão 'chief transformation officers' dedicados segundo previsões da IDC.",
+      "generated_response": "- Quais são as tendências futuras na transformação digital? O New York Times relata que \"a transformação digital deve levar a um aumento significativo no número de empregos criados, bem como uma redução na quantidade de tempo necessária para que as empresas desenvolvam novos produtos e serviços\", segundo o The Times. \"A transformação digital continuará sendo uma parte importante de nossa economia e precisamos garantir que isso não seja um problema para todos nós\". O Times também observa que ainda há um longo caminho a percorrer para garantir que a transformação digital continue sendo uma parte essencial da economia",
+      "auto_metrics": {
+        "cosine_similarity": 0.7082987427711487,
+        "rouge_l": 0.13913043001890374,
+        "meteor_score": 0.09578544061302682,
+        "bleu_score": 4.497548684366688e-155,
+        "length_difference": 257,
+        "length_ratio": 1.704109589041096
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Como a transformação digital está impactando a experiência do cliente em diferentes setores?",
+      "expected_response": "A transformação digital revoluciona a experiência do cliente através de: 1) Personalização em tempo real baseada em dados, 2) Canais omnichannel integrados, 3) Autoatendimento avançado via chatbots, 4) Proatividade na resolução de problemas, e 5) Engajamento pós-venda contínuo. Empresas líderes reportam aumento de 35% na retenção de clientes após implementação bem-sucedida.",
+      "generated_response": "- A transformação digital está mudando a experiência do cliente em diferentes setores. Nos Estados Unidos, por exemplo, a transformação digital tem sido um fator importante nas experiências dos clientes nos EUA, enquanto na Europa foi visto como um fator -chave de inovação e diferenciação competitiva. Em outros países, no entanto, tem sido amplamente resultado de mudanças tecnológicas, como a Internet das Coisas (IoT) e a Inteligência Artificial (AI), relata o New York Times. Na Europa, as transições digitais foram impulsionadas principalmente pelo uso da tecnologia para melhorar a experiência do cliente. Na América do Norte, a mudança digital foi impulsionada por uma combinação de fatores econômicos, culturais e políticos. Na Ásia, as mudanças digitais levaram a uma mudança no comportamento do consumidor em relação aos produtos e serviços digitais. Na América Latina, os consumidores confiam cada vez mais em tecnologias digitais para ajudá -los a tomar decisões informadas sobre o que querem comprar e o que precisam fazer para alcançar seus objetivos",
+      "auto_metrics": {
+        "cosine_similarity": 0.8019507527351379,
+        "rouge_l": 0.13496932104934334,
+        "meteor_score": 0.12861736334405147,
+        "bleu_score": 0.04817784832155701,
+        "length_difference": 689,
+        "length_ratio": 2.8324468085106385
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Quais são exemplos de sucesso em transformação digital no setor financeiro?",
+      "expected_response": "Cases emblemáticos incluem: 1) Bancos digitais com operação 100% mobile, 2) Plataformas de investimento baseadas em IA, 3) Processos de crédito automatizados via machine learning, 4) Combate a fraudes com algoritmos preditivos, e 5) Atendimento personalizado através de data analytics. Instituições pioneiras reduziram custos operacionais em 40% e aumentaram a satisfação do cliente em 50%.",
+      "generated_response": "- A transformação digital no setor financeiro resultou em várias inovações, incluindo a introdução de sistemas de pagamento digital e a criação de uma moeda digital. A Autoridade de Conduta Financeira (FCA) diz que \"a transformação digital tem sido um fator importante da inovação no setor de fintech\". O site da FCA lista alguns exemplos de sucesso no setor: nos Estados Unidos, por exemplo, o uso de pagamentos digitais para pagar as contas levou a um aumento nas compras on -line e no Reino Unido, onde os pagamentos digitais se tornaram mais comuns do que nunca. No Reino Unido, por exemplo, os clientes agora podem fazer pagamentos em seus dispositivos móveis usando um aplicativo para smartphone. Na Europa, no entanto, os pagamentos digitais estão se tornando cada vez mais comuns, com muitas empresas dependendo dos métodos de pagamento tradicionais, como cartões de crédito",
+      "auto_metrics": {
+        "cosine_similarity": 0.6674515604972839,
+        "rouge_l": 0.10666666231466684,
+        "meteor_score": 0.109717868338558,
+        "bleu_score": 2.0094908840954785e-63,
+        "length_difference": 492,
+        "length_ratio": 2.2615384615384615
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Como a transformação digital pode melhorar a eficiência operacional nas cadeias de suprimentos?",
+      "expected_response": "Melhorias-chave: 1) Rastreamento em tempo real com IoT, 2) Otimização de rotas através de algoritmos, 3) Gestão preditiva de estoques, 4) Automação de processos logísticos com RPA, e 5) Integração digital com fornecedores. Empresas líderes alcançaram redução de 30% nos custos logísticos e 25% no tempo de entrega.",
+      "generated_response": "- A transformação digital pode melhorar a eficiência operacional nas cadeias de suprimentos, e não se trata apenas de melhorar a eficiência. Trata -se também de melhorar a qualidade da própria cadeia de suprimentos. O New York Times relata que a transformação digital demonstrou ter vários benefícios para cadeias de suprimentos-incluindo escalabilidade, custo-efetividade e melhor atendimento ao cliente. \"A transformação digital é um componente essencial para alcançar esse objetivo\", diz um pesquisador da Universidade da Califórnia, Berkeley. \"É uma parte muito importante para garantir que nossas cadeias de suprimentos estejam fazendo o que precisam fazer\".",
+      "auto_metrics": {
+        "cosine_similarity": 0.7794973850250244,
+        "rouge_l": 0.05607476177482787,
+        "meteor_score": 0.08538899430740038,
+        "bleu_score": 4.5912576796118165e-155,
+        "length_difference": 349,
+        "length_ratio": 2.111464968152866
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Qual o papel da transformação digital na conquista de metas de sustentabilidade?",
+      "expected_response": "A transformação digital contribui para sustentabilidade através de: 1) Monitoramento inteligente de consumo energético, 2) Logística otimizada para reduzir emissões, 3) Economia circular habilitada por IoT, 4) Digitalização de documentos e processos, e 5) Simulações para eco-design de produtos. Organizações digitais reduzem sua pegada de carbono em até 45% comparado a empresas tradicionais.",
+      "generated_response": "- A transformação digital é a chave para alcançar as metas de sustentabilidade, e é uma parte importante disso. Mas o que isso significa para o futuro? O New York Times relata que a transformação digital tem vários benefícios: pode ajudar as empresas a fazer melhor uso da tecnologia, aumentar a produtividade e reduzir custos. E também pode ajudar as empresas a alcançar um crescimento mais sustentável. \"A transformação digital é uma parte essencial para atingir as metas de desenvolvimento sustentável\", diz o Times. \"É uma parte crucial de nossa abordagem geral para o desenvolvimento sustentável\". O Times observa que o papel da transformação digital na conquista desses objetivos depende de quão bem a empresa está implementando sua estratégia de transformação digital",
+      "auto_metrics": {
+        "cosine_similarity": 0.8240749835968018,
+        "rouge_l": 0.13008129609095131,
+        "meteor_score": 0.15706516068447415,
+        "bleu_score": 0.04059917554661784,
+        "length_difference": 381,
+        "length_ratio": 1.9694656488549618
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Quais são as maiores tendências em transformação digital para os próximos 3 anos?",
+      "expected_response": "Tendências-chave: 1) Hiperautomação com IA generativa, 2) Plataformas de metaverso para colaboração corporativa, 3) Arquiteturas de TI auto-curáveis, 4) Democratização de ferramentas de IA, e 5) Segurança adaptativa baseada em comportamento. Estima-se que 75% das empresas adotarão pelo menos 3 dessas tecnologias até 2026.",
+      "generated_response": "- Quais são as maiores tendências digitais para os próximos 3 anos? Aqui está uma lista das tendências digitais mais importantes nos próximos três anos. A seguir, é apresentada uma amostra das maiores tendências digitais nos próximos 3 anos. (Resposta: A.) A seguir, são apresentadas as principais tendências digitais do próximo ano: (B.) Google, Facebook, Snapchat, Twitter, Instagram e Snapchat. (C.) Apple, Google, Microsoft e Amazon.com. (D.) Facebook, Google+ e YouTube",
+      "auto_metrics": {
+        "cosine_similarity": 0.5996410846710205,
+        "rouge_l": 0.10989010493901726,
+        "meteor_score": 0.04282655246252677,
+        "bleu_score": 3.540568792139384e-155,
+        "length_difference": 151,
+        "length_ratio": 1.4674922600619196
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Como a transformação digital está remodelando modelos de negócios tradicionais?",
+      "expected_response": "A transformação digital redefine modelos de negócio através de: 1) Servitização (produtos como serviços), 2) Plataformas multisided, 3) Assinaturas digitais, 4) Mercados virtuais, e 5) Modelos baseados em ecossistemas. Empresas inovadoras geram 30-50% de sua receita de novos modelos digitais.",
+      "generated_response": "- A transformação digital está mudando os modelos de negócios tradicionais e os tornam mais atraentes para clientes e empresas. Mas o que isso significa para o futuro dos negócios? O New York Times relata que a transformação digital está transformando a maneira como as empresas operam e interagem com seus clientes e funcionários. Também está mudando a maneira como eles pensam sobre si mesmos e como interagem entre si. \"É uma nova maneira de pensar sobre as coisas\", diz um especialista em transformação digital na Universidade da Califórnia, Berkeley. \"A transformação digital mudou a maneira como pensamos nas pessoas e como interagimos com nossos clientes e colegas\". O Times observa que as mudanças não estão necessariamente relacionadas à experiência do cliente, mas como as empresas estão interagindo com os clientes e trabalhando juntos para criar melhores produtos e serviços. O Times também aponta que muitas empresas estão usando a transformação digital como uma maneira de melhorar sua experiência com o cliente",
+      "auto_metrics": {
+        "cosine_similarity": 0.8086366057395935,
+        "rouge_l": 0.13636363232897167,
+        "meteor_score": 0.19236437008320298,
+        "bleu_score": 0.02858929542211936,
+        "length_difference": 732,
+        "length_ratio": 3.4982935153583616
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Quais considerações éticas são críticas em tecnologias digitais avançadas?",
+      "expected_response": "Considerações éticas essenciais: 1) Transparência algorítmica, 2) Prevenção de vieses em sistemas de IA, 3) Privacidade de dados pessoais, 4) Responsabilidade por decisões automatizadas, e 5) Impacto social da automação. Empresas líderes estabelecem comitês de ética digital e realizam auditorias regulares em seus sistemas.",
+      "generated_response": "- Os críticos das tecnologias digitais avançadas estão preocupadas com as implicações éticas de seu uso. Os críticos argumentam que violam os direitos dos indivíduos à privacidade, liberdade de expressão e estado de direito. Eles também argumentam que é injusto discriminar pessoas que usam tecnologias avançadas para seu próprio ganho pessoal. Criticar tecnologias avançadas é uma violação dos direitos humanos, que inclui o direito à privacidade e à liberdade de expressão. O New York Times relata que os críticos das tecnologias avançadas os criticaram por serem \"inadequados\" e \"injustos\". Os críticos dizem que não estão fazendo o suficiente para proteger os direitos humanos",
+      "auto_metrics": {
+        "cosine_similarity": 0.590991735458374,
+        "rouge_l": 0.07843136787389493,
+        "meteor_score": 0.11022044088176353,
+        "bleu_score": 4.157177775410604e-155,
+        "length_difference": 356,
+        "length_ratio": 2.0987654320987654
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Como engajar líderes seniores na jornada de transformação digital?",
+      "expected_response": "Estratégias eficazes: 1) Demonstrar impactos tangíveis no negócio, 2) Criar programas de imersão digital, 3) Estabelecer KPIs digitais na remuneração, 4) Conectar transformação a objetivos estratégicos, e 5) Designar 'embaixadores digitais' entre executivos. Empresas com liderança engajada têm 3x mais sucesso em iniciativas digitais.",
+      "generated_response": "- A jornada de transformação digital pode ser desafiadora para os líderes seniores, e é importante envolvê -los na jornada. Aqui estão algumas maneiras de envolver líderes seniores no processo de transformação digital: 1. Explique por que a intenção/tópico é crítica no contexto mais amplo da transformação digital. 2. Explique como o público -alvo responderá à pergunta. 3. Forneça orientação prática, exemplos concretos ou ferramentas/métodos que podem ser aplicados nesta área. 4. Use um tom profissional e consultivo. Evite conselhos genéricos. Ser prático e adaptado ao cenário",
+      "auto_metrics": {
+        "cosine_similarity": 0.6928688287734985,
+        "rouge_l": 0.08620689188614769,
+        "meteor_score": 0.07246376811594203,
+        "bleu_score": 4.231181054318901e-155,
+        "length_difference": 247,
+        "length_ratio": 1.7373134328358208
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Se minha equipe tem medo de novas tecnologias, como superar essa barreira?",
+      "expected_response": "Abordagens: 1) Implementar programas de mentoria reversa (jovens ensinando seniores), 2) Criar 'campeões digitais' em cada departamento, 3) Demonstrar ganhos pessoais de produtividade, 4) Começar com tecnologias de baixo risco, e 5) Oferecer treinamento contínuo com aplicação prática. O medo reduz em 70% após 3 meses de exposição guiada.",
+      "generated_response": "- Se sua equipe tem medo de novas tecnologias, como você pode superar essa barreira? A resposta a esta pergunta é: \"Faça a pergunta\". O primeiro passo é explicar por que a pergunta é importante. O segundo é fornecer conselhos práticos. O terceiro é oferecer recomendações práticas. A resposta final é prática e adaptada ao contexto. A primeira frase é um exemplo de como superar o medo de novas tecnologias. A última frase é uma descrição de qual será o próximo passo",
+      "auto_metrics": {
+        "cosine_similarity": 0.5944804549217224,
+        "rouge_l": 0.09900989607293426,
+        "meteor_score": 0.07648183556405354,
+        "bleu_score": 4.35827178345681e-155,
+        "length_difference": 128,
+        "length_ratio": 1.3775811209439528
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Qual o impacto de infraestrutura de TI ultrapassada na agilidade digital?",
+      "expected_response": "Infraestrutura legada: 1) Aumenta tempo de lançamento de novos recursos em 300%, 2) Eleva custos de manutenção para 70-80% do orçamento de TI, 3) Cria vulnerabilidades de segurança críticas, 4) Limita integração com soluções modernas, e 5) Reduz capacidade de inovação. Migrar para arquiteturas cloud-native pode reverter esses impactos em 6-12 meses.",
+      "generated_response": "- O impacto da infraestrutura desatualizada de TI na agilidade digital tem sido amplamente desconhecida, mas está se tornando cada vez mais comum ver o impacto desse tipo de infraestrutura. Como resultado, muitas empresas estão se afastando da infraestrutura tradicional de TI, o que pode levar a uma perda de produtividade e eficiência, relata o Wall Street Journal. \"É uma questão muito importante\", diz um analista. \"Se não tivermos a infraestrutura certa no lugar, perderemos nossa vantagem competitiva\". Outro analista diz ao New York Times que, embora o impacto não seja tão grande quanto algumas pessoas podem pensar: \"ainda é um grande problema\".",
+      "auto_metrics": {
+        "cosine_similarity": 0.8087481260299683,
+        "rouge_l": 0.062499995440674166,
+        "meteor_score": 0.0788091068301226,
+        "bleu_score": 1.9187537535511585e-63,
+        "length_difference": 303,
+        "length_ratio": 1.8632478632478633
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Como transformar dados em decisões estratégicas efetivas?",
+      "expected_response": "Requer: 1) Governança de dados centralizada, 2) Ferramentas de BI intuitivas para não especialistas, 3) Cultura de decisão baseada em evidências, 4) Treinamento contínuo em data literacy, e 5) Processos de feedback para refinamento de modelos. Empresas data-driven tomam decisões 40% mais rápidas com 30% maior precisão.",
+      "generated_response": "- Como você transforma os dados em decisões estratégicas eficazes? A resposta a esta pergunta é: transformando dados em decisões estratégicas acionáveis. Nesse caso, não se trata dos dados em si, mas como usá -los para tomar melhores decisões estratégicas, relata o Wall Street Journal. A questão não é sobre como tirar o máximo proveito de seus dados - é sobre o que você pode fazer com eles. É também sobre como você pode aplicá -lo a outras áreas da sua empresa, como marketing, vendas, operações e muito mais. O objetivo é garantir que seus dados estejam sendo usados ​​da maneira certa, para que você possa tomar decisões mais inteligentes",
+      "auto_metrics": {
+        "cosine_similarity": 0.6666973233222961,
+        "rouge_l": 0.1525423683467396,
+        "meteor_score": 0.10318949343339588,
+        "bleu_score": 4.717068855239749e-155,
+        "length_difference": 324,
+        "length_ratio": 2.0125
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Quais riscos enfrentamos se o treinamento em novas plataformas for insuficiente?",
+      "expected_response": "Riscos críticos: 1) Apenas 40-50% das funcionalidades são utilizadas, 2) Erros operacionais aumentam em 60%, 3) Resistência ativa dos usuários, 4) Retorno sobre investimento abaixo de 30%, e 5) Vazamentos de dados por uso inadequado. Cada dólar investido em treinamento gera US$5 em ganhos de produtividade.",
+      "generated_response": "- Se não treinarmos em novas plataformas, ficaremos presos no escuro nos próximos anos. É por isso que é tão importante ter uma base sólida de conhecimento e habilidades para nos ajudar a avançar. O New York Times relata que muitas empresas estão lutando para treinar seus funcionários em novas tecnologias, mas também estão lutando para encontrar as pessoas certas para ensiná -las. \"É uma situação muito difícil\", diz um dos CEOs da empresa. \"Não temos certeza de como treinar nossos funcionários, mas precisamos garantir que eles saibam o que precisam aprender\". O Times observa que algumas empresas ainda não estão treinando seus funcionários, e ainda há muito trabalho a fazer antes que possam começar a treinar",
+      "auto_metrics": {
+        "cosine_similarity": 0.5154985189437866,
+        "rouge_l": 0.06201549948440629,
+        "meteor_score": 0.07532956685499058,
+        "bleu_score": 3.648617231290655e-155,
+        "length_difference": 409,
+        "length_ratio": 2.3322475570032575
+      },
+      "human_evaluation": {
+        "scores": {
+          "relevance": 4,
+          "correctness": 3,
+          "completeness": 3,
+          "clarity": 3
+        },
+        "comments": {
+          "relevance": "A pergunta fala sobre o contexto da pergunta, consegue responder em partes a pergunta. ",
+          "correctness": "Ele responde dentro do contexto mas não chega a citar mais exemplos dos riscos",
+          "completeness": "Ainda faltou ele citar mais exemplos dos riscos, alem de mencionar dados reais",
+          "clarity": "A resposta até que é clara, mas ainda sim precisaria melhorar"
+        },
+        "overall_comment": "Foi uma resposta razoavel",
+        "timestamp": "2025-07-03T21:12:22.676636"
+      }
+    },
+    {
+      "question": "Como fomentar experimentação digital em organizações tradicionais?",
+      "expected_response": "Estratégias: 1) Criar 'espaços seguros' para inovação, 2) Estabelecer métricas de experimentação (ex: % tempo para POCs), 3) Celebrar aprendizados mesmo em falhas, 4) Implementar programas de intraempreendedorismo, e 5) Conectar inovação a incentivos. Empresas com culturas experimentais lançam 50% mais novos produtos/serviços.",
+      "generated_response": "- Experimentação digital em organizações tradicionais pode ser uma ótima maneira de promover a inovação, mas não é a única maneira de fazê -lo. O New York Times relata que a experimentação digital não é apenas sobre tecnologia, mas também sobre como as pessoas interagem e interagem com seu ambiente digital. \"É sobre como pensamos sobre o que queremos fazer a seguir\", diz um pesquisador da Universidade da Califórnia, Berkeley. \"Queremos garantir que todos tenham acesso às informações necessárias para tomar decisões informadas sobre seu futuro\". O Times também observa que muitas organizações tradicionais não têm os recursos ou recursos para conduzir experimentos digitais, e isso é especialmente verdadeiro na indústria de tecnologia, onde há muito trabalho a ser feito",
+      "auto_metrics": {
+        "cosine_similarity": 0.6400563716888428,
+        "rouge_l": 0.11111110672083666,
+        "meteor_score": 0.09861932938856016,
+        "bleu_score": 4.306075028866568e-155,
+        "length_difference": 447,
+        "length_ratio": 2.3628048780487805
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Como a IoT está transformando a indústria manufatureira?",
+      "expected_response": "Revolução através de: 1) Manutenção preditiva de equipamentos, 2) Otimização de linhas de produção em tempo real, 3) Rastreamento inteligente de materiais, 4) Controle de qualidade automatizado, e 5) Gestão energética eficiente. Fábricas inteligentes aumentam produtividade em 25% e reduzem desperdícios em 30%.",
+      "generated_response": "- A IoT está transformando a indústria de fabricação e está mudando a maneira como as pessoas trabalham e interagem com a tecnologia. Está tornando a fabricação mais eficiente, mais rápida e mais barata do que nunca. E é isso que está acontecendo no setor manufatureiro, relata o Wall Street Journal. \"Está transformando a fabricação\", diz um pesquisador da Universidade da Califórnia, Berkeley. \"A indústria manufatureira está se tornando mais conectada à Internet das Coisas (IoT), que está reunindo todas as diferentes partes do mundo físico\". A indústria também está se afastando dos processos de fabricação tradicionais, como automação de fabricação, para transformação digital. \"Estamos vendo uma mudança na maneira como fazemos negócios\", ele diz ao Journal",
+      "auto_metrics": {
+        "cosine_similarity": 0.6222355365753174,
+        "rouge_l": 0.03361344115811084,
+        "meteor_score": 0.0496031746031746,
+        "bleu_score": 3.0836443769010018e-155,
+        "length_difference": 453,
+        "length_ratio": 2.4565916398713825
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Quais habilidades são essenciais para profissionais na era digital?",
+      "expected_response": "Habilidades críticas: 1) Alfabetização de dados, 2) Pensamento analítico, 3) Adaptabilidade tecnológica, 4) Colaboração virtual, 5) Resolução criativa de problemas, e 6) Inteligência emocional. 85% das profissões do futuro exigirão combinação dessas competências técnicas e humanas.",
+      "generated_response": "- A transformação digital é um campo em rápida mudança e é importante ter as habilidades certas para fazer a transição. O New York Times explica que a transformação digital é uma área de alta maturidade digital e que \"nível de maturidade\" significa o estágio atual da organização na maturidade digital (emergente, em desenvolvimento, amadurecimento, liderança). O Times também observa que \"todos precisam ser capazes de entender como a transformação digital afeta suas vidas\". O Times relata que a era digital sofreu várias mudanças nos últimos anos, incluindo a introdução das mídias sociais, a criação de aplicativos móveis e a criação e o uso da realidade virtual. O Times observa que essa tendência levou a uma mudança na maneira como as pessoas interagem entre si, o que pode levar a uma comunicação mais eficiente e eficaz. \"A era digital está cheia de desafios\", diz um especialista. \"É hora de todos estarem cientes do que está acontecendo ao seu redor\".",
+      "auto_metrics": {
+        "cosine_similarity": 0.4414083957672119,
+        "rouge_l": 0.0579710107792483,
+        "meteor_score": 0.07246376811594203,
+        "bleu_score": 2.8976723635433103e-155,
+        "length_difference": 680,
+        "length_ratio": 3.4113475177304964
+      },
+      "human_evaluation": {
+        "scores": {
+          "relevance": 1,
+          "correctness": 1,
+          "completeness": 1,
+          "clarity": 1
+        },
+        "comments": {
+          "relevance": "A resposta gerada foi completamente forar do contexto da pergunta",
+          "correctness": "A resposta gerada não cita as habilidades essenciais para os profissionais da pergunta",
+          "completeness": "A resposta foi insatisfatoria",
+          "clarity": "A resposta esta totalmente fora do contexto da pergunta tornando a não clara"
+        },
+        "overall_comment": "A resposta fugiu inteiramente do contexto",
+        "timestamp": "2025-07-03T21:05:42.326354"
+      }
+    },
+    {
+      "question": "Como a computação em nuvem acelera a transformação digital?",
+      "expected_response": "Aceleração através de: 1) Provisionamento de recursos em minutos, 2) Escalabilidade elástica sob demanda, 3) Redução de custos de infraestrutura em 30-50%, 4) Acesso a serviços avançados (IA, analytics), e 5) Facilidade de implementação de inovações. Empresas cloud-first lançam novos produtos 60% mais rápido.",
+      "generated_response": "- A computação em nuvem acelera a transformação digital, acelerando a velocidade na qual os dados são processados, relata o New York Times. A computação em nuvem existe há décadas, mas agora está se tornando cada vez mais comum na era digital. \"A computação em nuvem acelera a transformação digital\" é um exemplo de como a computação em nuvem pode acelerar a transformação digital, observa o Wall Street Journal. \"A tecnologia baseada em casos pode ser usada para acelerar a velocidade do processamento de dados\", diz um pesquisador da Universidade da Califórnia, Berkeley. \"É uma maneira de tornar os dados mais acessíveis e mais fáceis de acessar\".",
+      "auto_metrics": {
+        "cosine_similarity": 0.6998831033706665,
+        "rouge_l": 0.09009008553201875,
+        "meteor_score": 0.08946322067594435,
+        "bleu_score": 4.326150079552032e-155,
+        "length_difference": 340,
+        "length_ratio": 2.096774193548387
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Qual o impacto da 5G na transformação digital das empresas?",
+      "expected_response": "Impactos revolucionários: 1) Operações remotas em tempo real, 2) IoT massiva com milhões de dispositivos conectados, 3) Realidade aumentada para manutenção e treinamento, 4) Veículos autônomos em ambientes controlados, e 5) Cidades inteligentes integradas. A 5G permitirá aplicações com latência abaixo de 1ms e velocidades 100x superiores.",
+      "generated_response": "- O 5G está pronto para transformar a transformação digital das empresas, e espera -se que tenha um grande impacto no modelo de negócios da empresa. Também é esperado aumentar o número de funcionários da empresa, o que pode levar a um aumento na produtividade dos funcionários, de acordo com o Wall Street Journal. Espera -se que a tecnologia seja usada em mais de um terço de todas as empresas até 2025, e a indústria espera ver um aumento significativo no uso de 5g no futuro próximo",
+      "auto_metrics": {
+        "cosine_similarity": 0.7589282989501953,
+        "rouge_l": 0.09345793915625844,
+        "meteor_score": 0.09803921568627452,
+        "bleu_score": 4.5233228133342904e-155,
+        "length_difference": 145,
+        "length_ratio": 1.4264705882352942
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Como implementar segurança zero-trust em ambientes digitais?",
+      "expected_response": "Implementação requer: 1) Verificação contínua de identidades, 2) Microssegmentação de redes, 3) Princípio de menor privilégio, 4) Monitoramento contínuo de comportamento, e 5) Criptografia de ponta a ponta. Modelo zero-trust reduz incidentes de segurança em 70% e limita impacto de violações.",
+      "generated_response": "-Segurança zero-confiança em ambientes digitais é uma questão-chave que precisa ser abordada, de acordo com os Centros de Controle e Prevenção de Doenças (CDC). O objetivo da trust zero é reduzir o risco de ataques cibernéticos, reduzindo a probabilidade de um ataque cibernético. Em particular, é importante garantir que ninguém corre o risco de ser exposto a qualquer tipo de ameaça, como um ataque terrorista ou um ataque nuclear. \"Zero-Trust\" significa que as pessoas têm maior probabilidade de estar em risco do que aquelas que estão em risco. Também é importante garantir que todos tenham acesso ao mesmo nível de proteção que em um ambiente do mundo real. Isso é especialmente importante se houver um alto nível de segurança cibernética no mundo digital",
+      "auto_metrics": {
+        "cosine_similarity": 0.7372510433197021,
+        "rouge_l": 0.0869565176468811,
+        "meteor_score": 0.11178861788617886,
+        "bleu_score": 2.085953985196734e-63,
+        "length_difference": 468,
+        "length_ratio": 2.6027397260273974
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Quais são os principais desafios na integração de sistemas legados?",
+      "expected_response": "Desafios críticos: 1) Dados isolados em silos, 2) Documentação inadequada, 3) Falta de APIs modernas, 4) Conhecimento técnico escasso, e 5) Custos elevados de integração. Abordagens eficazes incluem: camada de integração com APIs, containers, e modernização incremental via strangler pattern.",
+      "generated_response": "- Os principais desafios na integração dos sistemas herdados são: escalabilidade, consistência e alinhamento interno. Além disso, esses sistemas não podem ser facilmente integrados aos sistemas existentes, o que significa que eles precisam ser reprojetados para atender às necessidades do novo sistema. Isso é especialmente problemático para empresas que desejam integrar sistemas legados com sistemas mais novos, como o Microsoft's Office 365. \"É muito difícil fazer as pessoas entenderem o que está acontecendo em seus sistemas\", diz um analista. \"Eles não sabem o que estão fazendo.\"",
+      "auto_metrics": {
+        "cosine_similarity": 0.6728883981704712,
+        "rouge_l": 0.07339449098897426,
+        "meteor_score": 0.05605381165919283,
+        "bleu_score": 3.2170142581658837e-155,
+        "length_difference": 294,
+        "length_ratio": 2.006849315068493
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Como a análise de dados preditiva apoia a tomada de decisão?",
+      "expected_response": "Suporte através de: 1) Antecipação de tendências de mercado, 2) Identificação proativa de riscos, 3) Personalização de ofertas, 4) Otimização de operações, e 5) Previsão de demanda com 85% de precisão. Empresas que adotam analytics preditivo aumentam lucratividade em 20-30%.",
+      "generated_response": "-A análise preditiva de dados ajuda os tomadores de decisão a tomar melhores decisões e também é uma ferramenta útil para medir o impacto das mudanças no ambiente digital de uma organização. Nesse caso, a análise de dados preditivos pode ser usada para prever o futuro dos produtos ou serviços de uma empresa, relata o Wall Street Journal. \"A análise preditiva de dados é uma ferramenta poderosa para a tomada de decisões\", diz o Dr. Robert A. Smith, professor de ciência da computação na Universidade da Califórnia, Berkeley",
+      "auto_metrics": {
+        "cosine_similarity": 0.695364236831665,
+        "rouge_l": 0.04123710884897489,
+        "meteor_score": 0.10044642857142858,
+        "bleu_score": 4.497548684366688e-155,
+        "length_difference": 250,
+        "length_ratio": 1.9090909090909092
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Qual o papel do design thinking na transformação digital?",
+      "expected_response": "Papel fundamental: 1) Colocar o usuário no centro do desenvolvimento, 2) Promover soluções humanizadas, 3) Acelerar prototipagem e testes, 4) Facilitar colaboração multidisciplinar, e 5) Reduzir riscos de rejeição. Projetos usando design thinking têm 50% mais taxa de sucesso e 30% maior adoção.",
+      "generated_response": "- O papel do design thinking na transformação digital é ajudar as empresas a fazer melhor uso de seus recursos e processos. É uma parte essencial do processo de design e é uma parte importante da estratégia geral de uma empresa para transformação digital. \"Design Thinking\" é um conceito que existe há muito tempo, e muitas empresas criam maneiras de incorporar o design do design em seus processos de negócios. Em particular, o Design Thinking pode ajudar as empresas a otimizar seus processos e processos, melhorar sua produtividade e criar uma vantagem competitiva. \"O pensamento de design disruptivo é uma parte essencial da estratégia de transformação digital de qualquer organização\", diz David A. Smith, professor da Universidade da Califórnia, Berkeley. \"É também uma parte crítica da construção de uma marca forte\".",
+      "auto_metrics": {
+        "cosine_similarity": 0.6775648593902588,
+        "rouge_l": 0.09917354929308127,
+        "meteor_score": 0.09652509652509651,
+        "bleu_score": 1.7937895411022607e-63,
+        "length_difference": 529,
+        "length_ratio": 2.7932203389830508
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Como mensurar a maturidade digital de uma organização?",
+      "expected_response": "Através de frameworks que avaliam: 1) Estratégia digital, 2) Capacidades tecnológicas, 3) Cultura organizacional, 4) Liderança, e 5) Experiência do cliente. Modelos como o Digital Maturity Matrix classificam empresas em 5 estágios: Inicial, Emergente, Padronizado, Otimizado e Transformador.",
+      "generated_response": "- Um \"nível de maturidade\" é uma medida da maturidade digital atual da organização (emergente, em desenvolvimento, amadurecimento, liderança). É também uma medição de quão bem uma organização está alcançando seus objetivos digitais. Por exemplo, se a organização tiver um alto grau de maturidade digital, poderá ser considerado \"emergência\", \"desenvolvimento\" ou \"amadurecimento\", relata o Wall Street Journal. Se a organização estiver surgindo, pode ser considerada liderança, observa o New York Times. Mas se estiver liderando, pode ser descrito como \"liderando\".",
+      "auto_metrics": {
+        "cosine_similarity": 0.6782848834991455,
+        "rouge_l": 0.09900989634741714,
+        "meteor_score": 0.08293838862559241,
+        "bleu_score": 3.729170365600141e-155,
+        "length_difference": 274,
+        "length_ratio": 1.9415807560137457
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Quais benefícios a automação de processos traz para empresas?",
+      "expected_response": "Benefícios-chave: 1) Redução de 50-70% em tarefas manuais, 2) Diminuição de erros em 60-90%, 3) Aumento de produtividade em 40%, 4) Melhoria na conformidade, e 5) Liberação de talentos para atividades estratégicas. ROI médio de projetos de RPA é de 200-300% no primeiro ano.",
+      "generated_response": "- A automação de processos é uma ótima maneira de otimizar processos e melhorar a eficiência. É também uma boa maneira de aumentar a produtividade e reduzir custos, relata o Wall Street Journal. A automação de processos pode ajudar as empresas a reduzir custos e melhorar a produtividade, reduzindo os custos e reduzindo o tempo para o mercado. A revista relata que a automação de processos demonstrou ter um impacto positivo na produtividade em muitos setores, incluindo assistência médica, educação, energia e fabricação. \"Os benefícios da automação de processos são numerosos\", diz um estudo recente publicado nos procedimentos da revista da Academia Nacional de Engenharia. \"É uma maneira muito eficaz de reduzir o tempo necessário para administrar um negócio\".",
+      "auto_metrics": {
+        "cosine_similarity": 0.6634606719017029,
+        "rouge_l": 0.10909090468760349,
+        "meteor_score": 0.16301763423816126,
+        "bleu_score": 2.328640677240249e-63,
+        "length_difference": 491,
+        "length_ratio": 2.791970802919708
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Como a transformação digital impacta o setor de educação?",
+      "expected_response": "Revolução através de: 1) Aprendizado personalizado via IA, 2) Plataformas adaptativas, 3) Credenciais digitais verificáveis, 4) Realidade virtual para simulações, e 5) Analytics de engajamento. Instituições digitais alcançam taxas de retenção 35% superiores e melhoram resultados de aprendizagem em 40%.",
+      "generated_response": "- O setor educacional está passando por uma grande mudança na maneira como opera, e muitas escolas estão lutando para acompanhar o ritmo da transformação digital. Como resultado, o setor educacional viu uma diminuição significativa no número de professores e alunos que usam a tecnologia, relata o Wall Street Journal. \"A transformação digital transformou a maneira como ensinamos e aprendemos\", diz um professor da Universidade da Califórnia, Berkeley. \"Isso mudou a maneira como as pessoas interagem entre si e mudou a maneira como pensam sobre suas vidas\". A transformação digital também tem um impacto positivo no setor educacional, observa o New York Times",
+      "auto_metrics": {
+        "cosine_similarity": 0.6233923435211182,
+        "rouge_l": 0.03603603165327543,
+        "meteor_score": 0.04319654427645789,
+        "bleu_score": 2.939568595590758e-155,
+        "length_difference": 358,
+        "length_ratio": 2.1815181518151814
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Quais estratégias para gerenciar a mudança durante a transformação?",
+      "expected_response": "Estratégias comprovadas: 1) Comunicação transparente e frequente, 2) Envolvimento precoce dos stakeholders, 3) Treinamento contínuo e contextualizado, 4) Reconhecimento de conquistas, e 5) Ajustes baseados em feedback. Projetos com gestão de mudança eficaz têm 70% mais chance de sucesso.",
+      "generated_response": "- Uma \"importância estratégica\" é a chave para gerenciar mudanças durante a transformação digital, de acordo com o New York Times. \"Recomendações práticas\" são exemplos concretos ou ferramentas/métodos que podem ser aplicados nessa área. \"Insight transversal\" é um exemplo de insight transcisional, e \"Exemplos Práticos\" incluem como a cultura permite a experiência do cliente ou como a tecnologia suporta operações",
+      "auto_metrics": {
+        "cosine_similarity": 0.6010361909866333,
+        "rouge_l": 0.04597700668516368,
+        "meteor_score": 0.072992700729927,
+        "bleu_score": 3.851470592303926e-155,
+        "length_difference": 127,
+        "length_ratio": 1.4409722222222223
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Como blockchain está transformando setores além do financeiro?",
+      "expected_response": "Aplicações inovadoras: 1) Rastreabilidade de cadeias de suprimentos, 2) Registros médicos seguros e interoperáveis, 3) Verificação de identidade digital, 4) Direitos autorais e propriedade intelectual, e 5) Votação eletrônica segura. Blockchain pode reduzir custos de verificação em 80% e aumentar transparência.",
+      "generated_response": "- O Blockchain está transformando setores além do setor financeiro, relata o Wall Street Journal. \"O Blockchain está mudando a maneira como realizamos negócios\", diz um pesquisador da Universidade da Califórnia, Berkeley. \"Está transformando a maneira como as pessoas fazem negócios, e está revolucionando a maneira como fazem negócios\". A tecnologia está sendo usada em muitos setores, incluindo finanças, assistência médica, educação e energia. Também está transformando bens e serviços de consumo, como alimentos e bebidas, em formas de transporte mais eficientes e sustentáveis",
+      "auto_metrics": {
+        "cosine_similarity": 0.6543139219284058,
+        "rouge_l": 0.08247422219151902,
+        "meteor_score": 0.08830022075055188,
+        "bleu_score": 4.6033878399317575e-155,
+        "length_difference": 269,
+        "length_ratio": 1.8621794871794872
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Qual o impacto da IA generativa na criatividade empresarial?",
+      "expected_response": "Impacto transformador: 1) Aceleração de design de produtos, 2) Personalização de conteúdo em escala, 3) Geração de ideias inovadoras, 4) Prototipagem rápida, e 5) Solução criativa de problemas. Empresas usando IA generativa reduzem tempo de desenvolvimento de 50% e aumentam inovação em 40%.",
+      "generated_response": "- A IA generativa demonstrou ser uma ferramenta poderosa no campo da criatividade e está sendo usada pelas empresas para criar novos produtos e serviços. Também tem sido usado para melhorar a produtividade e as vendas, o que pode levar a um melhor atendimento ao cliente. O uso da inteligência artificial (IA) tem sido associada a um aumento da criatividade dos negócios, de acordo com o New York Times. \"A inteligência artificial generativa é uma maneira muito eficaz de ajudar as empresas a inovar\", diz um pesquisador da Universidade da Califórnia, Berkeley. \"É uma ótima maneira de fazer as pessoas que pensam sobre o que estão fazendo\".",
+      "auto_metrics": {
+        "cosine_similarity": 0.7138160467147827,
+        "rouge_l": 0.0714285671316967,
+        "meteor_score": 0.08097165991902833,
+        "bleu_score": 1.860948085477267e-63,
+        "length_difference": 350,
+        "length_ratio": 2.202749140893471
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Como implementar governança de dados eficaz?",
+      "expected_response": "Implementação requer: 1) Definição clara de responsabilidades, 2) Padrões de qualidade e metadados, 3) Catálogo de dados unificado, 4) Framework de segurança e privacidade, e 5) Monitoramento contínuo. Boa governança aumenta confiabilidade dos dados em 90% e valor analítico em 60%.",
+      "generated_response": "- A governança de dados é o processo de garantir que os dados sejam armazenados com segurança e acessíveis a todos os usuários. O objetivo da governança de dados é garantir que todos os usuários tenham acesso às informações necessárias para tomar decisões informadas sobre o uso dos dados, relata o Wall Street Journal. Não se trata apenas de proteger a privacidade dos usuários, mas também se trata de garantir que todos tenham acesso ao que querem fazer com seus dados. \"É importante poder entender o que você vai fazer\", diz um especialista em governança de dados da Universidade da Califórnia, Berkeley. \"Se você não sabe como fazê -lo, não pode fazer isso.\"",
+      "auto_metrics": {
+        "cosine_similarity": 0.6369214057922363,
+        "rouge_l": 0.11009173889739939,
+        "meteor_score": 0.11410788381742738,
+        "bleu_score": 2.748967459761196e-63,
+        "length_difference": 380,
+        "length_ratio": 2.347517730496454
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Quais são os principais erros a evitar na transformação digital?",
+      "expected_response": "Erros comuns: 1) Focar apenas em tecnologia, 2) Subestimar a cultura organizacional, 3) Negligencer a gestão da mudança, 4) Falta de alinhamento estratégico, 5) Implementações big-bang sem pilotos. 70% das iniciativas falham devido a esses erros - começar pequeno e escalar progressivamente aumenta sucesso.",
+      "generated_response": "- A transformação digital pode ser um processo complexo e é importante garantir que você não caia na armadilha de cometer erros. Aqui está o que você precisa saber: os principais erros a serem evitados na transformação digital são: usando muita tecnologia (por exemplo, mineração de dados), usando pouca informação (os funcionários não estão sendo treinados corretamente) e não tendo recursos suficientes (os empregadores precisam contratar mais pessoas). Os principais erros a serem evitados incluem confiar muito na tecnologia desatualizada, o que pode levar à falta de inovação e desperdiçar recursos. Por exemplo, se você está tentando criar um modelo de negócios para um cliente, convém se concentrar na integração, consistência e alinhamento interno. Se você já fez isso, considere focar em escalabilidade, eficiência e desempenho",
+      "auto_metrics": {
+        "cosine_similarity": 0.6155362129211426,
+        "rouge_l": 0.10606060172176326,
+        "meteor_score": 0.11494252873563218,
+        "bleu_score": 3.758650431988558e-155,
+        "length_difference": 529,
+        "length_ratio": 2.7231270358306188
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Como a realidade aumentada está transformando o varejo?",
+      "expected_response": "Transformação através de: 1) Provadores virtuais de produtos, 2) Visualização de móveis em ambientes reais, 3) Navegação em lojas com orientação AR, 4) Experiências interativas de produtos, e 5) Treinamento imersivo de equipes. Varejistas com AR aumentam conversão em 40% e reduzem devoluções em 35%.",
+      "generated_response": "-A realidade aumentada (AR) é uma tecnologia que permite que as pessoas interajam com objetos virtuais em tempo real. Os varejistas usam AR há anos e está se tornando cada vez mais popular no setor de varejo. Mas muitos varejistas nem sequer estão cientes dos benefícios da AR, relata o Wall Street Journal. \"É uma maneira de ver as coisas de uma perspectiva diferente\", diz um pesquisador da Universidade da Califórnia, Berkeley. \"E acho que é isso que estamos tentando fazer com a AR. Não é apenas uma nova maneira de olhar as coisas, mas uma maneira totalmente nova de olhar as coisas\".",
+      "auto_metrics": {
+        "cosine_similarity": 0.6230103969573975,
+        "rouge_l": 0.12280701322253017,
+        "meteor_score": 0.11811023622047244,
+        "bleu_score": 4.874723038543166e-155,
+        "length_difference": 289,
+        "length_ratio": 1.9633333333333334
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Quais benefícios os digital twins trazem para a indústria?",
+      "expected_response": "Benefícios significativos: 1) Simulação de cenários operacionais, 2) Manutenção preditiva avançada, 3) Otimização de processos em tempo real, 4) Treinamento virtual de equipes, e 5) Desenvolvimento de produtos acelerado. Implementações de digital twins reduzem downtime em 40% e custos de operação em 25%.",
+      "generated_response": "-Os gêmeos digitais são uma ferramenta de marketing em todo o setor que permite que as empresas comercializem seus produtos e serviços de uma maneira fácil de entender e usar. Eles também podem ser usados ​​para promover novos produtos ou serviços, como videogames, aplicativos e mídias sociais, relata o Wall Street Journal. \"Os gêmeos digitais trazem ao setor uma variedade de benefícios\", diz um dos co-fundadores da empresa. \"Eles podem ajudar as empresas a aumentar suas vendas e aumentar seus lucros\".",
+      "auto_metrics": {
+        "cosine_similarity": 0.6280692219734192,
+        "rouge_l": 0.08247422219151902,
+        "meteor_score": 0.08547008547008546,
+        "bleu_score": 4.687860717716855e-155,
+        "length_difference": 202,
+        "length_ratio": 1.662295081967213
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Como garantir a privacidade de dados na era digital?",
+      "expected_response": "Requer: 1) Compliance com LGPD/GDPR, 2) Privacidade by design, 3) Anonimização de dados sensíveis, 4) Controles de acesso granulares, e 5) Transparência no uso de dados. Empresas com fortes práticas de privacidade têm 30% mais confiança dos clientes e reduzem multas em 90%.",
+      "generated_response": "- A privacidade dos dados na era digital é uma questão que precisa ser abordada, de acordo com os Centros de Controle e Prevenção de Doenças (CDC) e o Instituto Nacional de Saúde e Serviços Humanos (NIH). O CDC recomenda que as políticas de privacidade de dados sejam implementadas em todos os sistemas de saúde, incluindo hospitais, clínicas, escolas e universidades. No entanto, o CDC observa que alguns sistemas de saúde não estão fazendo o suficiente para garantir a privacidade dos dados. Em particular, recomenda garantir a privacidade dos dados em todos os sistemas médicos, como hospitais, farmácias e clínicas",
+      "auto_metrics": {
+        "cosine_similarity": 0.7127511501312256,
+        "rouge_l": 0.13592232549344913,
+        "meteor_score": 0.1540041067761807,
+        "bleu_score": 3.167217946640691e-63,
+        "length_difference": 344,
+        "length_ratio": 2.2554744525547443
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Qual o papel da liderança de meio de carreira na transformação?",
+      "expected_response": "Papel crucial: 1) Ponte entre estratégia e execução, 2) Tradução de conceitos técnicos, 3) Engajamento de equipes operacionais, 4) Implementação prática de iniciativas, e 5) Feedback para ajustes. Líderes de meio de carreira bem capacitados aumentam velocidade de adoção em 60%.",
+      "generated_response": "- O papel da liderança de carreira na transformação é incentivar a inovação, a orquestração do ecossistema e a diferenciação competitiva. É o papel de líder de carreira em uma empresa ou organização e é uma parte essencial da descrição do trabalho. A liderança de carreira pode ser uma combinação de liderança e gerenciamento, mas também pode ser usada como uma ferramenta para ajudar os funcionários a alcançar seus objetivos. Por exemplo, você pode dizer: \"É importante ter uma visão clara do que queremos alcançar no futuro\". Você também pode dizer: \"É muito importante poder tomar decisões alinhadas com nossos valores e prioridades\".",
+      "auto_metrics": {
+        "cosine_similarity": 0.6233372688293457,
+        "rouge_l": 0.09433961821822734,
+        "meteor_score": 0.14550357192884159,
+        "bleu_score": 2.2933493805121103e-63,
+        "length_difference": 360,
+        "length_ratio": 2.2949640287769784
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Como a transformação digital está mudando o setor de seguros?",
+      "expected_response": "Mudanças disruptivas: 1) Underwriting baseado em IoT e dados, 2) Seguros pay-per-use, 3) Processamento automatizado de sinistros, 4) Prevenção de perdas com analytics, e 5) Plataformas digitais de comparação. Seguradoras digitais reduzem custos de aquisição em 70% e tempo de sinistro em 80%.",
+      "generated_response": "- A transformação digital está mudando o setor de seguros de maneiras que ainda não são conhecidas e está facilitando a vida para os consumidores. O Instituto de Seguros de Saúde e Serviços Humanos relata que a transformação digital tem sido um dos principais contribuintes para o crescimento do setor de seguros desde o início dos anos 90. \"A transformação digital mudou a maneira como fazemos negócios\", diz um porta -voz do Instituto de Seguros. \"Está mudando a maneira como as pessoas interagem entre si, como interagem com seus clientes e como tomam decisões sobre suas vidas\". A indústria também está vendo uma mudança significativa na maneira como a tecnologia está sendo usada para melhorar o atendimento ao cliente, de acordo com o Wall Street Journal",
+      "auto_metrics": {
+        "cosine_similarity": 0.7672216296195984,
+        "rouge_l": 0.05128204715903314,
+        "meteor_score": 0.10721247563352829,
+        "bleu_score": 4.202298934792532e-155,
+        "length_difference": 468,
+        "length_ratio": 2.6027397260273974
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Quais estratégias para reter talentos digitais?",
+      "expected_response": "Estratégias eficazes: 1) Projetos desafiadores, 2) Ambiente de inovação contínua, 3) Flexibilidade e autonomia, 4) Programas de desenvolvimento acelerado, 5) Remuneração competitiva com bônus por inovação. Empresas com alta retenção de talentos digitais inovam 50% mais rápido.",
+      "generated_response": "- O talento digital é uma parte essencial da força de trabalho, por isso é importante ter uma estratégia para garantir que o talento digital possa ser retido. Aqui está o que você precisa saber: uma \"importância estratégica\" é a quantidade de tempo que um funcionário gasta trabalhando em um projeto, e uma \"orientação baseada em maturidade\" seria o nível de orientação apropriado. Um \"nível de maturidade\" refere -se ao estágio atual da organização na maturidade digital (emergente, em desenvolvimento, amadurecimento, liderança). Uma \"recomendações práticas\" é como tornar suas recomendações práticas e adaptadas à situação",
+      "auto_metrics": {
+        "cosine_similarity": 0.5990771055221558,
+        "rouge_l": 0.05660376929690313,
+        "meteor_score": 0.08177570093457945,
+        "bleu_score": 3.422121424610076e-155,
+        "length_difference": 348,
+        "length_ratio": 2.256317689530686
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Como a computação de borda (edge) apoia a transformação?",
+      "expected_response": "Suporte crítico para: 1) Processamento em tempo real de IoT, 2) Aplicações sensíveis à latência, 3) Redução de tráfego de dados, 4) Operações em locais remotos, e 5) Maior segurança distribuída. Edge computing reduz latência para menos de 10ms e custos de banda em 40%.",
+      "generated_response": "- Computação de fronteira (Edge) suporta a transformação. A computação de fronteira é uma tecnologia que usa computação de fronteira para apoiar a integração de dados, processos e aplicativos nas fronteiras. É um componente essencial do processo de transformação digital e é uma parte importante do esforço geral de transformação digital. A \"computação de pássaros\" existe há muito tempo, mas não foi amplamente adotada no setor, e muitas empresas ainda o usam como uma maneira de apoiar seus processos de negócios. A tecnologia está sendo usada em uma ampla variedade de indústrias, incluindo manufatura, serviços financeiros e tecnologia da informação",
+      "auto_metrics": {
+        "cosine_similarity": 0.5504081845283508,
+        "rouge_l": 0.0925925880315503,
+        "meteor_score": 0.09900990099009901,
+        "bleu_score": 2.3484338299478885e-63,
+        "length_difference": 384,
+        "length_ratio": 2.4275092936802976
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Qual o impacto da transformação digital no desenvolvimento sustentável?",
+      "expected_response": "Impacto positivo: 1) Otimização de recursos energéticos, 2) Logística eficiente com menor carbono, 3) Economia circular habilitada digitalmente, 4) Monitoramento ambiental em tempo real, e 5) Transparência em cadeias sustentáveis. Empresas digitais alcançam metas ESG 30% mais rápido.",
+      "generated_response": "- A transformação digital tem um impacto profundo no desenvolvimento sustentável e é importante observar que também pode ter um impacto positivo no meio ambiente. O New York Times relata que \"a transformação digital teve um impacto significativo na saúde ambiental, biodiversidade e desenvolvimento econômico\". O Times observa que o impacto da transformação digital na sustentabilidade não se limita ao meio ambiente, mas também à própria economia. \"A transformação digital tem sido um dos principais contribuintes para o aquecimento global, as mudanças climáticas e as mudanças climáticas nos últimos anos\", diz The Times",
+      "auto_metrics": {
+        "cosine_similarity": 0.7667970657348633,
+        "rouge_l": 0.0198019755553388,
+        "meteor_score": 0.022988505747126436,
+        "bleu_score": 1.5467878122190126e-155,
+        "length_difference": 338,
+        "length_ratio": 2.1901408450704225
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Como implementar inovação aberta na transformação digital?",
+      "expected_response": "Implementação através de: 1) Parcerias com startups, 2) Programas de cocriação com clientes, 3) Hackathons e desafios de inovação, 4) Plataformas de inovação aberta, e 5) Aquisições estratégicas de tecnologia. Empresas com inovação aberta lançam 60% mais novos produtos com 40% menos custos.",
+      "generated_response": "- A inovação aberta na transformação digital é uma parte essencial do processo de transformação digital e é importante ter inovação aberta como parte desse processo. O New York Times explica que a inovação aberta é uma parte essencial da estratégia de transformação digital de uma empresa. \"A inovação aberta é a capacidade de criar novos produtos e serviços que podem ser usados ​​de várias maneiras\", diz o The Times. A inovação aberta também é um componente crítico da estratégia geral da organização para transformação digital. O Times observa que o objetivo da inovação aberta na transformação digital é promover a inovação, a orquestração do ecossistema e a diferenciação competitiva. Ele também fornece conselhos práticos sobre como implementar a inovação aberta",
+      "auto_metrics": {
+        "cosine_similarity": 0.7213153839111328,
+        "rouge_l": 0.11999999545000017,
+        "meteor_score": 0.16786964129483817,
+        "bleu_score": 2.717824748662532e-63,
+        "length_difference": 478,
+        "length_ratio": 2.642611683848797
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Quais métricas usar para avaliar o sucesso da transformação digital?",
+      "expected_response": "Métricas-chave: 1) Velocidade de lançamento de produtos, 2) Adoção de novas tecnologias, 3) ROI de iniciativas digitais, 4) Satisfação do cliente (NPS), 5) Eficiência operacional, e 6) Engajamento de colaboradores. Balanced scorecard digital deve combinar métricas financeiras e não-financeiras.",
+      "generated_response": "- A transformação digital pode ser medida de várias maneiras, incluindo o quão bem é feito, quanto tempo foi bem -sucedido e quanto dinheiro ele economizou. Mas quais são as métricas usadas para avaliar o sucesso da transformação digital? A seguir, são as métricas mais usadas: ROI, escalabilidade e desempenho. As métricas a seguir são usadas para avaliar o sucesso ou falha da digitalização: quanto tempo passou desde a última vez que você criou um site? Quanto tempo demorou para construir um novo site? Quantas pessoas visitaram o site?",
+      "auto_metrics": {
+        "cosine_similarity": 0.61175537109375,
+        "rouge_l": 0.0824742222510365,
+        "meteor_score": 0.056818181818181816,
+        "bleu_score": 3.535592586177672e-155,
+        "length_difference": 245,
+        "length_ratio": 1.8305084745762712
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Como a transformação digital está revolucionando a agricultura?",
+      "expected_response": "Revolução AgriTech: 1) Agricultura de precisão com drones, 2) Monitoramento de solo via sensores IoT, 3) Previsão climática avançada, 4) Otimização de insumos com IA, 5) Rastreabilidade blockchain. Fazendas digitais aumentam produtividade em 20-30% e reduzem água/pesticidas em 40%.",
+      "generated_response": "- A transformação digital está revolucionando a agricultura e está mudando a maneira como fazemos negócios. O Departamento de Agricultura dos EUA estima que, até 2050, haverá mais de 1 bilhão de empregos na agricultura. Esse é um aumento significativo nos últimos anos, quando os agricultores conseguiram cultivar suas próprias colheitas e produzir sua própria comida, relata o Wall Street Journal. \"A transformação digital revolucionou a agricultura de várias maneiras\", diz um pesquisador da Universidade da Califórnia, Berkeley. \"Ele transformou a maneira como as pessoas pensam na agricultura e em como elas interagem entre si\".",
+      "auto_metrics": {
+        "cosine_similarity": 0.7619631290435791,
+        "rouge_l": 0.05454545020661192,
+        "meteor_score": 0.0672645739910314,
+        "bleu_score": 3.748746197561221e-155,
+        "length_difference": 350,
+        "length_ratio": 2.2411347517730498
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Quais são as melhores práticas para migração para nuvem?",
+      "expected_response": "Práticas recomendadas: 1) Avaliação detalhada de aplicações, 2) Estratégia cloud-first mas pragmática, 3) Adoção de arquiteturas nativas na nuvem, 4) Gerenciamento de custos desde o início, e 5) Segurança integrada. Migrações bem planejadas reduzem custos de TI em 30-50% e aumentam agilidade.",
+      "generated_response": "- A migração em nuvem é o processo de mover dados de um local para outro e é importante garantir que os dados estejam sendo movidos de uma maneira que minimize o risco de perda. As melhores práticas para a migração em nuvem são migrar dados de locais existentes para novos e mover dados de antigos para os mais novos. Por exemplo, se você estiver movendo dados para um novo local, convém migrar todos os seus dados para o novo local. Se você moveu dados de um local diferente, como um desktop, considere mover dados para um ambiente de armazenamento baseado em nuvem. Você também pode tentar mover dados em vários locais ou transferir dados de diferentes locais",
+      "auto_metrics": {
+        "cosine_similarity": 0.6888799071311951,
+        "rouge_l": 0.07692307233912749,
+        "meteor_score": 0.09072580645161292,
+        "bleu_score": 3.883973030075554e-155,
+        "length_difference": 368,
+        "length_ratio": 2.255972696245734
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Como a transformação digital impacta o futuro do trabalho?",
+      "expected_response": "Impactos profundos: 1) Modelos híbridos de trabalho, 2) Automação de tarefas repetitivas, 3) Surgimento de novas profissões digitais, 4) Aprendizado contínuo obrigatório, e 5) Foco em habilidades humanas. Até 2025, 50% dos trabalhadores precisarão requalificação significativa.",
+      "generated_response": "- A transformação digital está mudando a maneira como trabalhamos, e está mudando a maneira como fazemos negócios. O futuro do trabalho depende de como usamos a tecnologia digital e como estamos usando -a em nossas vidas diárias. Como resultado, estamos vendo uma mudança na maneira como as pessoas trabalham e interagem entre si, e isso afetará a maneira como as empresas operam no futuro. \"A transformação digital mudou a maneira como trabalho\", diz um especialista na Universidade da Califórnia, Berkeley. \"Isso mudou como penso sobre o meu trabalho e o que faço como ser humano\".",
+      "auto_metrics": {
+        "cosine_similarity": 0.6739200353622437,
+        "rouge_l": 0.061224485264473466,
+        "meteor_score": 0.04761904761904762,
+        "bleu_score": 2.6369216537158484e-155,
+        "length_difference": 306,
+        "length_ratio": 2.104693140794224
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Qual o papel do Chief Digital Officer (CDO) na transformação?",
+      "expected_response": "Papel estratégico: 1) Definir visão digital, 2) Integrar iniciativas transversais, 3) Desenvolver novas capacidades digitais, 4) Gerenciar ecossistema de inovação, e 5) Medir resultados da transformação. CDOs bem-sucedidos reportam diretamente ao CEO e têm orçamento dedicado.",
+      "generated_response": "- O diretor digital (CDO) é o chefe dos esforços de transformação digital da organização. O CDO é responsável por garantir que a organização esteja alinhada com seus objetivos e objetivos digitais, além de garantir o sucesso da empresa no processo de transformação digital. Ele também é responsável por supervisionar a implementação das políticas, práticas e procedimentos da CDO. Ele também supervisiona o desenvolvimento e a implantação de novas tecnologias e serviços e gerencia as operações gerais da empresa",
+      "auto_metrics": {
+        "cosine_similarity": 0.6720702648162842,
+        "rouge_l": 0.11764705397923896,
+        "meteor_score": 0.086848635235732,
+        "bleu_score": 4.11087522650628e-155,
+        "length_difference": 236,
+        "length_ratio": 1.855072463768116
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Como implementar inteligência artificial de forma ética?",
+      "expected_response": "Implementação ética requer: 1) Diversidade nas equipes de desenvolvimento, 2) Auditoria regular de algoritmos, 3) Transparência nas decisões automatizadas, 4) Mecanismos de supervisão humana, e 5) Compliance com regulamentações. Frameworks como o da UE para IA confiável são referências essenciais.",
+      "generated_response": "- A inteligência artificial (IA) é uma tecnologia que existe há muito tempo, mas não é a única. De fato, muitas pessoas nem sequer estão cientes de sua existência, de acordo com o New York Times. Um estudo recente descobriu que a IA pode ser usada de várias maneiras, incluindo: pode ajudar as pessoas a entender o que está acontecendo em suas vidas, como como elas interagem com os outros, e também pode ajudá -las a tomar melhores decisões sobre suas vidas. \"É uma parte muito importante de nossas vidas\", diz um pesquisador da Universidade da Califórnia, Berkeley. \"E precisamos ser capazes de usar a IA de maneira ética para que as pessoas não sintam que estão sendo exploradas\". A IA também pode ser usada para ajudar as pessoas a aprender novas habilidades, como ler e escrever ou como se comunicar com os outros. O Times observa que a IA é frequentemente usada em ambientes educacionais para ajudar as crianças a aprender matemática, ciências e engenharia",
+      "auto_metrics": {
+        "cosine_similarity": 0.42884713411331177,
+        "rouge_l": 0.08333332951485357,
+        "meteor_score": 0.1140684410646388,
+        "bleu_score": 4.01059487686273e-155,
+        "length_difference": 664,
+        "length_ratio": 3.228187919463087
+      },
+      "human_evaluation": {
+        "scores": {
+          "relevance": 5,
+          "correctness": 3,
+          "completeness": 2,
+          "clarity": 4
+        },
+        "comments": {
+          "relevance": "Na verdade essa pergunta não atende muito bem",
+          "correctness": "É que a resposta é um pouco generica e a resposta de referencia ela enumera cituações de como usar de forma etica a IA",
+          "completeness": "A resposta gerada senti que ele alucinou com relação as referencias que ele usou",
+          "clarity": "A resposta até que é clara, mas ela acaba sendo mais generica e sinto que ele inventou as fontes que ele usou"
+        },
+        "overall_comment": "A resposta ela é intermediaria, ela não é tão ruim ao ponto de sair completamente do sentido da pergunta, no entanto, ela meio que não é muito certeira",
+        "timestamp": "2025-07-03T21:02:34.071901"
+      }
+    },
+    {
+      "question": "Quais são os desafios da transformação digital em governos?",
+      "expected_response": "Desafios específicos: 1) Sistemas legados complexos, 2) Regulamentações rígidas, 3) Cultura avessa a riscos, 4) Orçamentos limitados, e 5) Necessidade de inclusão digital. Governos líderes adotam estratégias como GovTech Partnerships e sandboxes regulatórios.",
+      "generated_response": "- A transformação digital em governos é um grande desafio, mas também é um dos mais desafiadores em termos de inovação e diferenciação competitiva. De acordo com o New York Times, \"os desafios da transformação digital em governo são :. A capacidade de tomar decisões sobre como usar a tecnologia, como construir infraestrutura, como as pessoas interagem entre si e como gerenciar recursos e recursos\". O Times relata que os desafios não se limitam a melhorar a eficiência e a eficácia dos processos governamentais, mas também a promover a inovação, a escalabilidade e o desempenho. O Times observa que há muito trabalho a ser feito para garantir que isso aconteça. \"A transformação digital tem sido um enorme desafio na última década\", diz o Times. \"É um desafio importante para todos nós\".",
+      "auto_metrics": {
+        "cosine_similarity": 0.8408989906311035,
+        "rouge_l": 0.06451612520291386,
+        "meteor_score": 0.08177570093457943,
+        "bleu_score": 2.9142148710953654e-155,
+        "length_difference": 531,
+        "length_ratio": 3.0501930501930503
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Como a transformação digital está mudando o setor de energia?",
+      "expected_response": "Mudanças disruptivas: 1) Redes inteligentes (smart grids), 2) Geração distribuída, 3) Monitoramento preditivo de ativos, 4) Plataformas de trading de energia, e 5) Soluções de eficiência energética via IoT. Empresas do setor reduzem perdas técnicas em 15-25% com digitalização.",
+      "generated_response": "- A transformação digital está mudando o setor de energia de maneiras que ainda não são conhecidas, e está tornando a indústria de energia mais competitiva do que nunca. Como o Wall Street Journal relata, a transformação digital tem sido um fator -chave no crescimento do mercado de energia na última década, com empresas como ExxonMobil e Enron cortando custos e cortando as emissões de carbono. A revista também observa que \"a transformação digital mudou a maneira como a energia é entregue a consumidores e empresas\" e que \"o setor de energia está se tornando cada vez mais competitivo\". A revista observa que isso é especialmente importante para empresas que já estão em um estágio crítico em sua maturidade digital",
+      "auto_metrics": {
+        "cosine_similarity": 0.7972432374954224,
+        "rouge_l": 0.10714285278061242,
+        "meteor_score": 0.10615711252653927,
+        "bleu_score": 4.085101460037875e-155,
+        "length_difference": 442,
+        "length_ratio": 2.595667870036101
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Qual a importância da experiência do colaborador na transformação?",
+      "expected_response": "Importância crítica: 1) Funcionários engajados adotam novas tecnologias 3x mais rápido, 2) Impacta diretamente a produtividade, 3) Reduz turnover de talentos digitais, 4) Melhora atendimento ao cliente. Empresas com excelente EX têm 25% maior rentabilidade.",
+      "generated_response": "- A experiência de um funcionário em transformação digital é crucial para o sucesso da organização e é importante que eles possam aplicar esse conhecimento ao seu trabalho. Por exemplo, se você estiver trabalhando em um novo produto, pode querer enfatizar a integração, a consistência e o alinhamento interno. Você também pode se concentrar em escalabilidade e desempenho, o que pode ser um componente essencial da estratégia de transformação digital de uma empresa. Se você trabalhou em uma organização em um alto nível de maturidade digital, precisará fornecer orientação prática, exemplos concretos ou ferramentas/métodos que possam ser aplicados nesta área",
+      "auto_metrics": {
+        "cosine_similarity": 0.6962707042694092,
+        "rouge_l": 0.056603769161623706,
+        "meteor_score": 0.04819277108433735,
+        "bleu_score": 2.5836450173198176e-155,
+        "length_difference": 403,
+        "length_ratio": 2.568093385214008
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Como os dados abertos contribuem para inovação digital?",
+      "expected_response": "Contribuição significativa: 1) Transparência governamental, 2) Inovação cidadã, 3) Novos modelos de negócio, 4) Pesquisa avançada, e 5) Soluções para problemas sociais. Países com iniciativas robustas de open data lideram em competitividade digital.",
+      "generated_response": "- Os dados abertos são um componente essencial da inovação digital e é importante que as empresas estejam cientes dos benefícios dos dados abertos. O New York Times relata que os dados abertos demonstraram ter um impacto positivo na inovação em muitos setores, incluindo assistência médica, educação, transporte e energia. Os dados abertos também podem ser usados ​​como uma ferramenta para ajudar as empresas a encontrar maneiras de fazer melhor uso de seus dados, como permitindo que as empresas acessem dados de outras fontes ou facilitando o compartilhamento de informações com outras pessoas. \"Os dados abertos são uma parte importante da revolução digital\", diz um pesquisador da Universidade da Califórnia, Berkeley. \"É uma ótima maneira de dar às pessoas uma noção do que está acontecendo\".",
+      "auto_metrics": {
+        "cosine_similarity": 0.7900434732437134,
+        "rouge_l": 0.0826446242087291,
+        "meteor_score": 0.08293838862559243,
+        "bleu_score": 3.2680811680303495e-155,
+        "length_difference": 549,
+        "length_ratio": 3.2048192771084336
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Quais são as melhores práticas para transformação em empresas familiares?",
+      "expected_response": "Práticas adaptadas: 1) Alinhar transformação com valores familiares, 2) Engajar múltiplas gerações, 3) Conselhos consultivos externos, 4) Unidades de inovação autônomas, e 5) Comunicação transparente. Empresas familiares bem-sucedidas preservam valores enquanto abraçam novas tecnologias.",
+      "generated_response": "- As melhores práticas de transformação em empresas familiares são as seguintes: \"Como empresa familiar, queremos poder se concentrar em nossos valores fundamentais de propriedade da família e apoiar os objetivos e aspirações uns dos outros. Queremos construir uma base forte para nossos filhos e netos\". \"Queremos garantir que nossos filhos tenham acesso a educação e recursos de qualidade\". \"Ao mesmo tempo, nos esforçamos para criar um ambiente em que todos tenham acesso a oportunidades de aprender e crescer\". \"É importante entender que as empresas familiares podem ser um ótimo lugar para começar no mundo dos negócios da família\". \"Se você está procurando um tipo específico de modelo de negócios familiar, não procure mais, modelos de negócios familiares\".",
+      "auto_metrics": {
+        "cosine_similarity": 0.8144752979278564,
+        "rouge_l": 0.08403360943718684,
+        "meteor_score": 0.11311128224874856,
+        "bleu_score": 3.0705502864260774e-155,
+        "length_difference": 476,
+        "length_ratio": 2.6527777777777777
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Como a transformação digital está mudando o RH?",
+      "expected_response": "Evolução para HR Tech: 1) Recrutamento baseado em IA, 2) Treinamento personalizado, 3) People analytics, 4) Gestão de desempenho contínua, e 5) Plataformas de experiência do colaborador. RH digitais reduzem 50% no tempo de contratação e aumentam retenção.",
+      "generated_response": "- A transformação digital está mudando a maneira como as pessoas trabalham e interagem entre si, e está mudando a maneira como as empresas estão fazendo negócios. O departamento de RH viu um aumento acentuado no número de funcionários que têm acesso ao local de trabalho digital, de acordo com um novo relatório do Centro de Desenvolvimento de Recursos Humanos (CRD). O RH também está vendo uma diminuição na quantidade de tempo que gastam no treinamento e desenvolvimento dos funcionários. \"A transformação digital mudou a maneira como fazemos negócios\", diz a CRD. \"Isso está afetando todos os aspectos de nossas vidas, incluindo nossos empregos, nossas famílias, nossas casas, nossas comunidades, nossas escolas, nossas cidades, nossos bairros, nossos negócios, nosso governo, nossos sistemas educacionais, nossos sistemas de saúde e muito mais\".",
+      "auto_metrics": {
+        "cosine_similarity": 0.7172563672065735,
+        "rouge_l": 0.0806451572385538,
+        "meteor_score": 0.1059322033898305,
+        "bleu_score": 3.92483852941417e-155,
+        "length_difference": 594,
+        "length_ratio": 3.3294117647058825
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Qual o impacto da transformação digital na inovação de produtos?",
+      "expected_response": "Impacto transformador: 1) Redução de 50% no time-to-market, 2) Cocriação com clientes, 3) Prototipagem rápida digital, 4) Personalização em massa, e 5) Ciclos de feedback acelerados. Empresas digitais lançam 3x mais novos produtos com 30% maior sucesso.",
+      "generated_response": "- A inovação de produtos é o resultado da transformação digital e é importante garantir que sua organização tenha as ferramentas certas para ajudá -lo a atingir esse objetivo. Por exemplo, se você é uma empresa líder, pode se concentrar na integração, consistência e alinhamento interno. Você também pode enfatizar as idéias cruzadas, como como a cultura permite a experiência do cliente ou como a tecnologia suporta operações. Se você tiver um nível de alta maturidade, convém resolver esse problema, fornecendo orientação prática, exemplos concretos ou ferramentas/métodos que podem ser aplicados nesta área",
+      "auto_metrics": {
+        "cosine_similarity": 0.7223820090293884,
+        "rouge_l": 0.053571424274553914,
+        "meteor_score": 0.05868544600938968,
+        "bleu_score": 3.093575624438031e-155,
+        "length_difference": 356,
+        "length_ratio": 2.4071146245059287
+      },
+      "human_evaluation": null
+    },
+    {
+      "question": "Como implementar arquitetura orientada a eventos?",
+      "expected_response": "Implementação eficaz: 1) Identificar fontes de eventos críticos, 2) Definir padrões de mensagens, 3) Implementar barramento de eventos, 4) Desenvolver microserviços reativos, e 5) Garantir resiliência e escalabilidade. Arquitetura orientada a eventos permite resposta em tempo real e sistemas altamente desacoplados.",
+      "generated_response": "- A arquitetura orientada para eventos é um conceito que existe há muito tempo. É uma maneira de implementar eventos de maneira orientada a eventos, e é uma que pode ser aplicada a uma ampla variedade de cenários, incluindo ambientes de negócios, governo e educação. O objetivo da arquitetura orientada para eventos (EA) é fornecer um único ponto de contato para os usuários interagirem entre si através do uso da tecnologia, como videogames, salas de bate-papo e mídias sociais. O principal objetivo da EA é ajudar as pessoas a entender como usar a tecnologia para facilitar suas vidas. \"É importante ter uma resposta clara e bem estruturada para esta pergunta\", diz John McKinney, co-fundador e CEO da arquitetura orientada para eventos",
+      "auto_metrics": {
+        "cosine_similarity": 0.5310221910476685,
+        "rouge_l": 0.13675213249178186,
+        "meteor_score": 0.17133486047480218,
+        "bleu_score": 2.207559664977474e-63,
+        "length_difference": 422,
+        "length_ratio": 2.3354430379746836
+      },
+      "human_evaluation": {
+        "scores": {
+          "relevance": 1,
+          "correctness": 1,
+          "completeness": 1,
+          "clarity": 1
+        },
+        "comments": {
+          "relevance": "A resposta é completamente irrelevante",
+          "correctness": "Ele não cita como implementar a arquitetura orientada a enventos",
+          "completeness": "A resposta está completamente incompleta",
+          "clarity": "Não é clara"
+        },
+        "overall_comment": "Irrelevante",
+        "timestamp": "2025-07-03T21:15:08.021057"
+      }
+    }
+  ],
+  "weak_points": {
+    "low_semantic_similarity": [
+      {
+        "question": "Qual a importância da cultura organizacional na transformação digital?",
+        "score": 0.5492154359817505
+      },
+      {
+        "question": "Como engajar colaboradores com mentalidade digital?",
+        "score": 0.5319312810897827
+      },
+      {
+        "question": "Como superar a resistência a novas tecnologias?",
+        "score": 0.4653463661670685
+      },
+      {
+        "question": "Como criar cultura de experimentação em empresas tradicionais?",
+        "score": 0.535697877407074
+      },
+      {
+        "question": "Quais são as maiores tendências em transformação digital para os próximos 3 anos?",
+        "score": 0.5996410846710205
+      },
+      {
+        "question": "Quais considerações éticas são críticas em tecnologias digitais avançadas?",
+        "score": 0.590991735458374
+      },
+      {
+        "question": "Se minha equipe tem medo de novas tecnologias, como superar essa barreira?",
+        "score": 0.5944804549217224
+      },
+      {
+        "question": "Quais riscos enfrentamos se o treinamento em novas plataformas for insuficiente?",
+        "score": 0.5154985189437866
+      },
+      {
+        "question": "Quais habilidades são essenciais para profissionais na era digital?",
+        "score": 0.4414083957672119
+      },
+      {
+        "question": "Quais estratégias para reter talentos digitais?",
+        "score": 0.5990771055221558
+      },
+      {
+        "question": "Como a computação de borda (edge) apoia a transformação?",
+        "score": 0.5504081845283508
+      },
+      {
+        "question": "Como implementar inteligência artificial de forma ética?",
+        "score": 0.42884713411331177
+      },
+      {
+        "question": "Como implementar arquitetura orientada a eventos?",
+        "score": 0.5310221910476685
+      }
+    ],
+    "human_low_scores": [
+      {
+        "question": "Como superar a resistência a novas tecnologias?",
+        "criteria": [
+          "relevance",
+          "correctness",
+          "completeness",
+          "clarity"
+        ],
+        "comments": {
+          "relevance": "A pergunta não é relevante para a pergunta, ele cita algo relacionado a pergunta mas ao decorrer da resposta fica completamente fora da pergunta",
+          "correctness": "A resposta gerada nao diz como superar a resisitencia a novas tecnologias",
+          "completeness": "A resposta não esta totalmente completa",
+          "clarity": "A resposta gerada é completamente confusa"
+        }
+      },
+      {
+        "question": "Quais habilidades são essenciais para profissionais na era digital?",
+        "criteria": [
+          "relevance",
+          "correctness",
+          "completeness",
+          "clarity"
+        ],
+        "comments": {
+          "relevance": "A resposta gerada foi completamente forar do contexto da pergunta",
+          "correctness": "A resposta gerada não cita as habilidades essenciais para os profissionais da pergunta",
+          "completeness": "A resposta foi insatisfatoria",
+          "clarity": "A resposta esta totalmente fora do contexto da pergunta tornando a não clara"
+        }
+      },
+      {
+        "question": "Como implementar inteligência artificial de forma ética?",
+        "criteria": [
+          "completeness"
+        ],
+        "comments": {
+          "relevance": "Na verdade essa pergunta não atende muito bem",
+          "correctness": "É que a resposta é um pouco generica e a resposta de referencia ela enumera cituações de como usar de forma etica a IA",
+          "completeness": "A resposta gerada senti que ele alucinou com relação as referencias que ele usou",
+          "clarity": "A resposta até que é clara, mas ela acaba sendo mais generica e sinto que ele inventou as fontes que ele usou"
+        }
+      },
+      {
+        "question": "Como implementar arquitetura orientada a eventos?",
+        "criteria": [
+          "relevance",
+          "correctness",
+          "completeness",
+          "clarity"
+        ],
+        "comments": {
+          "relevance": "A resposta é completamente irrelevante",
+          "correctness": "Ele não cita como implementar a arquitetura orientada a enventos",
+          "completeness": "A resposta está completamente incompleta",
+          "clarity": "Não é clara"
+        }
+      }
+    ]
+  }
+}

@@ -67,6 +67,12 @@ def main():
     if 'user_id' not in st.session_state:
         st.session_state['user_id'] = str(uuid.uuid4())
         st.session_state['start_time'] = time.time()
+    # isQuestionAudio = False 
+    # isResponseAudio = False
+    if 'isQuestionAudio' not in st.session_state:
+        st.session_state.isQuestionAudio = False
+    if 'isResponseAudio' not in st.session_state:
+        st.session_state.isResponseAudio = False
     # Inicialização do gravador
     if 'gravador' not in st.session_state:
         st.session_state.gravador = GravadorAudio()
@@ -164,14 +170,17 @@ def main():
     if user_input:
         prompt = user_input
         is_audio = False
+        st.session_state.isQuestionAudio = False
     elif st.session_state.ultima_transcricao:
         prompt = st.session_state.ultima_transcricao
         # Limpa a transcrição após usar
         st.session_state.ultima_transcricao = ""
         is_audio = True
+        st.session_state.isQuestionAudio = True
     else:
         prompt = None
         is_audio = False
+        st.session_state.isQuestionAudio = False
 
     # Se houve nova pergunta
     if prompt:
@@ -214,13 +223,6 @@ def main():
             else:
                 response = conversation_chatbot(prompt, st.session_state.df, st.session_state.resources)
 
-        isQuestionAudio = False 
-        isResponseAudio = False
-        timestamp_end = datetime.now()
-        delta = timestamp_end - timestamp_start
-        time_in_seconds = delta.total_seconds()
-        interaction.log_interaction(prompt, response, isQuestionAudio, isResponseAudio, time_in_seconds)
-
         # Checa se a conversão para áudio está ativada
         if on:
             # audio_path = f"script\\output\\audio_output_{st.session_state['user_id']}_{timestamp}.wav"
@@ -232,7 +234,7 @@ def main():
                         "audio_file": audio,
                     }]
                 })
-
+            st.session_state.isResponseAudio = True
             isResponseAudio = True
         else:
             # Exibir resposta incrementalmente
@@ -243,6 +245,13 @@ def main():
                 "role": "assistant",
                 "content": [{"type": "text", "text": full_response}]
             })
+        
+        isQuestionAudio = st.session_state.isQuestionAudio
+        isResponseAudio = st.session_state.isResponseAudio
+        timestamp_end = datetime.now()
+        delta = timestamp_end - timestamp_start
+        time_in_seconds = delta.total_seconds()
+        interaction.log_interaction(prompt, response, isQuestionAudio, isResponseAudio, time_in_seconds)
 
         st.rerun()
 

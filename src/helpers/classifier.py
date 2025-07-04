@@ -10,25 +10,15 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import joblib
 import re
+from sentence_transformers import SentenceTransformer
 from helpers.classification_score_intent import map_score_to_label
 
 from pathlib import Path
 base_path = Path(__file__).resolve().parents[2]
 
 # Inicialize os pipelines (uma vez)
-# rephrase_pipe = pipeline("text2text-generation", model="Vamsi/T5_Paraphrase_Paws")
-# tokenizer = AutoTokenizer.from_pretrained("google/flan-t5-base")
-# model_for_seqlm = AutoModelForSeq2SeqLM.from_pretrained("google/flan-t5-base")
-# embed_model_transformer = SentenceTransformer("paraphrase-mpnet-base-v2")
+# model = SentenceTransformer('paraphrase-multilingual-mpnet-base-v2')
 
-# model_name_llama = "meta-llama/Llama-2-7b-chat-hf"
-# tokenizer_llama = AutoTokenizer.from_pretrained(model_name_llama)
-# model_llama = AutoModelForCausalLM.from_pretrained(
-#     model_name_llama,
-#     device_map="auto",  # envia para GPU se disponível
-#     torch_dtype=torch.float16,
-#     load_in_4bit=True  # usa quantização para caber em GPUs menores
-# )
 
 def create_directory_matrix(type_train, type_directory, base_name):
     root_image_path = Path(join(base_path, type_directory,type_train))

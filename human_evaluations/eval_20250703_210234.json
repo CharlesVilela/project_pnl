@@ -1,0 +1,29 @@
+{
+  "question": "Como implementar inteligência artificial de forma ética?",
+  "expected_response": "Implementação ética requer: 1) Diversidade nas equipes de desenvolvimento, 2) Auditoria regular de algoritmos, 3) Transparência nas decisões automatizadas, 4) Mecanismos de supervisão humana, e 5) Compliance com regulamentações. Frameworks como o da UE para IA confiável são referências essenciais.",
+  "generated_response": "- A inteligência artificial (IA) é uma tecnologia que existe há muito tempo, mas não é a única. De fato, muitas pessoas nem sequer estão cientes de sua existência, de acordo com o New York Times. Um estudo recente descobriu que a IA pode ser usada de várias maneiras, incluindo: pode ajudar as pessoas a entender o que está acontecendo em suas vidas, como como elas interagem com os outros, e também pode ajudá -las a tomar melhores decisões sobre suas vidas. \"É uma parte muito importante de nossas vidas\", diz um pesquisador da Universidade da Califórnia, Berkeley. \"E precisamos ser capazes de usar a IA de maneira ética para que as pessoas não sintam que estão sendo exploradas\". A IA também pode ser usada para ajudar as pessoas a aprender novas habilidades, como ler e escrever ou como se comunicar com os outros. O Times observa que a IA é frequentemente usada em ambientes educacionais para ajudar as crianças a aprender matemática, ciências e engenharia",
+  "auto_metrics": {
+    "cosine_similarity": 0.42884713411331177,
+    "rouge_l": 0.08333332951485357,
+    "meteor_score": 0.1140684410646388,
+    "bleu_score": 4.01059487686273e-155,
+    "length_difference": 664,
+    "length_ratio": 3.228187919463087
+  },
+  "human_evaluation": {
+    "scores": {
+      "relevance": 5,
+      "correctness": 3,
+      "completeness": 2,
+      "clarity": 4
+    },
+    "comments": {
+      "relevance": "Na verdade essa pergunta não atende muito bem",
+      "correctness": "É que a resposta é um pouco generica e a resposta de referencia ela enumera cituações de como usar de forma etica a IA",
+      "completeness": "A resposta gerada senti que ele alucinou com relação as referencias que ele usou",
+      "clarity": "A resposta até que é clara, mas ela acaba sendo mais generica e sinto que ele inventou as fontes que ele usou"
+    },
+    "overall_comment": "A resposta ela é intermediaria, ela não é tão ruim ao ponto de sair completamente do sentido da pergunta, no entanto, ela meio que não é muito certeira",
+    "timestamp": "2025-07-03T21:02:34.071901"
+  }
+}

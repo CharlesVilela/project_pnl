@@ -8,7 +8,7 @@ import pandas as pd
 
 base_path = Path(__file__).resolve().parents[1]
 def main():
-    articles = ["artigo_37"]
+    articles = ["artigo_38"]
     # articles = ["artigo_01", "artigo_02", "artigo_03", "artigo_04", "artigo_05", "artigo_06", "artigo_07", "artigo_08","artigo_09", "artigo_10"]
     # articles = ["artigo_01", "artigo_02", "artigo_03", "artigo_04", "artigo_05", "artigo_06", "artigo_07", "artigo_08","artigo_09", "artigo_10",
     #             "artigo_11", "artigo_12", "artigo_13", "artigo_14", "artigo_15", "artigo_16", "artigo_17", "artigo_18","artigo_19", "artigo_20",
