@@ -400,7 +400,6 @@ def conversation_chatbot(user_input, df, resources):
         st.error("Erro ao gerar resposta.")
         st.exception(e)
 
-# Token huggface: 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
 # Função do chatbot
 def chatbot_loop(df):
     tfidf_vectorizer, tfidf_matrix, embed_model, embeddings = prepare_semantic_search(df)
