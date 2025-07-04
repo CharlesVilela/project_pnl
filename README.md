@@ -619,8 +619,10 @@ A tabela abaixo é uma pequena amostra dos dados gerados pelos modelos de avalia
 
 Os membros do projeto:
 
-* **Charles Vilela** – [GitHub](https://github.com/charlesvilela) | [LinkedIn](https://linkedin.com/in/charlesvilela)
+* **Charles Vilela** – [GitHub](https://github.com/charlesvilela) | [LinkedIn](https://www.linkedin.com/in/charles-vilela-a19532204)
 * **Gabriel Lima** – [GitHub](https://github.com/Gabs19) | [LinkedIn](https://www.linkedin.com/in/gabriel-lima-861181168/)
+* **João Batista** – [GitHub](https://github.com/Gabs19) | [LinkedIn]((ttps://www.linkedin.com/in/joao-batista-jr/)
+* **William Ferreira** – [GitHub](https://github.com/Gabs19) | [LinkedIn](www.linkedin.com/in/william-ferreira-47bb8b15a)
 
 ---
 
