@@ -388,9 +388,10 @@ O objetivo da utilização do cache de interações é otimizar o tempo de respo
 
 ## **10. Resultados**
 
+Os resultados se dividem em três pontos: o funcionamento do chatbot, analise dos resultados dos modelos treinados e a analise das respostas do chatbot. <br><br>
+
 ![Figura 01 - Fluxo do chatbot](image/img_readme/fluxo_chatbot_mains.png)
 
-### Texto para descrever melhor depois:<br>
 O projeto do chatbot se divide em três partes.
 
 1. O primeiro main é mais voltado para a extração de textos de artigos/livros e do treinamento dos modelos de redes neurais
@@ -506,7 +507,66 @@ A analise dos dados gerados pelo chatbot seguem o fluxo da Figura 02
         
         return weak_points
      ```
+### Analise do treinamento
 
+Os modelos foram treinados para 2 tarefas distintas:
+   * `maturity_label` (Classificação de maturidade)
+   * `intent` (Classificação de intenção
+
+Cada tarefa foi testada com 3 algoritmos: Naive Bayes, Regressão Logística e Random Forest
+
+#### Tabelas
+##### **1. Maturity Label**
+
+| **Modelo**           | **Accuracy** | **Macro Avg (F1-score)** | **Weighted Avg (F1-score)** |
+|-----------------------|:------------:|:------------------------:|:---------------------------:|
+| Naive Bayes           | 0.911        | 0.493                    | 0.894                       |
+| Logistic Regression   | 0.937        | 0.661                    | 0.933                       |
+| Random Forest         | 0.950        | 0.738                    | 0.949                       |
+
+---
+
+##### **2. Intent**
+
+| **Modelo**           | **Accuracy** | **Macro Avg (F1-score)** | **Weighted Avg (F1-score)** |
+|-----------------------|:------------:|:------------------------:|:---------------------------:|
+| Naive Bayes           | 0.843        | 0.096                    | 0.801                       |
+| Logistic Regression   | 0.925        | 0.248                    | 0.917                       |
+| Random Forest         | 0.952        | 0.422                    | 0.947                       |
+
+### Principais Padrões Observados
+
+1. **Maturity Label**
+    * Melhor modelo: Random Forest
+        * Accuracy: 0.950
+        * Macro Avg F1: 0.738
+        * Weighted Avg F1: 0.949
+     * Observações:
+         * O Random Forest apresentou desempenho superior em todas as métricas.
+         * Logistic Regression também teve performance alta, mas levemente inferior em macro avg, indicando menor equilíbrio entre classes.
+         * Naive Bayes teve o pior desempenho, especialmente na macro avg (0.493), evidenciando dificuldade em classes minoritárias.
+
+2. Intent
+    * Melhor modelo: Random Forest
+      * Accuracy: 0.952
+      * Macro Avg F1: 0.422
+      * Weighted Avg F1: 0.947
+    * Observações
+       * Apesar da alta accuracy (~95%), o macro avg F1 é baixo (0.422) em todos os modelos, sugerindo que:
+
+         * O modelo acerta predominantemente classes majoritárias.
+         * Classes minoritárias têm performance insatisfatória.
+
+       * Logistic Regression apresentou macro avg F1 melhor (0.248) que Naive Bayes (0.096), mas ambos muito baixos.
+          
+**Insights Gerais**
+ - Random Forest foi consistentemetne o melhor modelo em todas as tarefas
+ - Logistic Regression teve desempenho competitivo, especialmente para maturity_label
+ - Naive Bayes apresentou desempenho fraco, sugerindo inadequação aos seus dados de alta dimensionaldiade e distribuição desequilibrada.
+
+
+
+<br>
 ### Desempenho do chatbot
 
 A tabela abaixo é uma pequena amostra dos dados gerados pelos modelos de avaliação. Para ver o arquivo json completo clique aqui: [Ver arquivo JSON completo](full_evaluation_report.json)
