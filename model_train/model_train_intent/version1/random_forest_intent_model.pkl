@@ -47,5 +47,10 @@ print("Accuracy:", accuracy_score(y_test, y_pred))
 print("\nClassification Report:\n", classification_report(y_test, y_pred))
 
 import joblib
+import os
 
-joblib.dump(pipeline, "random_forest_intent_model.pkl")
+# Garante que a pasta existe
+os.makedirs("model_train/model_train_intent/version1", exist_ok=True)
+
+# Salva o PIPELINE treinado corretamente
+joblib.dump(pipeline, "model_train/model_train_intent/version1/random_forest_intent_model.pkl")
