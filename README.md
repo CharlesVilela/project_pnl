@@ -31,7 +31,7 @@ NLU (Natural Language Understanding) para compreensão do usuário
 
 NLG (Natural Language Generation) para gerar respostas naturais
 
-Seu modelo de aprendizado é treinado aplicando Machine Learning e redes neurais para melhorar a precisão da classificação.
+O modelo de aprendizado é treinado aplicando Machine Learning e redes neurais para melhorar a precisão da classificação.
 
 ### Objetivo 
 
